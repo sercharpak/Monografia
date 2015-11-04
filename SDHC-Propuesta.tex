@@ -38,23 +38,35 @@ Advisor: Jaime E. Forero-Romero
 \normalsize
 \section{Introducci\'{o}n}
 %Introducción a la propuesta de Monografía. Debe incluir un breve resumen del estado del arte del problema a tratar. También deben aparecer citadas todas las referencias de la bibliografía (a menos de que se citen más adelante, en los objetivos o metodología, por ejemplo)
-Se ha observado que las galaxias se agrupan en estructuras amplias separadas por regiones vac\'{i}as, estas estructuras son denominadas c\'{u}mulos de galaxias. En ciertos casos, estas estructuras tienen una alta concentraci\'{o}n de galaxias y portan entonces el nombre de superc\'{u}mulo de galaxia. Sin embargo la manera de delimitar dicha estructura no es del todo clara\cite{gott_iii_map_2005}.
+En el Universo visto a grandes escalas las galaxias se agrupan en
+estructuras amplias semejantes a una red con filamentos que atraviesan
+grandes regiones vac\'ias y se cruzan en regiones denominadas superc\'{u}mulos.
+Aunque estas estructuras son f\'aciles de detectar a simple vista, hay
+diferentes posibilidades para delimitarlas a partir de criterios
+f\'isicos \cite{gott_iii_map_2005}.    
 \\
 
-A partir de la distancia de cada galaxia a la tierra directamente observada, es posible deducir la velocidad peculiar de dicha galaxia. Desde esta velocidad peculiar existe una forma de obtener la distribuci\'{o}n de materia de la galaxia. As\'{i}, un muestreo de la distribuci\'{o}n de velocidades ser\'{a} equivalente a la distribuci\'{o}n de materia correspondiente.
+Una propuesta para definir un superc\'umulo es utilizar el flujo de
+velocidades de las galaxias en esa regi\'on del espacio.
+En un superc\'umulo las galaxias tienden a fluir hacia la regi\'on
+m\'as densa debido al proceso de atracci\'on gravitacional.
+De esta manera, las regiones espaciales donde el flujo de galaxias es
+convergente  representar\'ian superc\'umulos diferentes.\\
 \\
 
 Recientemente un equipo de astr\'{o}nomos construy\'o un mapa del flujo
 de velocidades de galaxias en el Universo local en una escala de
-cientos de millones de a\~nos luz\cite{tully_cosmicflows-2_2013}. En dicho mapa se encuentran puntos en donde este flujo diverge. Al estar relacionado con la distribuci\'{o}n de materia, se puede entonces definir un volumen delimitado por la superficie de los puntos divergentes. 
-Con base en este mapa y esta nueva definici\'{o}n de superc\'{u}mulo, este equipo identific\'{o} a Laniakea, el superc\'umulo de galaxias que
-incluye a nuestra galaxia, la Vida L\'{a}ctea\cite{tully_laniakea_2014}.
-\\  
-
+cientos de millones de a\~nos luz\cite{tully_cosmicflows-2_2013}. 
+En dicho mapa se encuentran puntos en donde este flujo convege. 
+Con base en este mapa este equipo identific\'{o} a Laniakea, el
+superc\'umulo de galaxias que incluye a nuestra galaxia, la V\'ia
+L\'{a}ctea\cite{tully_laniakea_2014}. 
+\\   
 
 
 En esta monograf\'{i}a nos proponemos desarrollar un m\'etodo para
-detectar cientos de superc\'{u}mulos de galaxias en simulaciones. 
+detectar cientos de superc\'{u}mulos de galaxias en simulaciones
+cosmol\'ogicas.  
 Con esto buscamos cuantificar si Laniakea puede considerarse como una
 estructura at\'ipica en el Universo.
 \\
@@ -76,16 +88,16 @@ cosmol\'{o}gicas.
           superc\'{u}mulos de galaxias en simulaciones.
 	\item Caracterizar los superc\'umulos encontrados en la
           simulaci\'on.
-        \item Comparar las caracter\'isticas de Laniakea con las
-          propiedades de los conjuntos de superc\'umulos detectados en
-          la simulaci\'on.
+        \item Comparar las caracter\'isticas de los conjuntos de
+          superc\'umulos detectados en          la simulaci\'on con
+          Laniakea. 
 \end{itemize}
 
 \section{Metodolog\'{i}a}
 %Exponer DETALLADAMENTE la metodología que se usará en la Monografía. 
 %Monografía computacional: ¿Cómo se harán las simulaciones? ¿Qué requerimientos computacionales se necesitan? ¿Qué espacios físicos o virtuales se van a utilizar?
 
-Esta monograf\'{i}a es en su mayor\'{i}a computacional. 
+Esta monograf\'{i}a utiliza en su mayor\'{i}a m\'etodos computacional.  
 Se usar\'{a}n los lenguajes C y Python, ya que ambos son de licencia
 libre. 
 Las simulaciones de la distribuci\'on de materia en escalas
