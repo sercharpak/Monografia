@@ -4,7 +4,7 @@
 \usepackage{graphicx}
 \usepackage{epstopdf}
 \usepackage[english]{babel}
-\usepackage[latin5]{inputenc}
+
 \usepackage{hyperref}
 \usepackage[left=3cm,top=3cm,right=3cm,nohead,nofoot]{geometry}
 \usepackage{braket}
@@ -38,21 +38,23 @@ Advisor: Jaime E. Forero-Romero
 \normalsize
 \section{Introducci\'{o}n}
 %Introducción a la propuesta de Monografía. Debe incluir un breve resumen del estado del arte del problema a tratar. También deben aparecer citadas todas las referencias de la bibliografía (a menos de que se citen más adelante, en los objetivos o metodología, por ejemplo)
+Se ha observado que las galaxias se agrupan en estructuras amplias separadas por regiones vac\'{i}as, estas estructuras son denominadas c\'{u}mulos de galaxias. En ciertos casos, estas estructuras tienen una alta concentraci\'{o}n de galaxias y portan entonces el nombre de superc\'{u}mulo de galaxia. Sin embargo la manera de delimitar dicha estructura no es del todo clara\cite{gott_iii_map_2005}.
+\\
 
-Recientemente un equipo de astr\'onomos construy\'o un mapa del flujo
+A partir de la distancia de cada galaxia a la tierra directamente observada, es posible deducir la velocidad peculiar de dicha galaxia. Desde esta velocidad peculiar existe una forma de obtener la distribuci\'{o}n de materia de la galaxia. As\'{i}, un muestreo de la distribuci\'{o}n de velocidades ser\'{a} equivalente a la distribuci\'{o}n de materia correspondiente.
+\\
+
+Recientemente un equipo de astr\'{o}nomos construy\'o un mapa del flujo
 de velocidades de galaxias en el Universo local en una escala de
-cientos de millones de a\~nos luz.
-A partir de este mapa identificaron a Laniakea, el superc\'umulo de galaxias que
-incluye a nuestra galaxia, la Vida L\'{a}ctea
+cientos de millones de a\~nos luz\cite{tully_cosmicflows-2_2013}. En dicho mapa se encuentran puntos en donde este flujo diverge. Al estar relacionado con la distribuci\'{o}n de materia, se puede entonces definir un volumen delimitado por la superficie de los puntos divergentes. 
+Con base en este mapa y esta nueva definici\'{o}n de superc\'{u}mulo, este equipo identific\'{o} a Laniakea, el superc\'umulo de galaxias que
+incluye a nuestra galaxia, la Vida L\'{a}ctea\cite{tully_laniakea_2014}.
 \\  
 
 
-Los m\'{e}todos usados durante este estudio son:
-%TODO Acabar de leer los papers.
-\\
 
 En esta monograf\'{i}a nos proponemos desarrollar un m\'etodo para
-detecatr cientos de superc\'{u}mulos de galaxias en simulaciones. 
+detectar cientos de superc\'{u}mulos de galaxias en simulaciones. 
 Con esto buscamos cuantificar si Laniakea puede considerarse como una
 estructura at\'ipica en el Universo.
 \\
@@ -97,10 +99,11 @@ El estudiante debe entender como se realizan las
 simulaciones. Deber\'{a} familiarizarse con los datos manejados en
 este entorno.  
 \\
-
+%TODO revisar V-Web Algorithm \cite{hoffman_kinematic_2012}
+%TODO revisar Wiener Filter
 Una vez generada una simulaci\'on cosmol\'{o}gica, el estudiante
 deber\'{a} estudiarla en m\'{a}s detalle para familiarizarse con
-ella. Identificar\'{a} el campo de velocidades de la materia. 
+ella. Identificar\'{a} el campo de velocidades de la materia. Para ello debe tener un entendimiento de la relaci\'{o}n entre campo de campo de velocidades y distribuci\'{o}n de materia.
 Luego probar\'{a} los m\'{e}todos previamente estudiados para obtener unos
 primeros resultados.  
 \\
