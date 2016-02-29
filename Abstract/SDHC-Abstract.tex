@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+
+%PACKAGES
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage[english]{babel}
+
+\usepackage{hyperref}
+\usepackage[left=3cm,top=3cm,right=3cm,nohead,nofoot]{geometry}
+\usepackage{braket}
+\usepackage{datenumber}
+\usepackage{placeins}
+
+
+%COMMANDS
+
+\begin{document}
+
+\begin{center}
+\Huge
+Detection of galaxies super clusters in simulated cosmological structures\\  
+\vspace{3mm}
+\normalsize Sergio Daniel Hern\'{a}ndez Charpak
+
+\vspace{2mm}
+\normalsize Jaime E. Forero-Romero
+
+\normalsize
+\vspace{2mm}
+
+\today
+\end{center}
+
+
+\normalsize
+\section{Abstract}
+%Your abstract is simply a short, standalone summary of the work or paper that others can use as an overview.[1] An abstract describes what you do in your essay, whether it’s a scientific experiment or a literary analysis paper. It will help your reader to understand the paper and it will help people searching for a particular work to find it and decide whether it suits their purposes. Seeing as an abstract is only a summary of the work you've already done, it's easy to accomplish!
+
+Galaxies form larger-scale structures known as clusters and super clusters. Tully et al \cite{tully_laniakea_2014} used the V-Web algorithm, developed by Hoffman et al\cite{hoffman_kinematic_2012}, on the flow map of the local universe \cite{tully_cosmicflows-2_2013} to define our home super cluster of galaxies, which they named Laniakea, which means infinite heaven in Hawaiian. 
+\\
+In this work we used similar techniques to detect galaxies super clusters in different simulations generated with the N-Body simulator Gadget-2 \cite{springel_gadget_2_2005}. The results of the simulation were read with the pyGadgetReader module \cite{thompson_pygadgetreader_2014ascl_soft11001T}. We performed different approaches using the velocities as a basis to detect different large-scale structures if the same order of magnitude as Laniakea (100 Mpc/h). We can then perform comparations of different properties of theses structures with our home super cluster, Laniakea.
+
+
+
+
+\bibliographystyle{unsrt}
+\renewcommand\refname{References}
+\bibliography{references}
+
+
+
+\end{document} 
