@@ -1,0 +1,9 @@
+134217728
+Returning DM    Positions
+Returning DM    Velocities
+2023.87402344 0.340330988169 117.752752554
+1906.12127088 23.8908814989
+There are: 74 seeds
+The regions have: 1254 galaxies.
+Starting with points with V > 1906.12127088
+Ending at points with V < 23.8908814989
