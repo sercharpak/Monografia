@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1456922220 "Hernandez-S-Pl.tex" "Hernandez-S-Pl.pdf" "Hernandez-S-Pl" 1456922220
+["pdflatex"] 1457045885 "Hernandez-S-Pl.tex" "Hernandez-S-Pl.pdf" "Hernandez-S-Pl" 1457045885
   "/etc/texmf/web2c/texmf.cnf" 1456833386 1101 af7716885e081ab43982cab7b4672c1a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -31,9 +31,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1435377840 31349 7675f8adfbe12aae865d340d35423a49 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1456833781 1830106 84d76edbb610990cc412e8c14df69a68 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1456833555 3844427 f9bf1195b66614aa31408f86130ec742 ""
-  "Hernandez-S-Pl.aux" 1456922220 23 e5e656ba29013d7e38f7d2d1b2e0266a ""
-  "Hernandez-S-Pl.tex" 1456922183 2651 cf71d8153244d24e19d5316bafcfb162 ""
+  "Hernandez-S-Pl.aux" 1457045885 23 e5e656ba29013d7e38f7d2d1b2e0266a ""
+  "Hernandez-S-Pl.tex" 1457045863 2805 3d2a3939b43669c44d96f10bc61522e0 ""
   (generated)
-  "Hernandez-S-Pl.log"
   "Hernandez-S-Pl.aux"
   "Hernandez-S-Pl.pdf"
+  "Hernandez-S-Pl.log"

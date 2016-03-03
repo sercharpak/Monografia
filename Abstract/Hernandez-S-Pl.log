@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.3.1)  2 MAR 2016 12:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.3.1)  3 MAR 2016 22:58
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -47,17 +47,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 42.
 Missing character: There is no Â in font cmr9!
 Missing character: There is no º in font cmr9!
-Missing character: There is no Ã in font cmr9!
-Missing character: There is no ¡ in font cmr9!
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 (./Hernandez-S-Pl.aux) ) 
 Here is how much of TeX's memory you used:
- 235 strings out of 493085
- 2566 string characters out of 6136918
+ 236 strings out of 493085
+ 2574 string characters out of 6136918
  54737 words of memory out of 5000000
- 3792 multiletter control sequences out of 15000+600000
+ 3793 multiletter control sequences out of 15000+600000
  8578 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  23i,7n,17p,164b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -69,7 +67,7 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Hernandez-S-Pl.pdf (1 page, 97369 bytes).
+Output written on Hernandez-S-Pl.pdf (1 page, 98008 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  28 compressed objects within 1 object stream
