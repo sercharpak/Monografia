@@ -1,0 +1,17 @@
+134217728
+Returning DM    Positions
+Returning DM    Velocities
+The magnitud of the velocities has been calculated.
+The results array has been created.
+Vel_max, Vel_min, std_vel
+2023.87402344 0.340330988169 117.752752554
+Thresh_high, Thresh_low
+1866.87035337 23.8908814989
+There are: 133 seeds
+The regions have: 2635 galaxies.
+Starting with points with V > 1866.87035337
+Ending at points with V < 23.8908814989
+mean, std
+43886.2259273 38733.1429958
+vel_mean, vel_std
+1012.43803123 478.240160716
