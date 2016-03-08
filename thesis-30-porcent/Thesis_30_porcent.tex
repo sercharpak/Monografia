@@ -1,0 +1,199 @@
+\documentclass[12pt]{article}
+
+%PACKAGES
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage[english]{babel}
+\usepackage[toc,page]{appendix}
+
+\usepackage{hyperref}
+\usepackage[left=3cm,top=3cm,right=3cm,nohead,nofoot]{geometry}
+\usepackage{braket}
+\usepackage{datenumber}
+\usepackage{placeins}
+
+
+%COMMANDS
+
+\begin{document}
+
+\begin{center}
+\Huge
+Detection of galaxies superclusters in simulated cosmological structures\\  
+\vspace{3mm}
+\Large Sergio Daniel Hern\'{a}ndez Charpak
+
+\large
+200922618
+
+\vspace{2mm}
+\Large
+Advisor: Jaime E. Forero-Romero
+
+\normalsize
+\vspace{2mm}
+
+\today
+\end{center}
+
+
+\normalsize
+%\newpage
+\tableofcontents
+\newpage
+
+\section{Abstract}
+Recently Tully et al. (2014) \cite{tully_laniakea_2014} used local cosmic flow information to
+define our local supercluster, Laniakea. 
+In this work we present a study on large cosmological N-body
+simulations aimed at establishing the significance of Laniakea in a
+cosmological context.
+We explore different algorithms to define superclusters from the dark
+matter velocity field in the simulation. 
+We summarize the properties of the supercluster population by their
+abundance at a given total mass and its shape distributions.
+We find that superclusters similar in size and structure to Laniakea are
+relatively uncommon on a broader cosmological context.
+We finalize by discussing the possible sources of systematics (both in
+our methods and in observations) leading to this discrepancy.
+
+\section{Introduction}
+%Introducción a la propuesta de Monografía. Debe incluir un breve resumen del estado del arte del problema a tratar. También deben aparecer citadas todas las referencias de la bibliografía (a menos de que se citen más adelante, en los objetivos o metodología, por ejemplo)
+
+In the Universe scene at large scales the galaxies group themselves in structures
+similar to a filament web which go through large voids regions and cross in regions
+called superclusters. Even though these structures can be easily detected at simple
+view, there are different possibilities to delimited them from physical criteria \cite{gott_iii_map_2005}.    
+\\
+
+A proposal to define a supercluster is to use the flow of galaxies in this region of
+space. Within a supercluster, galaxies tend to flow to the most dense region as a
+consequence of the gravitational attraction process. In this way, spacial regions where
+the galaxy flow is convergent represent galaxies superclusters.\\
+\\
+Recently a team build a galaxies velocities flow map of the local group in a scale of
+hundreds of light years \cite{tully_cosmicflows-2_2013}. In this map converging points
+were found and this team identified Laniakea, the galaxies supercluster which includes
+our galaxy, the milky way \cite{tully_laniakea_2014}.
+\\   
+
+We propose to develop a method to detect a statistical significant number of galaxies
+supercluster in cosmological simulations. 
+With this we aim to quantified if Laniakea can be considered as an atypical structure in
+the Universe. 
+\\
+
+\section{Background}
+%Describe in detail the Laniakea work and the Methods used
+
+\section{Methods}
+
+As we support the open-source community, we used the N-Body simulation open
+software Gadget-2 \cite{springel_gadget_2_2005} to generate the simulations
+and source code in C and Python to treat the data obtained from the
+simulations. The development of the code will be in Github \url{https://github.com/sercharpak/Monografia/}.
+
+\subsection{Simulations}
+We used the N-Body simulation software Gadget-2 \cite{springel_gadget_2_2005}
+widely used in the scientific community to generate a box of size 500 Mpc/h
+with $512^{3}$ dark matter particles (DM). The initial conditions were
+generated with Springel's N-Genic software. The simulations ran on the HPC cluster at UNIANDES with 48 processors and took approximately 10 hours to run. \\
+
+By DM particle we mean a particle which only interacts through gravity
+interaction. In the simulation each particle represents a galaxy. We then use
+different algorithms to identify the superclusters within the simulation.\\
+
+\subsection{Algorithms}
+
+So far we have used a naive way to approach to the problem. 
+\begin{enumerate}
+	\item We calculate the magnitude of the velocity (the speed) of each particle. 
+	\item We look for regions where the center has the highest speed and from it the speed decreases while the particle is further away from the center. 
+    \item We define the limits of this region the regions where the speed begins to increase with the distance from the center.
+\end{enumerate}
+
+We used a region growing algorithm, a simple image segmentation algorithm
+used to identify different regions in a image \cite{gonzalez_digital_2008}.\\
+$f(x,y,z)$ denotes the input data. $S(x,y,z)$ denotes a seed array, with
+value 1 where the particle can be define as a seed and 0 where not. It is the
+same size of $f(x,y,z)$. $Q$ denotes a predicate which is to be apply to the
+input data and determines if the region which starts at the seeds grows or
+not. Here $Q$ denotes: "if the speed of the close particle is lower than the
+marked one but greater than a threshold, mark that particle and continue."
+
+\begin{enumerate}
+	\item We choose seeds to begin the growth. In this case we choose the particles with high velocities. Here \[ |v|>  v_{max}  - \frac{\sigma_{v}}{4} \]
+	\item We open a window of particles to look for 2 close particles from the seed $s$ which do not for part of $S(x,y,z)$. Here:
+    \[ window = 20000\]
+    \item Once we found the 2 close particles $c$ we apply the predicate $Q$. Here:
+    \[ Q := |v_s| > |v_c| > |th_{low}|\]
+    With $th_{low} = v_{min} = \frac{\sigma_{v}}{2} $
+    \item If the particle $c$ satisfies $Q$, it is marked, $S(c) = 1$
+    \item Apply the algorithm to $c$, and so on (Recursion).
+\end{enumerate}
+
+The first version of the algorithm was written in python using the module
+pyGadgetReader \cite{thompson_pygadgetreader_2014ascl_soft11001T} to read the
+data and transform it to NumPy arrays in Python. In Appendix \ref{App:AppendixA} we attach the source code used.
+
+
+\section{Results}
+
+The simulation ran correctly on 48 processors in approximately 10 hours. We first visualized the simulation and its distribution of velocities. \\
+
+We first visualize the speed histogram.\\
+
+%Speed histogram
+
+Our hypothesis is based on the distribution of the speed. The lower speed
+particles will mainly be in the region borders and the higher speed particles
+will be in the region's center. \\
+
+%Plot 3Ds
+%First plot, particles with speed lower than thresh_low
+%Second plot, particles with speed higher than thresh_high
+
+We produce cuts in the z-direction to visualize in 2-D the speed distribution. \\
+
+%Plot 2D
+
+%10 plots of the 2D. 
+
+Finally we apply our region growing algorithm and we obtain the following results.\\
+
+%Plot of the region identified.
+
+We have three main observations:\\
+\begin{enumerate}
+	\item The details of the region seem accurate with what we would expect. It is more dense in the center and less dense in the borders.
+	\item The region obtained has a dimension of only a few tens kpc/h (Laniakea's dimension is one order of magnitude higher).
+    \item There is only one region identified. There should be more. Clearly there is a problem with the algorithm.
+\end{enumerate}
+
+The script in Appendix \ref{App:AppendixA} was executed in a student's
+laptop because of inconveniences with the HPC cluster. We think the main
+problem in the laptop is the limited memory (8GB). We expect to run it in the
+HPC to get more accurate results.
+
+\section{Future Work}
+\begin{itemize}
+	\item Understand more in detail how the work done by Hoffman et al\cite{hoffman_kinematic_2012} in the V-web algorithm, was used to determine Laniakea.
+    \item Write our own Gadget-2 snapshop reader in C or Python which implements the region growing algorithm.
+    \item Optimize our Algorithm. The current results are not sufficient.
+    \item Run a bigger simulation (boxsize: $5 \times 10^{6} Mpc/h$ and $1024^3$ DM particles.
+    \item Run the algorithm on this simulation.
+    \item Compare the properties of the results with the Laniakea supercluster.
+    \item Discuss the sources of systematics in both methods and observations.
+\end{itemize}
+
+
+
+
+\bibliographystyle{unsrt}
+\renewcommand\refname{Referencias}
+\bibliography{references}
+
+\appendix
+\section{Region Growing Algorithm} \label{App:AppendixA}
+
+\end{document} 
