@@ -1,0 +1,28 @@
+discarding /lustre/apps/anaconda/2/bin from PATH
+prepending /lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/bin to PATH
+Traceback (most recent call last):
+  File "region_detection_64.py", line 200, in <module>
+    plt.savefig(results_path+"regions_all_small.png",format = 'png')
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/pyplot.py", line 688, in savefig
+    res = fig.savefig(*args, **kwargs)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/figure.py", line 1565, in savefig
+    self.canvas.print_figure(*args, **kwargs)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/backend_bases.py", line 2232, in print_figure
+    **kwargs)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/backends/backend_agg.py", line 527, in print_png
+    FigureCanvasAgg.draw(self)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/backends/backend_agg.py", line 474, in draw
+    self.figure.draw(self.renderer)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/artist.py", line 61, in draw_wrapper
+    draw(artist, renderer, *args, **kwargs)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/figure.py", line 1159, in draw
+    func(*args)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/mpl_toolkits/mplot3d/axes3d.py", line 271, in draw
+    for col in self.collections]
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/mpl_toolkits/mplot3d/art3d.py", line 460, in do_3d_projection
+    fcs = mcolors.colorConverter.to_rgba_array(fcs, self._alpha)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/colors.py", line 399, in to_rgba_array
+    return np.array([self.to_rgba(c, alpha)], dtype=np.float)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/colors.py", line 376, in to_rgba
+    'to_rgba: Invalid rgba arg "%s"\n%s' % (str(arg), exc))
+MemoryError

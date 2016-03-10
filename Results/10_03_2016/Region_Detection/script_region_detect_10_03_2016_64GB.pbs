@@ -1,0 +1,16 @@
+#!/bin/sh
+
+#PBS -q batch
+#PBS -N python_region_detect_64
+#PBS -l nodes=1:ppn=16
+#PBS -M sergiocharpak@gmail.com
+#PBS -m abe
+#PBS -l mem=64gb
+#PBS -l vmem=64gb 
+#PBS -l walltime=24:00:00
+
+module load anaconda/python2 
+cd $PBS_O_WORKDIR
+NPROCS=`wc -l < $PBS_NODEFILE`
+source activate myenv_1
+python region_detection_64.py

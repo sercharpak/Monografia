@@ -1,0 +1,12 @@
+discarding /lustre/apps/anaconda/2/bin from PATH
+prepending /lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/bin to PATH
+Traceback (most recent call last):
+  File "region_detection_32.py", line 190, in <module>
+    ax.scatter(array_pos_plot_region[:,0],array_pos_plot_region[:,1],array_pos_plot_region[:,2],s=2,c='r')
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/mpl_toolkits/mplot3d/axes3d.py", line 2280, in scatter
+    depthshade=depthshade)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/mpl_toolkits/mplot3d/art3d.py", line 498, in patch_collection_2d_to_3d
+    col.set_3d_properties(zs, zdir)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/mpl_toolkits/mplot3d/art3d.py", line 445, in set_3d_properties
+    xs, ys = list(zip(*offsets))
+MemoryError

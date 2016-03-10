@@ -1,0 +1,18 @@
+discarding /lustre/apps/anaconda/2/bin from PATH
+prepending /lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/bin to PATH
+Traceback (most recent call last):
+  File "general_graphics.py", line 34, in <module>
+    fig = plt.figure()
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/pyplot.py", line 527, in figure
+    **kwargs)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/backends/backend_qt4agg.py", line 46, in new_figure_manager
+    return new_figure_manager_given_figure(num, thisFig)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/backends/backend_qt4agg.py", line 53, in new_figure_manager_given_figure
+    canvas = FigureCanvasQTAgg(figure)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/backends/backend_qt4agg.py", line 76, in __init__
+    FigureCanvasQT.__init__(self, figure)
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/backends/backend_qt4.py", line 68, in __init__
+    _create_qApp()
+  File "/lustre/home/ciencias/fisica/pregrado/sd.hernandez204/.conda/envs/myenv_1/lib/python2.7/site-packages/matplotlib/backends/backend_qt5.py", line 138, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable

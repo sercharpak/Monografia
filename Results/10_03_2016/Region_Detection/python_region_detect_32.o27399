@@ -1,0 +1,20 @@
+Number of Dark Matter particles
+134217728
+Returning DM    Positions
+Returning DM    Velocities
+The speed array has been calculated
+The lenght of the position array should be the same number of particles
+134217728
+The results array has been created.
+Vel_max, Vel_min, std_vel, vel_mean
+2023.87402344 0.340330988169 117.752752554 252.978166677
+Thresh_high, Thresh_low
+1195.00018711 488.483671784
+There are: 5196 seeds
+The regions have: 25104 galaxies.
+Starting with points with V > 1195.00018711
+Ending at points with V < 488.483671784
+mean, std
+115489.128007 131875.6577
+vel_mean, vel_std
+903.66295066 332.870349495

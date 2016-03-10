@@ -1,0 +1,58 @@
+Number of Dark Matter particles
+134217728
+Returning DM    Positions
+Returning DM    Velocities
+The speed array has been calculated
+The lenght of the position array should be the same number of particles
+134217728
+Pasamos a los scatter con colores. El color depende de la magnitud de la velocidad. 
+
+Vel_max, Vel_min, std_vel, vel_mean
+2023.87402344 0.340330988169 117.752752554 252.978166677
+Thresh_high, Thresh_low
+488.483671784 135.225414123
+Ya termino el scatter plot con z entre 0 y 100000
+Ya termino el scatter plot con z entre 100000 y 200000
+Ya termino el scatter plot con z entre 200000 y 300000
+Ya termino el scatter plot con z entre 300000 y 400000
+Ya termino el scatter plot con z entre 400000 y 500000
+El umbral de la velocidad es: 135.225414123
+Ya hizo el calculo el minimo y la desviacion. Ya formo los arreglos de posicion y magnitud velocidad 
+El nuevo arreglo posiciones tiene forma
+(19900067, 3)
+El nuevo arreglo velocidades tiene forma
+(19900067,)
+Pasamos a los scatter con colores con los arreglos recien calculados. El color depende de la magnitud de la velocidad. 
+
+Ya termino el scatter plot con z entre 0 y 100000
+El nuevo arreglo posiciones tiene forma 
+
+(3898836, 3)
+El nuevo arreglo velocidades tiene forma 
+
+(3898836,)
+Ya termino el scatter plot con z entre 100000 y 200000
+El nuevo arreglo posiciones tiene forma 
+
+(4058161, 3)
+El nuevo arreglo velocidades tiene forma 
+
+(4058161,)
+Ya termino el scatter plot con z entre 200000 y 300000
+El nuevo arreglo posiciones tiene forma 
+
+(4028874, 3)
+El nuevo arreglo velocidades tiene forma 
+
+(4028874,)
+Ya termino el scatter plot con z entre 300000 y 400000
+El nuevo arreglo posiciones tiene forma 
+
+(4113048, 3)
+El nuevo arreglo velocidades tiene forma 
+
+(4113048,)
+Ya termino el scatter plot con z entre 400000 y 500000
+Pasa a los plots en 3D 
+
+Ploteo en 3D a 19900067 galaxias
