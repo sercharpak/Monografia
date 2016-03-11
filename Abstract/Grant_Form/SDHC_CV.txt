@@ -8,64 +8,99 @@ Brief CV
 -----------------------------------------------------------------------------------------------
 
 Education
--Universidad de los Andes	Bogotá, Colombia
+==========
+
+- Universidad de los Andes, Bogotá (Colombia)
+
 Physics, Bachelor of Science	 
 Expected graduation, September 2016
 GPA 4.25/5.00
+
 Computing Engineering, Bachelor of Engineering
 Expected graduation, April 2017
 GPA 4.25/5.00
+
 Japanese Language and Culture, Minor
 
--Tokyo University of Marine Science and Technology	Tokyo, Japan
+- Tokyo University of Marine Science and Technology, Tokyo (Japan)
+
 Visiting Student			 May 2014-June 2014
 Control and Robotics Laboratory
 
--Kyoto Institute of Culture and Language		Kyoto, Japan
+- Kyoto Institute of Culture and Language, Kyoto (Japan)
+
 Intermediate Japanese Student		October 2013-March 2014
 	 
--Lycée Français Louis Pasteur	                    Bogotá, Colombia
+- Lycée Français Louis Pasteur Bogotá (Colombia)
+
 Student		Graduated, July 2011
 Scientific Bachalauréat, Mention Bien
 
 Research Experience
--Universidad de los Andes	Bogotá, Colombia
-Undergraduate Research Assistant	August 2015 – June 2016
-Astronomical Image Processing from Large All-Sky Photometric Surveys for the detection and measurement of transients under the mentorship of PhD student Juan Pablo Reyes and the direction of professor Marcela Hernandez.
+====================
 
--Fermi National Laboratory	Neutrino Division	Batavia, U.S.A.
-IPM Intern – Muon G-2 Experiment		June –July – August  2015
-Part of the team for the Test Beam of a Straw Detector Prototype, was in charge of the High Voltage and assisted with the analysis of the data taken under the mentorship of scientist Brendan C Casey. 
+- Universidad de los Andes Bogotá (Colombia)
 
--Tokyo University of Marine Science and Technology	Tokyo, Japan
-May -June 2014	Visiting Student - Control and Robotics Laboratory
-Assisted with the integration and control of a helicopter with Arduino under the supervision of professors Sho and Ito. 
+January 2016 - May 2016 / Undergraduate Thesis
+
+
+August 2015 – June 2016 / Undergraduate Research Assistant 
+Astronomical Image Processing from Large All-Sky Photometric Surveys
+for the detection and measurement of transients under the mentorship
+of PhD student Juan Pablo Reyes and the direction of professor Marcela
+Hernandez.  
+
+- Fermi National Laboratory	Neutrino Division, Batavia (U.S.A.)
+
+June –July – August  2015 /  IPM Intern – Muon G-2 Experiment		
+Part of the team for the Test Beam of a Straw Detector Prototype, was
+in charge of the High Voltage and assisted with the analysis of the
+data taken under the mentorship of scientist Brendan C Casey.  
+
+-Tokyo University of Marine Science and Technology, Tokyo (Japan)
+
+May - June 2014	/ Visiting Student - Control and Robotics Laboratory
+Assisted with the integration and control of a helicopter with Arduino
+under the supervision of professors Sho and Ito.  
 
 Teaching Experience
--Universidad de los Andes		Bogotá, Colombia
-Undergraduate Teaching Assistant	2011,2012,2013,2014,2015	
-Undergraduate Teaching Assistant for sections of Object Oriented Programming 1, Data Structures, Modeling, Simulation and Optimization, and Computational Methods courses.
+===================
+
+- Universidad de los Andes, Bogotá (Colombia)
+
+2011,2012,2013,2014,2015 Undergraduate Teaching Assistant	
+Undergraduate Teaching Assistant for sections of Object Oriented
+Programming 1, Data Structures, Modeling, Simulation and Optimization,
+and Computational Methods courses. 
 	
-Additional Work Experience
--Mariño Math		Bogotá, Colombia
-Sept 2011-Present	Tutor
-High School Physics, Chemistry, Math and Biology Tutoring in both French and Spanish.
+- Mariño Math, Bogotá (Colombia)
+
+Sept 2011-Present Tutor
+High School Physics, Chemistry, Math and Biology Tutoring in both
+French and Spanish. 
 
 Skills
+========
+
 Software and programming
--Java, Python, IPython, C, MATLAB, Processing, Arduino, Assembler, UML, Git, PHP.
--Familiar with Linux, Windows and MAC OS.
--Play the Piano since 6 years old
+
+- Java, Python, IPython, C, MATLAB, Processing, Arduino, Assembler,
+UML, Git, PHP. 
+- Familiar with Linux, Windows and MAC OS. 
+- Play the Piano since 6 years old
 
 Techniques
--Familiar with group work techniques: TSP, XP.
--Basic electronic circuits skills (design and fabrication of prototypes).
+
+- Familiar with group work techniques: TSP, XP. 
+- Basic electronic circuits skills (design and fabrication of
+prototypes). 
 
 Languages
--French (fluent) 
--English (fluent)
--Spanish (fluent)				   	     
--Japanese (Upper Intermediate, JLPT level 3)
+
+- French (fluent) 
+- English (fluent)
+- Spanish (fluent)				   	     
+- Japanese (Upper Intermediate, JLPT level 3)
 
 
 
