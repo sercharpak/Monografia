@@ -10,21 +10,45 @@ Current or projected research activities and motives for wishing to attend the c
 
 -----------------------------------------------------------------------------------------------
 
-Currently I’m working on my undergraduate physics thesis on computational cosmology, “Laniakea in a Cosmological Context” with Professor Jaime Forero 
-at Universidad de los Andes, here in Bogotá, the capital of Colombia. I find the topic fascinating and I’m thrilled to be doing actual research.  
-This conference is an incredible chance to immerse myself in the community, learn of all the different work that is being done and share my work. 
-In addition to this work, I am also a research assistant in astronomical image processing for the Large Synoptic Survey Telescope (LSST). 
-This work will be the foundation of my computing engineering senior thesis and is also related to this conference. 
+I am currently working on my undergraduate physics thesis at
+Los Andes University in Bogota, Colombia. The title
+of my project is “Laniakea in a Cosmological Context”. I approach this
+subject from the computational perspective, running N-body simulations
+and developing algorithms to detect super-clusters from the peculiar
+velocity information. I am doing this work under the advice of
+Prof. Jaime Forero-Romero.  
 
-Therefore the Large Scale Structures and Galaxy Flows conference is a great opportunity to interact and learn from leading researchers in the field, and to help focus my research interests as I start looking into graduate school possibilities.
+I find numerical cosmology fascinating. I am thrilled to be tackling
+a real research project on the topic. Your Vietnam Conference is the best
+chance to meet the leading scientific community on my research
+topic. I am eager to learn from them while I get the opportunity to
+share my work. 
 
-I submitted the abstract of our work to the “Cosmic Flows” conference and got accepted to present in the Poster Session.
-I’m really looking forward to this life experience opportunity. 
+Besides my undergraduate thesis, I am also doing image processing
+research for the Large Synoptic Survey Telescope (LSST) with in the
+Computing Engineering Department.  This work will be the foundation of
+my computing engineering senior thesis and is also related to this
+conference.   
 
-Nevertheless, Vietnam is quite far from Colombia (17,916 km from Bogota to Quy Nhon according to Google). 
-I am therefore applying for financial support to help me cover the significant expenses (more than 1500 dollars in airfare alone).
- 
-I thank you very much for your time and help,
+The Large Scale Structures and Galaxy Flows conference is clearly  a
+great opportunity to interact and learn from leading researchers in
+the field. This will help me to find a focus of interest for my future
+research and guide my choice for a subject to chose a Graduate School
+next year.  
+
+I submitted the abstract of my work to your conference and got it
+accepted as a Poster presentation.  I am really looking forward to
+this life experience opportunity.    
+
+Nevertheless, Vietnam is quite far from Colombia (17,916 km from
+Bogota to Quy Nhon according to Google).  I am therefore applying for
+financial support to help me cover either the travel
+expenses (tickets are around 1500 USD), the conference fee or my
+accommodation 
+  
+Thank you very much for your time and help.
+
+Yours,
 
 Sergio Daniel Hernández Charpak
 
