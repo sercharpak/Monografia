@@ -42,7 +42,9 @@ Research Experience
 - Universidad de los Andes Bogotá (Colombia)
 
 January 2016 - May 2016 / Undergraduate Thesis
-
+Laniakea in a Cosmological Context (or Detection of Galaxies Superclusters
+in Simulated Cosmological Structures) under the direction of professor 
+Jaime E. Forero.
 
 August 2015 – June 2016 / Undergraduate Research Assistant 
 Astronomical Image Processing from Large All-Sky Photometric Surveys
@@ -82,12 +84,14 @@ French and Spanish.
 Skills
 ========
 
+- Play the Piano since 6 years old
+
 Software and programming
 
 - Java, Python, IPython, C, MATLAB, Processing, Arduino, Assembler,
 UML, Git, PHP. 
 - Familiar with Linux, Windows and MAC OS. 
-- Play the Piano since 6 years old
+
 
 Techniques
 
