@@ -25,7 +25,7 @@
 //First try - a little barbaric
 
 //Definition of float size constant
-#define FLOAT float
+#define FLOAT double
 
 FLOAT * form_grid_eigen_value (FILE * in);
 void getGeneralParameters(FILE * in, long long *n_total_gen, int * n_x_gen, int * n_y_gen, int * n_z_gen, long long * n_nodes_gen, float * dx_gen, float * dy_gen, float * dz_gen, float * x_0_gen, float * y_0_gen, float * z_0_gen);
