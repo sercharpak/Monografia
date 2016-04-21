@@ -29,7 +29,7 @@ i.e. a 3D point grid(i,j,k) corresponds to  grid[i + N_X * (j + N_Y * k)] where 
 
 FLOAT * form_grid_eigen_value (FILE * in);
 void getGeneralParameters(FILE * in, long long *n_total_gen, int * n_x_gen, int * n_y_gen, int * n_z_gen, long long * n_nodes_gen, float * dx_gen, float * dy_gen, float * dz_gen, float * x_0_gen, float * y_0_gen, float * z_0_gen);
-void write_grid_FA(FILE *out, FLOAT*grid_FA, long long* n_nodes, long long* n_total_gen, int* n_x_gen, int* n_y_gen, int* n_z_gen,  float* dx_gen, float* dy_gen, float* dz_gen, float* x_0_gen, float* y_0_gen, float* z_0_gen);
+void write_grid_Divergence(FILE *out, FLOAT*grid_Divergence, long long* n_nodes, long long* n_total_gen, int* n_x_gen, int* n_y_gen, int* n_z_gen,  float* dx_gen, float* dy_gen, float* dz_gen, float* x_0_gen, float* y_0_gen, float* z_0_gen);
 
 int main(int argc, char **argv){
   FILE *in;
@@ -38,7 +38,7 @@ int main(int argc, char **argv){
   FLOAT *grid_1;
   FLOAT *grid_2;
   FLOAT *grid_3;
-  FLOAT *grid_FA;
+  FLOAT *grid_Divergence;
 
   //These are general, they are valid for all 3 grids and we are using them in the formation of the fourth one
 
@@ -113,10 +113,10 @@ if(!(in=fopen(argv[3], "r"))){
 
 grid_3 = form_grid_eigen_value(in);
 
-fprintf(stderr,"We are done forming the three grids \n Now we proceed in the calculation of the FA \n");
+fprintf(stderr,"We are done forming the three grids \n Now we proceed in the calculation of the Divergence \n");
 
 //Allocates the grid
-if(!(grid_FA=malloc(n_total_gen * sizeof(FLOAT)))){
+if(!(grid_Divergence=malloc(n_total_gen * sizeof(FLOAT)))){
   fprintf(stderr, "problem with array allocation\n");
   exit(1);
 }
@@ -124,17 +124,17 @@ if(!(grid_FA=malloc(n_total_gen * sizeof(FLOAT)))){
 // We don't care about the coordinates. We just want the same position for the grids, here we have i
 //FA = (1/sqrt(3))*(sqrt( ( (lambda1-lamda3)^2 + (lambda2 - lambda3)^2 + (lambda1 - lambda2)^2  )/( lambda1^2 + lambda2^2 + lambda3^2  )  ))
 for(i=0;i<n_nodes_gen;i++){
-  grid_FA[i] = (1.0 / sqrt(3.0)) * sqrt( ( pow( (grid_1[i] - grid_3[i]), 2.0) + pow( (grid_2[i] - grid_3[i]), 2.0) + pow( (grid_1 - grid_2), 2.0)  )/( pow(grid_1[i], 2.0) + pow(grid_2[i], 2.0) + pow(grid_3[i], 2.0)  ) );
+  grid_Divergence[i] = grid_1[i] + grid_2[i] + grid_3[i];
 }
 
-fprintf(stderr,"We are done forming the FA grid \n");
+fprintf(stderr,"We are done forming the Divergence grid \n");
 
-// We now proceed to write the grid_FA into a text file.
+// We now proceed to write the grid_Divergence into a text file.
 if(!(out = fopen(argv[4], "w"))){
   fprintf(stderr, "Problem opening file %s\n", argv[4]);
   exit(1);
 }
-write_grid_FA(out, grid_FA, &n_nodes_gen, &n_total_gen, &n_x_gen, &n_y_gen, &n_z_gen, &dx_gen, &dy_gen, &dz_gen, &x_0_gen, &y_0_gen, &z_0_gen);
+write_grid_Divergence(out, grid_Divergence, &n_nodes_gen, &n_total_gen, &n_x_gen, &n_y_gen, &n_z_gen, &dx_gen, &dy_gen, &dz_gen, &x_0_gen, &y_0_gen, &z_0_gen);
 
 return 0;
 }
@@ -249,7 +249,7 @@ FLOAT * form_grid_eigen_value (FILE * in){
 /*
 * Writes the FA grid into a text formatted file.
 */
-void write_grid_FA(FILE *archivo, FLOAT*grid_FA, long long* n_nodes, long long* n_total_gen, int* n_x_gen, int* n_y_gen, int* n_z_gen, float* dx_gen, float* dy_gen, float* dz_gen, float* x_0_gen, float* y_0_gen, float* z_0_gen)
+void write_grid_Divergence(FILE *archivo, FLOAT*grid_Divergence, long long* n_nodes, long long* n_total_gen, int* n_x_gen, int* n_y_gen, int* n_z_gen, float* dx_gen, float* dy_gen, float* dz_gen, float* x_0_gen, float* y_0_gen, float* z_0_gen)
 {
 
   //We have a big grid of n_x *n_y *n_z. We need to pass on some of the parameters.
@@ -289,7 +289,7 @@ void write_grid_FA(FILE *archivo, FLOAT*grid_FA, long long* n_nodes, long long* 
   for(i=0;i<*n_x_gen;i++){
     for(j=0;j<*n_y_gen;j++){
       for(k=0;k<*n_z_gen;k++){
-        fprintf(archivo, "%f", grid_FA[i + *n_x_gen * (j + *n_y_gen * k)]);
+        fprintf(archivo, "%f", grid_Divergence[i + *n_x_gen * (j + *n_y_gen * k)]);
         fprintf(archivo, "\t");
       }
       fprintf(archivo, "\n");
