@@ -1,0 +1,12 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Abstract}{2}{section.1}
+\contentsline {section}{\numberline {2}Introduction}{2}{section.2}
+\contentsline {section}{\numberline {3}Background}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}Cosmic flows and peculiar velocities}{2}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Boundaries of Laniakea}{3}{subsection.3.2}
+\contentsline {section}{\numberline {4}Methods}{3}{section.4}
+\contentsline {subsection}{\numberline {4.1}Simulations}{3}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Approach and Algorithms}{3}{subsection.4.2}
+\contentsline {section}{\numberline {5}Results}{5}{section.5}
+\contentsline {section}{\numberline {6}Future Work}{9}{section.6}
+\contentsline {section}{\numberline {A}Region Growing Algorithm}{9}{appendix.A}
