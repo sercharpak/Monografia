@@ -5,11 +5,11 @@
 \usepackage{epstopdf}
 \usepackage[english]{babel}
 \usepackage[toc,page]{appendix}
-\usepackage{subcaption}
+%\usepackage{subcaption}
 \usepackage{listings}
-\usepackage[format=plain,labelfont=bf,up,textfont=it,up]{caption}
-\usepackage{suhbfig}
-\usepackage{multicol}
+\usepackage{caption}
+%\usepackage{subfig}
+%\usepackage{multicol}
 
 \usepackage{hyperref}
 \usepackage[left=3cm,top=3cm,right=3cm,nohead,nofoot]{geometry}
@@ -229,31 +229,31 @@ We produce cuts in the z-direction to visualize in 2-D the speed distribution. \
 %Plot 2D
 
 %5 plots of the 2D. 
-%\begin{figure}[ht]
-%\centering
-%\begin{minipage}{.15\textwidth}
-%  \centering
-%  \includegraphics[width=0.2\textwidth]{graphs/scatter_magnitud_vel50000.png}
-%\end{minipage}%
-%\begin{minipage}{.15\textwidth}
-%  \centering
-%  \includegraphics[width=0.2\textwidth]{graphs/scatter_magnitud_vel100000.png}
-%\end{minipage}
-%\begin{minipage}{.15\textwidth}
-%  \centering
-%  \includegraphics[width=0.2\textwidth]{graphs/scatter_magnitud_vel150000.png}
-%\end{minipage}
-%\begin{minipage}{.15\textwidth}
-%  \centering
-%  \includegraphics[width=0.2\textwidth]{graphs/scatter_magnitud_vel200000.png}
-%\end{minipage}
-%\begin{minipage}{.15\textwidth}
-%  \centering
-%  \includegraphics[width=0.2\textwidth]{graphs/scatter_magnitud_vel250000.png}
-%\end{minipage}
-%\caption{2D slices of the speed distribution}\label{fig:2D_slices}
-%\end{figure}
-%\FloatBarrier
+\begin{figure}[ht]
+\centering
+\begin{minipage}{.45\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{graphs/scatter_magnitud_vel50000.png}
+\end{minipage}%
+\begin{minipage}{.45\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{graphs/scatter_magnitud_vel100000.png}
+\end{minipage}
+\begin{minipage}{.45\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{graphs/scatter_magnitud_vel150000.png}
+\end{minipage}
+\begin{minipage}{.45\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{graphs/scatter_magnitud_vel200000.png}
+\end{minipage}
+\begin{minipage}{.45\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{graphs/scatter_magnitud_vel250000.png}
+\end{minipage}
+\caption{2D slices of the speed distribution}\label{fig:2D_slices}
+\end{figure}
+\FloatBarrier
 
 
 We can observe more intuitive signs of structures related to the speed distribution. 

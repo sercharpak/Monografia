@@ -8,5 +8,5 @@
 \contentsline {subsection}{\numberline {4.1}Simulations}{3}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Approach and Algorithms}{3}{subsection.4.2}
 \contentsline {section}{\numberline {5}Results}{5}{section.5}
-\contentsline {section}{\numberline {6}Future Work}{9}{section.6}
-\contentsline {section}{\numberline {A}Region Growing Algorithm}{9}{appendix.A}
+\contentsline {section}{\numberline {6}Future Work}{10}{section.6}
+\contentsline {section}{\numberline {A}Region Growing Algorithm}{10}{appendix.A}
