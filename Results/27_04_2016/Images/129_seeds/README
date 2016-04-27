@@ -1,0 +1,6 @@
+thresh_FA = 0.8
+thresh_Trace = 0.0
+thresh_FA_seeds = 0.6
+thresh_Trace_seeds = 1.0
+Number of seeds: 129
+Number of cells in groups: 35392
