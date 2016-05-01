@@ -10,7 +10,7 @@
 USAGE = "python pipeline_script_1.py file_eigen_vale_1 file_eigen_vale_2 file_eigen_vale_3 FA_thresh_value Div_thresh_value"
 
 #Imports
-#General Imports 
+#General Imports
 #Reading the CIC
 from ast import literal_eval
 from struct import *
@@ -67,7 +67,7 @@ def read_CIC_scalar(filename):
 if(len(sys.argv)!=6):
     print "Please use correctly"
     print USAGE
-    sys.exit() 
+    sys.exit()
 
 inputfile_1 = sys.argv[1]
 inputfile_2 = sys.argv[2]
@@ -84,7 +84,7 @@ print "Eigenvalues read"
 
 print "Forming the FA and the Trace grids"
 
-FA = (grid_1-grid_3)**2  + (grid_2-grid_3)**2  + (grid_1-grid_2)**2 
+FA = (grid_1-grid_3)**2  + (grid_2-grid_3)**2  + (grid_1-grid_2)**2
 FA = FA/(grid_1**2 + grid_2**2 + grid_3**2)
 FA = np.sqrt(FA)/np.sqrt(3.0)
 
@@ -95,7 +95,7 @@ print "Fa and Trace matrix formed"
 thresh_FA = float(sys.argv[4])
 thresh_Trace = float(sys.argv[5])
 
-print "The Thresholds are: FA, Trace", str(thresh_FA), str(thresh_Trace) 
+print "The Thresholds are: FA, Trace", str(thresh_FA), str(thresh_Trace)
 
 n_x,n_y,n_z = shape(FA)
 
@@ -104,11 +104,11 @@ print "Forming the resulting grid"
 cell_list = []
 cells_total = 0
 for i in range (n_x):
-    for j in range (n_y): 
+    for j in range (n_y):
         for k in range (n_z):
             if((FA[i,j,k]<thresh_FA ) & (Trace[i,j,k]>thresh_Trace)):
                 cells_total +=1
-                cell_list.append([i,j,k])
+                cell_list.append([i,j,k, FA[i,j,k], Trace[i,j,k]])
 
 print "Grid formed with number of cells:", cells_total
 
@@ -118,7 +118,7 @@ print "Writing in file " + output_name
 
 fileout = open(output_name, 'w')
 
-fileout.write("%d\n"%cells_total) #points in total 
+fileout.write("%d\n"%cells_total) #points in total
 fileout.write("%d\n"%cells_total) #points in 'DM'
 fileout.write("0\n") #gas
 fileout.write("0\n") #stars
@@ -127,6 +127,29 @@ fileout.write("0\n") # nactive
 
 for l in range(cells_total):
     fileout.write("%f %f %f\n"%(cell_list[l][0],cell_list[l][1],cell_list[l][2]))
+
+fileout.close()
+
+print "Finished writting the file"
+
+#It prints the values of the FA and Trace for the later analysis
+
+output_name = '../FoF/src/values_FA_'+str(thresh_FA)+'_Trace_'+str(thresh_Trace)+'.dat'
+
+print "Writing in FA and Trace values in file " + output_name
+
+fileout = open(output_name, 'w')
+
+fileout.write("%d\n"%cells_total) #points in total
+fileout.write("%d\n"%cells_total) #points in 'DM'
+fileout.write("0\n") #gas
+fileout.write("0\n") #stars
+fileout.write("0.01\n") # time
+fileout.write("0\n") # nactive
+
+l = 0
+for l in range(cells_total):
+    fileout.write("%f %f\n"%(cell_list[l][3],cell_list[l][4]))
 
 fileout.close()
 

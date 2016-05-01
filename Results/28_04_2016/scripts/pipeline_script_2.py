@@ -4,10 +4,10 @@
 #
 
 # Usage
-# python pipeline_script_2.py file_search file_seeds
+# python pipeline_script_2.py file_search file_seeds file_FA_Trace_search
 #
 
-USAGE = "python pipeline_script_2.py file_search file_seeds"
+USAGE = "python pipeline_script_2.py file_search file_seeds file_FA_Trace_search"
 
 #Imports
 #General Imports
@@ -58,9 +58,72 @@ def group_valid(id_group,seeds):
     else:
         return False, index_seeds_in_group
 
+def calcultate_inertia_tensor_overdensity_volume(group_number):
+    index = where(fof_groups==group_number)
+    index = index[0]
+    x_group = particles[index,0]
+    y_group = particles[index,1]
+    z_group = particles[index,2]
+    FA_group = FA_Trace[index,0]
+    Trace_group = FA_Trace[index,1]
+    #First we need to find the center of mass (CM)
+    sum_mx = 0
+    sum_my = 0
+    sum_mz = 0
+    sum_Trace = 0.0
+    for i in range(len(x_group)):
+        sum_mx += Trace_group[i] * x_group[i]
+        sum_my += Trace_group[i] * y_group[i]
+        sum_mz += Trace_group[i] * z_group[i]
+        sum_Trace += Trace_group[i]
+    if (sum_Trace == 0):
+        #There is no overdensity
+        print "The total overdensity of the group "+ str(group_number)
+        print sum_Trace
+        #return -10
+    #We get now the x,y,z of the CM
+    x_CM = sum_mx / sum_Trace
+    y_CM = sum_my / sum_Trace
+    z_CM = sum_mz / sum_Trace
+    #print "The Center of mass coordinates for group "+ str(group_number)
+    #print x_CM, y_CM, z_CM
+    #print "The total overdensity of the group "+ str(group_number)
+    #print sum_Trace
+    #We now form the Inertia Tensor for the group
+    #http://scipython.com/book/chapter-6-numpy/problems/p65/the-moment-of-inertia-tensor/
+    #The positions must be relative to their center of mass
+    sum_xy = 0
+    sum_yz = 0
+    sum_zx = 0
+    sum_x_square = 0
+    sum_y_square = 0
+    sum_z_square = 0
+    for i in range(len(x_group)):
+        sum_xy += ((np.fabs(x_group[i] - x_CM)) * (np.fabs(y_group[i] - y_CM)))
+        sum_x_square+=((np.fabs(x_group[i] - x_CM))**2)
+        sum_yz += ((np.fabs(y_group[i] - y_CM)) * (np.fabs(z_group[i] - z_CM)))
+        sum_y_square+=((np.fabs(y_group[i] - y_CM))**2)
+        sum_zx += ((np.fabs(z_group[i] - z_CM)) * (np.fabs(x_group[i] - x_CM)))
+        sum_z_square+=((np.fabs(z_group[i] - z_CM))**2)
+    I_xx = sum_y_square + sum_z_square
+    I_yy = sum_x_square + sum_z_square
+    I_zz = sum_x_square + sum_y_square
+
+    I_xy = - sum_xy
+    I_yz = - sum_yz
+    I_xz = - sum_zx
+    I_matrix = np.matrix([[I_xx, I_xy, I_xz], [I_xy, I_yy, I_yz], [I_xz, I_yz, I_zz]])
+    I_a, I_b, I_c = np.linalg.eigvalsh(I_matrix)
+    #print "Intertia eigenvalues for group number: "+ str(group_number)
+    #print I_a, I_b, I_c
+    return I_a, I_b, I_c, x_CM, y_CM, z_CM, sum_Trace, len(x_group)
+
+
+
+
 #---------------------------------------------------------
 
-if(len(sys.argv)!=3):
+if(len(sys.argv)!=4):
     print "Please use correctly"
     print USAGE
     sys.exit()
@@ -123,8 +186,20 @@ for id_group in id_groups:
 print "There are ", size(valid_id_groups), "valid groups"
 print "Oposite to the ", size(id_groups), "groups at first"
 
+#Now it proceeds to the inertia and group properties analysis
+#It needs the values of the Trace
+file_values_FA_Trace = sys.argv[3]
+FA_Trace = loadtxt(file_values_FA_Trace, skiprows=6)
 
+#Prepares the output file
+output_name = './group_results_seeds_FA_'+str(seeds_thresh_FA)+'_Trace_'+str(seeds_thresh_Trace)+'_search_FA_'+str(search_thresh_FA)+'_Trace_'+str(search_thresh_Trace)+'.dat'
 
-#plt.figure()
-#plt.scatter(x_group, z_group)
-#plt.show()
+print "Writing the group results values in file " + output_name
+fileout = open(output_name, 'w')
+for id_valid_group in valid_id_groups:
+    I_a, I_b, I_c, x_CM, y_CM, z_CM, sum_Trace, volume = calcultate_inertia_tensor_overdensity_volume(id_valid_group)
+    fileout.write("%f %f %f %f %f %f %f %f \n"%(I_a, I_b, I_c, x_CM, y_CM, z_CM, sum_Trace, volume ))
+
+fileout.close()
+
+print "Finished writting the file"
