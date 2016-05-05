@@ -5,11 +5,9 @@
 \usepackage{epstopdf}
 \usepackage[english]{babel}
 \usepackage[toc,page]{appendix}
-%\usepackage{subcaption}
 \usepackage{listings}
 \usepackage{caption}
-%\usepackage{subfig}
-%\usepackage{multicol}
+\usepackage{epsfig}
 
 \usepackage{hyperref}
 \usepackage[left=3cm,top=3cm,right=3cm,nohead,nofoot]{geometry}
@@ -23,68 +21,112 @@
 \begin{document}
 
 \begin{center}
+\begin{figure}
+\centering%
+\epsfig{file=logo-andes.jpg,scale=0.75}%
+\end{figure}
+\vspace{3 cm}
+\FloatBarrier
 \Huge
 Laniakea in a Cosmological Context\\
-Detection of galaxies superclusters in simulated cosmological structures\\  
+\vspace{3 mm}
+or\\
+\vspace{3 mm}
+Detection of galaxy superclusters in simulated cosmological structures\\  
+\vspace{1 cm}
 \vspace{3mm}
-\Large Sergio Daniel Hern\'{a}ndez Charpak
+\Large Sergio Daniel Hern\'{a}ndez Charpak\\
 
 \large
-200922618
-
+200922618\\
+\vspace{1 cm}
 \vspace{2mm}
 \Large
-Advisor: Jaime E. Forero-Romero
+Advisor: Jaime E. Forero-Romero\\
 
 \normalsize
 \vspace{2mm}
-
-\today
+\vspace{1 cm}
+\today \\
+\vspace{1 cm}
+\small 
+Universidad de los Andes\\
+Facultad de Ciencias, Departamento de F\'{i}sica\\
+Bogot\'{a}, Colombia\\
 \end{center}
 
 
 \normalsize
-%\newpage
+\newpage
+\section{Acknowledgements}
+
+I would like to thank my advisor, Jaime E. Forero-Romero, for his guidance
+ during this process, of course my family, Nathalie, Jose Tiberio, Yv\'{a}n David,
+  Gabriel Luis, Nico, Dani and all the others for
+   their great patience and always good advices. I
+    also acknowledge the University of Los Andes
+     for its mayor financial support during my
+      studies. Finally I couldn't have finish this
+       without the support of Andr\'{e}s,
+        Nicol\'{a}s, Jorge and all the special
+         friends I am lucky to have.
+
+
+\newpage
+\section{Abstract}
+Recently Tully et al. (2014)
+ \cite{tully_laniakea_2014} used local cosmic flow
+ information to define our local supercluster,
+  Laniakea. 
+In this work we present a study on large
+ cosmological N-body
+simulations aimed at establishing the significance
+ of Laniakea in a
+cosmological context.
+We explore different algorithms to define
+ superclusters from the dark
+matter velocity field in the simulation. 
+We summarize the properties of the supercluster
+ population by their
+abundance at a given total mass and its shape
+ distributions.
+We find that superclusters similar in size and
+ structure to Laniakea are
+relatively uncommon on a broader cosmological
+ context.
+We finalize by discussing the possible sources of
+ systematics (both in
+our methods and in observations) leading to this
+ discrepancy.
+%TODO make sure it is what it is
+\newpage
 \tableofcontents
 \newpage
 
-\section{Abstract}
-Recently Tully et al. (2014) \cite{tully_laniakea_2014} used local cosmic flow
- information to define our local supercluster, Laniakea. 
-In this work we present a study on large cosmological N-body
-simulations aimed at establishing the significance of Laniakea in a
-cosmological context.
-We explore different algorithms to define superclusters from the dark
-matter velocity field in the simulation. 
-We summarize the properties of the supercluster population by their
-abundance at a given total mass and its shape distributions.
-We find that superclusters similar in size and structure to Laniakea are
-relatively uncommon on a broader cosmological context.
-We finalize by discussing the possible sources of systematics (both in
-our methods and in observations) leading to this discrepancy.
-
 \section{Introduction}
 
-In the Universe scene at large scales the galaxies group themselves in structures
+In the Universe scene at large scales the galaxy group themselves in structures
 similar to a filament web which go through large voids regions and cross in regions
 called superclusters. Even though these structures can be easily detected at simple
 view, there are different possibilities to delimited them from physical criteria \cite{gott_iii_map_2005}.    
 \\
 
-A proposal to define a supercluster is to use the flow of galaxies in this region of
-space. Within a supercluster, galaxies tend to flow to the most dense region as a
+A proposal to define a supercluster is to use the flow of galaxy in this region of
+space. Within a supercluster, galaxy tend to flow to the most dense region as a
 consequence of the gravitational attraction process. In this way, spacial regions where
-the galaxy flow is convergent represent galaxies superclusters.\\
+the galaxy flow is convergent represent galaxy superclusters.\\
 \\
-Recently a team build a galaxies velocities flow map of the local group in a scale of
+Recently a team build a galaxy velocities flow map of the local group in a scale of
 hundreds of light years \cite{tully_cosmicflows-2_2013}. In this map converging points
-were found and this team identified Laniakea, the galaxies supercluster which includes
+were found and this team identified Laniakea, the galaxy supercluster which includes
 our galaxy, the milky way \cite{tully_laniakea_2014}.
 \\   
 
-We propose to develop a method to detect a statistical significant number of galaxies
+We propose to develop a method to detect a
+ statistical significant number of galaxy
 supercluster in cosmological simulations. 
-With this we aim to quantified if Laniakea can be considered as an atypical structure in
+With this we aim to quantify if Laniakea can be
+ considered as an atypical structure in
 the Universe. 
 \\
 
@@ -93,22 +135,26 @@ the Universe.
 %Describe in detail the Laniakea work and the Methods used
 The peculiar velocity refers to the velocity relative to a rest frame. In the case of the
 Cosmicflows-2 map, the rest frame is the earth. 
-The Laniakea supercluster of galaxies was mainly identified following an analysis of the
+The Laniakea supercluster of galaxy was mainly identified following an analysis of the
 peculiar velocities flows. A Wiener filtering method was apply to obtained a better
 Signal/Noise proportion and separate the peculiar velocities from the cosmic expansion.\\
-%Explain how the fieltering worked
-This is to be explained in further detail.
+%TODO Explain how the fieltering worked
 
 
 
-\subsection{Boundaries of Laniakea}
-The contour of the region were reconstructed with the V-web Algorithm. This algorithm is deeply connected to the velocities as its core is the shear velocity tensor.\\
 
-%Explain how the V-Web algorithm worked. 
-This is to be explained in further detail.
+\subsection{Boundaries of Laniakea - The V-Web Algorithm}
+\label{sec:v_web}
+The contour of the region were reconstructed with
+ the V-web Algorithm. This algorithm is deeply
+  connected to the velocities as its core is the
+   shear velocity tensor.\\
+
+%TODO Explain how the V-Web algorithm worked. 
+
 
 \subsection{Fractional Anisotropy and Overdensity}
-
+\label{sec:FA_trace}
 \section{Methods}
 
 As we support the open-source community, we used the N-Body simulation open
@@ -117,47 +163,139 @@ and source code in C and Python to treat the data obtained from the
 simulations. The development of the code will be in Github \url{https://github.com/sercharpak/Monografia/}.
 
 \subsection{Simulations}
-We used the N-Body simulation software Gadget-2 \cite{springel_gadget_2_2005}
-widely used in the scientific community to generate a box of size 500 Mpc/h
-with $512^{3}$ dark matter particles (DM). The initial conditions were
-generated with Springel's N-Genic software. The simulations ran on the HPC cluster at UNIANDES with 48 processors and took approximately 10 hours to run. \\
+We used the N-Body simulation software Gadget-2
+ \cite{springel_gadget_2_2005}
+widely used in the scientific community to
+ generate different boxes of dark matter particles
+  (DM). The initial conditions were
+generated with Springel's N-Genic software. The
+ simulations ran on the HPC cluster at UNIANDES.
+  The main properties (boxsize, number of
+   particles, number of CPUs used and time of the
+    simulation) are described in table
+     \ref{tab:sims}. \\
 
-By DM particle we mean a particle which only interacts through gravity
-interaction. In the simulation each particle represents a galaxy. The DM particles are
-placed in a 3D grid layout first and then are perturbed following Poisson distribution
-before the simulation start, during the initial conditions generation.\\
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        Boxsize [Mpc/h] & DM particles & \# CPU & Time [hours] \\
+        500 & $512^{3}$ & 48 & \~ 10 \\
+        250 & $512^{3}$ & 48 & \~ 6  \\
+        500 & $1024^{3}$ & 48 & \~ 70  \\
+    \end{tabular}
+    \caption{Different Gadget-2 Simulations}
+    \label{tab:sims}
+\end{table}
+\FloatBarrier
 
-Once the simulation starts, the particles interact only with gravity as time goes by following the cosmological constants. Here these were not modified, the default values were used.\\
+By DM particle we mean a particle which only
+ interacts through gravity
+interaction. In the simulation each particle
+ represents a galaxy. The DM particles are
+placed in a 3D grid layout first and then are
+ perturbed following Poisson distribution
+before the simulation start, during the initial
+ conditions generation.\\
 
-We then use different algorithms to identify the superclusters within the simulation.\\
+Once the simulation starts, the particles interact
+ only with gravity as time goes by following the
+  cosmological constants. Here these were not
+   modified, the default values were used.\\
+
+We then use different algorithms to identify the
+ superclusters within the simulation.\\
 
 \subsection{Approaches}
+%Opening the section
+
+\subsubsection{Naive: the magnitude of the velocity}
+\label{sec:naive_speed}
+\begin{par}
+In a first approach we analyse the distribution of
+ the magnitude of the velocity in the different
+  simulations. We work with all the particles and
+   points given by the simulation. As our final
+    results are not based in this naive approach
+     we leave it as an appendix here. It is
+      explained in further detail in Appendix
+       \ref{App:App_Speed}.
+\end{par}
+
+\subsubsection{More complete: V-Web, CIC, the FA and $\delta$}
 
 \begin{par}
-In a first approach we analyse the distribution of the magnitude of the velocity in the different simulations. We work with all the particles and points given by the simulation. As our results are not based in this naive approach we leave it as an appendix here. It is explained in further detail in Appendix \ref{App:App_Speed}.
+In our second approach, we used directly the V-Web
+ algorithm to form the Fractional Anisotropy (FA)
+  and the Overdensity $\delta$) to have detailed
+   results comparable to Laniakea's.\\
+Finally we apply a Cloud In Cell (CIC) method and
+ a Gaussian smooth to have a more manipulable grid
+  to work with.\\
+\end{par}
+
+
+\begin{par}
+We described the V-Web algorithm in section
+ \ref{sec:v_web}. Let us remind the velocity shear
+  tensor as 
+%TODO write the velocity shear tensor
 \end{par}
 
 \begin{par}
-
-In our second approach, We use the Fractional Anisotropy (FA) and the Trace of
- the eigenvalues of the velocity shear tensor to have more detailed results.\\
-We apply a Cloud In Cell (CIC) method and a Gaussian smooth to have a more manipulable grid to work with.\\
+The CIC method is used to transform the box to a
+ grid in which the (i,j,k) have {$\lambda_1$,
+  $\lambda_2$, $\lambda_3$} values related to the
+   number of particles in a cell.
+%TODO explain in detail de CIC and gaussian smooth.
+Each cell has a number of particles in it and
+ hence a total mass equivalent to the sum of the
+  mass of its particles.
 \end{par}
+
+\begin{par}
+And in section \ref{sec:FA_trace} we saw how the
+ FA and $\delta$ are formed and are relevant in
+  this context. 
+%TODO maybe expand this a little bit
+We are then looking for regions with $\delta$
+ positive and FA lesser than 1.0.
+%TODO the lesser than 1.0 could be rephrased.
+\end{par}
+
+%Closing the section
+\begin{par}
+Our approach is hence very close with the approach
+ used to define Laniakea
+  \cite{tully_laniakea_2014} which is important to
+   validate our later comparison of Laniakea with
+    our detected structures.
+\end{par}
+
 \subsection{Algorithms}
 
-We first used a region growing algorithm implementation looking at the speeds.
+Our main algorithm is a region growing algorithm
+ as described by Gonzalez
+  \cite{gonzalez_digital_2008} mainly used in
+   image segmentation. We now proceed to describe
+    it generally.
 
-On second period we implemented another region growing algorithm based at the FA and the overdensity.
+\subsubsection{Region Growing Algorithm: General Description}
 
-Finally we improved this last method making used of the Friends-of-Friends (FoF) algorithm.
+%TODO General description of the algorithm as described by Gonzalez
+
+
+
+
 
 
 
 \subsubsection{Region Growing Algorithm with the FA and Overdensity}
-
+Our implementation is based in the FA and the Overdensity $\delta$.
+%TODO Describe my implementation
 
 \subsubsection{Region Growing Algorithm and FoF with the FA and Overdensity}
-
+Finally we improved this last method making used of the Friends-of-Friends (FoF) algorithm.
+%TODO Describe the FoF and the final pipeline implementation
 
 
 
@@ -165,14 +303,16 @@ Finally we improved this last method making used of the Friends-of-Friends (FoF)
 
 \section{Results}
 
-\subsection{Simulations}
 
+\subsection{Region Growing Algorithm with the FA and Overdensity}
 
+\subsection{Region Growing Algorithm and FoF with the FA and Overdensity}
 
-\subsubsection{Region Growing Algorithm with the FA and Overdensity}
+\subsection{Comparisons with Laniakea}
 
-\subsubsection{Region Growing Algorithm and FoF with the FA and Overdensity}
+\section{Conclusions}
 
+%TODO The Future Work section needs to be re-written
 \section{Future Work}
 \begin{itemize}
 	\item Understand more in detail how the work done by Hoffman et al\cite{hoffman_kinematic_2012} in the V-web algorithm, was used to determine Laniakea.
@@ -183,12 +323,6 @@ Finally we improved this last method making used of the Friends-of-Friends (FoF)
     \item Compare the properties of the results with the Laniakea supercluster.
     \item Discuss the sources of systematics in both methods and observations.
 \end{itemize}
-
-\section{Acknowledgements}
-
-I would like to thank my advisor, Jaime E. Forero-Romero, for his guidance
- during this process, of course my family, Nathalie, Jose Tiberio, Yvan David,
-  Gabriel Luis, Nico, Dani and all the others for their great patience and always good advices. I also acknowledge the University of Los Andes for its mayor financial support during my studies. Finally I couldn't have finish this without the support of Andres, Nicolas, Jorge and all the special friends I am lucky to have.
 
 
 
@@ -207,43 +341,65 @@ We present here a naive way to approach to the problem.
     \item We define the limits of this region the regions where the speed begins to increase with the distance from the center.
 \end{enumerate}
 
+\begin{par}
 We use a region growing algorithm, a simple image segmentation algorithm
-used to identify different regions in a image \cite{gonzalez_digital_2008}.\\
+used to identify different regions in a image \cite{gonzalez_digital_2008}.
+\end{par}
+
+\begin{par}
 $f(x,y,z)$ denotes the input data. $S(x,y,z)$ denotes a seed array, with
 value 1 where the particle can be define as a seed and 0 where not. It is the
 same size of $f(x,y,z)$. $Q$ denotes a predicate which is to be apply to the
-input data and determines if the region which starts at the seeds grows or
-not. Here $Q$ denotes: "if the speed of the close particle is lower than the
-marked one but greater than a threshold, mark that particle and continue."
+input data and determines if the region which
+ starts at the seeds grows or
+not. Here $Q$ denotes: "if the speed of the close
+ particle is lower than the
+marked one but greater than a threshold, mark that
+ particle and continue."
+\end{par}
 
 \begin{enumerate}
-	\item We choose seeds to begin the growth. In this case we choose the particles with high velocities. Here \[ |v|>  th_{high}\]
-	\item We open a window of particles to look for 2 close particles from the seed $s$ which do not for part of $S(x,y,z)$. Here:
+	\item We choose seeds to begin the growth. In
+	 this case we choose the particles with high
+	  velocities. Here \[ |v|>  th_{high}\]
+	\item We open a window of particles to look
+	 for 2 close particles from the seed $s$ which
+	  do not for part of $S(x,y,z)$. Here:
     \[ window = 20000\]
     \item Once we found the 2 close particles $c$ we apply the predicate $Q$. Here:
     \[ Q := |v_s| > |v_c| > |th_{low}|\]
     
-    \item If the particle $c$ satisfies $Q$, it is marked, $S(c) = 1$
-    \item Apply the algorithm to $c$, and so on (Recursion).
+    \item If the particle $c$ satisfies $Q$, it is
+     marked, $S(c) = 1$
+    \item Apply the algorithm to $c$, and so on
+     (Recursion).
 \end{enumerate}
 
-Here we defined empirically different thresholds in order to observer the results. \\
+Here we defined empirically different thresholds
+ in order to observer the results. \\
 First we used:  \\
-$th_{low} = v_{min} + \frac{\sigma_{v}}{2} $ and $th_{high} = v_{max}  - \sigma_{v}$ .\\
+$th_{low} = v_{min} + \frac{\sigma_{v}}{2} $ and
+ $th_{high} = v_{max}  - \sigma_{v}$ .\\
 Secondly we used: \\
-$th_{low} = \bar{v} + 2  \sigma_{v} $ and $th_{high} = \bar{v}  +  8 \sigma_{v}$.\\
+$th_{low} = \vec{v} + 2  \sigma_{v} $ and $th_{high} = \vec{v}  +  8 \sigma_{v}$.\\
 
-The first version of the algorithm was written in python using the module
-pyGadgetReader \cite{thompson_pygadgetreader_2014ascl_soft11001T} to read the
-data and transform it to NumPy arrays in Python. In Appendix \ref{App:App_speed_code} we attach the source code used.
+The first version of the algorithm was written in
+ python using the module
+pyGadgetReader
+ \cite{thompson_pygadgetreader_2014ascl_soft11001T}
+  to read the
+data and transform it to NumPy arrays in Python.
+ In Appendix \ref{App:App_speed_code} we attach
+  the source code used.
 
 \subsection{Results of the Speed Approach}
-This approach was tested on the size simulation of boxsize 500 Mpc/h
-and $512^{3}$ dark matter particles (DM). //
+This approach was tested on the simulation of
+ boxsize 500 Mpc/h
+and $512^{3}$ dark matter particles (DM) described
+ in table \ref{tab:sims}. \\
 
-This simulation ran correctly on 48 processors in approximately 10 hours. We first visualize the simulation and its distribution of velocities. \\
-
-We first visualize the speed histogram in figure \ref{fg:hist_vel}.\\
+We first visualize the speed histogram in figure
+ \ref{fg:hist_vel}.\\
 
 %Speed histogram
 \begin{figure}[ht]
@@ -345,7 +501,7 @@ It is more clear if we observe from one side the particles with speed greater th
   \centering
   \includegraphics[width=0.9\textwidth]{graphs/scatter_magnitud_vel_59_lz_200000.png}
 \end{minipage}
-\caption{2D slices of the speed distribution. The upper slices with $|\bar{v}| > th_{high} = 488$ and the two lower slices with $|\bar{v}| < th_{low} = 59$ for the same cuts, $z = \{100, 200 \} Mpc/h$ and }\label{fig:2D_slices_thresh}
+\caption{2D slices of the speed distribution. The upper slices with $|\vec{v}| > th_{high} = 488$ and the two lower slices with $|\vec{v}| < th_{low} = 59$ for the same cuts, $z = \{100, 200 \} Mpc/h$ and }\label{fig:2D_slices_thresh}
 \end{figure}
 \FloatBarrier
 

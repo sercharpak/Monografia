@@ -1,21 +1,26 @@
-\BOOKMARK [1][-]{section.1}{Abstract}{}% 1
-\BOOKMARK [1][-]{section.2}{Introduction}{}% 2
-\BOOKMARK [1][-]{section.3}{Background}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Cosmic flows and peculiar velocities}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Boundaries of Laniakea}{section.3}% 5
-\BOOKMARK [1][-]{section.4}{Methods}{}% 6
-\BOOKMARK [2][-]{subsection.4.1}{Simulations}{section.4}% 7
-\BOOKMARK [2][-]{subsection.4.2}{Approaches}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.3}{Algorithms}{section.4}% 9
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Region Growing Algorithm with the FA and Overdensity}{subsection.4.3}% 10
-\BOOKMARK [3][-]{subsubsection.4.3.2}{Region Growing Algorithm and FoF with the FA and Overdensity}{subsection.4.3}% 11
-\BOOKMARK [1][-]{section.5}{Results}{}% 12
-\BOOKMARK [2][-]{subsection.5.1}{Simulations}{section.5}% 13
-\BOOKMARK [3][-]{subsubsection.5.1.1}{Region Growing Algorithm with the FA and Overdensity}{subsection.5.1}% 14
-\BOOKMARK [3][-]{subsubsection.5.1.2}{Region Growing Algorithm and FoF with the FA and Overdensity}{subsection.5.1}% 15
-\BOOKMARK [1][-]{section.6}{Future Work}{}% 16
-\BOOKMARK [1][-]{section.7}{Acknowledgements}{}% 17
-\BOOKMARK [1][-]{appendix.A}{Approach by the Speed}{}% 18
-\BOOKMARK [2][-]{subsection.A.1}{Region Growing Algorithm with the Speed}{appendix.A}% 19
-\BOOKMARK [2][-]{subsection.A.2}{Results of the Speed Approach}{appendix.A}% 20
-\BOOKMARK [2][-]{subsection.A.3}{Code example for Region Growing Algorithm - Approach by the Speed}{appendix.A}% 21
+\BOOKMARK [1][-]{section.1}{Acknowledgements}{}% 1
+\BOOKMARK [1][-]{section.2}{Abstract}{}% 2
+\BOOKMARK [1][-]{section.3}{Introduction}{}% 3
+\BOOKMARK [1][-]{section.4}{Background}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Cosmic flows and peculiar velocities}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Boundaries of Laniakea - The V-Web Algorithm}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Fractional Anisotropy and Overdensity}{section.4}% 7
+\BOOKMARK [1][-]{section.5}{Methods}{}% 8
+\BOOKMARK [2][-]{subsection.5.1}{Simulations}{section.5}% 9
+\BOOKMARK [2][-]{subsection.5.2}{Approaches}{section.5}% 10
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Naive: the magnitude of the velocity}{subsection.5.2}% 11
+\BOOKMARK [3][-]{subsubsection.5.2.2}{More complete: V-Web, CIC, the FA and }{subsection.5.2}% 12
+\BOOKMARK [2][-]{subsection.5.3}{Algorithms}{section.5}% 13
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Region Growing Algorithm: General Description}{subsection.5.3}% 14
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Region Growing Algorithm with the FA and Overdensity}{subsection.5.3}% 15
+\BOOKMARK [3][-]{subsubsection.5.3.3}{Region Growing Algorithm and FoF with the FA and Overdensity}{subsection.5.3}% 16
+\BOOKMARK [1][-]{section.6}{Results}{}% 17
+\BOOKMARK [2][-]{subsection.6.1}{Region Growing Algorithm with the FA and Overdensity}{section.6}% 18
+\BOOKMARK [2][-]{subsection.6.2}{Region Growing Algorithm and FoF with the FA and Overdensity}{section.6}% 19
+\BOOKMARK [2][-]{subsection.6.3}{Comparisons with Laniakea}{section.6}% 20
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 21
+\BOOKMARK [1][-]{section.8}{Future Work}{}% 22
+\BOOKMARK [1][-]{appendix.A}{Approach by the Speed}{}% 23
+\BOOKMARK [2][-]{subsection.A.1}{Region Growing Algorithm with the Speed}{appendix.A}% 24
+\BOOKMARK [2][-]{subsection.A.2}{Results of the Speed Approach}{appendix.A}% 25
+\BOOKMARK [2][-]{subsection.A.3}{Code example for Region Growing Algorithm - Approach by the Speed}{appendix.A}% 26
