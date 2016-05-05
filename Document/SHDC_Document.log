@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.13)  24 APR 2016 09:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.13)  4 MAY 2016 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -306,11 +306,7 @@ File: datenumberUSenglish.ldf
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-(./SHDC_Document.aux
-
-LaTeX Warning: Label `fg:regions_small' multiply defined.
-
-)
+(./SHDC_Document.aux)
 \openout1 = `SHDC_Document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -327,7 +323,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count123
 \scratchdimen=\dimen129
@@ -412,213 +409,218 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Citation `tully_laniakea_2014' on page 2 undefined on input line
- 51.
-
-
-LaTeX Warning: Citation `gott_iii_map_2005' on page 2 undefined on input line 7
-0.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--72
+Underfull \hbox (badness 10000) in paragraph at lines 68--73
 
  []
 
 
-LaTeX Warning: Citation `tully_cosmicflows-2_2013' on page 2 undefined on input
- line 79.
-
-
-LaTeX Warning: Citation `tully_laniakea_2014' on page 2 undefined on input line
- 81.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--83
+Underfull \hbox (badness 10000) in paragraph at lines 74--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--83
+Underfull \hbox (badness 10000) in paragraph at lines 74--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--89
+Underfull \hbox (badness 10000) in paragraph at lines 85--90
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 
-LaTeX Warning: Citation `springel_gadget_2_2005' on page 3 undefined on input l
-ine 112.
-
-
-LaTeX Warning: Citation `springel_gadget_2_2005' on page 3 undefined on input l
-ine 117.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--121
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--126
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
 [3]
-
-LaTeX Warning: Citation `gonzalez_digital_2008' on page 4 undefined on input li
-ne 141.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--165
+Underfull \hbox (badness 10000) in paragraph at lines 140--144
 
  []
 
-
-LaTeX Warning: Citation `thompson_pygadgetreader_2014ascl_soft11001T' on page 4
- undefined on input line 167.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
-
- []
-
-<graphs/hist_vel.png, id=96, 578.16pt x 433.62pt>
-File: graphs/hist_vel.png Graphic file (type png)
- <use graphs/hist_vel.png>
-Package pdftex.def Info: graphs/hist_vel.png used on input line 180.
-(pdftex.def)             Requested size: 399.21791pt x 299.40985pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 202--205
-
- []
-
-[5 <./graphs/hist_vel.png>]
-<graphs/pos_3d_vel_menor_s_smaller.png, id=105, 2168.1pt x 2168.1pt>
-File: graphs/pos_3d_vel_menor_s_smaller.png Graphic file (type png)
-
-<use graphs/pos_3d_vel_menor_s_smaller.png>
-Package pdftex.def Info: graphs/pos_3d_vel_menor_s_smaller.png used on input li
-ne 216.
-(pdftex.def)             Requested size: 354.86412pt x 354.8429pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-
- []
-
-<graphs/scatter_magnitud_vel50000.png, id=106, 1445.4pt x 1445.4pt>
-File: graphs/scatter_magnitud_vel50000.png Graphic file (type png)
-
-<use graphs/scatter_magnitud_vel50000.png>
-Package pdftex.def Info: graphs/scatter_magnitud_vel50000.png used on input lin
-e 236.
-(pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
-
-<graphs/scatter_magnitud_vel100000.png, id=107, 1445.4pt x 1445.4pt>
-File: graphs/scatter_magnitud_vel100000.png Graphic file (type png)
-
-<use graphs/scatter_magnitud_vel100000.png>
-Package pdftex.def Info: graphs/scatter_magnitud_vel100000.png used on input li
-ne 240.
-(pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
-
-<graphs/scatter_magnitud_vel150000.png, id=108, 1445.4pt x 1445.4pt>
-File: graphs/scatter_magnitud_vel150000.png Graphic file (type png)
-
-<use graphs/scatter_magnitud_vel150000.png>
-Package pdftex.def Info: graphs/scatter_magnitud_vel150000.png used on input li
-ne 244.
-(pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
-
-<graphs/scatter_magnitud_vel200000.png, id=109, 1445.4pt x 1445.4pt>
-File: graphs/scatter_magnitud_vel200000.png Graphic file (type png)
-
-<use graphs/scatter_magnitud_vel200000.png>
-Package pdftex.def Info: graphs/scatter_magnitud_vel200000.png used on input li
-ne 248.
-(pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
-
-<graphs/scatter_magnitud_vel250000.png, id=110, 1445.4pt x 1445.4pt>
-File: graphs/scatter_magnitud_vel250000.png Graphic file (type png)
-
-<use graphs/scatter_magnitud_vel250000.png>
-Package pdftex.def Info: graphs/scatter_magnitud_vel250000.png used on input li
-ne 252.
-(pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
- [6 <./graphs/pos_3d_vel_menor_s_smaller.png>] [7 <./graphs/scatter_magnitud_ve
-l50000.png> <./graphs/scatter_magnitud_vel100000.png> <./graphs/scatter_magnitu
-d_vel150000.png> <./graphs/scatter_magnitud_vel200000.png> <./graphs/scatter_ma
-gnitud_vel250000.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 259--261
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
-
- []
-
-<graphs/regions_small.png, id=128, 1806.75pt x 1806.75pt>
-File: graphs/regions_small.png Graphic file (type png)
-
-<use graphs/regions_small.png>
-Package pdftex.def Info: graphs/regions_small.png used on input line 291.
-(pdftex.def)             Requested size: 354.86412pt x 354.86494pt.
-
-<graphs/regions_big.png, id=129, 1806.75pt x 1806.75pt>
-File: graphs/regions_big.png Graphic file (type png)
-
-<use graphs/regions_big.png>
-Package pdftex.def Info: graphs/regions_big.png used on input line 304.
-(pdftex.def)             Requested size: 354.86412pt x 354.86494pt.
- [8
-
- <./graphs/regions_small.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 325.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 176.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 325.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 176.
+ [4]
+(./SHDC_Document.bbl
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no © in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ‡ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no © in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no © in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+) [5]
+Underfull \hbox (badness 10000) in paragraph at lines 228--233
+
+ []
 
 
-LaTeX Warning: Citation `hoffman_kinematic_2012' on page 9 undefined on input l
-ine 325.
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
-[9 <./graphs/regions_big.png>]
-No file SHDC_Document.bbl.
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+<graphs/hist_vel.png, id=175, 578.16pt x 433.62pt>
+File: graphs/hist_vel.png Graphic file (type png)
+ <use graphs/hist_vel.png>
+Package pdftex.def Info: graphs/hist_vel.png used on input line 249.
+(pdftex.def)             Requested size: 399.21791pt x 299.40985pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--273
+
+ []
+
+[7 <./graphs/hist_vel.png>]
+<graphs/pos_3d_vel_menor_s_smaller.png, id=185, 2168.1pt x 2168.1pt>
+File: graphs/pos_3d_vel_menor_s_smaller.png Graphic file (type png)
+
+<use graphs/pos_3d_vel_menor_s_smaller.png>
+Package pdftex.def Info: graphs/pos_3d_vel_menor_s_smaller.png used on input li
+ne 284.
+(pdftex.def)             Requested size: 354.86412pt x 354.8429pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
+
+ []
+
+<graphs/scatter_magnitud_vel50000.png, id=186, 1445.4pt x 1445.4pt>
+File: graphs/scatter_magnitud_vel50000.png Graphic file (type png)
+
+<use graphs/scatter_magnitud_vel50000.png>
+Package pdftex.def Info: graphs/scatter_magnitud_vel50000.png used on input lin
+e 304.
+(pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
+
+<graphs/scatter_magnitud_vel100000.png, id=187, 1445.4pt x 1445.4pt>
+File: graphs/scatter_magnitud_vel100000.png Graphic file (type png)
+
+<use graphs/scatter_magnitud_vel100000.png>
+Package pdftex.def Info: graphs/scatter_magnitud_vel100000.png used on input li
+ne 308.
+(pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
+
+<graphs/scatter_magnitud_vel150000.png, id=188, 1445.4pt x 1445.4pt>
+File: graphs/scatter_magnitud_vel150000.png Graphic file (type png)
+
+<use graphs/scatter_magnitud_vel150000.png>
+Package pdftex.def Info: graphs/scatter_magnitud_vel150000.png used on input li
+ne 312.
+(pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
+
+<graphs/scatter_magnitud_vel200000.png, id=189, 1445.4pt x 1445.4pt>
+File: graphs/scatter_magnitud_vel200000.png Graphic file (type png)
+
+<use graphs/scatter_magnitud_vel200000.png>
+Package pdftex.def Info: graphs/scatter_magnitud_vel200000.png used on input li
+ne 316.
+(pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
+ [8 <./graphs/pos_3d_vel_menor_s_smaller.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 323--325
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
+
+ []
+
+<graphs/scatter_magnitud_vel_488_lz_100000.png, id=197, 1445.4pt x 1445.4pt>
+File: graphs/scatter_magnitud_vel_488_lz_100000.png Graphic file (type png)
+
+<use graphs/scatter_magnitud_vel_488_lz_100000.png>
+Package pdftex.def Info: graphs/scatter_magnitud_vel_488_lz_100000.png used on 
+input line 332.
+(pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
+
+<graphs/scatter_magnitud_vel_488_lz_200000.png, id=198, 1445.4pt x 1445.4pt>
+File: graphs/scatter_magnitud_vel_488_lz_200000.png Graphic file (type png)
+
+<use graphs/scatter_magnitud_vel_488_lz_200000.png>
+Package pdftex.def Info: graphs/scatter_magnitud_vel_488_lz_200000.png used on 
+input line 336.
+(pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
+
+<graphs/scatter_magnitud_vel_59_lz_100000.png, id=199, 1445.4pt x 1445.4pt>
+File: graphs/scatter_magnitud_vel_59_lz_100000.png Graphic file (type png)
+
+<use graphs/scatter_magnitud_vel_59_lz_100000.png>
+Package pdftex.def Info: graphs/scatter_magnitud_vel_59_lz_100000.png used on i
+nput line 340.
+(pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
+
+<graphs/scatter_magnitud_vel_59_lz_200000.png, id=200, 1445.4pt x 1445.4pt>
+File: graphs/scatter_magnitud_vel_59_lz_200000.png Graphic file (type png)
+
+<use graphs/scatter_magnitud_vel_59_lz_200000.png>
+Package pdftex.def Info: graphs/scatter_magnitud_vel_59_lz_200000.png used on i
+nput line 344.
+(pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
+ [9 <./graphs/scatter_magnitud_vel50000.png> <./graphs/scatter_magnitud_vel1000
+00.png> <./graphs/scatter_magnitud_vel150000.png> <./graphs/scatter_magnitud_ve
+l200000.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
+
+ []
+
+<graphs/regions_small.png, id=211, 1806.75pt x 1806.75pt>
+File: graphs/regions_small.png Graphic file (type png)
+
+<use graphs/regions_small.png>
+Package pdftex.def Info: graphs/regions_small.png used on input line 357.
+(pdftex.def)             Requested size: 354.86412pt x 354.86494pt.
+ [10 <./graphs/scatter_magnitud_vel_488_lz_100000.png> <./graphs/scatter_magnit
+ud_vel_488_lz_200000.png> <./graphs/scatter_magnitud_vel_59_lz_100000.png> <./g
+raphs/scatter_magnitud_vel_59_lz_200000.png>]
+<graphs/regions_big.png, id=221, 1806.75pt x 1806.75pt>
+File: graphs/regions_big.png Graphic file (type png)
+
+<use graphs/regions_big.png>
+Package pdftex.def Info: graphs/regions_big.png used on input line 370.
+(pdftex.def)             Requested size: 354.86412pt x 354.86494pt.
+ [11 <./graphs/regions_small.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
+
+ []
+
+[12 <./graphs/regions_big.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
@@ -638,7 +640,7 @@ File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <6> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 46.
- [10]
+
 Overfull \hbox (31.62086pt too wide) in paragraph at lines 65--66
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -648,7 +650,7 @@ Overfull \hbox (40.42085pt too wide) in paragraph at lines 68--69
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
+[13]
 Overfull \hbox (31.62086pt too wide) in paragraph at lines 73--74
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -659,31 +661,24 @@ Overfull \hbox (40.42085pt too wide) in paragraph at lines 77--78
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
- [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 392.
+ [14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 392.
  (./SHDC_Document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 345.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 345.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 392.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 392.
 Package rerunfilecheck Info: File `SHDC_Document.out' has not changed.
-(rerunfilecheck)             Checksum: FFD53693B4AE30C24867C01FA5F6EB37;615.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
+(rerunfilecheck)             Checksum: 2ABF7C3341E45483B591D0C4E45DE20F;1522.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 392.
  ) 
 Here is how much of TeX's memory you used:
- 8808 strings out of 494985
- 134190 string characters out of 6180356
- 285967 words of memory out of 5000000
- 11746 multiletter control sequences out of 15000+600000
- 9023 words of font info for 32 fonts, out of 8000000 for 9000
+ 8864 strings out of 494985
+ 135651 string characters out of 6180356
+ 279724 words of memory out of 5000000
+ 11773 multiletter control sequences out of 15000+600000
+ 9370 words of font info for 33 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 42i,9n,43p,334b,1832s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,9n,43p,380b,1832s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texli
@@ -694,12 +689,13 @@ ype1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on SHDC_Document.pdf (11 pages, 11956217 bytes).
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on SHDC_Document.pdf (14 pages, 15273497 bytes).
 PDF statistics:
- 359 PDF objects out of 1000 (max. 8388607)
- 311 compressed objects within 4 object streams
- 162 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 463 PDF objects out of 1000 (max. 8388607)
+ 404 compressed objects within 5 object streams
+ 185 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 

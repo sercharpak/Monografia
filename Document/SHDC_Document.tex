@@ -24,6 +24,7 @@
 
 \begin{center}
 \Huge
+Laniakea in a Cosmological Context\\
 Detection of galaxies superclusters in simulated cosmological structures\\  
 \vspace{3mm}
 \Large Sergio Daniel Hern\'{a}ndez Charpak
@@ -48,8 +49,8 @@ Advisor: Jaime E. Forero-Romero
 \newpage
 
 \section{Abstract}
-Recently Tully et al. (2014) \cite{tully_laniakea_2014} used local cosmic flow information to
-define our local supercluster, Laniakea. 
+Recently Tully et al. (2014) \cite{tully_laniakea_2014} used local cosmic flow
+ information to define our local supercluster, Laniakea. 
 In this work we present a study on large cosmological N-body
 simulations aimed at establishing the significance of Laniakea in a
 cosmological context.
@@ -106,6 +107,8 @@ The contour of the region were reconstructed with the V-web Algorithm. This algo
 %Explain how the V-Web algorithm worked. 
 This is to be explained in further detail.
 
+\subsection{Fractional Anisotropy and Overdensity}
+
 \section{Methods}
 
 As we support the open-source community, we used the N-Body simulation open
@@ -128,16 +131,83 @@ Once the simulation starts, the particles interact only with gravity as time goe
 
 We then use different algorithms to identify the superclusters within the simulation.\\
 
-\subsection{Approach and Algorithms}
+\subsection{Approaches}
 
-So far we have used a naive way to approach to the problem. 
+\begin{par}
+In a first approach we analyse the distribution of the magnitude of the velocity in the different simulations. We work with all the particles and points given by the simulation. As our results are not based in this naive approach we leave it as an appendix here. It is explained in further detail in Appendix \ref{App:App_Speed}.
+\end{par}
+
+\begin{par}
+
+In our second approach, We use the Fractional Anisotropy (FA) and the Trace of
+ the eigenvalues of the velocity shear tensor to have more detailed results.\\
+We apply a Cloud In Cell (CIC) method and a Gaussian smooth to have a more manipulable grid to work with.\\
+\end{par}
+\subsection{Algorithms}
+
+We first used a region growing algorithm implementation looking at the speeds.
+
+On second period we implemented another region growing algorithm based at the FA and the overdensity.
+
+Finally we improved this last method making used of the Friends-of-Friends (FoF) algorithm.
+
+
+
+\subsubsection{Region Growing Algorithm with the FA and Overdensity}
+
+
+\subsubsection{Region Growing Algorithm and FoF with the FA and Overdensity}
+
+
+
+
+
+
+\section{Results}
+
+\subsection{Simulations}
+
+
+
+\subsubsection{Region Growing Algorithm with the FA and Overdensity}
+
+\subsubsection{Region Growing Algorithm and FoF with the FA and Overdensity}
+
+\section{Future Work}
+\begin{itemize}
+	\item Understand more in detail how the work done by Hoffman et al\cite{hoffman_kinematic_2012} in the V-web algorithm, was used to determine Laniakea.
+    \item Write our own Gadget-2 snapshop reader in C or Python which implements the region growing algorithm.
+    \item Optimize our Algorithm. The current results are not sufficient.
+    \item Run a bigger simulation (boxsize: $5 \times 10^{6} Mpc/h$ and $1024^3$ DM particles.
+    \item Run the algorithm on this simulation.
+    \item Compare the properties of the results with the Laniakea supercluster.
+    \item Discuss the sources of systematics in both methods and observations.
+\end{itemize}
+
+\section{Acknowledgements}
+
+I would like to thank my advisor, Jaime E. Forero-Romero, for his guidance
+ during this process, of course my family, Nathalie, Jose Tiberio, Yvan David,
+  Gabriel Luis, Nico, Dani and all the others for their great patience and always good advices. I also acknowledge the University of Los Andes for its mayor financial support during my studies. Finally I couldn't have finish this without the support of Andres, Nicolas, Jorge and all the special friends I am lucky to have.
+
+
+
+\bibliographystyle{unsrt}
+%\renewcommand\refname{Referencias}
+\bibliography{references}
+
+\appendix
+\section{Approach by the Speed} \label{App:App_Speed}
+\subsection{Region Growing Algorithm with the Speed}
+
+We present here a naive way to approach to the problem. 
 \begin{enumerate}
 	\item We calculate the magnitude of the velocity (the speed) of each particle. 
 	\item We look for regions where the center has the highest speed and from it the speed decreases while the particle is further away from the center. 
     \item We define the limits of this region the regions where the speed begins to increase with the distance from the center.
 \end{enumerate}
 
-We used a region growing algorithm, a simple image segmentation algorithm
+We use a region growing algorithm, a simple image segmentation algorithm
 used to identify different regions in a image \cite{gonzalez_digital_2008}.\\
 $f(x,y,z)$ denotes the input data. $S(x,y,z)$ denotes a seed array, with
 value 1 where the particle can be define as a seed and 0 where not. It is the
@@ -165,14 +235,15 @@ $th_{low} = \bar{v} + 2  \sigma_{v} $ and $th_{high} = \bar{v}  +  8 \sigma_{v}$
 
 The first version of the algorithm was written in python using the module
 pyGadgetReader \cite{thompson_pygadgetreader_2014ascl_soft11001T} to read the
-data and transform it to NumPy arrays in Python. In Appendix \ref{App:AppendixA} we attach the source code used.
+data and transform it to NumPy arrays in Python. In Appendix \ref{App:App_speed_code} we attach the source code used.
 
+\subsection{Results of the Speed Approach}
+This approach was tested on the size simulation of boxsize 500 Mpc/h
+and $512^{3}$ dark matter particles (DM). //
 
-\section{Results}
+This simulation ran correctly on 48 processors in approximately 10 hours. We first visualize the simulation and its distribution of velocities. \\
 
-The simulation ran correctly on 48 processors in approximately 10 hours. We first visualized the simulation and its distribution of velocities. \\
-
-We first visualize the speed histogram.\\
+We first visualize the speed histogram in figure \ref{fg:hist_vel}.\\
 
 %Speed histogram
 \begin{figure}[ht]
@@ -184,7 +255,7 @@ We first visualize the speed histogram.\\
 \end{figure}
 \FloatBarrier
 
-The histogram resemble a Poisson distribution. This is a consequence of the perturbations generated in the initial conditions generation. 
+The histogram resembles a Poisson distribution. This is a consequence of the perturbations generated in the initial conditions generation. 
 
 \begin{table}[ht]
     \centering
@@ -197,7 +268,6 @@ The histogram resemble a Poisson distribution. This is a consequence of the pert
     \label{tab:vel}
 \end{table}
 \FloatBarrier
-
 
 Our hypothesis is based on the most direct implication of gravity. The lower speed
 particles will mainly be in the border regions and the higher speed particles
@@ -247,41 +317,39 @@ We produce cuts in the z-direction to visualize in 2-D the speed distribution. \
   \centering
   \includegraphics[width=0.9\textwidth]{graphs/scatter_magnitud_vel200000.png}
 \end{minipage}
-\begin{minipage}{.45\textwidth}
-  \centering
-  \includegraphics[width=0.9\textwidth]{graphs/scatter_magnitud_vel250000.png}
-\end{minipage}
 \caption{2D slices of the speed distribution}\label{fig:2D_slices}
 \end{figure}
 \FloatBarrier
 
 
-We can observe more intuitive signs of structures related to the speed distribution. 
+We can observe in figure \ref{fig:2D_slices} intuitive signs of structures related to the speed distribution. 
 We can observe filament structures\\
 
-It is more clear if we observe from one side the particles with speed greater than $th_{high}$ and the particles with speed lesser than $th_{low}$.\\
+It is more clear if we observe from one side the particles with speed greater than a $th_{high}$ and the particles with speed lesser than a $th_{low}$.\\
 
-%\begin{figure}[ht]
-%\centering
-%\begin{minipage}{.2\textwidth}
-%  \centering
-%  \includegraphics[width=0.2\textwidth]{graphs/scatter_magnitud_vel_488_lz_100000.png}
-%\end{minipage}%
-%\begin{minipage}{.2\textwidth}
-%  \centering
-%  \includegraphics[width=0.2\textwidth]{graphs/scatter_magnitud_vel_488_lz_200000.png}
-%\end{minipage}
-%%\begin{minipage}{.2\textwidth}
-%  \centering
-%  \includegraphics[width=0.2\textwidth]{graphs/scatter_magnitud_vel_59_lz_100000.png}
-%\end{minipage}
-%\begin{minipage}{.2\textwidth}
-%  \centering
-%  \includegraphics[width=0.2\textwidth]{graphs/scatter_magnitud_vel_59_lz_200000.png}
-%\end{minipage}
-%\caption{2D slices of the speed distribution with thresholds}\label{fig:2D_slices_thresh}
-%\end{figure}
-%\FloatBarrier
+\begin{figure}[ht]
+\centering
+\begin{minipage}{.45\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{graphs/scatter_magnitud_vel_488_lz_100000.png}
+\end{minipage}%
+\begin{minipage}{.45\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{graphs/scatter_magnitud_vel_488_lz_200000.png}
+\end{minipage}
+\begin{minipage}{.45\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{graphs/scatter_magnitud_vel_59_lz_100000.png}
+\end{minipage}
+\begin{minipage}{.45\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{graphs/scatter_magnitud_vel_59_lz_200000.png}
+\end{minipage}
+\caption{2D slices of the speed distribution. The upper slices with $|\bar{v}| > th_{high} = 488$ and the two lower slices with $|\bar{v}| < th_{low} = 59$ for the same cuts, $z = \{100, 200 \} Mpc/h$ and }\label{fig:2D_slices_thresh}
+\end{figure}
+\FloatBarrier
+
+As we can see in figure \ref{fig:2D_slices_thresh} the cuts with low and high thresholds are complementary. It is evident that structures are present. 
 
 Finally we apply our region growing algorithm and we obtain the following results.\\
 
@@ -290,56 +358,37 @@ Finally we apply our region growing algorithm and we obtain the following result
 \begin{center}
 \includegraphics[width=0.8\textwidth]{graphs/regions_small.png} % Include the image placeholder.png
 \caption{Region identified by the algorithm}
-\label{fg:regions_small}
+\label{fg:regions_speed_th_1}
 \end{center}
 \end{figure}
 \FloatBarrier
 
 And, changing the thresholds to: 
 $th_{low} = \bar{v} + 2  \sigma_{v} = 488.48$ and $th_{high} = \bar{v}  +  8 \sigma_{v} =1195.0 $\\
-We obtained:
+We obtain:
 %Plot of the region identified.
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=0.8\textwidth]{graphs/regions_big.png} % Include the image placeholder.png
 \caption{Region identified by the algorithm with the second thresholds}
-\label{fg:regions_small}
+\label{fg:regions_speed_th_2}
 \end{center}
 \end{figure}
 \FloatBarrier
 
 We have different observations:\\
 \begin{enumerate}
-	\item The details of the region seem accurate with what we would expect. It is more dense in the center and less dense in the borders.
+	\item The details of the regions in figures \ref{fg:regions_speed_th_1} and \ref{fg:regions_speed_th_2} seem accurate with what we would expect. It is more dense in the center and less dense in the borders.
 	\item The regions obtained have a dimension of only a few Mpc/h (Laniakea's dimension is two orders of magnitude higher). This could mean that Laniakea is atypical. 
-    \item There is first only one region identified. This indicates than all the high velocity particles are congregated in one region (the detected region). If we set lower $th_{high}$ we can see we get more regions. The algorithm must be improved.
+    \item There is first only one region identified. This indicates than all the high velocity particles are congregated in only one region (the detected region). If we set lower $th_{high}$ we can see we get more regions. 
+    \item This is certainly a good naive approach to the problem. Nevertheless for more accurate results it needs to be drastically changed.
 \end{enumerate}
 
-The script in Appendix \ref{App:AppendixA} was executed in a student's
-laptop because of inconveniences with the HPC cluster. We think the main
-problem in the laptop is the limited memory (8GB). We expect to run it in the
-HPC to get more accurate results.
-
-\section{Future Work}
-\begin{itemize}
-	\item Understand more in detail how the work done by Hoffman et al\cite{hoffman_kinematic_2012} in the V-web algorithm, was used to determine Laniakea.
-    \item Write our own Gadget-2 snapshop reader in C or Python which implements the region growing algorithm.
-    \item Optimize our Algorithm. The current results are not sufficient.
-    \item Run a bigger simulation (boxsize: $5 \times 10^{6} Mpc/h$ and $1024^3$ DM particles.
-    \item Run the algorithm on this simulation.
-    \item Compare the properties of the results with the Laniakea supercluster.
-    \item Discuss the sources of systematics in both methods and observations.
-\end{itemize}
+The script in Appendix \ref{App:App_speed_code} was executed in a student's
+laptop and later on the HPC cluster. For a significant number of particles, the laptop limited memory (8GB) crashes. Running in the HPC solves this issue. results.
 
 
-
-
-\bibliographystyle{unsrt}
-%\renewcommand\refname{Referencias}
-\bibliography{references}
-
-\appendix
-\section{Region Growing Algorithm} \label{App:AppendixA}
+\subsection{Code example for Region Growing Algorithm - Approach by the Speed} \label{App:App_speed_code}
 \tiny
 \lstinputlisting[language=Python, caption=Region Growing Algorithm Code]{code/region_detection_document.py}
 \end{document} 

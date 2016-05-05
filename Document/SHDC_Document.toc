@@ -6,7 +6,17 @@
 \contentsline {subsection}{\numberline {3.2}Boundaries of Laniakea}{3}{subsection.3.2}
 \contentsline {section}{\numberline {4}Methods}{3}{section.4}
 \contentsline {subsection}{\numberline {4.1}Simulations}{3}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Approach and Algorithms}{3}{subsection.4.2}
-\contentsline {section}{\numberline {5}Results}{5}{section.5}
-\contentsline {section}{\numberline {6}Future Work}{10}{section.6}
-\contentsline {section}{\numberline {A}Region Growing Algorithm}{10}{appendix.A}
+\contentsline {subsection}{\numberline {4.2}Approaches}{3}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Algorithms}{4}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Region Growing Algorithm with the FA and Overdensity}{4}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Region Growing Algorithm and FoF with the FA and Overdensity}{4}{subsubsection.4.3.2}
+\contentsline {section}{\numberline {5}Results}{4}{section.5}
+\contentsline {subsection}{\numberline {5.1}Simulations}{4}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Region Growing Algorithm with the FA and Overdensity}{4}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Region Growing Algorithm and FoF with the FA and Overdensity}{4}{subsubsection.5.1.2}
+\contentsline {section}{\numberline {6}Future Work}{4}{section.6}
+\contentsline {section}{\numberline {7}Acknowledgements}{5}{section.7}
+\contentsline {section}{\numberline {A}Approach by the Speed}{5}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Region Growing Algorithm with the Speed}{5}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}Results of the Speed Approach}{7}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}Code example for Region Growing Algorithm - Approach by the Speed}{13}{subsection.A.3}

@@ -1,0 +1,45 @@
+\begin{thebibliography}{1}
+
+\bibitem{tully_laniakea_2014}
+R.~Brent Tully, Hélène Courtois, Yehuda Hoffman, and Daniel Pomarède.
+\newblock The {Laniakea} supercluster of galaxies.
+\newblock {\em Nature}, 513(7516):71--73, September 2014.
+
+\bibitem{gott_iii_map_2005}
+J.~Richard Gott~III, Mario Jurić, David Schlegel, Fiona Hoyle, Michael
+  Vogeley, Max Tegmark, Neta Bahcall, and Jon Brinkmann.
+\newblock A {Map} of the {Universe}.
+\newblock {\em The Astrophysical Journal}, 624(2):463--484, May 2005.
+
+\bibitem{tully_cosmicflows-2_2013}
+R.~Brent Tully, Hélène~M. Courtois, Andrew~E. Dolphin, J.~Richard Fisher,
+  Philippe Héraudeau, Bradley~A. Jacobs, Igor~D. Karachentsev, Dmitry Makarov,
+  Lidia Makarova, Sofia Mitronova, Luca Rizzi, Edward~J. Shaya, Jenny~G. Sorce,
+  and Po-Feng Wu.
+\newblock \textit{{COSMICFLOWS}-2} : {THE} {DATA}.
+\newblock {\em The Astronomical Journal}, 146(4):86, October 2013.
+
+\bibitem{springel_gadget_2_2005}
+V.~Springel.
+\newblock The cosmological simulation code gadget-2.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  364(4):1105--1134, 2005.
+
+\bibitem{gonzalez_digital_2008}
+Rafael~C. Gonzalez and Richard~E. Woods.
+\newblock {\em Digital image processing}.
+\newblock Prentice Hall, 3rd ed edition.
+
+\bibitem{thompson_pygadgetreader_2014ascl_soft11001T}
+R.~{Thompson}.
+\newblock {pyGadgetReader: GADGET snapshot reader for python}.
+\newblock Astrophysics Source Code Library, November 2014.
+
+\bibitem{hoffman_kinematic_2012}
+Yehuda Hoffman, Ofer Metuki, Gustavo Yepes, Stefan Gottlöber, Jaime~E.
+  Forero-Romero, Noam~I. Libeskind, and Alexander Knebe.
+\newblock A kinematic classification of the cosmic web: {The} cosmic web.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  425(3):2049--2057, September 2012.
+
+\end{thebibliography}
