@@ -30,16 +30,16 @@ Rafael~C. Gonzalez and Richard~E. Woods.
 \newblock {\em Digital image processing}.
 \newblock Prentice Hall, 3rd ed edition.
 
-\bibitem{thompson_pygadgetreader_2014ascl_soft11001T}
-R.~{Thompson}.
-\newblock {pyGadgetReader: GADGET snapshot reader for python}.
-\newblock Astrophysics Source Code Library, November 2014.
-
 \bibitem{hoffman_kinematic_2012}
 Yehuda Hoffman, Ofer Metuki, Gustavo Yepes, Stefan Gottlöber, Jaime~E.
   Forero-Romero, Noam~I. Libeskind, and Alexander Knebe.
 \newblock A kinematic classification of the cosmic web: {The} cosmic web.
 \newblock {\em Monthly Notices of the Royal Astronomical Society},
   425(3):2049--2057, September 2012.
+
+\bibitem{thompson_pygadgetreader_2014ascl_soft11001T}
+R.~{Thompson}.
+\newblock {pyGadgetReader: GADGET snapshot reader for python}.
+\newblock Astrophysics Source Code Library, November 2014.
 
 \end{thebibliography}

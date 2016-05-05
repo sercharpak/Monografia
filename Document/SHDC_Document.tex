@@ -197,15 +197,21 @@ placed in a 3D grid layout first and then are
 before the simulation start, during the initial
  conditions generation.\\
 
+%TODO this may be could be relocated in the %background section
 Once the simulation starts, the particles interact
  only with gravity as time goes by following the
-  cosmological constants. The values used are
-   described in table \ref{tab:consts}\\.
+  cosmological constants. We following are an
+   approximation of the $\Lambda$CDM (Lambda cold
+    dark matter) or Lambda-CDM model, our current
+     cosmological model. The involved
+     cosmological constants are described in table
+      \ref{tab:consts}\\.
+   
   
  \begin{table}[ht]
     \centering
     \begin{tabular}{|c|c|c|c|}
-        $\Omega_0$ & $\Omega_{\Lambda}$ & $\Omega $ & H \\
+        $\Omega_0$ & $\Omega_{\Lambda}$ & $\Omega$ & H \\
         0.3 &  0.7 & 0 & 0.7 \\
     \end{tabular}
     \caption{Cosmological Constants in the Gadget-2 Simulations}
@@ -213,6 +219,21 @@ Once the simulation starts, the particles interact
 \end{table}
 \FloatBarrier
 %TODO Specify the units
+$\Omega_0$  corresponds to the Cosmological matter density parameter in units of the critical density at
+z = 0. $\Omega_{\Lambda}$ is the cosmological
+ vacuum energy density (cosmological constant) in
+  units of the critical density at z = 0. 
+%Relevant only for comoving integration. 
+For a geometrically flat universe, as ours, one has $\Omega_0$ + $\Omega_{\Lambda}$ = 1.
+ $\Omega$ is the baryon density in units
+  of the critical density at z = 0. In our case it
+   is not relevant. Finally, H denotes the Hubble
+    constant at z=0 in  units of 100 $km$ $s^{-1}$
+     $Mpc^{-1}$. It will be relevant in the
+      discussions at the end of this work.
+%TODO make a reference to the discussion with the
+% Chon paper where the Hubble constant is related
+% to a gravitationaly bounded structure.
 %TODO Explain the constants
 
 We then use different algorithms to identify the
@@ -220,7 +241,12 @@ We then use different algorithms to identify the
 
 \subsection{Approaches}
 %Opening the section
-
+We mainly had two approaches in this work for the
+ search of superclusters. First, a naive one
+  involving the speed very easy to implement
+   \ref{sec:naive_speed}. And a second one, more
+    complete, using other concepts
+     \ref{sec:approach_complete}.
 \subsubsection{Naive: the magnitude of the velocity}
 \label{sec:naive_speed}
 \begin{par}
@@ -235,7 +261,7 @@ In a first approach we analyse the distribution of
 \end{par}
 
 \subsubsection{More complete: V-Web, CIC, the FA and $\delta$}
-
+\label{sec:approach_complete}
 \begin{par}
 In our second approach, we used directly the V-Web
  algorithm to form the Fractional Anisotropy (FA)
@@ -318,8 +344,16 @@ Finally we improved this last method making used of the Friends-of-Friends (FoF)
 
 
 \subsection{Region Growing Algorithm with the FA and Overdensity}
+%The first results I got
+%TODO this section could be ommited and just show the last results (the next section)
 
 \subsection{Region Growing Algorithm and FoF with the FA and Overdensity}
+%The real results I got
+
+%General results of the simulation. Show the
+% histogram for the FA and the Overdensity
+
+%Show cuts of the FA and of the Overdensity
 
 \subsection{Comparisons with Laniakea}
 
