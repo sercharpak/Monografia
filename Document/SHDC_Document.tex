@@ -199,8 +199,21 @@ before the simulation start, during the initial
 
 Once the simulation starts, the particles interact
  only with gravity as time goes by following the
-  cosmological constants. Here these were not
-   modified, the default values were used.\\
+  cosmological constants. The values used are
+   described in table \ref{tab:consts}\\.
+  
+ \begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+        $\Omega_0$ & $\Omega_{\Lambda}$ & $\Omega $ & H \\
+        0.3 &  0.7 & 0 & 0.7 \\
+    \end{tabular}
+    \caption{Cosmological Constants in the Gadget-2 Simulations}
+    \label{tab:consts}
+\end{table}
+\FloatBarrier
+%TODO Specify the units
+%TODO Explain the constants
 
 We then use different algorithms to identify the
  superclusters within the simulation.\\

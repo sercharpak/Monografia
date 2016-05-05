@@ -8,8 +8,8 @@
 \contentsline {subsection}{\numberline {4.3}Fractional Anisotropy and Overdensity}{6}{subsection.4.3}
 \contentsline {section}{\numberline {5}Methods}{6}{section.5}
 \contentsline {subsection}{\numberline {5.1}Simulations}{6}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Approaches}{6}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Naive: the magnitude of the velocity}{6}{subsubsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2}Approaches}{7}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Naive: the magnitude of the velocity}{7}{subsubsection.5.2.1}
 \contentsline {subsubsection}{\numberline {5.2.2}More complete: V-Web, CIC, the FA and $\delta $}{7}{subsubsection.5.2.2}
 \contentsline {subsection}{\numberline {5.3}Algorithms}{7}{subsection.5.3}
 \contentsline {subsubsection}{\numberline {5.3.1}Region Growing Algorithm: General Description}{7}{subsubsection.5.3.1}
