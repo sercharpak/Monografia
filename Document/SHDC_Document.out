@@ -15,12 +15,16 @@
 \BOOKMARK [3][-]{subsubsection.5.3.2}{Region Growing Algorithm with the FA and Overdensity}{subsection.5.3}% 15
 \BOOKMARK [3][-]{subsubsection.5.3.3}{Region Growing Algorithm and FoF with the FA and Overdensity}{subsection.5.3}% 16
 \BOOKMARK [1][-]{section.6}{Results}{}% 17
-\BOOKMARK [2][-]{subsection.6.1}{Region Growing Algorithm with the FA and Overdensity}{section.6}% 18
-\BOOKMARK [2][-]{subsection.6.2}{Region Growing Algorithm and FoF with the FA and Overdensity}{section.6}% 19
-\BOOKMARK [2][-]{subsection.6.3}{Comparisons with Laniakea}{section.6}% 20
-\BOOKMARK [1][-]{section.7}{Conclusions}{}% 21
-\BOOKMARK [1][-]{section.8}{Future Work}{}% 22
-\BOOKMARK [1][-]{appendix.A}{Approach by the Speed}{}% 23
-\BOOKMARK [2][-]{subsection.A.1}{Region Growing Algorithm with the Speed}{appendix.A}% 24
-\BOOKMARK [2][-]{subsection.A.2}{Results of the Speed Approach}{appendix.A}% 25
-\BOOKMARK [2][-]{subsection.A.3}{Code example for Region Growing Algorithm - Approach by the Speed}{appendix.A}% 26
+\BOOKMARK [2][-]{subsection.6.1}{General visualizations \(FA, \) of the Simulations}{section.6}% 18
+\BOOKMARK [3][-]{subsubsection.6.1.1}{FA, Fractal Anisotropy}{subsection.6.1}% 19
+\BOOKMARK [3][-]{subsubsection.6.1.2}{, Overdensity}{subsection.6.1}% 20
+\BOOKMARK [2][-]{subsection.6.2}{Region Growing Algorithm with the FA and Overdensity}{section.6}% 21
+\BOOKMARK [2][-]{subsection.6.3}{Region Growing Algorithm and FoF with the FA and Overdensity}{section.6}% 22
+\BOOKMARK [2][-]{subsection.6.4}{Comparisons with Laniakea}{section.6}% 23
+\BOOKMARK [1][-]{section.7}{Discussions}{}% 24
+\BOOKMARK [1][-]{section.8}{Conclusions}{}% 25
+\BOOKMARK [1][-]{section.9}{Future Work}{}% 26
+\BOOKMARK [1][-]{appendix.A}{Approach by the Speed}{}% 27
+\BOOKMARK [2][-]{subsection.A.1}{Region Growing Algorithm with the Speed}{appendix.A}% 28
+\BOOKMARK [2][-]{subsection.A.2}{Results of the Speed Approach}{appendix.A}% 29
+\BOOKMARK [2][-]{subsection.A.3}{Code example for Region Growing Algorithm - Approach by the Speed}{appendix.A}% 30

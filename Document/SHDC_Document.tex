@@ -177,13 +177,13 @@ generated with Springel's N-Genic software. The
 
 \begin{table}[ht]
     \centering
-    \begin{tabular}{|c|c|c|c|}
-        Boxsize [Mpc/h] & DM particles & \# CPU & Time [hours] \\
-        500 & $512^{3}$ & 48 & \~ 10 \\
-        250 & $512^{3}$ & 48 & \~ 6  \\
-        500 & $1024^{3}$ & 48 & \~ 70  \\
+    \begin{tabular}{|c|c|c|c|c|}
+        Name & Boxsize [Mpc/h] & DM particles & \# CPU & Time [hours] \\
+        Medium & 500 & $512^{3}$ & 48 & ~ 10 \\
+        Small (Dense) & 250 & $512^{3}$ & 48 & ~ 6  \\
+        Medium (Dense) & 500 & $1024^{3}$ & 48 & ~ 70  \\
     \end{tabular}
-    \caption{Different Gadget-2 Simulations}
+    \caption{Different Gadget-2 Simulations. We named them to easily refer to each one of them}
     \label{tab:sims}
 \end{table}
 \FloatBarrier
@@ -342,6 +342,92 @@ Finally we improved this last method making used of the Friends-of-Friends (FoF)
 
 \section{Results}
 
+\subsection{General visualizations (FA, $\delta$) of the Simulations}
+
+\subsubsection{FA, Fractal Anisotropy}
+Using our small and dense simulation described in table \ref{tab:sims}, after the CIC (in a 256x256x256 grid) and V-Web have been aplied, we can form the FA and visualize its histogram (Figure \ref{fg:hist_FA}) and a 2-D cut (Figure \ref{fg:cut_FA}).
+%Histogram and cut
+\begin{figure}[ht]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.8\textwidth]{simulation/FA_hist_sim.png}
+  \caption{FA Histogram of the Small and Dense simulation}
+\label{fg:hist_FA}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.95\textwidth]{simulation/FA_cut_i_10.png}
+  \caption{A cut of the FA in the x axis}
+\label{fg:cut_FA}
+\end{minipage}
+\end{figure}
+\FloatBarrier
+
+%TODO Correct the following statement.
+\begin{par}
+As we saw in section \ref{sec:FA_trace}, you would
+ expect to have few highly isotropic particles.
+  The distribution \ref{fg:hist_FA} we obtained
+   agrees with it.\\
+Observing a 2-D cut of the FA \ref{fg:cut_FA} we
+ observe the filamentary structures we would
+  expect of the Cosmic Web. This cut is very
+   similar to the ones presented by  Bustamante et
+   al.  \cite{bustamante_tensor_2015} in their
+    work. This is a good indicator that our
+     simulation, CIC procedure V-Web application
+      and FA forming were correctly excecuted.
+       Bustamante et. al  explain that void
+        regions should have a FA < 0.95. We expect
+         the similar FA values for superclusters
+          and will make use of the Overdensity
+           $\delta$ to discriminate the    
+            regions and make sure we do not find
+             voids.
+
+\end{par}
+
+
+\subsubsection{$\delta$, Overdensity}
+As we did for the FA, we visualize the
+ distribution (Figure \ref{fg:hist_Trace}) and a
+  2-D cut (Figure \ref{fg:cut_Trace})of $\delta$
+   for the small and dense simulation of table
+    \ref{tab:sims}.
+
+%Histogram and cut
+\begin{figure}[ht]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.8\textwidth]{simulation/Trace_hist_sim.png} % Include the image placeholder.png
+\caption{$\delta$ Histogram of the Small and Dense simulation}
+\label{fg:hist_Trace}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.95\textwidth]{simulation/Trace_cut_i_10.png}
+  \caption{A cut of the $\delta$ in the x axis}
+\label{fg:cut_Trace}
+\end{minipage}
+\end{figure}
+\FloatBarrier
+
+\begin{par}
+The overdensity $\delta$ distribution is symmetric
+ around 0.0. As we are searching for overdense
+  structures (superclusters) we can then diminish
+   our search space to half of it only by
+    selecting the points with $\delta \geq 0.0$. \\
+Observing a 2D cut of the overdensity as shown in
+ figure \ref{fg:cut_Trace} also gives a good idea
+  of good idea of the Cosmic Web as we can easily
+   recognize filaments (highly underdense, $\delta
+    \leq 1.0$) and highly overdense regions
+     ($\delta \geq 1.0$) which are our candidates
+      for seeds of supercluster structures.
+\end{par}
 
 \subsection{Region Growing Algorithm with the FA and Overdensity}
 %The first results I got
@@ -356,6 +442,8 @@ Finally we improved this last method making used of the Friends-of-Friends (FoF)
 %Show cuts of the FA and of the Overdensity
 
 \subsection{Comparisons with Laniakea}
+
+\section{Discussions}
 
 \section{Conclusions}
 
