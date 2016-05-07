@@ -1,0 +1,374 @@
+python pipeline_script_2.py ../FoF/src/grid_FA_0.5_Trace_0.0.dat ../FoF/src/grid_FA_0.9_Trace_1.0.dat ../FoF/src/values_FA_0.5_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.5 0.0
+Seeds file thresholds (FA, Trace):  0.9 1.0
+('76318\ndone input\n', None)
+76318
+[ 0.  0.  0. ...,  0.  0.  0.]
+1470 groups
+(53323, 3) shape seeds
+There are  2 valid groups
+Oposite to the  1470 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.9_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.9_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.6_Trace_0.0.dat ../FoF/src/grid_FA_0.9_Trace_1.0.dat ../FoF/src/values_FA_0.6_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.6 0.0
+Seeds file thresholds (FA, Trace):  0.9 1.0
+('201781\ndone input\n', None)
+201781
+[ 0.  0.  0. ...,  0.  0.  0.]
+4002 groups
+(53323, 3) shape seeds
+There are  28 valid groups
+Oposite to the  4002 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.9_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.9_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.7_Trace_0.0.dat ../FoF/src/grid_FA_0.9_Trace_1.0.dat ../FoF/src/values_FA_0.7_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.7 0.0
+Seeds file thresholds (FA, Trace):  0.9 1.0
+('480310\ndone input\n', None)
+480310
+[   0.  595.  595. ...,    0.    0.    0.]
+7284 groups
+(53323, 3) shape seeds
+There are  397 valid groups
+Oposite to the  7284 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.9_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.9_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.8_Trace_0.0.dat ../FoF/src/grid_FA_0.9_Trace_1.0.dat ../FoF/src/values_FA_0.8_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.8 0.0
+Seeds file thresholds (FA, Trace):  0.9 1.0
+('1074203\ndone input\n', None)
+1074203
+[    0.   819.  1475. ...,     0.     0.     0.]
+9855 groups
+(53323, 3) shape seeds
+There are  1467 valid groups
+Oposite to the  9855 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.9_Trace_1.0_search_FA_0.8_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.9_Trace_1.0_search_FA_0.8_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.9_Trace_0.0.dat ../FoF/src/grid_FA_0.9_Trace_1.0.dat ../FoF/src/values_FA_0.9_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.9 0.0
+Seeds file thresholds (FA, Trace):  0.9 1.0
+('2370961\ndone input\n', None)
+2370961
+[    0.     0.   719. ...,     0.  7889.  7889.]
+7890 groups
+(53323, 3) shape seeds
+There are  1210 valid groups
+Oposite to the  7890 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.9_Trace_1.0_search_FA_0.9_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.9_Trace_1.0_search_FA_0.9_Trace_0.0.dat
+Finished writting the file
+python pipeline_histograms.py group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+There are 2 groups
+Volume distribution for 
+ growth: FA: 0.5 Trace: 0.0
+ seeds: FA: 0.5 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.5 Trace: 0.0
+ seeds: FA: 0.5 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 2.0
+python pipeline_histograms.py group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+There are 3 groups
+Volume distribution for 
+ growth: FA: 0.6 Trace: 0.0
+ seeds: FA: 0.5 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.6 Trace: 0.0
+ seeds: FA: 0.5 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 3.0
+python pipeline_histograms.py group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+There are 4 groups
+Volume distribution for 
+ growth: FA: 0.7 Trace: 0.0
+ seeds: FA: 0.5 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.7 Trace: 0.0
+ seeds: FA: 0.5 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 4.0
+python pipeline_histograms.py group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.8_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.8_Trace_0.0.dat
+There are 4 groups
+Volume distribution for 
+ growth: FA: 0.8 Trace: 0.0
+ seeds: FA: 0.5 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.8 Trace: 0.0
+ seeds: FA: 0.5 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 4.0
+python pipeline_histograms.py group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.9_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.9_Trace_0.0.dat
+There are 6 groups
+Volume distribution for 
+ growth: FA: 0.9 Trace: 0.0
+ seeds: FA: 0.5 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.9 Trace: 0.0
+ seeds: FA: 0.5 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 6.0
+python pipeline_histograms.py group_results_seeds_FA_0.6_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.6_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+There are 2 groups
+Volume distribution for 
+ growth: FA: 0.5 Trace: 0.0
+ seeds: FA: 0.6 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.5 Trace: 0.0
+ seeds: FA: 0.6 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 2.0
+python pipeline_histograms.py group_results_seeds_FA_0.6_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.6_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+There are 28 groups
+Volume distribution for 
+ growth: FA: 0.6 Trace: 0.0
+ seeds: FA: 0.6 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.6 Trace: 0.0
+ seeds: FA: 0.6 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 28.0
+python pipeline_histograms.py group_results_seeds_FA_0.6_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.6_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+There are 49 groups
+Volume distribution for 
+ growth: FA: 0.7 Trace: 0.0
+ seeds: FA: 0.6 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.7 Trace: 0.0
+ seeds: FA: 0.6 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 49.0
+python pipeline_histograms.py group_results_seeds_FA_0.6_Trace_1.0_search_FA_0.9_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.6_Trace_1.0_search_FA_0.9_Trace_0.0.dat
+There are 56 groups
+Volume distribution for 
+ growth: FA: 0.9 Trace: 0.0
+ seeds: FA: 0.6 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.9 Trace: 0.0
+ seeds: FA: 0.6 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 56.0
+python pipeline_histograms.py group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+There are 2 groups
+Volume distribution for 
+ growth: FA: 0.5 Trace: 0.0
+ seeds: FA: 0.7 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.5 Trace: 0.0
+ seeds: FA: 0.7 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 2.0
+python pipeline_histograms.py group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+There are 28 groups
+Volume distribution for 
+ growth: FA: 0.6 Trace: 0.0
+ seeds: FA: 0.7 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.6 Trace: 0.0
+ seeds: FA: 0.7 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 28.0
+python pipeline_histograms.py group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+There are 397 groups
+Volume distribution for 
+ growth: FA: 0.7 Trace: 0.0
+ seeds: FA: 0.7 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.7 Trace: 0.0
+ seeds: FA: 0.7 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 397.0
+python pipeline_histograms.py group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.8_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.8_Trace_0.0.dat
+There are 534 groups
+Volume distribution for 
+ growth: FA: 0.8 Trace: 0.0
+ seeds: FA: 0.7 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.8 Trace: 0.0
+ seeds: FA: 0.7 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 534.0
+python pipeline_histograms.py group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.9_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.9_Trace_0.0.dat
+There are 268 groups
+Volume distribution for 
+ growth: FA: 0.9 Trace: 0.0
+ seeds: FA: 0.7 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.9 Trace: 0.0
+ seeds: FA: 0.7 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 268.0
+python pipeline_histograms.py group_results_seeds_FA_0.8_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.8_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+There are 2 groups
+Volume distribution for 
+ growth: FA: 0.5 Trace: 0.0
+ seeds: FA: 0.8 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.5 Trace: 0.0
+ seeds: FA: 0.8 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 2.0
+python pipeline_histograms.py group_results_seeds_FA_0.8_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.8_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+There are 28 groups
+Volume distribution for 
+ growth: FA: 0.6 Trace: 0.0
+ seeds: FA: 0.8 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.6 Trace: 0.0
+ seeds: FA: 0.8 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 28.0
+python pipeline_histograms.py group_results_seeds_FA_0.8_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.8_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+There are 397 groups
+Volume distribution for 
+ growth: FA: 0.7 Trace: 0.0
+ seeds: FA: 0.8 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.7 Trace: 0.0
+ seeds: FA: 0.8 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 397.0
+python pipeline_histograms.py group_results_seeds_FA_0.8_Trace_1.0_search_FA_0.8_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.8_Trace_1.0_search_FA_0.8_Trace_0.0.dat
+There are 1467 groups
+Volume distribution for 
+ growth: FA: 0.8 Trace: 0.0
+ seeds: FA: 0.8 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.8 Trace: 0.0
+ seeds: FA: 0.8 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 1467.0
+python pipeline_histograms.py group_results_seeds_FA_0.8_Trace_1.0_search_FA_0.9_Trace_0.0.dat
+Processing the file: group_results_seeds_FA_0.8_Trace_1.0_search_FA_0.9_Trace_0.0.dat
+There are 778 groups
+Volume distribution for 
+ growth: FA: 0.9 Trace: 0.0
+ seeds: FA: 0.8 Trace: 1.0
+Inertia Analysis for 
+ growth: FA: 0.9 Trace: 0.0
+ seeds: FA: 0.8 Trace: 1.0
+-------------------------------------------
+Case Case Number Number of occurences
+none of the above 0 0.0
+spherical top 1 0.0
+oblate symmetric top 2 0.0
+prolate symmetric top 3 0.0
+asymmetric top 4 778.0

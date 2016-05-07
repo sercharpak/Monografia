@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from pylab import *
 import sys
 #-------------------------------------------
-# USAGE = "python pipeline_histograms.py file_valid_groups output_folder OPT "
+# USAGE = "python pipepline_plt_groups.py file_valid_groups output_folder OPT "
 #File example: group_valid_positions_FA_Trace_seeds_FA_0.6_Trace_1.0_search_FA_0.8_Trace_0.0.dat
 USAGE = "python pipepline_plt_groups.py file_valid_groups output_folder OPT(1 for plotting all 0 for not) "
 
@@ -119,7 +119,7 @@ if(int(sys.argv[3]) == 1):
         ax.tick_params(axis='both', which='major', labelsize=30)
         plt.savefig(output_folder+"region_"+str(id_group)+"_scale_seeds_FA_" + str(thresh_seeds_FA) + "_Trace_" + str(thresh_seeds_Trace) + "_search_FA_" + str(thresh_search_FA) + "_Trace_" + str(thresh_search_Trace) + ".png",format = 'png')
         plt.close(fig)
-        
+
 #The group 0.0 seems like noise. We will proceed to make the 3d plot of the regions excluding this one.
 index = where(group_particle==0.0)
 index = index[0]

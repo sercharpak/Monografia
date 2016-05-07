@@ -1,0 +1,320 @@
+python pipeline_script_1.py ../Outputs/07_04_2016/snapshot_005.eigen_1 ../Outputs/07_04_2016/snapshot_005.eigen_2 ../Outputs/07_04_2016/snapshot_005.eigen_3 0.5 1.0
+Preparing to read the eigenvalues
+../Outputs/07_04_2016/snapshot_005.eigen_1 ../Outputs/07_04_2016/snapshot_005.eigen_2 ../Outputs/07_04_2016/snapshot_005.eigen_3
+256 256 256 16777216 976.5625 976.5625 976.5625
+256 256 256 16777216 976.5625 976.5625 976.5625
+256 256 256 16777216 976.5625 976.5625 976.5625
+Eigenvalues read
+Forming the FA and the Trace grids
+Fa and Trace matrix formed
+The Thresholds are: FA, Trace 0.5 1.0
+Forming the resulting grid
+Grid formed with number of cells: 13
+Writing in file ../FoF/src/grid_FA_0.5_Trace_1.0.dat
+Finished writting the file
+Writing in FA and Trace values in file ../FoF/src/values_FA_0.5_Trace_1.0.dat
+Finished writting the file
+python pipeline_script_1.py ../Outputs/07_04_2016/snapshot_005.eigen_1 ../Outputs/07_04_2016/snapshot_005.eigen_2 ../Outputs/07_04_2016/snapshot_005.eigen_3 0.7 1.0
+Preparing to read the eigenvalues
+../Outputs/07_04_2016/snapshot_005.eigen_1 ../Outputs/07_04_2016/snapshot_005.eigen_2 ../Outputs/07_04_2016/snapshot_005.eigen_3
+256 256 256 16777216 976.5625 976.5625 976.5625
+256 256 256 16777216 976.5625 976.5625 976.5625
+256 256 256 16777216 976.5625 976.5625 976.5625
+Eigenvalues read
+Forming the FA and the Trace grids
+Fa and Trace matrix formed
+The Thresholds are: FA, Trace 0.7 1.0
+Forming the resulting grid
+Grid formed with number of cells: 1844
+Writing in file ../FoF/src/grid_FA_0.7_Trace_1.0.dat
+Finished writting the file
+Writing in FA and Trace values in file ../FoF/src/values_FA_0.7_Trace_1.0.dat
+Finished writting the file
+python pipeline_script_1.py ../Outputs/07_04_2016/snapshot_005.eigen_1 ../Outputs/07_04_2016/snapshot_005.eigen_2 ../Outputs/07_04_2016/snapshot_005.eigen_3 0.9 1.0
+Preparing to read the eigenvalues
+../Outputs/07_04_2016/snapshot_005.eigen_1 ../Outputs/07_04_2016/snapshot_005.eigen_2 ../Outputs/07_04_2016/snapshot_005.eigen_3
+256 256 256 16777216 976.5625 976.5625 976.5625
+256 256 256 16777216 976.5625 976.5625 976.5625
+256 256 256 16777216 976.5625 976.5625 976.5625
+Eigenvalues read
+Forming the FA and the Trace grids
+Fa and Trace matrix formed
+The Thresholds are: FA, Trace 0.9 1.0
+Forming the resulting grid
+Grid formed with number of cells: 53323
+Writing in file ../FoF/src/grid_FA_0.9_Trace_1.0.dat
+Finished writting the file
+Writing in FA and Trace values in file ../FoF/src/values_FA_0.9_Trace_1.0.dat
+Finished writting the file
+python pipeline_script_1.py ../Outputs/07_04_2016/snapshot_005.eigen_1 ../Outputs/07_04_2016/snapshot_005.eigen_2 ../Outputs/07_04_2016/snapshot_005.eigen_3 0.5 0.0
+Preparing to read the eigenvalues
+../Outputs/07_04_2016/snapshot_005.eigen_1 ../Outputs/07_04_2016/snapshot_005.eigen_2 ../Outputs/07_04_2016/snapshot_005.eigen_3
+256 256 256 16777216 976.5625 976.5625 976.5625
+256 256 256 16777216 976.5625 976.5625 976.5625
+256 256 256 16777216 976.5625 976.5625 976.5625
+Eigenvalues read
+Forming the FA and the Trace grids
+Fa and Trace matrix formed
+The Thresholds are: FA, Trace 0.5 0.0
+Forming the resulting grid
+Grid formed with number of cells: 76318
+Writing in file ../FoF/src/grid_FA_0.5_Trace_0.0.dat
+Finished writting the file
+Writing in FA and Trace values in file ../FoF/src/values_FA_0.5_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_1.py ../Outputs/07_04_2016/snapshot_005.eigen_1 ../Outputs/07_04_2016/snapshot_005.eigen_2 ../Outputs/07_04_2016/snapshot_005.eigen_3 0.6 0.0
+Preparing to read the eigenvalues
+../Outputs/07_04_2016/snapshot_005.eigen_1 ../Outputs/07_04_2016/snapshot_005.eigen_2 ../Outputs/07_04_2016/snapshot_005.eigen_3
+256 256 256 16777216 976.5625 976.5625 976.5625
+256 256 256 16777216 976.5625 976.5625 976.5625
+256 256 256 16777216 976.5625 976.5625 976.5625
+Eigenvalues read
+Forming the FA and the Trace grids
+Fa and Trace matrix formed
+The Thresholds are: FA, Trace 0.6 0.0
+Forming the resulting grid
+Grid formed with number of cells: 201781
+Writing in file ../FoF/src/grid_FA_0.6_Trace_0.0.dat
+Finished writting the file
+Writing in FA and Trace values in file ../FoF/src/values_FA_0.6_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_1.py ../Outputs/07_04_2016/snapshot_005.eigen_1 ../Outputs/07_04_2016/snapshot_005.eigen_2 ../Outputs/07_04_2016/snapshot_005.eigen_3 0.7 0.0
+Preparing to read the eigenvalues
+../Outputs/07_04_2016/snapshot_005.eigen_1 ../Outputs/07_04_2016/snapshot_005.eigen_2 ../Outputs/07_04_2016/snapshot_005.eigen_3
+256 256 256 16777216 976.5625 976.5625 976.5625
+256 256 256 16777216 976.5625 976.5625 976.5625
+256 256 256 16777216 976.5625 976.5625 976.5625
+Eigenvalues read
+Forming the FA and the Trace grids
+Fa and Trace matrix formed
+The Thresholds are: FA, Trace 0.7 0.0
+Forming the resulting grid
+Grid formed with number of cells: 480310
+Writing in file ../FoF/src/grid_FA_0.7_Trace_0.0.dat
+Finished writting the file
+Writing in FA and Trace values in file ../FoF/src/values_FA_0.7_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.5_Trace_0.0.dat ../FoF/src/grid_FA_0.5_Trace_1.0.dat ../FoF/src/values_FA_0.5_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.5 0.0
+Seeds file thresholds (FA, Trace):  0.5 1.0
+('76318\ndone input\n', None)
+76318
+[ 0.  0.  0. ...,  0.  0.  0.]
+1470 groups
+(13, 3) shape seeds
+There are  2 valid groups
+Oposite to the  1470 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.5_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.6_Trace_0.0.dat ../FoF/src/grid_FA_0.5_Trace_1.0.dat ../FoF/src/values_FA_0.6_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.6 0.0
+Seeds file thresholds (FA, Trace):  0.5 1.0
+('201781\ndone input\n', None)
+201781
+[ 0.  0.  0. ...,  0.  0.  0.]
+4002 groups
+(13, 3) shape seeds
+There are  3 valid groups
+Oposite to the  4002 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.5_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.7_Trace_0.0.dat ../FoF/src/grid_FA_0.5_Trace_1.0.dat ../FoF/src/values_FA_0.7_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.7 0.0
+Seeds file thresholds (FA, Trace):  0.5 1.0
+('480310\ndone input\n', None)
+480310
+[   0.  595.  595. ...,    0.    0.    0.]
+7284 groups
+(13, 3) shape seeds
+There are  4 valid groups
+Oposite to the  7284 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.5_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.8_Trace_0.0.dat ../FoF/src/grid_FA_0.5_Trace_1.0.dat ../FoF/src/values_FA_0.8_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.8 0.0
+Seeds file thresholds (FA, Trace):  0.5 1.0
+('1074203\ndone input\n', None)
+1074203
+[    0.   819.  1475. ...,     0.     0.     0.]
+9855 groups
+(13, 3) shape seeds
+There are  4 valid groups
+Oposite to the  9855 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.8_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.5_Trace_1.0_search_FA_0.8_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.9_Trace_0.0.dat ../FoF/src/grid_FA_0.5_Trace_1.0.dat ../FoF/src/values_FA_0.9_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.9 0.0
+Seeds file thresholds (FA, Trace):  0.5 1.0
+('2370961\ndone input\n', None)
+2370961
+[    0.     0.   719. ...,     0.  7889.  7889.]
+7890 groups
+(13, 3) shape seeds
+There are  6 valid groups
+Oposite to the  7890 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.5_Trace_1.0_search_FA_0.9_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.5_Trace_1.0_search_FA_0.9_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.5_Trace_0.0.dat ../FoF/src/grid_FA_0.6_Trace_1.0.dat ../FoF/src/values_FA_0.5_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.5 0.0
+Seeds file thresholds (FA, Trace):  0.6 1.0
+('76318\ndone input\n', None)
+76318
+[ 0.  0.  0. ...,  0.  0.  0.]
+1470 groups
+(129, 3) shape seeds
+There are  2 valid groups
+Oposite to the  1470 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.6_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.6_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.6_Trace_0.0.dat ../FoF/src/grid_FA_0.6_Trace_1.0.dat ../FoF/src/values_FA_0.6_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.6 0.0
+Seeds file thresholds (FA, Trace):  0.6 1.0
+('201781\ndone input\n', None)
+201781
+[ 0.  0.  0. ...,  0.  0.  0.]
+4002 groups
+(129, 3) shape seeds
+There are  28 valid groups
+Oposite to the  4002 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.6_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.6_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.7_Trace_0.0.dat ../FoF/src/grid_FA_0.6_Trace_1.0.dat ../FoF/src/values_FA_0.7_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.7 0.0
+Seeds file thresholds (FA, Trace):  0.6 1.0
+('480310\ndone input\n', None)
+480310
+[   0.  595.  595. ...,    0.    0.    0.]
+7284 groups
+(129, 3) shape seeds
+There are  49 valid groups
+Oposite to the  7284 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.6_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.6_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.5_Trace_0.0.dat ../FoF/src/grid_FA_0.7_Trace_1.0.dat ../FoF/src/values_FA_0.5_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.5 0.0
+Seeds file thresholds (FA, Trace):  0.7 1.0
+('76318\ndone input\n', None)
+76318
+[ 0.  0.  0. ...,  0.  0.  0.]
+1470 groups
+(1844, 3) shape seeds
+There are  2 valid groups
+Oposite to the  1470 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.7_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.6_Trace_0.0.dat ../FoF/src/grid_FA_0.7_Trace_1.0.dat ../FoF/src/values_FA_0.6_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.6 0.0
+Seeds file thresholds (FA, Trace):  0.7 1.0
+('201781\ndone input\n', None)
+201781
+[ 0.  0.  0. ...,  0.  0.  0.]
+4002 groups
+(1844, 3) shape seeds
+There are  28 valid groups
+Oposite to the  4002 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.7_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.7_Trace_0.0.dat ../FoF/src/grid_FA_0.7_Trace_1.0.dat ../FoF/src/values_FA_0.7_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.7 0.0
+Seeds file thresholds (FA, Trace):  0.7 1.0
+('480310\ndone input\n', None)
+480310
+[   0.  595.  595. ...,    0.    0.    0.]
+7284 groups
+(1844, 3) shape seeds
+There are  397 valid groups
+Oposite to the  7284 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.7_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.8_Trace_0.0.dat ../FoF/src/grid_FA_0.7_Trace_1.0.dat ../FoF/src/values_FA_0.8_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.8 0.0
+Seeds file thresholds (FA, Trace):  0.7 1.0
+('1074203\ndone input\n', None)
+1074203
+[    0.   819.  1475. ...,     0.     0.     0.]
+9855 groups
+(1844, 3) shape seeds
+There are  534 valid groups
+Oposite to the  9855 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.8_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.7_Trace_1.0_search_FA_0.8_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.9_Trace_0.0.dat ../FoF/src/grid_FA_0.7_Trace_1.0.dat ../FoF/src/values_FA_0.9_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.9 0.0
+Seeds file thresholds (FA, Trace):  0.7 1.0
+('2370961\ndone input\n', None)
+2370961
+[    0.     0.   719. ...,     0.  7889.  7889.]
+7890 groups
+(1844, 3) shape seeds
+There are  268 valid groups
+Oposite to the  7890 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.7_Trace_1.0_search_FA_0.9_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.7_Trace_1.0_search_FA_0.9_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.5_Trace_0.0.dat ../FoF/src/grid_FA_0.8_Trace_1.0.dat ../FoF/src/values_FA_0.5_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.5 0.0
+Seeds file thresholds (FA, Trace):  0.8 1.0
+('76318\ndone input\n', None)
+76318
+[ 0.  0.  0. ...,  0.  0.  0.]
+1470 groups
+(16652, 3) shape seeds
+There are  2 valid groups
+Oposite to the  1470 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.8_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.8_Trace_1.0_search_FA_0.5_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.6_Trace_0.0.dat ../FoF/src/grid_FA_0.8_Trace_1.0.dat ../FoF/src/values_FA_0.6_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.6 0.0
+Seeds file thresholds (FA, Trace):  0.8 1.0
+('201781\ndone input\n', None)
+201781
+[ 0.  0.  0. ...,  0.  0.  0.]
+4002 groups
+(16652, 3) shape seeds
+There are  28 valid groups
+Oposite to the  4002 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.8_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.8_Trace_1.0_search_FA_0.6_Trace_0.0.dat
+Finished writting the file
+python pipeline_script_2.py ../FoF/src/grid_FA_0.7_Trace_0.0.dat ../FoF/src/grid_FA_0.8_Trace_1.0.dat ../FoF/src/values_FA_0.7_Trace_0.0.dat
+Search file thresholds (FA, Trace):  0.7 0.0
+Seeds file thresholds (FA, Trace):  0.8 1.0
+('480310\ndone input\n', None)
+480310
+[   0.  595.  595. ...,    0.    0.    0.]
+7284 groups
+(16652, 3) shape seeds
+There are  397 valid groups
+Oposite to the  7284 groups at first
+Writing the group results values in file ./group_results_seeds_FA_0.8_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+Finished writting the file
+Writing the group positions and FA_Trace values in file ./group_valid_positions_FA_Trace_seeds_FA_0.8_Trace_1.0_search_FA_0.7_Trace_0.0.dat
+Finished writting the file
