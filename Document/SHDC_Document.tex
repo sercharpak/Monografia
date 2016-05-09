@@ -107,22 +107,35 @@ our methods and in observations) leading to this
 \newpage
 
 \section{Introduction}
-
-In the Universe scene at large scales the galaxy group themselves in structures
-similar to a filament web which go through large voids regions and cross in regions
-called superclusters. Even though these structures can be easily detected at simple
-view, there are different possibilities to delimited them from physical criteria \cite{gott_iii_map_2005}.    
+The Universe, at large scales, has a filamentary
+ scructure. Large voids regions and galaxy
+  superclusters are part of it. These structures can
+   be identified visually. However, there are
+    different algorithms to identify them based on
+     physical criteria \cite{gott_iii_map_2005}.    
 \\
 
-A proposal to define a supercluster is to use the flow of galaxy in this region of
-space. Within a supercluster, galaxy tend to flow to the most dense region as a
-consequence of the gravitational attraction process. In this way, spacial regions where
-the galaxy flow is convergent represent galaxy superclusters.\\
+Due to gravitational attraction, velocity and
+ density are related. It is possible to relate
+  velocity fields with density fields. A proposal to
+   find galaxy superclusters is to analyze the
+    velocity field of galaxy. Matter tend to flow to
+     the most dense region. In this way, spacial
+      regions where the galaxy flow is convergent
+       represent galaxy superclusters.\\
 \\
-Recently a team build a galaxy velocities flow map of the local group in a scale of
-hundreds of light years \cite{tully_cosmicflows-2_2013}. In this map converging points
-were found and this team identified Laniakea, the galaxy supercluster which includes
-our galaxy, the milky way \cite{tully_laniakea_2014}.
+Recently a team build a galaxy velocities flow map
+ of the local group in a scale of hundreds of light
+  years \cite{tully_cosmicflows-2_2013}. In this map
+   converging points were found and this team
+    identified Laniakea, the galaxy supercluster
+     which includes our galaxy, the milky way
+      \cite{tully_laniakea_2014}. These observations
+       are difficult to make for several reasons we
+        will describe briefly. As a result of these
+         difficulties, there is not a statistical
+          quantity of galaxy superclusters obtained
+           from the observational approach. 
 \\   
 
 We propose to develop a method to detect a
@@ -136,12 +149,23 @@ the Universe.
 \section{Background}
 \subsection{Cosmic flows and peculiar velocities}
 %Describe in detail the Laniakea work and the Methods used
-The peculiar velocity refers to the velocity relative to a rest frame. In the case of the
-Cosmicflows-2 map, the rest frame is the earth. 
-The Laniakea supercluster of galaxy was mainly identified following an analysis of the
-peculiar velocities flows. A Wiener filtering method was apply to obtained a better
-Signal/Noise proportion and separate the peculiar velocities from the cosmic expansion.\\
+
+%TODO Paragraph about the peculiar velocity.
+%TODO What is the peculiar velocity in an expanding universe?
+
+The peculiar velocity refers to the velocity relative to a rest frame. \\
+
+%TODO Paragraph about how do you find it observationally.
+In the case of the Cosmicflows-2 map, the rest frame is the earth. \\
+
+
+
+
+%TODO Paragraph about the Wiener filterning method
 %TODO Explain how the fieltering worked
+%Reference \cite{zaroubi_wiener_1995}
+A Wiener filtering method was apply to obtained a better Signal/Noise proportion and separate the peculiar velocities from the cosmic expansion.\\
+
 
 
 
@@ -149,23 +173,63 @@ Signal/Noise proportion and separate the peculiar velocities from the cosmic exp
 \subsection{Boundaries of Laniakea - The V-Web Algorithm}
 \label{sec:v_web}
 The contour of the region were reconstructed with
- the V-web Algorithm. This algorithm is deeply
+ the V-web Algorithm. 
+%TODO V-Web
+%Reference \cite{hoffman_kinematic_2012}
+This algorithm is deeply
   connected to the velocities as its core is the
    shear velocity tensor.\\
 
 %TODO Explain how the V-Web algorithm worked. 
 
 
+
+
+
 \subsection{Fractional Anisotropy and Overdensity}
 \label{sec:FA_trace}
+%TODO FA and Trace of the Tensor
+%\cite{bustamante_tensor_2015}
+%\cite{libeskind_velocity_2013}
+\subsection{The Current Model: Cosmological Parameters}
+%TODO Explain the cosmological Parameters
 \section{Methods}
+\begin{par}
+Volker Springel's N-Body simulation software,
+ Gadget-2 \cite{springel_gadget_2_2005}, is
+  currently state-of-the-art in the field of
+   cosmological simulations and is widely used in
+    the scientific community. One example of use of
+     Gadget is the Millennium Run
+      \cite{springel_simulations_2005}, which has
+       brought our understanding of our current
+        model forward. We describe our numerical
+         experiments in the section \ref{sec:sims}.
+\end{par}
+\\
+\begin{par}
+We devised different approaches for the detection of
+ galaxy superclusters in the simulation data. One
+  approach is based on the speed and is described in
+   appendix \ref{App:App_Speed}. We describe our
+    main approach in section \ref{sec:approaches}.
+     It is based on the analysis of the 
+    %TODO verify this
+    eigenvalues of the local velocity shear tensor
+     in the V-Web scheme. We use the Fractional
+      Anisotropy and the trace of the shear tensor
+       described in section \ref{sec:FA_trace}. 
+\end{par}
+\\
+\begin{par}
+We developed code in C and Python to treat the
+ simulation data. The code is made available for the
+  public in Github
+   \url{https://github.com/sercharpak/Monografia/}
+\end{par}
 
-As we support the open-source community, we used the N-Body simulation open
-software Gadget-2 \cite{springel_gadget_2_2005} to generate the simulations
-and source code in C and Python to treat the data obtained from the
-simulations. The development of the code will be in Github \url{https://github.com/sercharpak/Monografia/}.
 
-\subsection{Simulations}
+\subsection{Simulations}\label{sec:sims}
 We used the N-Body simulation software Gadget-2
  \cite{springel_gadget_2_2005}
 widely used in the scientific community to
@@ -242,7 +306,7 @@ For a geometrically flat universe, as ours, one has $\Omega_0$ + $\Omega_{\Lambd
 We then use different algorithms to identify the
  superclusters within the simulation.\\
 
-\subsection{Approaches}
+\subsection{Approaches} \label{sec:approaches}
 %Opening the section
 We mainly had two approaches in this work for the
  search of superclusters. First, a naive one
@@ -325,7 +389,7 @@ Our main algorithm is a region growing algorithm
 %TODO General description of the algorithm as described by Gonzalez
 
 \begin{par}
-The region growing algorithm is a simple image segmentation algorithm used to identify different regions in a image. The aim is to identify regions which share common properties. First we identify points, as few as possible, which we know for sure are contained in these regions. These points are the seeds of our regions. We then define a certain growth predicate, if the neighbors of a seed validate this predicate they are considered as members of the group. These new members are then treated as seeds and ask their own neighbors if they validate the predicate. This goes on until all the points have been evaluated or until a limit defined by the user is reached.
+The region growing algorithm is used to identify different regions in a image. The aim is to identify regions which share common properties. First we identify points, as few as possible, which we know for sure are contained in these regions. These points are the seeds of our regions. We then define a certain growth predicate, if the neighbors of a seed validate this predicate they are considered as members of the group. These new members are then treated as seeds and ask their own neighbors if they validate the predicate. This goes on until all the points have been evaluated or until a limit defined by the user is reached.
 \end{par}
 
 \begin{par}
