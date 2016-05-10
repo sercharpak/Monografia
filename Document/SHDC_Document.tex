@@ -295,7 +295,33 @@ These supernovas are very bright and can been seen from
 %TODO Paragraph about the Wiener filterning method
 %TODO Explain how the fieltering worked
 %Reference 
-A Wiener filtering method was apply to obtained a better Signal/Noise proportion and separate the peculiar velocities from the cosmic expansion\cite{zaroubi_wiener_1995}.\\
+\begin{par}
+A Wiener filtering method is a tool to reconstruct
+ large scale structure data from some of the incomplete
+  and noisy data \cite{zaroubi_wiener_1995}. It  was
+   applied by Tully et al. \cite{tully_laniakea_2014}
+    to  to obtained a better Signal/Noise proportion in
+     the peculiar velocity field.  \\
+\end{par}
+
+\begin{par}
+The Wiener filter formalism is based on linear minimum
+ variance solution, assuming a model \textit{a priori}
+  and having the data (incomplete and noisy). It starts
+   from the equation: 
+  \[
+  d = R s + \epsilon
+  \]
+  Where \textbf{d} is the are the resulting data
+   points of the observations,  \textbf{s} is the
+    underlying field which yields \textbf{d},
+     \textbf{R} is the \textit{Point Spread
+      Function}, a matrix which represents the response
+       of the measuring device or procedure to the
+        underlying field \textbf{s} and finally
+         \textbf{ $\epsilon$ } is the statistical
+          uncertainty related with the data.\\
+\end{par}
 
 
 
@@ -308,7 +334,7 @@ The contour of the region were reconstructed with
 %TODO V-Web
 %Reference 
 This algorithm is deeply
-  connected to the velocities as its core is the
+  connected to the velocities.ts core is the
    shear velocity tensor \cite{hoffman_kinematic_2012}:\\
 \[
 \sum_{\alpha\beta} = -\frac{1}{2 H_0} \left( \frac{\partial v_{\alpha}}{\partial x_{\beta}} + \frac{\partial v_{\beta}}{\partial x_{\alpha}} \right)
@@ -524,7 +550,9 @@ The Cloud In Cell (CIC) method is a derivation of the
           assigned a weighted part of the physical
            quantity we look to mesh proportional to the
             superposed volume (in 2-D, superposed
-             area). We perform this CIC
+             area). A function can then be applied to
+              smooth the obtained field. We perform
+               this CIC
             for the density field and the velocity
              field. In figure \ref{fg:cic_explain} a
               graphical explanation is provided for the

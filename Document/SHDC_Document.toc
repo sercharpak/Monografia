@@ -5,10 +5,10 @@
 \contentsline {section}{\numberline {4}Background}{6}{section.4}
 \contentsline {subsection}{\numberline {4.1}The Current Model $\Lambda $CDM Cosmological Parameters}{6}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Cosmic flows and peculiar velocities}{6}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Boundaries of Laniakea - The V-Web Algorithm}{8}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.3}Boundaries of Laniakea - The V-Web Algorithm}{9}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Fractional Anisotropy and trace of the velocity shear tensor}{9}{subsection.4.4}
 \contentsline {section}{\numberline {5}Methods}{9}{section.5}
-\contentsline {subsection}{\numberline {5.1}Simulations}{9}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.1}Simulations}{10}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Approaches}{11}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Algorithms}{13}{subsection.5.3}
 \contentsline {subsubsection}{\numberline {5.3.1}Region Growing Algorithm: Basic Description}{13}{subsubsection.5.3.1}
