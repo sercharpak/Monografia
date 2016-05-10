@@ -34,6 +34,11 @@ Volker Springel, Simon D.~M. White, Adrian Jenkins, Carlos~S. Frenk, Naoki
   and quasars.
 \newblock {\em Nature}, 435(7042):629--636, June 2005.
 
+\bibitem{harlow1964particle}
+Francis~H Harlow.
+\newblock The particle-in-cell computing method for fluid dynamics.
+\newblock {\em Methods in computational physics}, 3(3):319--343, 1964.
+
 \bibitem{gonzalez_digital_2008}
 Rafael~C. Gonzalez and Richard~E. Woods.
 \newblock {\em Digital image processing}.

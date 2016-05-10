@@ -10,24 +10,24 @@
 \contentsline {section}{\numberline {5}Methods}{6}{section.5}
 \contentsline {subsection}{\numberline {5.1}Simulations}{6}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Approaches}{7}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Algorithms}{8}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Region Growing Algorithm: Basic Description}{8}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Region Growing Algorithm with the FA and the trace of the velocity shear tensor}{9}{subsubsection.5.3.2}
-\contentsline {section}{\numberline {6}Results}{11}{section.6}
-\contentsline {subsection}{\numberline {6.1}General visualizations (FA, $\delta $) of the Simulations}{11}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}FA, Fractal Anisotropy}{11}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}$\delta $, Overdensity}{12}{subsubsection.6.1.2}
-\contentsline {subsection}{\numberline {6.2}Region Growing Algorithm with the FA and Overdensity}{12}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Region Growing Algorithm and FoF with the FA and Overdensity}{14}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Influence of the FA in the seeds}{14}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Influence of the FA in the growth}{14}{subsubsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.3}Volume distribution}{16}{subsubsection.6.3.3}
-\contentsline {subsubsection}{\numberline {6.3.4}Shape of the regions}{16}{subsubsection.6.3.4}
-\contentsline {subsection}{\numberline {6.4}Comparisons with Laniakea}{16}{subsection.6.4}
-\contentsline {section}{\numberline {7}Discussions}{16}{section.7}
-\contentsline {section}{\numberline {8}Conclusions}{16}{section.8}
-\contentsline {section}{\numberline {9}Future Work}{16}{section.9}
-\contentsline {section}{\numberline {A}Approach by the Speed}{17}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}Region Growing Algorithm with the Speed}{17}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}Results of the Speed Approach}{18}{subsection.A.2}
-\contentsline {subsection}{\numberline {A.3}Code example for Region Growing Algorithm - Approach by the Speed}{25}{subsection.A.3}
+\contentsline {subsection}{\numberline {5.3}Algorithms}{9}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Region Growing Algorithm: Basic Description}{9}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Region Growing Algorithm with the FA and the trace of the velocity shear tensor}{10}{subsubsection.5.3.2}
+\contentsline {section}{\numberline {6}Results}{12}{section.6}
+\contentsline {subsection}{\numberline {6.1}General visualizations (FA, $\delta $) of the Simulations}{12}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}FA, Fractal Anisotropy}{12}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}$\delta $, Overdensity}{13}{subsubsection.6.1.2}
+\contentsline {subsection}{\numberline {6.2}Region Growing Algorithm with the FA and Overdensity}{13}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Region Growing Algorithm and FoF with the FA and Overdensity}{15}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Influence of the FA in the seeds}{15}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Influence of the FA in the growth}{15}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Volume distribution}{17}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.4}Shape of the regions}{17}{subsubsection.6.3.4}
+\contentsline {subsection}{\numberline {6.4}Comparisons with Laniakea}{17}{subsection.6.4}
+\contentsline {section}{\numberline {7}Discussions}{17}{section.7}
+\contentsline {section}{\numberline {8}Conclusions}{17}{section.8}
+\contentsline {section}{\numberline {9}Future Work}{17}{section.9}
+\contentsline {section}{\numberline {A}Approach by the Speed}{18}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Region Growing Algorithm with the Speed}{18}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}Results of the Speed Approach}{19}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}Code example for Region Growing Algorithm - Approach by the Speed}{26}{subsection.A.3}

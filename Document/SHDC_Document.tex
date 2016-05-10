@@ -24,7 +24,7 @@
 \begin{center}
 \begin{figure}
 \centering%
-\epsfig{file=logo-andes.jpg,scale=0.75}%
+\epsfig{file=general/logo-andes.jpg,scale=0.75}%
 \end{figure}
 \vspace{3 cm}
 \FloatBarrier
@@ -192,6 +192,7 @@ This algorithm is deeply
 %\cite{bustamante_tensor_2015}
 %\cite{libeskind_velocity_2013}
 \subsection{The Current Model: Cosmological Parameters}
+\label{cosmo_constants}
 %TODO Explain the cosmological Parameters
 \section{Methods}
 \begin{par}
@@ -230,25 +231,55 @@ We developed code in C and Python to treat the
 
 
 \subsection{Simulations}\label{sec:sims}
+\begin{par}
 We used the N-Body simulation software Gadget-2
  \cite{springel_gadget_2_2005}
 widely used in the scientific community to
- generate different cubic boxes of dark matter particles
-  (DM). The initial conditions were
-generated with Springel's N-Genic software. The
- simulations ran on the HPC cluster at UNIANDES.
+ generate different cubic boxes of dark matter
+  particles
+  (DM). The simulations ran on the HPC cluster at
+   UNIANDES.
   The main properties (boxsize, number of
    particles, number of CPUs used and time of the
     simulation) are described in table
      \ref{tab:sims}. \\
-
+\end{par}
+\begin{itemize}
+\item Numerical Experiments
+\end{itemize}
+\begin{par}
+We are looking for structures of the same order of
+ magnitude of Laniakea. Laniakea is, approximatively, a
+  sphere of radius 80 Mpc/h. Our simulations need to be
+   of at least the same order of magnitude. Next, we
+    need to have a sufficient number of DM particles to
+     be able to perform the Cloud in Cells described in
+      section \ref{sec:approaches}. Finally we want
+       these simulations to run in a reasonable time. 
+       In table \ref{tab:sims}, we describe the 3
+        simulations we ran. We first ran the Medium
+         simulation, of dimension 500 Mpc/h and $512^3$
+          DM particles, as a first approach to this
+           problem. To perform the CIC correctly we
+            needed a more dense simulation. The result
+             is the Small (Dense) simulation, of
+              dimension 250 Mpc/h and the same $512^3$
+               DM particles. Finally we ran a longer
+                Medium (Dense), of dimension 500 Mpc/h
+                 and  $1024^3$ DM particles. This last
+                  simulation took several days to
+                   complete (80 hours). A bigger
+                    simulation would take several weeks
+                     and is to be performed in a future
+                      work.
+\end{par}
 \begin{table}[ht]
     \centering
     \begin{tabular}{|c|c|c|c|c|}
         Name & Boxsize [Mpc/h] & DM particles & \# CPU & Time [hours] \\
         Medium & 500 & $512^{3}$ & 48 & ~ 10 \\
         Small (Dense) & 250 & $512^{3}$ & 48 & ~ 6  \\
-        Medium (Dense) & 500 & $1024^{3}$ & 48 & ~ 70  \\
+        Medium (Dense) & 500 & $1024^{3}$ & 48 & ~ 80\\
     \end{tabular}
     \caption{Different Gadget-2 Simulations. We named them to easily refer to each one of them}
     \label{tab:sims}
@@ -260,19 +291,16 @@ By DM particle we mean a particle which only
 interaction. In the simulation each particle
  represents a galaxy. The DM particles are
 placed in a 3D grid layout first and then are
- perturbed following Poisson distribution
+ perturbed following a Poisson distribution
 before the simulation start, during the initial
- conditions generation.\\
+ conditions generation. Once the simulation starts, the particles interact only with gravity\\
 
 %TODO this may be could be relocated in the %background section
-Once the simulation starts, the particles interact
- only with gravity as time goes by following the
-  cosmological constants. We following are an
-   approximation of the $\Lambda$CDM (Lambda cold
-    dark matter) or Lambda-CDM model, our current
-     cosmological model. The involved
-     cosmological constants are described in table
-      \ref{tab:consts}\\.
+The initial conditions were generated with Volker
+ Springel's N-Genic software. For the initial
+  conditions we specify the cosmological constants
+   described in section \ref{sec:cosmo_constants}. They
+    are described in table \ref{tab:consts}\\.
    
   
  \begin{table}[ht]
@@ -287,17 +315,17 @@ Once the simulation starts, the particles interact
 \FloatBarrier
 %TODO Specify the units
 $\Omega_0$  corresponds to the Cosmological matter density parameter in units of the critical density at
-z = 0. $\Omega_{\Lambda}$ is the cosmological
+red shift z = 0. $\Omega_{\Lambda}$ is the cosmological
  vacuum energy density (cosmological constant) in
-  units of the critical density at z = 0. 
+  units of the critical density at red shift z = 0. 
 %Relevant only for comoving integration. 
 For a geometrically flat universe, as ours, one has $\Omega_0$ + $\Omega_{\Lambda}$ = 1.
  $\Omega$ is the baryon density in units
-  of the critical density at z = 0. In our case it
+  of the critical density at red shift z = 0. In our case it
    is not relevant. Finally, H denotes the Hubble
-    constant at z=0 in  units of 100 $km$ $s^{-1}$
+    constant at red shift z=0 in  units of 100 $km$ $s^{-1}$
      $Mpc^{-1}$. It will be relevant in the
-      discussions at the end of this work.
+      discussions, section \ref{sec:discussions}.
 %TODO make a reference to the discussion with the
 % Chon paper where the Hubble constant is related
 % to a gravitationaly bounded structure.
@@ -308,7 +336,6 @@ We then use different algorithms to identify the
 
 \subsection{Approaches} \label{sec:approaches}
 %Opening the section
-We use two approaches to find superclusters. 
 \begin{par}
 In a first approach we analyse the distribution of
  the magnitude of the velocity in the different
@@ -338,8 +365,37 @@ For our second approach (main one), we will use the
 \end{itemize}
 \begin{par}
 %TODO Describe the CIC method
-The Cloud In Cell (CIC) method\\
+The Cloud In Cell (CIC) method is a derivation of the
+ Particle in Cell (PIC) method, a Particle Mesh (PM)
+  method, first introduced by Francis Harlow in the
+   1950's in the field of computational fluid dynamics
+    \cite{harlow1964particle}. CIC is very popular
+     among the scientific community
+      \cite{grigoryev_numerical_2002}. We form, in our
+       case, a $N^3$ grid. This grid is superpose with
+        the cubic
+      box resulting from the simulation. We then form
+       particle clouds (cubes in our case) around each
+        particle. For each particle cloud, each cell
+         where the particle cloud superposes is
+          assigned a weighted part of the physical
+           quantity we look to mesh proportional to the
+            superposed volume (in 2-D, superposed
+             area). We perform this CIC
+            for the density field and the velocity
+             field. In figure \ref{fg:cic_explain} a
+              graphical explanation is provided for the
+               2-D case.  \\
 \end{par}
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{general/CIC_Explain_bigger} % Include the image placeholder.png
+\caption{Explanation of the Cloud In Cell Method (CIC)}
+\label{fg:cic_explain}
+\end{center}
+\end{figure}
+\FloatBarrier
 
 \begin{itemize}
 \item The V-Web scheme
@@ -788,11 +844,13 @@ For the results of the small and dense simulation \ref{tab:sims} we applied all 
 \subsection{Comparisons with Laniakea}
 
 \section{Discussions}
+\label{sec:discussions}
 
 \section{Conclusions}
 
 %TODO The Future Work section needs to be re-written
 \section{Future Work}
+\label{sec:future_work}
 
 
 
