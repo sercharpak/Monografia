@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{tully_laniakea_2014}
 R.~Brent Tully, Hélène Courtois, Yehuda Hoffman, and Daniel Pomarède.
@@ -19,6 +19,11 @@ R.~Brent Tully, Hélène~M. Courtois, Andrew~E. Dolphin, J.~Richard Fisher,
 \newblock \textit{{COSMICFLOWS}-2} : {THE} {DATA}.
 \newblock {\em The Astronomical Journal}, 146(4):86, October 2013.
 
+\bibitem{padmanabhan_theoretical_2000}
+T.~Padmanabhan.
+\newblock {\em Theoretical astrophysics}.
+\newblock Cambridge University Press, Cambridge ; New York, 2000.
+
 \bibitem{springel_gadget_2_2005}
 V.~Springel.
 \newblock The cosmological simulation code gadget-2.
@@ -38,6 +43,11 @@ Volker Springel, Simon D.~M. White, Adrian Jenkins, Carlos~S. Frenk, Naoki
 Francis~H Harlow.
 \newblock The particle-in-cell computing method for fluid dynamics.
 \newblock {\em Methods in computational physics}, 3(3):319--343, 1964.
+
+\bibitem{grigoryev_numerical_2002}
+Yu~N. Grigoryev, V.~A. Vshivkov, and M.~P. Fedoruk.
+\newblock {\em Numerical "particle-in-cell" methods: theory and applications}.
+\newblock VSP, Utrecht, 2002.
 
 \bibitem{gonzalez_digital_2008}
 Rafael~C. Gonzalez and Richard~E. Woods.

@@ -147,24 +147,155 @@ the Universe.
 \\
 
 \section{Background}
+\subsection{The Current Model $\Lambda$CDM Cosmological Parameters}
+\label{cosmo_constants}
+%TODO Explain the cosmological Parameters
+
+\begin{par}
+The current accepted model for cosmology is the Lambda
+ - Cold Matter Model, or $\Lambda$ CDM Model. The
+  letter $\Lambda$ makes a reference to the
+   cosmological constant $\Omega_{\Lambda}$, the dark
+    matter density, which is
+    associated with dark energy and the accelerated
+     expansion of the Universe according to General
+      Relativity.
+\end{par}
+
+\begin{par}
+The simplest $\Lambda$-CDM Model is based on 6 parameters.\\
+
+Here comes the explanation of the model and the exposition of the Friedman Equation.\\
+
+%TODO Explain the Friedman Equation of the model 
+\end{par}
+
+
+
+
 \subsection{Cosmic flows and peculiar velocities}
 %Describe in detail the Laniakea work and the Methods used
 
 %TODO Paragraph about the peculiar velocity.
 %TODO What is the peculiar velocity in an expanding universe?
+\begin{itemize}
+\item Peculiar velocity
+\end{itemize}
+\begin{par}
+The peculiar velocity is defined as the velocity relative to a rest frame. In the current cosmology context ($\Lambda$CDM), it is the amount of the radial velocity of a galaxy which cannot be explained by the expansion of the Universe. Hubble's law states that galaxy are moving away from us at a speed proportional to the distance from us (the proportion is Hubble's constant). In other words,
+\[ 
+v_p = v_{obs} - H_{0} * d_{obs}
+\]
+\end{par}
 
-The peculiar velocity refers to the velocity relative to a rest frame. \\
+\begin{itemize}
+\item Relation between the density field and the velocity field
+\end{itemize}
 
+\begin{par}
+From the linear perturbations in the Newtonian limit of
+ the $\Lambda$CDM model presented in section
+  \ref{cosmo_constants} we can find a linear relation
+   between the peculiar velocity and the peculiar
+    acceleration \cite{padmanabhan_theoretical_2000}.
+     We find that:
+\[
+\vec{v}_p \simeq \frac{2}{3 H \Omega} \Omega^{0.6} \vec{g}
+\]
+With $H = \frac{\dot{a}}{a}$ the Friedmann equation,
+ $\Omega$ the density parameter and $\vec{g}$ the
+  peculiar acceleration with $\vec{g} = \frac{-1}{a}
+   \nabla \phi $ with $\phi$ the gravitational
+    potential.\\
+In other words we obtain an expression:
+\[ 
+\vec{v}_p \propto  - \nabla \phi
+\]
+If we take the divergence we obtain:
+\[
+\nabla \cdot \vec{v}_p \propto \nabla^2 \phi
+\]
+But $\nabla^2 \phi$ responds a Poisson-like equation
+ with the density field $\delta$. We can finally write:
+\[
+\nabla \cdot \vec{v}_p \propto - \delta
+\]
+And, more exactly, as stated in
+ \cite{tully_laniakea_2014}: 
+\[
+\nabla \cdot \vec{v}_p = - H_0 f(\Omega_m, \Omega_{\Lambda}) \delta
+\] 
+With $\vec{v}_p$ the peculiar velocity field, $H_0$ the
+ Hubble constant, $\Omega_m$ the matter density
+  parameter, $\Omega_{\Lambda}$ the Dark matter density
+   parameter and $\delta$ the density field.\\
+   With this relation we can directly link the peculiar
+    velocity field and the density field.
+\end{par}
+
+
+\begin{itemize}
+\item Observational methods
+\end{itemize}
 %TODO Paragraph about how do you find it observationally.
-In the case of the Cosmicflows-2 map, the rest frame is the earth. \\
+\begin{par}
+We now proceed to describe some of the observational
+ methods used Cosmicflows-2
+  \cite{tully_cosmicflows-2_2013}. The catalogue of
+   peculiar velocities is detailed within ~100 Mpc with
+    data which covers out to ~400 Mpc. Six main methods
+     were jointly used to estimate the galaxy
+      distances.	\\
+     
+     The first method is the Cepheid Period-Luminosity
+      Relation (Cepheid PLR) applied to the Hubble
+       Space Telescope (HST) distance scale key
+        project. The HST data is covers distances
+         within 10 Mpc. Cepheid variables are young
+          bright stars. They are located in star
+           formation locations. 
+           This makes their observation
+            difficult as there is plenty of luminosity
+             noise from other objects even if Cepheids
+              themselves are bright.\\
+
+The second method is applied to old stars. From the
+ luminosities of Red Giant stars at the gap of core
+  Helium burning, distances are determined. This can be
+   seen in the the Red Giant Branch (TRGB) color
+    magnitude diagram (CMD). These old Red Giants are
+     fainter than the Cepheids but are located in
+      regions with small luminosity noise. This method,
+       complementary to the Cepheid PRL method covers
+        distances within 10 Mpc.\\
+        
+The third method is the Surface Brightness Fluctuation method.\\\
+
+The fourth method is the elliptical fundamental plane
+ method. The quality of these measurements is not very
+  good. Despite of that, it can be used for large
+   samples of galaxies in a large volume.\\
+
+The fifth method is the Spiral luminosity-rotation
+ method. This method also provides less accurate
+  distances, but can be applied to large sets of
+   galaxies.\\
+
+Finally, the sixth method is the Supernovae Ia method.
+These supernovas are very bright and can been seen from
+ great distances. The quality of these measurements are
+  very high. Nevertheless, samples of these supernovas
+   are small.
+\end{par}
 
 
-
-
+\begin{itemize}
+\item Wiener Filter
+\end{itemize}
 %TODO Paragraph about the Wiener filterning method
 %TODO Explain how the fieltering worked
-%Reference \cite{zaroubi_wiener_1995}
-A Wiener filtering method was apply to obtained a better Signal/Noise proportion and separate the peculiar velocities from the cosmic expansion.\\
+%Reference 
+A Wiener filtering method was apply to obtained a better Signal/Noise proportion and separate the peculiar velocities from the cosmic expansion\cite{zaroubi_wiener_1995}.\\
 
 
 
@@ -175,25 +306,33 @@ A Wiener filtering method was apply to obtained a better Signal/Noise proportion
 The contour of the region were reconstructed with
  the V-web Algorithm. 
 %TODO V-Web
-%Reference \cite{hoffman_kinematic_2012}
+%Reference 
 This algorithm is deeply
   connected to the velocities as its core is the
-   shear velocity tensor.\\
+   shear velocity tensor \cite{hoffman_kinematic_2012}:\\
+\[
+\sum_{\alpha\beta} = -\frac{1}{2 H_0} \left( \frac{\partial v_{\alpha}}{\partial x_{\beta}} + \frac{\partial v_{\beta}}{\partial x_{\alpha}} \right)
+\]
+With $v_{\alpha}$ and $x_{\alpha}$ representing the $\alpha$ component of respectively the comoving velocity (the peculiar velocity) and the comoving position.  \\
 
+Here goes an explanation of the eigenvalues significance.
 %TODO Explain how the V-Web algorithm worked. 
 
 
 
 
 
-\subsection{Fractional Anisotropy and Overdensity}
+\subsection{Fractional Anisotropy and trace of the velocity shear tensor}
 \label{sec:FA_trace}
 %TODO FA and Trace of the Tensor
-%\cite{bustamante_tensor_2015}
-%\cite{libeskind_velocity_2013}
-\subsection{The Current Model: Cosmological Parameters}
-\label{cosmo_constants}
-%TODO Explain the cosmological Parameters
+The Fractional Anisotropy (FA) was first introduced by Libeskind et al \cite{libeskind_velocity_2013} as tracer of cosmic voids and later exposed in detail by Bustamante et al. \cite{bustamante_tensor_2015}.\\
+The FA can be written as:
+\[
+FA = \frac{1}{\sqrt{3}} \sqrt{\frac{( \left( \lambda_1 - \lambda_3 \right)^2 + \left( \lambda_2 - \lambda_3 \right)^2 + \left( \lambda_1 - \lambda_2 \right)^2  )}{\lambda^{2}_1 + \lambda^{2}_2 + \lambda^{2}_3}} 
+\]
+With $\lambda_1$ $\lambda_2$ and $\lambda_3$ the eigenvalues obtained from the V-Web algorithm.
+
+
 \section{Methods}
 \begin{par}
 Volker Springel's N-Body simulation software,
@@ -314,16 +453,20 @@ The initial conditions were generated with Volker
 \end{table}
 \FloatBarrier
 %TODO Specify the units
-$\Omega_0$  corresponds to the Cosmological matter density parameter in units of the critical density at
+$\Omega_0$  corresponds to the Cosmological matter
+ density parameter in units of the critical density at
 red shift z = 0. $\Omega_{\Lambda}$ is the cosmological
  vacuum energy density (cosmological constant) in
   units of the critical density at red shift z = 0. 
 %Relevant only for comoving integration. 
-For a geometrically flat universe, as ours, one has $\Omega_0$ + $\Omega_{\Lambda}$ = 1.
+For a geometrically flat universe, as ours, one has
+ $\Omega_0$ + $\Omega_{\Lambda}$ = 1.
  $\Omega$ is the baryon density in units
-  of the critical density at red shift z = 0. In our case it
+  of the critical density at red shift z = 0. In our
+   case it
    is not relevant. Finally, H denotes the Hubble
-    constant at red shift z=0 in  units of 100 $km$ $s^{-1}$
+    constant at red shift z=0 in  units of 100 
+    $km$ $s^{-1}$
      $Mpc^{-1}$. It will be relevant in the
       discussions, section \ref{sec:discussions}.
 %TODO make a reference to the discussion with the
@@ -629,7 +772,7 @@ need to search for this case individually.
 
 \subsection{General visualizations (FA, $\delta$) of the Simulations}
 
-\subsubsection{FA, Fractal Anisotropy}
+\subsubsection{FA, Fractional Anisotropy}
 Using our small and dense simulation described in table \ref{tab:sims}, after the CIC (in a $256^{3}$ grid) and V-Web have been applied, we can form the FA and visualize its histogram (Figure \ref{fg:hist_FA}) and a 2-D cut (Figure \ref{fg:cut_FA}).
 %Histogram and cut
 \begin{figure}[ht]
@@ -674,7 +817,7 @@ Observing a 2-D cut of the FA \ref{fg:cut_FA} we
 \end{par}
 
 
-\subsubsection{$\delta$, Overdensity}
+\subsubsection{$tr \left(\sum_{\alpha\beta}\right)$, Trace of the shear velocity tensor}
 As we did for the FA, we visualize the
  distribution (Figure \ref{fg:hist_Trace}) and a
   2-D cut (Figure \ref{fg:cut_Trace})of $\delta$
@@ -687,42 +830,42 @@ As we did for the FA, we visualize the
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=0.8\textwidth]{simulation/Trace_hist_sim.png} % Include the image placeholder.png
-\caption{$\delta$ Histogram of the Small and Dense simulation}
+\caption{$tr \left(\sum_{\alpha\beta}\right)$ Histogram of the Small and Dense simulation}
 \label{fg:hist_Trace}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=0.95\textwidth]{simulation/Trace_cut_i_10.png}
-  \caption{A cut of the $\delta$ in the x axis}
+  \caption{A cut of the $tr \left(\sum_{\alpha\beta}\right)$ in the x axis}
 \label{fg:cut_Trace}
 \end{minipage}
 \end{figure}
 \FloatBarrier
 
 \begin{par}
-The overdensity $\delta$ distribution is symmetric
+The overdensity $tr \left(\sum_{\alpha\beta}\right)$ distribution is symmetric
  around 0.0. As we are searching for overdense
   structures (superclusters) we can then diminish
    our search space to half of it only by
-    selecting the points with $\delta \geq 0.0$. \\
+    selecting the points with $tr \left(\sum_{\alpha\beta}\right) \geq 0.0$. \\
 Observing a 2D cut of the overdensity as shown in
  figure \ref{fg:cut_Trace} also gives a good idea
   of good idea of the Cosmic Web as we can easily
-   recognize filaments (highly underdense, $\delta
+   recognize filaments (highly underdense, $tr \left(\sum_{\alpha\beta}\right)
     \leq 1.0$) and highly overdense regions
-     ($\delta \geq 1.0$) which are our candidates
+     ($tr \left(\sum_{\alpha\beta}\right) \geq 1.0$) which are our candidates
       for seeds of supercluster structures.
 \end{par}
 
 
 
-\subsection{Region Growing Algorithm with the FA and Overdensity} \label{sec:results_own_impl}
+\subsection{Region Growing Algorithm with the FA and $tr \left(\sum_{\alpha\beta}\right)$} \label{sec:results_own_impl}
 %The first results I got
 %TODO this section could be ommited and just show the last results (the next section)
 \begin{par}
 Using our small and dense simulation described in
  table \ref{tab:sims}, after the CIC (in a
-  256x256x256 grid) and V-Web have been applied,
+  $256^3$ grid) and V-Web have been applied,
    we ran the implementation described in section
     \ref{sec:own_impl_descr} for some of the
      values described in tables
@@ -733,7 +876,7 @@ Using our small and dense simulation described in
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=0.7\textwidth]{groups/firstimplementation/regions_3D_129.png} % Include the image placeholder.png
-\caption{Regions detected for: Seeds (FA:0.6, $\delta$: 1.0) and Growth (FA:0.8, $\delta$: 0.0) }
+\caption{Regions detected for: Seeds (FA:0.6, $tr \left(\sum_{\alpha\beta}\right)$: 1.0) and Growth (FA:0.8, $tr \left(\sum_{\alpha\beta}\right)$: 0.0) }
 \label{fg:first_3D_all}
 \end{center}
 \end{figure}
@@ -749,12 +892,12 @@ Using our small and dense simulation described in
   \centering
   \includegraphics[width=0.8\textwidth]{groups/firstimplementation/largest_vol_24_seeds_129_scale.png}
   \end{minipage}
-\caption{Largest volume detected for: Seeds (FA:0.6, $\delta$: 1.0) and Growth (FA:0.8, $\delta$: 0.0). The region is on the left and can be seen at scale with the simulation on the right.}
+\caption{Largest volume detected for: Seeds (FA:0.6, $tr \left(\sum_{\alpha\beta}\right)$: 1.0) and Growth (FA:0.8, $tr \left(\sum_{\alpha\beta}\right)$: 0.0). The region is on the left and can be seen at scale with the simulation on the right.}
 \label{fg:first_3D_largest}
 \end{figure}
 \FloatBarrier
 
-\subsection{Region Growing Algorithm and FoF with the FA and Overdensity}
+\subsection{Region Growing Algorithm and FoF with the FA and $tr \left(\sum_{\alpha\beta}\right)$}
 %The real results I got
 
 \begin{par}
@@ -781,7 +924,7 @@ For the results of the small and dense simulation \ref{tab:sims} we applied all 
   \centering
   \includegraphics[width=0.9\textwidth]{groups/3d/seeds_FA_8/regions_nonoise_seeds_FA_08_Trace_10_search_FA_09_Trace_00_.png}
 \end{minipage}
-\caption{Efect of augmenting the FA threshold in the seed chosing. From upper left to down right the FA for the seeds are: 0.5, 0.6, 0.7 and 0.8. The growth FA is 0.9 and $\delta$ is 0.0. The $\delta$ for the seeds is 1.0.} \label{fg:3D_FA_seeds}
+\caption{Efect of augmenting the FA threshold in the seed chosing. From upper left to down right the FA for the seeds are: 0.5, 0.6, 0.7 and 0.8. The growth FA is 0.9 and $tr \left(\sum_{\alpha\beta}\right)$ is 0.0. The $tr \left(\sum_{\alpha\beta}\right)$ for the seeds is 1.0.} \label{fg:3D_FA_seeds}
 \end{figure}
 \FloatBarrier
 
@@ -804,7 +947,7 @@ For the results of the small and dense simulation \ref{tab:sims} we applied all 
   \centering
   \includegraphics[width=0.9\textwidth]{groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_09_Trace_00_.png}
 \end{minipage}
-\caption{Efect of augmenting the FA threshold in the growth. From upper left to down right the FA for the growth is: 0.6, 0.7, 0.8 and 0.9. The seed FA is 0.6 and $\delta$ is 1.0. The $\delta$ for the growth is 0.0.} \label{fg:3D_FA_growth}
+\caption{Efect of augmenting the FA threshold in the growth. From upper left to down right the FA for the growth is: 0.6, 0.7, 0.8 and 0.9. The seed FA is 0.6 and $tr \left(\sum_{\alpha\beta}\right)$ is 1.0. The $tr \left(\sum_{\alpha\beta}\right)$ for the growth is 0.0.} \label{fg:3D_FA_growth}
 \end{figure}
 \FloatBarrier
 
@@ -833,7 +976,7 @@ For the results of the small and dense simulation \ref{tab:sims} we applied all 
 %  \centering
 %  \includegraphics[width=0.9\textwidth]%{groups/volumeplots/volumes_growth_FA09_Trace_10.png}
 %\end{minipage}
-\caption{Volume of the largest structure and Volume of the growth space ratio augmenting the FA threshold in the growth. From upper left to down right the FA for the seeds is: 0.5, 0.6, 0.7 and 0.8. The growth $\delta$ is 1.0. The $\delta$ for the seed is 0.0.} \label{fg:vol_FA_growth}
+\caption{Volume of the largest structure and Volume of the growth space ratio augmenting the FA threshold in the growth. From upper left to down right the FA for the seeds is: 0.5, 0.6, 0.7 and 0.8. The growth $tr \left(\sum_{\alpha\beta}\right)$ is 1.0. The $tr \left(\sum_{\alpha\beta}\right)$ for the seed is 0.0.} \label{fg:vol_FA_growth}
 \end{figure}
 \FloatBarrier
 
@@ -1070,7 +1213,7 @@ We have different observations:\\
 \end{enumerate}
 
 The script in Appendix \ref{App:App_speed_code} was executed in a student's
-laptop and later on the HPC cluster. For a significant number of particles, the laptop limited memory (8GB) crashes. Running in the HPC solves this issue. results.
+laptop and later on the HPC cluster. For a significant number of particles, the laptop limited memory (8GB) crashes. Running in the HPC solves this issue.
 
 
 \subsection{Code example for Region Growing Algorithm - Approach by the Speed} \label{App:App_speed_code}

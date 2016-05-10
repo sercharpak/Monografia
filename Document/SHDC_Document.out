@@ -2,10 +2,10 @@
 \BOOKMARK [1][-]{section.2}{Abstract}{}% 2
 \BOOKMARK [1][-]{section.3}{Introduction}{}% 3
 \BOOKMARK [1][-]{section.4}{Background}{}% 4
-\BOOKMARK [2][-]{subsection.4.1}{Cosmic flows and peculiar velocities}{section.4}% 5
-\BOOKMARK [2][-]{subsection.4.2}{Boundaries of Laniakea - The V-Web Algorithm}{section.4}% 6
-\BOOKMARK [2][-]{subsection.4.3}{Fractional Anisotropy and Overdensity}{section.4}% 7
-\BOOKMARK [2][-]{subsection.4.4}{The Current Model: Cosmological Parameters}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.1}{The Current Model CDM Cosmological Parameters}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Cosmic flows and peculiar velocities}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Boundaries of Laniakea - The V-Web Algorithm}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.4}{Fractional Anisotropy and trace of the velocity shear tensor}{section.4}% 8
 \BOOKMARK [1][-]{section.5}{Methods}{}% 9
 \BOOKMARK [2][-]{subsection.5.1}{Simulations}{section.5}% 10
 \BOOKMARK [2][-]{subsection.5.2}{Approaches}{section.5}% 11
@@ -14,10 +14,10 @@
 \BOOKMARK [3][-]{subsubsection.5.3.2}{Region Growing Algorithm with the FA and the trace of the velocity shear tensor}{subsection.5.3}% 14
 \BOOKMARK [1][-]{section.6}{Results}{}% 15
 \BOOKMARK [2][-]{subsection.6.1}{General visualizations \(FA, \) of the Simulations}{section.6}% 16
-\BOOKMARK [3][-]{subsubsection.6.1.1}{FA, Fractal Anisotropy}{subsection.6.1}% 17
-\BOOKMARK [3][-]{subsubsection.6.1.2}{, Overdensity}{subsection.6.1}% 18
-\BOOKMARK [2][-]{subsection.6.2}{Region Growing Algorithm with the FA and Overdensity}{section.6}% 19
-\BOOKMARK [2][-]{subsection.6.3}{Region Growing Algorithm and FoF with the FA and Overdensity}{section.6}% 20
+\BOOKMARK [3][-]{subsubsection.6.1.1}{FA, Fractional Anisotropy}{subsection.6.1}% 17
+\BOOKMARK [3][-]{subsubsection.6.1.2}{tr \(\), Trace of the shear velocity tensor}{subsection.6.1}% 18
+\BOOKMARK [2][-]{subsection.6.2}{Region Growing Algorithm with the FA and tr \(\)}{section.6}% 19
+\BOOKMARK [2][-]{subsection.6.3}{Region Growing Algorithm and FoF with the FA and tr \(\)}{section.6}% 20
 \BOOKMARK [3][-]{subsubsection.6.3.1}{Influence of the FA in the seeds}{subsection.6.3}% 21
 \BOOKMARK [3][-]{subsubsection.6.3.2}{Influence of the FA in the growth}{subsection.6.3}% 22
 \BOOKMARK [3][-]{subsubsection.6.3.3}{Volume distribution}{subsection.6.3}% 23
