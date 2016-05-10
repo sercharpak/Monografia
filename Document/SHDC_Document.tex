@@ -233,7 +233,7 @@ We developed code in C and Python to treat the
 We used the N-Body simulation software Gadget-2
  \cite{springel_gadget_2_2005}
 widely used in the scientific community to
- generate different boxes of dark matter particles
+ generate different cubic boxes of dark matter particles
   (DM). The initial conditions were
 generated with Springel's N-Genic software. The
  simulations ran on the HPC cluster at UNIANDES.
@@ -308,14 +308,7 @@ We then use different algorithms to identify the
 
 \subsection{Approaches} \label{sec:approaches}
 %Opening the section
-We mainly had two approaches in this work for the
- search of superclusters. First, a naive one
-  involving the speed very easy to implement
-   \ref{sec:naive_speed}. And a second one, more
-    complete, using other concepts
-     \ref{sec:approach_complete}.
-\subsubsection{Naive: the magnitude of the velocity}
-\label{sec:naive_speed}
+We use two approaches to find superclusters. 
 \begin{par}
 In a first approach we analyse the distribution of
  the magnitude of the velocity in the different
@@ -324,49 +317,68 @@ In a first approach we analyse the distribution of
     results are not based in this naive approach
      we leave it as an appendix here. It is
       explained in further detail in Appendix
-       \ref{App:App_Speed}.
-\end{par}
-
-\subsubsection{More complete: V-Web, CIC, the FA and $\delta$}
-\label{sec:approach_complete}
-\begin{par}
-In our second approach, we used directly the V-Web
- algorithm to form the Fractional Anisotropy (FA)
-  and the Overdensity $\delta$) to have detailed
-   results comparable to Laniakea's.\\
-Finally we apply a Cloud In Cell (CIC) method and
- a Gaussian smooth to have a more manipulable grid
-  to work with.\\
-\end{par}
-
-
-\begin{par}
-We described the V-Web algorithm in section
- \ref{sec:v_web}. Let us remind the velocity shear
-  tensor as 
-%TODO write the velocity shear tensor
+       \ref{App:App_Speed}.\\
 \end{par}
 
 \begin{par}
-The CIC method is used to transform the box to a
- grid in which the (i,j,k) have {$\lambda_1$,
-  $\lambda_2$, $\lambda_3$} values related to the
-   number of particles in a cell.
-%TODO explain in detail de CIC and gaussian smooth.
-Each cell has a number of particles in it and
- hence a total mass equivalent to the sum of the
-  mass of its particles.
+For our second approach (main one), we will use the
+ following concepts: Cloud In Cell (CIC) method, the V-
+ Web scheme (as described in section \ref{sec:v_web}),
+  the Fractional Anisotropy (FA) (as described in
+   section \ref{sec:FA_trace}), the trace of the
+    velocity shear tensor $tr\left(\sum_{\alpha
+     \beta}\right)$ (as described in section
+      \ref{sec:FA_trace}) and the algorithms described
+       in section \ref{sec:algorithms}.\\
 \end{par}
 
+
+\begin{itemize}
+\item The Cloud In Cell (CIC) method
+\end{itemize}
 \begin{par}
-And in section \ref{sec:FA_trace} we saw how the
- FA and $\delta$ are formed and are relevant in
-  this context. 
-%TODO maybe expand this a little bit
-We are then looking for regions with $\delta$
- positive and FA lesser than 1.0.
-%TODO the lesser than 1.0 could be rephrased.
+%TODO Describe the CIC method
+The Cloud In Cell (CIC) method\\
 \end{par}
+
+\begin{itemize}
+\item The V-Web scheme
+\end{itemize}
+\begin{par}
+%TODO Describe very briefly the V-Web
+We described the V-Web scheme in section \ref{sec:v_web}.\\ %TODO write a summary of the V-WEB
+\end{par}
+
+\begin{itemize}
+\item The Fractional Anisotropy and the trace of $\sum_{\alpha \beta}$
+\end{itemize}
+\begin{par}
+%TODO Describe very briefly our use of FA and $\sum_{\alpha \beta}$
+As we saw in section \ref{sec:FA_trace} the FA and the trace of $\sum_{\alpha \beta}$ carry valuable information.
+The FA %TODO what iformation carries the FA
+
+The trace of $\sum_{\alpha \beta}$\\  %TODO what iformation carries the $\sum_{\alpha \beta}$
+\end{par}
+
+
+\begin{par}
+In summary, our approach follows the steps:
+\end{par}
+
+\begin{enumerate}
+\item Calculate the density field using CIC on the simulation data.
+\item At the same time we calculate the velocity field using CIC on the simulation data.
+\item Using finite differences we form the velocity shear tensor $\sum_{\alpha \beta}$.
+\item We diagonalize it and find its eigenvalues $\lambda_i$ and eigenvectors $\hat{u}_i$
+\item We form the FA grid as described in section \ref{sec:FA_trace} 
+\item We form the trace of $\sum_{\alpha \beta}$ grid.
+\item We apply the algorithms described in section \ref{sec:algorithms} to find the superclusters
+\item We extract the properties (volume, shape, mass) from the superclusters
+\item We compare the superclusters to Laniakea
+\end{enumerate}
+
+
+
 
 %Closing the section
 \begin{par}
@@ -377,7 +389,7 @@ Our approach is hence very close with the approach
     our detected structures.
 \end{par}
 
-\subsection{Algorithms}
+\subsection{Algorithms}\label{sec:algorithms}
 
 Our main algorithm is a region growing algorithm
  as described by Gonzalez
@@ -386,10 +398,8 @@ Our main algorithm is a region growing algorithm
     it generally.
 \subsubsection{Region Growing Algorithm: Basic Description}
 
-%TODO General description of the algorithm as described by Gonzalez
-
 \begin{par}
-The region growing algorithm is used to identify different regions in a image. The aim is to identify regions which share common properties. First we identify points, as few as possible, which we know for sure are contained in these regions. These points are the seeds of our regions. We then define a certain growth predicate, if the neighbors of a seed validate this predicate they are considered as members of the group. These new members are then treated as seeds and ask their own neighbors if they validate the predicate. This goes on until all the points have been evaluated or until a limit defined by the user is reached.
+The region growing algorithm is used to identify different regions in a image. The aim is to identify regions which share common properties. First we identify points, as few as possible, which we know for sure are contained in these regions. These points are the seeds of our regions. We then define a certain growth predicate, if the neighbours of a seed validate this predicate they are considered as members of the group. These new members are then treated as seeds and ask their own neighbours if they validate the predicate. This goes on until all the points have been evaluated or until a limit defined by the user is reached.
 \end{par}
 
 \begin{par}
@@ -416,13 +426,13 @@ not.
 
 \begin{par}
 The algorithm is based on a connectivity concept (definition of
-neighbors). Here we are working on a 4-connectivity. 4
+neighbours). Here we are working on a 4-connectivity. 4
 connectivity means that no diagonal particles are considered as
-neighbors. The following matrix shows this principle in a 2
-dimensional case. Only the elements labeled as 1 are considered as
-neighbors of the center $C$.
+neighbours. The following matrix shows this principle in a 2
+dimensional case. Only the elements labelled as 1 are considered as
+neighbours of the center $C$.
 \end{par}
-%TODO explain 4-connectivity with a matrix
+
 \[ 
 \begin{bmatrix} 
     0 & 1 & 0 \\
@@ -432,7 +442,7 @@ neighbors of the center $C$.
 \]
 
 \begin{par}
-So, if a particle is in coordinates $(x,y,z)$ its neighbors are
+So, if a particle is in coordinates $(x,y,z)$ its neighbours are
 $(x-1,y,z)$, $(x+1,y,z)$, $(x,y-1,z)$, $(x,y+1,z)$, $(x,y,z-1)$
 and $(x,y,z+1)$.
 \end{par}
@@ -440,22 +450,22 @@ and $(x,y,z+1)$.
 \begin{par}
 Another widely used connectivity is the 8-connectivity. As it is
 intuitive, in 8-connectivity, the diagonal particles are also
-considered as neighbors. We decided to use 4-connectivity to
+considered as neighbours. We decided to use 4-connectivity to
 simplify our own implementation.
 \end{par}
 
 
 
 
-\subsubsection{Region Growing Algorithm with the FA and Overdensity}\label{sec:own_impl_descr}
-Our implementation is based in the FA and the Overdensity $\delta$. It is uses 4-connectivity as described before.
-%TODO Describe my implementation
+\subsubsection{Region Growing Algorithm with the FA and the trace of the velocity shear tensor}\label{sec:own_impl_descr}
+Our implementation is based in the FA and the trace of the velocity shear tensor $tr\left(\sum_{\alpha \beta}\right)$. It is uses 4-connectivity as described before.
+
 \begin{itemize}
     \item Seeds
 \begin{par}
 We are looking for overdense structures. Therefore we will look
-for particles with $\delta \geq 1.0$.  We also want to analyze how
-the FA fits. We know that the centers of our structures should be
+for particles with $tr\sum_{\alpha \beta} \geq 1.0$.  We also want to analyse how
+the FA fits. We know that the centres of our structures should be
 fairly isotropic so we will explore seeds with FA lesser than a
 threshold. We will perform several runs of the algorithm, so we
 can explore the different criterion for the choice of the seeds.
@@ -464,55 +474,54 @@ These can be seen in table \ref{tab:seeds_FA_Trace}.
  \begin{table}[ht]
     \centering
     \begin{tabular}{|c|c|c|c|}
-        $FA_{seed}$ & $\delta_{seed}$ \\
+        $FA_{seed}$ & $tr\left(\sum_{\alpha \beta}\right)_{seed}$ \\
         0.5 &  1.0 \\
         0.6 &  1.0 \\
         0.7 &  1.0 \\
         0.8 &  1.0 \\
         0.9 &  1.0 \\
     \end{tabular}
-    \caption{Different values of the FA and $\delta$ for the choice of the seeds}
+    \caption{Different values of the FA and $tr\left(\sum_{\alpha \beta}\right)$ for the choice of the seeds}
     \label{tab:seeds_FA_Trace}
 \end{table}
 \FloatBarrier
 
-\item Labeling the regions
+\item Labelling the regions
 \begin{par}
-It is important to have each region labeled different since we
-want to extract individual properties as the volume, the shape and
-the mass of the groups. We label each group in function of its
-respective seed.
+We label groups as a function of its respective
+ seed to extract properties (volume, shape, mass)
+  for each one of them.
 \end{par}
 
 \item Predicate $Q$
 
 \begin{par}
-Our choice for predicate is simple. We define, as we did for the
-choice of the seeds, thresholds for the FA and for $\delta$. If
-the neighbor particle validates these thresholds, and hasn't been
-labeled yet, it is labeled as the group of the seed particle. So
+We define, as we did for the
+choice of the seeds, thresholds for the FA and for $tr\left(\sum_{\alpha \beta}\right)$. If
+the neighbour cell validates these thresholds, and hasn't been
+labelled yet, it is labelled as the group of the seed particle. So
 in other words: \\
 
 \begin{center}
 $Q: \left( FA (x,y,z) \leq Thresh_{FA} \right)$ AND
-$\left( \delta (x,y,z) \geq Thresh_{\delta} \right)$ 
+$\left( \delta (x,y,z) \geq Thresh_{tr\left(\sum_{\alpha \beta}\right)} \right)$ 
 \end{center}
 As we are looking for overdense regions (no voids) we define the
-threshold for $\delta$ as 0.0. As we are exploring the different
+threshold for $tr\left(\sum_{\alpha \beta}\right)$ as 0.0. As we are exploring the different
 values for the FA. each run will follow a row of the table \ref{tab:search_FA_Trace}.
 \end{par}
 
 \begin{table}[ht]
     \centering
     \begin{tabular}{|c|c|c|c|}
-        $FA_{growth}$ & $\delta_{growth}$ \\
+        $FA_{growth}$ & $tr\left(\sum_{\alpha \beta}\right)_{growth}$ \\
         0.5 &  0.0 \\
         0.6 &  0.0 \\
         0.7 &  0.0 \\
         0.8 &  0.0 \\
         0.9 &  0.0 \\
     \end{tabular}
-    \caption{Different values of the FA and $\delta$ for the growth of the regions}
+    \caption{Different values of the FA and $tr\left(\sum_{\alpha \beta}\right)$ for the growth of the regions}
     \label{tab:search_FA_Trace}
 \end{table}
 \FloatBarrier
@@ -520,13 +529,18 @@ values for the FA. each run will follow a row of the table \ref{tab:search_FA_Tr
 \end{itemize}
 
 \begin{par}
-The implementation was done in Python. A simplified version
-without the border cases management can be seen in appendix.
+A simplified version without the border cases
+ management can be seen in appendix \ref{App:own_impl_code}. Results of this
+  implementation can be seen in section
+   \ref{sec:results_own_impl}.
 %TODO put in appendix the simplified code
+%TODO The results could also be put in the appendix
 \end{par}
 
-\subsubsection{Region Growing Algorithm and FoF with the FA and Overdensity}\label{sec:fof_impl_descr}
-Finally we improved this last method making used of the Friends-of-Friends (FoF) algorithm.
+%\subsubsection{FoF with the FA and Overdensity}\label{sec:fof_impl_descr}
+\begin{par}
+Finally to find the groups we used the Friends-of-Friends (FoF) algorithm.
+\end{par}
 %TODO Describe the FoF and the final pipeline implementation
 \begin{par}
 The FoF algorithm looks at the distances between points in a given
@@ -537,11 +551,11 @@ predefined minimum number of members.
 \end{par}
 
 \begin{par}
-The FoF is useful here. If we choose as set of points all the
+We choose as set of points all the
 particles which validate the predicate $Q$ (following table
 \ref{tab:search_FA_Trace}, as maximum distance the distance
-between one particle and its neighbors as described by
-4-connectivity, the FoF algorithm will form the groups. 
+between one particle and its neighbours as described by
+4-connectivity. And we use the FoF algorithm to form the groups. 
 \end{par}
 \begin{par}
 We search for the seeds following table \ref{tab:seeds_FA_Trace}
@@ -554,20 +568,13 @@ can make sure these groups are merged into one and there is no
 need to search for this case individually.
 \end{par}
 
-\begin{par}
-Our main results were obtained by this method which in practice is faster.
-\end{par}
-
-
-
-
 
 \section{Results}
 
 \subsection{General visualizations (FA, $\delta$) of the Simulations}
 
 \subsubsection{FA, Fractal Anisotropy}
-Using our small and dense simulation described in table \ref{tab:sims}, after the CIC (in a 256x256x256 grid) and V-Web have been applied, we can form the FA and visualize its histogram (Figure \ref{fg:hist_FA}) and a 2-D cut (Figure \ref{fg:cut_FA}).
+Using our small and dense simulation described in table \ref{tab:sims}, after the CIC (in a $256^{3}$ grid) and V-Web have been applied, we can form the FA and visualize its histogram (Figure \ref{fg:hist_FA}) and a 2-D cut (Figure \ref{fg:cut_FA}).
 %Histogram and cut
 \begin{figure}[ht]
 \centering
@@ -599,7 +606,7 @@ Observing a 2-D cut of the FA \ref{fg:cut_FA} we
    al.  \cite{bustamante_tensor_2015} in their
     work. This is a good indicator that our
      simulation, CIC procedure V-Web application
-      and FA forming were correctly excecuted.
+      and FA forming were correctly executed.
        Bustamante et. al  explain that void
         regions should have a FA < 0.95. We expect
          the similar FA values for superclusters
@@ -653,7 +660,7 @@ Observing a 2D cut of the overdensity as shown in
 
 
 
-\subsection{Region Growing Algorithm with the FA and Overdensity}
+\subsection{Region Growing Algorithm with the FA and Overdensity} \label{sec:results_own_impl}
 %The first results I got
 %TODO this section could be ommited and just show the last results (the next section)
 \begin{par}
@@ -910,7 +917,7 @@ threshold for low velocities.\\
 \end{figure}
 \FloatBarrier
 
-There seem to be some structures, but it is not clear enough. This is due to the high number of DM particles used in the simulation ($512^3$). 
+There seem to be some structures, but it is not clear enough. This is due to the high number of DM particles used in this simulation ($512^3$). 
 
 %Second 3D plot, particles with speed higher than thresh_high
 
@@ -1012,3 +1019,8 @@ laptop and later on the HPC cluster. For a significant number of particles, the 
 \tiny
 \lstinputlisting[language=Python, caption=Region Growing Algorithm Code]{code/region_detection_document.py}
 \end{document} 
+
+\section{Region Growing Algorithm with the FA and $tr\left(\sum_{\alpha\beta}\right)$} \label{App:own_impl_code}
+\tiny
+%TODO insert the code
+Here comes the code.

@@ -25,17 +25,25 @@ V.~Springel.
 \newblock {\em Monthly Notices of the Royal Astronomical Society},
   364(4):1105--1134, 2005.
 
+\bibitem{springel_simulations_2005}
+Volker Springel, Simon D.~M. White, Adrian Jenkins, Carlos~S. Frenk, Naoki
+  Yoshida, Liang Gao, Julio Navarro, Robert Thacker, Darren Croton, John Helly,
+  John~A. Peacock, Shaun Cole, Peter Thomas, Hugh Couchman, August Evrard,
+  Jörg Colberg, and Frazer Pearce.
+\newblock Simulations of the formation, evolution and clustering of galaxies
+  and quasars.
+\newblock {\em Nature}, 435(7042):629--636, June 2005.
+
 \bibitem{gonzalez_digital_2008}
 Rafael~C. Gonzalez and Richard~E. Woods.
 \newblock {\em Digital image processing}.
 \newblock Prentice Hall, 3rd ed edition.
 
-\bibitem{hoffman_kinematic_2012}
-Yehuda Hoffman, Ofer Metuki, Gustavo Yepes, Stefan Gottlöber, Jaime~E.
-  Forero-Romero, Noam~I. Libeskind, and Alexander Knebe.
-\newblock A kinematic classification of the cosmic web: {The} cosmic web.
+\bibitem{bustamante_tensor_2015}
+Sebastian Bustamante and Jaime~E. Forero-Romero.
+\newblock Tensor anisotropy as a tracer of cosmic voids.
 \newblock {\em Monthly Notices of the Royal Astronomical Society},
-  425(3):2049--2057, September 2012.
+  453(1):497--506, October 2015.
 
 \bibitem{thompson_pygadgetreader_2014ascl_soft11001T}
 R.~{Thompson}.
