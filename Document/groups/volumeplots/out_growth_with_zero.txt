@@ -1,0 +1,155 @@
+The seed FA is 0.5
+The search space for search_FA 0.5 is 76318.0
+The first line of the group results file is: 430149558.228908 439365564.524551 443626211.595622 128.341307 127.663992 128.716490 13476.226952 40319.000000 0.000000 
+
+The number of groups in the group results file is: 2
+The max volume detected is:  40319.0 for group number:  0.0
+The search space for search_FA 0.6 is 201781.0
+The first line of the group results file is: 678601163.223461 687996423.310517 695240226.437718 127.424968 127.465773 128.176931 20667.470317 63169.000000 0.000000 
+
+The number of groups in the group results file is: 3
+The max volume detected is:  63169.0 for group number:  0.0
+The search space for search_FA 0.7 is 480310.0
+The first line of the group results file is: 893012396.809126 900633707.543175 912027498.812460 127.193956 127.086464 127.244457 26763.795535 81779.000000 0.000000 
+
+The number of groups in the group results file is: 4
+The max volume detected is:  81779.0 for group number:  0.0
+The search space for search_FA 0.8 is 1074203.0
+The first line of the group results file is: 1054929706.626620 1066212800.902098 1072431349.186403 128.506064 126.578181 127.459128 33016.465931 95820.000000 0.000000 
+
+The number of groups in the group results file is: 4
+The max volume detected is:  95820.0 for group number:  0.0
+The search space for search_FA 0.9 is 2370961.0
+The first line of the group results file is: 1235654552.538747 5542328921.591609 5549557273.225229 1.000000 254.000000 41.377873 681414706109803.750000 109740.000000 0.000000 
+
+The number of groups in the group results file is: 6
+The max volume detected is:  109740.0 for group number:  0.0
+The search space for search_FA 1.0 is 8178289.0
+The first line of the group results file is: 88681884419.269608 480690678367.803955 481611067241.354980 1.031234 0.000000 0.000000 15946646366073752.000000 8082975.000000 1.000000 
+
+The number of groups in the group results file is: 1
+The max volume detected is:  8082975.0 for group number:  1.0
+The seed FA is 0.6
+The search space for search_FA 0.5 is 76318.0
+The first line of the group results file is: 430149558.228908 439365564.524551 443626211.595622 128.341307 127.663992 128.716490 13476.226952 40319.000000 0.000000 
+
+The number of groups in the group results file is: 2
+The max volume detected is:  40319.0 for group number:  0.0
+The search space for search_FA 0.6 is 201781.0
+The first line of the group results file is: 678601163.223461 687996423.310517 695240226.437718 127.424968 127.465773 128.176931 20667.470317 63169.000000 0.000000 
+
+The number of groups in the group results file is: 28
+The max volume detected is:  63169.0 for group number:  0.0
+The search space for search_FA 0.7 is 480310.0
+The first line of the group results file is: 893012396.809126 900633707.543175 912027498.812460 127.193956 127.086464 127.244457 26763.795535 81779.000000 0.000000 
+
+The number of groups in the group results file is: 49
+The max volume detected is:  81779.0 for group number:  0.0
+The search space for search_FA 0.8 is 1074203.0
+The first line of the group results file is: 1054929706.626620 1066212800.902098 1072431349.186403 128.506064 126.578181 127.459128 33016.465931 95820.000000 0.000000 
+
+The number of groups in the group results file is: 59
+The max volume detected is:  95820.0 for group number:  0.0
+The search space for search_FA 0.9 is 2370961.0
+The first line of the group results file is: 1235654552.538747 5542328921.591609 5549557273.225229 1.000000 254.000000 41.377873 681414706109803.750000 109740.000000 0.000000 
+
+The number of groups in the group results file is: 56
+The max volume detected is:  227823.0 for group number:  2912.0
+The search space for search_FA 1.0 is 8178289.0
+The first line of the group results file is: 88681884419.269608 480690678367.803955 481611067241.354980 1.031234 0.000000 0.000000 15946646366073752.000000 8082975.000000 1.000000 
+
+The number of groups in the group results file is: 1
+The max volume detected is:  8082975.0 for group number:  1.0
+The seed FA is 0.7
+The search space for search_FA 0.5 is 76318.0
+The first line of the group results file is: 430149558.228908 439365564.524551 443626211.595622 128.341307 127.663992 128.716490 13476.226952 40319.000000 0.000000 
+
+The number of groups in the group results file is: 2
+The max volume detected is:  40319.0 for group number:  0.0
+The search space for search_FA 0.6 is 201781.0
+The first line of the group results file is: 678601163.223461 687996423.310517 695240226.437718 127.424968 127.465773 128.176931 20667.470317 63169.000000 0.000000 
+
+The number of groups in the group results file is: 28
+The max volume detected is:  63169.0 for group number:  0.0
+The search space for search_FA 0.7 is 480310.0
+The first line of the group results file is: 893012396.809126 900633707.543175 912027498.812460 127.193956 127.086464 127.244457 26763.795535 81779.000000 0.000000 
+
+The number of groups in the group results file is: 397
+The max volume detected is:  81779.0 for group number:  0.0
+The search space for search_FA 0.8 is 1074203.0
+The first line of the group results file is: 1054929706.626620 1066212800.902098 1072431349.186403 128.506064 126.578181 127.459128 33016.465931 95820.000000 0.000000 
+
+The number of groups in the group results file is: 534
+The max volume detected is:  95820.0 for group number:  0.0
+The search space for search_FA 0.9 is 2370961.0
+The first line of the group results file is: 1235654552.538747 5542328921.591609 5549557273.225229 1.000000 254.000000 41.377873 681414706109803.750000 109740.000000 0.000000 
+
+The number of groups in the group results file is: 268
+The max volume detected is:  227823.0 for group number:  2912.0
+The search space for search_FA 1.0 is 8178289.0
+The first line of the group results file is: 88681884419.269608 480690678367.803955 481611067241.354980 1.031234 0.000000 0.000000 15946646366073752.000000 8082975.000000 1.000000 
+
+The number of groups in the group results file is: 1
+The max volume detected is:  8082975.0 for group number:  1.0
+The seed FA is 0.8
+The search space for search_FA 0.5 is 76318.0
+The first line of the group results file is: 430149558.228908 439365564.524551 443626211.595622 128.341307 127.663992 128.716490 13476.226952 40319.000000 0.000000 
+
+The number of groups in the group results file is: 2
+The max volume detected is:  40319.0 for group number:  0.0
+The search space for search_FA 0.6 is 201781.0
+The first line of the group results file is: 678601163.223461 687996423.310517 695240226.437718 127.424968 127.465773 128.176931 20667.470317 63169.000000 0.000000 
+
+The number of groups in the group results file is: 28
+The max volume detected is:  63169.0 for group number:  0.0
+The search space for search_FA 0.7 is 480310.0
+The first line of the group results file is: 893012396.809126 900633707.543175 912027498.812460 127.193956 127.086464 127.244457 26763.795535 81779.000000 0.000000 
+
+The number of groups in the group results file is: 397
+The max volume detected is:  81779.0 for group number:  0.0
+The search space for search_FA 0.8 is 1074203.0
+The first line of the group results file is: 1054929706.626620 1066212800.902098 1072431349.186403 128.506064 126.578181 127.459128 33016.465931 95820.000000 0.000000 
+
+The number of groups in the group results file is: 1467
+The max volume detected is:  95820.0 for group number:  0.0
+The search space for search_FA 0.9 is 2370961.0
+The first line of the group results file is: 1235654552.538747 5542328921.591609 5549557273.225229 1.000000 254.000000 41.377873 681414706109803.750000 109740.000000 0.000000 
+
+The number of groups in the group results file is: 778
+The max volume detected is:  227823.0 for group number:  2912.0
+The search space for search_FA 1.0 is 8178289.0
+The first line of the group results file is: 847094834.803470 3792944064.849842 3804653310.034849 1.000000 254.000000 41.377873 681414706071955.375000 75120.000000 0.000000 
+
+The number of groups in the group results file is: 4
+The max volume detected is:  8082975.0 for group number:  1.0
+The seed FA is 0.9
+The search space for search_FA 0.5 is 76318.0
+The first line of the group results file is: 430149558.228908 439365564.524551 443626211.595622 128.341307 127.663992 128.716490 13476.226952 40319.000000 0.000000 
+
+The number of groups in the group results file is: 2
+The max volume detected is:  40319.0 for group number:  0.0
+The search space for search_FA 0.6 is 201781.0
+The first line of the group results file is: 678601163.223461 687996423.310517 695240226.437718 127.424968 127.465773 128.176931 20667.470317 63169.000000 0.000000 
+
+The number of groups in the group results file is: 28
+The max volume detected is:  63169.0 for group number:  0.0
+The search space for search_FA 0.7 is 480310.0
+The first line of the group results file is: 893012396.809126 900633707.543175 912027498.812460 127.193956 127.086464 127.244457 26763.795535 81779.000000 0.000000 
+
+The number of groups in the group results file is: 397
+The max volume detected is:  81779.0 for group number:  0.0
+The search space for search_FA 0.8 is 1074203.0
+The first line of the group results file is: 1054929706.626620 1066212800.902098 1072431349.186403 128.506064 126.578181 127.459128 33016.465931 95820.000000 0.000000 
+
+The number of groups in the group results file is: 1467
+The max volume detected is:  95820.0 for group number:  0.0
+The search space for search_FA 0.9 is 2370961.0
+The first line of the group results file is: 1235654552.538747 5542328921.591609 5549557273.225229 1.000000 254.000000 41.377873 681414706109803.750000 109740.000000 0.000000 
+
+The number of groups in the group results file is: 1210
+The max volume detected is:  227823.0 for group number:  2912.0
+The search space for search_FA 1.0 is 8178289.0
+The first line of the group results file is: 847094834.803470 3792944064.849842 3804653310.034849 1.000000 254.000000 41.377873 681414706071955.375000 75120.000000 0.000000 
+
+The number of groups in the group results file is: 8
+The max volume detected is:  8082975.0 for group number:  1.0
