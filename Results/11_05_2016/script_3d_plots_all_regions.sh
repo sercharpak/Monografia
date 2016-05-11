@@ -1,0 +1,32 @@
+#!/bin/bash
+#To print the 3d plots
+#All without noise
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.5_Trace_1.0_search_FA_0.5_Trace_0.0.dat 3dplots/seeds51search50/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.5_Trace_1.0_search_FA_0.6_Trace_0.0.dat 3dplots/seeds51search60/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.5_Trace_1.0_search_FA_0.7_Trace_0.0.dat 3dplots/seeds51search70/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.5_Trace_1.0_search_FA_0.8_Trace_0.0.dat 3dplots/seeds51search80/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.5_Trace_1.0_search_FA_0.9_Trace_0.0.dat 3dplots/seeds51search90/ 0
+
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.6_Trace_1.0_search_FA_0.5_Trace_0.0.dat 3dplots/seeds61search50/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.6_Trace_1.0_search_FA_0.6_Trace_0.0.dat 3dplots/seeds61search60/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.6_Trace_1.0_search_FA_0.7_Trace_0.0.dat 3dplots/seeds61search70/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.6_Trace_1.0_search_FA_0.8_Trace_0.0.dat 3dplots/seeds61search80/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.6_Trace_1.0_search_FA_0.9_Trace_0.0.dat 3dplots/seeds61search90/ 0
+
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.7_Trace_1.0_search_FA_0.5_Trace_0.0.dat 3dplots/seeds71search50/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.7_Trace_1.0_search_FA_0.6_Trace_0.0.dat 3dplots/seeds71search60/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.7_Trace_1.0_search_FA_0.7_Trace_0.0.dat 3dplots/seeds71search70/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.7_Trace_1.0_search_FA_0.8_Trace_0.0.dat 3dplots/seeds71search80/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.7_Trace_1.0_search_FA_0.9_Trace_0.0.dat 3dplots/seeds71search90/ 0
+
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.8_Trace_1.0_search_FA_0.5_Trace_0.0.dat 3dplots/seeds81search50/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.8_Trace_1.0_search_FA_0.6_Trace_0.0.dat 3dplots/seeds81search60/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.8_Trace_1.0_search_FA_0.7_Trace_0.0.dat 3dplots/seeds81search70/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.8_Trace_1.0_search_FA_0.8_Trace_0.0.dat 3dplots/seeds81search80/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.8_Trace_1.0_search_FA_0.9_Trace_0.0.dat 3dplots/seeds81search90/ 0
+
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.9_Trace_1.0_search_FA_0.5_Trace_0.0.dat 3dplots/seeds91search50/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.9_Trace_1.0_search_FA_0.6_Trace_0.0.dat 3dplots/seeds91search60/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.9_Trace_1.0_search_FA_0.7_Trace_0.0.dat 3dplots/seeds91search70/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.9_Trace_1.0_search_FA_0.8_Trace_0.0.dat 3dplots/seeds91search80/ 0
+python pipeline_plot_groups.py group_valid_positions_FA_Trace_seeds_FA_0.9_Trace_1.0_search_FA_0.9_Trace_0.0.dat 3dplots/seeds91search90/ 0
