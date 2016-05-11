@@ -395,7 +395,7 @@ We developed code in C and Python to treat the
 \end{par}
 
 
-\subsection{Simulations}\label{sec:sims}
+\subsection{Cosmological Simulations}\label{sec:sims}
 \begin{par}
 We used the N-Body simulation software Gadget-2
  \cite{springel_gadget_2_2005}
@@ -503,7 +503,7 @@ For a geometrically flat universe, as ours, one has
 We then use different algorithms to identify the
  superclusters within the simulation.\\
 
-\subsection{Approaches} \label{sec:approaches}
+\subsection{Approaches for the Detection of Superclusters} \label{sec:approaches}
 %Opening the section
 \begin{par}
 In a first approach we analyse the distribution of
@@ -798,10 +798,16 @@ need to search for this case individually.
 
 \section{Results}
 
-\subsection{General visualizations (FA, $\delta$) of the Simulations}
+\subsection{General visualizations (FA, Divergence) of the Simulations}
 
 \subsubsection{FA, Fractional Anisotropy}
-Using our small and dense simulation described in table \ref{tab:sims}, after the CIC (in a $256^{3}$ grid) and V-Web have been applied, we can form the FA and visualize its histogram (Figure \ref{fg:hist_FA}) and a 2-D cut (Figure \ref{fg:cut_FA}).
+The following results correspond to our
+ \textbf{Small (Dense)} described in table
+  \ref{tab:sims}. After the CIC (to a $256^{3}$
+   grid) and V-Web have been applied, we can form
+    the FA and visualize its histogram (Figure
+     \ref{fg:hist_FA}) and a 2-D cut (Figure
+      \ref{fg:cut_FA}).
 %Histogram and cut
 \begin{figure}[ht]
 \centering
@@ -848,9 +854,9 @@ Observing a 2-D cut of the FA \ref{fg:cut_FA} we
 \subsubsection{$tr \left(\sum_{\alpha\beta}\right)$, Trace of the shear velocity tensor}
 As we did for the FA, we visualize the
  distribution (Figure \ref{fg:hist_Trace}) and a
-  2-D cut (Figure \ref{fg:cut_Trace})of $\delta$
-   for the small and dense simulation of table
-    \ref{tab:sims}.
+  2-D cut (Figure \ref{fg:cut_Trace})of $-\nabla
+   \cdot \vec{v}$ for the small and dense
+    simulation of table \ref{tab:sims}.
 
 %Histogram and cut
 \begin{figure}[ht]
@@ -870,13 +876,14 @@ As we did for the FA, we visualize the
 \end{figure}
 \FloatBarrier
 
+%TODO Verify this
 \begin{par}
-The overdensity $tr \left(\sum_{\alpha\beta}\right)$ distribution is symmetric
+The Divergence $tr \left(\sum_{\alpha\beta}\right)$ distribution is symmetric
  around 0.0. As we are searching for overdense
   structures (superclusters) we can then diminish
    our search space to half of it only by
     selecting the points with $tr \left(\sum_{\alpha\beta}\right) \geq 0.0$. \\
-Observing a 2D cut of the overdensity as shown in
+Observing a 2D cut of the Velocity Divergence as shown in
  figure \ref{fg:cut_Trace} also gives a good idea
   of good idea of the Cosmic Web as we can easily
    recognize filaments (highly underdense, $tr \left(\sum_{\alpha\beta}\right)
@@ -886,27 +893,41 @@ Observing a 2D cut of the overdensity as shown in
 \end{par}
 
 
-
-\subsection{Region Growing Algorithm with the FA and $tr \left(\sum_{\alpha\beta}\right)$} \label{sec:results_own_impl}
-%The first results I got
-%TODO this section could be ommited and just show the last results (the next section)
+\subsection{Region Growing Algorithm and FoF with the FA and $tr \left(\sum_{\alpha\beta}\right)$}
+%The real results I got
 \begin{par}
-Using our small and dense simulation described in
- table \ref{tab:sims}, after the CIC (in a
-  $256^3$ grid) and V-Web have been applied,
-   we ran the implementation described in section
-    \ref{sec:own_impl_descr} for some of the
-     values described in tables
-      \ref{tab:seeds_FA_Trace} and
-       \ref{tab:search_FA_Trace}. 
+The following results are from the \textbf{Small
+ (Dense)} simulation exposed in table
+  \ref{tab:sims}. We applied all the combinations
+   for thresholds in table \ref{tab:seeds_FA_Trace}
+    (seeds)  and table \ref{tab:search_FA_Trace}
+     (growth). \\
+\end{par}
+
+\begin{par}
+Our algorithms run successfully on a regular
+ laptop. Two examples of detected superclusters are
+  shown individually on figure
+   \ref{fg:detected_small_51_90} and at the scale
+    of the simulation (of size 250 Mpc/h) on figure
+     \ref{fg:detected_scale_51_90}. Finally we can
+      see all the detected regions on the
+       simulation with one selection of thresholds
+        in figure \ref{fg:detected_all_51_90}.
 \end{par}
 
 \begin{figure}[ht]
-\begin{center}
-\includegraphics[width=0.7\textwidth]{groups/firstimplementation/regions_3D_129.png} % Include the image placeholder.png
-\caption{Regions detected for: Seeds (FA:0.6, $tr \left(\sum_{\alpha\beta}\right)$: 1.0) and Growth (FA:0.8, $tr \left(\sum_{\alpha\beta}\right)$: 0.0) }
-\label{fg:first_3D_all}
-\end{center}
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{groups/3d/seeds_FA_5/region_2184_small_seeds_FA_05_Trace_10_search_FA_09_Trace_00_.png} % Include the image placeholder.png
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{groups/3d/seeds_FA_5/region_4094_small_seeds_FA_05_Trace_10_search_FA_09_Trace_00_.png}
+\end{minipage}
+\label{fg:detected_small_51_90}
+\caption{Two detected superclusters in the Small (Dense) simulation with thresholds: Seed (FA: 0.5, Div: 1.0) and Growth (FA: 9.0, Div:0.0). }
 \end{figure}
 \FloatBarrier
 
@@ -914,25 +935,45 @@ Using our small and dense simulation described in
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=0.8\textwidth]{groups/firstimplementation/largest_vol_24_seeds_129.png} % Include the image placeholder.png
+  \includegraphics[width=0.9\textwidth]{groups/3d/seeds_FA_5/region_2184_scale_seeds_FA_05_Trace_10_search_FA_09_Trace_00_.png} % Include the image placeholder.png
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
-  \includegraphics[width=0.8\textwidth]{groups/firstimplementation/largest_vol_24_seeds_129_scale.png}
-  \end{minipage}
-\caption{Largest volume detected for: Seeds (FA:0.6, $tr \left(\sum_{\alpha\beta}\right)$: 1.0) and Growth (FA:0.8, $tr \left(\sum_{\alpha\beta}\right)$: 0.0). The region is on the left and can be seen at scale with the simulation on the right.}
-\label{fg:first_3D_largest}
+  \includegraphics[width=0.9\textwidth]{groups/3d/seeds_FA_5/region_4094_scale_seeds_FA_05_Trace_10_search_FA_09_Trace_00_.png}
+\end{minipage}
+\label{fg:detected_scale_51_90}
+\caption{Two detected superclusters in the Small (Dense) simulation at scale with thresholds: Seed (FA: 0.5, Div: 1.0) and Growth (FA: 9.0, Div:0.0). }
 \end{figure}
 \FloatBarrier
 
-\subsection{Region Growing Algorithm and FoF with the FA and $tr \left(\sum_{\alpha\beta}\right)$}
-%The real results I got
+\begin{figure}[ht]
+\begin{center}
+  \includegraphics[width=0.9\textwidth]{groups/3d/seeds_FA_5/regions_nonoise_seeds_FA_05_Trace_10_search_FA_09_Trace_00_.png}
+\caption{All the superclusters detected in the Small (Dense) simulation with thresholds: Seed (FA: 0.5, Div: 1.0) and Growth (FA: 9.0, Div:0.0). Different colors indicate different regions.}
+\label{fg:detected_all_51_90}
+\end{center}
+\end{figure}
+\FloatBarrier
 
 \begin{par}
-For the results of the small and dense simulation \ref{tab:sims} we applied all the combinations for thresholds in tables \ref{tab:seeds_FA_Trace} (seeds)  and \ref{tab:search_FA_Trace} (growth). 
+We can observe from figures
+ \ref{fg:detected_all_51_90},
+  \ref{fg:detected_scale_51_90} and
+   \ref{fg:detected_small_51_90} that the
+    structures have different shapes and sizes.
+     There are no hints for a specific shape and
+      size. We need to observe with more detail how
+       FA thresholds influence our results.
 \end{par}
 
 \subsubsection{Influence of the FA in the seeds}
+\label{sec:infl_FA_seed}
+\begin{par}
+We proceed to observe how changing the FA threshold
+ for the seed selection process described in
+  section \ref{sec:algorithms} influences the
+   detected structures. 
+\end{par}
 
 \begin{figure}[ht]
 \centering
@@ -952,11 +993,27 @@ For the results of the small and dense simulation \ref{tab:sims} we applied all 
   \centering
   \includegraphics[width=0.9\textwidth]{groups/3d/seeds_FA_8/regions_nonoise_seeds_FA_08_Trace_10_search_FA_09_Trace_00_.png}
 \end{minipage}
-\caption{Efect of augmenting the FA threshold in the seed chosing. From upper left to down right the FA for the seeds are: 0.5, 0.6, 0.7 and 0.8. The growth FA is 0.9 and $tr \left(\sum_{\alpha\beta}\right)$ is 0.0. The $tr \left(\sum_{\alpha\beta}\right)$ for the seeds is 1.0.} \label{fg:3D_FA_seeds}
+\caption{Efect of increasing the FA threshold in the seed selection. From upper left to down right the FA for the seeds are: 0.5, 0.6, 0.7 and 0.8. The growth FA is 0.9 and $tr \left(\sum_{\alpha\beta}\right)$ is 0.0. The $tr \left(\sum_{\alpha\beta}\right)$ for the seeds is 1.0.} \label{fg:3D_FA_seeds}
 \end{figure}
 \FloatBarrier
 
+\begin{par}
+As we can observe in figure \ref{fg:3D_FA_seeds},
+ increasing the FA threshold in the seed selection
+  increases strongly the number of seeds for the
+   algorithm. This can be deduced from the FA
+    histogram (figure \ref{fg:hist_FA}) as most
+     part of the particles have a high value of FA.
+\end{par}
+
+
 \subsubsection{Influence of the FA in the growth}
+\label{sec:infl_FA_growth}
+\begin{par}
+We now observe how changing the FA threshold
+ for the growth space affects our results. 
+\end{par}
+
 \begin{figure}[ht]
 \centering
 \begin{minipage}{.45\textwidth}
@@ -975,54 +1032,241 @@ For the results of the small and dense simulation \ref{tab:sims} we applied all 
   \centering
   \includegraphics[width=0.9\textwidth]{groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_09_Trace_00_.png}
 \end{minipage}
-\caption{Efect of augmenting the FA threshold in the growth. From upper left to down right the FA for the growth is: 0.6, 0.7, 0.8 and 0.9. The seed FA is 0.6 and $tr \left(\sum_{\alpha\beta}\right)$ is 1.0. The $tr \left(\sum_{\alpha\beta}\right)$ for the growth is 0.0.} \label{fg:3D_FA_growth}
+\caption{Efect of increasing the FA threshold in the growth. From upper left to down right the FA for the growth is: 0.6, 0.7, 0.8 and 0.9. The seed FA is 0.6 and $tr \left(\sum_{\alpha\beta}\right)$ is 1.0. The $tr \left(\sum_{\alpha\beta}\right)$ for the growth is 0.0.} \label{fg:3D_FA_growth}
 \end{figure}
 \FloatBarrier
 
 \begin{par}
- We can see in figure \ref{fg:3D_FA_growth} how augmenting the FA thresholds for the growth changes drastically the volumes of the regions detected. This can also be seen comparing the possible growth space volume with the volume of the largest region detected ratio (figure \ref{fg:vol_FA_growth}).
+ We can see in figure \ref{fg:3D_FA_growth} how augmenting the FA thresholds for the growth changes drastically the volumes of the regions detected, specially from the transition form FA threshold 0.8 to 0.9. This can also be seen comparing the possible growth space volume with the volume of the largest region detected ratio (figure \ref{fg:vol_FA_growth}).
 \end{par}
 
 \begin{figure}[ht]
 \centering
-\begin{minipage}{.45\textwidth}
-  \centering
-  \includegraphics[width=0.75\textwidth]{groups/volumeplots/volumes_growth_FA05_Trace_10.png}
-\end{minipage}
-\begin{minipage}{.45\textwidth}
-  \centering
-  \includegraphics[width=0.75\textwidth]{groups/volumeplots/volumes_growth_FA06_Trace_10.png}
-\end{minipage}
-\begin{minipage}{.45\textwidth}
-  \centering
-  \includegraphics[width=0.75\textwidth]{groups/volumeplots/volumes_growth_FA07_Trace_10.png}
-\end{minipage}
-\begin{minipage}{.45\textwidth}
-  \centering
-  \includegraphics[width=0.75\textwidth]{groups/volumeplots/volumes_growth_FA08_Trace_10.png}
-\end{minipage}
-%  \centering
-%  \includegraphics[width=0.9\textwidth]%{groups/volumeplots/volumes_growth_FA09_Trace_10.png}
-%\end{minipage}
-\caption{Volume of the largest structure and Volume of the growth space ratio augmenting the FA threshold in the growth. From upper left to down right the FA for the seeds is: 0.5, 0.6, 0.7 and 0.8. The growth $tr \left(\sum_{\alpha\beta}\right)$ is 1.0. The $tr \left(\sum_{\alpha\beta}\right)$ for the seed is 0.0.} \label{fg:vol_FA_growth}
+  \includegraphics[width=0.75\textwidth]{groups/volumeplots/volumes_growth_FA_All_WITH_ZERO.png}
+	
+\caption{Ratio of the volume of the largest structure and Volume of the growth space  increasing the FA threshold in the growth. From upper left to down right the FA for the seeds is: 0.5, 0.6, 0.7 and 0.8. The growth $tr \left(\sum_{\alpha\beta}\right)$ is 1.0. The $tr \left(\sum_{\alpha\beta}\right)$ for the seed is 0.0.} \label{fg:vol_FA_growth}
 \end{figure}
 \FloatBarrier
 
+\begin{par}
+From figure \ref{fg:vol_FA_growth}, we can deduce
+ that changing the growth FA threshold follows the
+  same pattern for the different seed FA
+   thresholds. Increasing the FA threshold in the
+    growth produces a gradually better repartition
+     of the growth space. But eventually as the
+      growth space gets closer to all the space,
+       all the detected regions converge into one
+        structure which occupy all the search
+         space.
+\end{par}
+
 \subsubsection{Volume distribution}
 
+\begin{par}
+The detected structures vary in volume and shape.
+ The number and size of the detected structures
+  strongly depend on the choice for FA thresholds
+   (seed and growth) as it is presented in sections
+    \ref{sec:infl_FA_seed} and
+     \ref{sec:infl_FA_growth}.
+     We proceed to visualize the distribution of
+      detected structures volume for FA thresholds
+       where we have a significant number of
+        detected structures.
+\end{par}
+
+\begin{figure}[ht]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_06_Trace_10_search_FA_09_Trace_00.png} % Include the image placeholder.png
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_07_Trace_10_search_FA_09_Trace_00.png}
+\end{minipage}
+\label{fg:volume_plots_higher}
+\caption{Volume distributions for low values of seed FA threshold (0.6 and 0.7)}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[ht]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_08_Trace_10_search_FA_09_Trace_00.png} % Include the image placeholder.png
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_09_Trace_10_search_FA_09_Trace_00.png}
+\end{minipage}
+\label{fg:volume_plots_higher}
+\caption{Volume distributions for higher values of seed FA threshold (0.8 and 0.9)}
+\end{figure}
+\FloatBarrier
+
+\begin{par}
+We find that as the seed FA threshold increases, the volume distribution tend to center to smaller volumes.
+\end{par}
+
 \subsubsection{Shape of the regions}
+\begin{par}
+To study the shape of the regions in a quantitative way we proceed, for each region, to form the Inertia Tensor, calculate its eigenvalues and observe how these eigenvalues differ from each other.
+\end{par}
+%TODO describe the Inertia Tensor
+
+\begin{figure}[ht]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{groups/inertiaplots/inertia_diff_08_Trace_10_search_FA_08_Trace_00.png} % Include the image placeholder.png
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{groups/inertiaplots/inertia_diff_09_Trace_10_search_FA_08_Trace_00.png}
+\end{minipage}
+\label{fg:inertia_diff}
+\caption{Inertia Tensor eigenvalues differences (normalized) for two different cases}
+\end{figure}
+\FloatBarrier
+
+\begin{par}
+We can observe that all our detected structures
+ correspond to the case of prolate structures. 
+\end{par}
 
 \subsection{Comparisons with Laniakea}
+\begin{par}
+ Let us remember the properties of Laniakea we can compare our detected structures with are described in table \ref{tab:laniakea}
+\end{par}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|}
+        Radius (Mpc/h) & 80  \\
+        Mass (Solar Masses) & $1*10^{17}$  \\
+    \end{tabular}
+    \caption{Properties of Laniakea we can compare with}
+    \label{tab:laniakea}
+\end{table}
+\FloatBarrier
 
-\section{Discussions}
+\begin{itemize}
+\item Size and Volume
+\end{itemize}
+\begin{par}
+Laniakea is a spheroid of radius 80 Mpc/h \cite{tully_laniakea_2014}. We can state it has approximatively a volume of $2.14 \cdot 10^6$ $\left[ Mpc/h \right]^3$.\\
+\end{par}
+\begin{par}
+We proceed to see how Laniakea fits in our volume distributions.
+\end{par}
+
+\begin{figure}[ht]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_laniakea_09_Trace_10_search_FA_09_Trace_00.png} % Include the image placeholder.png
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_laniakea_06_Trace_10_search_FA_09_Trace_00.png}
+\end{minipage}
+\label{fg:compare_lan_larg}
+\caption{Two distributions of volumes compared with the volume of Laniakea where Laniakea is larger.}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[ht]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_laniakea_06_Trace_10_search_FA_10_Trace_00.png} % Include the image placeholder.png
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_laniakea_05_Trace_10_search_FA_10_Trace_00.png}
+\end{minipage}
+\label{fg:compare_lan_small}
+\caption{Two distributions of volumes compared with the volume of Laniakea where Laniakea is smaller.}
+\end{figure}
+\FloatBarrier
+
+
+\begin{par}
+We can observe in figure \ref{fg:compare_lan_larg}  that for Growth FA thresholds
+ different than 1.0, Laniakea is always larger than
+  our detected structures. Figure \ref{fg:compare_lan_small}, where the Growth FA threshold
+   of 1.0 corresponds to the case where the
+    detected structure occupies all the available
+     space as exposed in section
+      \ref{sec:infl_FA_growth}.
+\end{par}
+
+
+
+\section{Conclusions and Discussions}
 \label{sec:discussions}
-
-\section{Conclusions}
+\begin{par}
+Our method, based on the Fractional Anisotropy (FA) and the Velocity Divergence, successfully find structures in cosmological simulations. \\
+\end{par}
+\begin{par}
+Nevertheless it is very sensitive to its parameters (FA and Divergence thresholds). An exhaustive calibration can improve it.\\
+\end{par}
+\begin{par}
+We state that Laniakea is, in the Cosmological
+ context, atypically larger. We visualise that, as
+  long as the growth FA threshold is not the
+   maximal FA value (1.0) and that the volume of
+    our detected structure is not equal to the
+     available growth space, Laniakea's volume is
+      always larger than the detected structures
+       volumes. \\
+\end{par}
+\begin{par}
+The definition of Laniakea by Tully et al
+ \cite{tully_laniakea_2014} is based on the
+  peculiar velocity flow. Chon et al provide an
+   interesting work on a different definition of
+    galaxy superclusters, a gravitationally bound
+     dense large scale structure
+      \cite{chon_characterising_2014} and
+       \cite{chon_definition_2015}. On this
+        different criteria, Laniakea and how
+         Laniakea fits in our current cosmological
+          context should be redefined.  \\
+\end{par}
 
 %TODO The Future Work section needs to be re-written
 \section{Future Work}
 \label{sec:future_work}
-
+\begin{par}
+We provide here results for the Small (Dense)
+ simulation. Nevertheless we generated data from
+  the two other simulations exposed in table
+   \ref{tab:sims}. A detailed analysis of how the
+    detected structures behave for the different
+     simulations is to be done.\\
+\end{par}
+\begin{par}
+A more exhaustive FA thresholds analysis is to be
+ done similar to the one performed in this work.
+  The behaviour for Growth FA thresholds for values
+   between 0.9 and 1.0 is to be examined in more
+    detail.
+\end{par}
+\begin{par}
+In order to have a larger sample of detected large
+ structures, a bigger simulation is to be performed
+  with parameters Boxsize: 1024 Mpc/h and $2014^3$
+   DM particles. \\
+\end{par}
+\begin{par}
+A new approach for the detection of regions is to
+ be developed based on the definition of
+  superclusters as gravitationally bound structures
+   as stated by Chon et al
+    \cite{chon_definition_2015}.
+\end{par}
 
 
 
@@ -1031,8 +1275,10 @@ For the results of the small and dense simulation \ref{tab:sims} we applied all 
 \bibliography{references}
 
 \appendix
-\section{Approach by the Speed} \label{App:App_Speed}
-\subsection{Region Growing Algorithm with the Speed}
+\section{Appendix}
+\subsection{Approach by the Speed} 
+\label{App:App_Speed}
+\subsubsection{Region Growing Algorithm with the Speed}
 
 We present here a naive way to approach to the problem. 
 \begin{enumerate}
@@ -1092,7 +1338,7 @@ data and transform it to NumPy arrays in Python.
  In Appendix \ref{App:App_speed_code} we attach
   the source code used.
 
-\subsection{Results of the Speed Approach}
+\subsubsection{Results of the Speed Approach}
 This approach was tested on the simulation of
  boxsize 500 Mpc/h
 and $512^{3}$ dark matter particles (DM) described
@@ -1244,12 +1490,53 @@ The script in Appendix \ref{App:App_speed_code} was executed in a student's
 laptop and later on the HPC cluster. For a significant number of particles, the laptop limited memory (8GB) crashes. Running in the HPC solves this issue.
 
 
-\subsection{Code example for Region Growing Algorithm - Approach by the Speed} \label{App:App_speed_code}
+\subsubsection{Code example for Region Growing Algorithm - Approach by the Speed} \label{App:App_speed_code}
 \tiny
 \lstinputlisting[language=Python, caption=Region Growing Algorithm Code]{code/region_detection_document.py}
 \end{document} 
 
-\section{Region Growing Algorithm with the FA and $tr\left(\sum_{\alpha\beta}\right)$} \label{App:own_impl_code}
+
+\subsection{Simple implementation of the Region Growing Algorithm with the FA and $tr\left(\sum_{\alpha\beta}\right)$}
+
+\subsubsection{Region Growing Algorithm with the FA and $tr \left(\sum_{\alpha\beta}\right)$} \label{sec:results_own_impl}
+%The first results I got
+%TODO this section could be ommited and just show the last results (the next section)
+\begin{par}
+Using our small and dense simulation described in
+ table \ref{tab:sims}, after the CIC (in a
+  $256^3$ grid) and V-Web have been applied,
+   we ran the implementation described in section
+    \ref{sec:own_impl_descr} for some of the
+     values described in tables
+      \ref{tab:seeds_FA_Trace} and
+       \ref{tab:search_FA_Trace}. 
+\end{par}
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=0.7\textwidth]{groups/firstimplementation/regions_3D_129.png} % Include the image placeholder.png
+\caption{Regions detected for: Seeds (FA:0.6, $tr \left(\sum_{\alpha\beta}\right)$: 1.0) and Growth (FA:0.8, $tr \left(\sum_{\alpha\beta}\right)$: 0.0) }
+\label{fg:first_3D_all}
+\end{center}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[ht]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.8\textwidth]{groups/firstimplementation/largest_vol_24_seeds_129.png} % Include the image placeholder.png
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.8\textwidth]{groups/firstimplementation/largest_vol_24_seeds_129_scale.png}
+  \end{minipage}
+\caption{Largest volume detected for: Seeds (FA:0.6, $tr \left(\sum_{\alpha\beta}\right)$: 1.0) and Growth (FA:0.8, $tr \left(\sum_{\alpha\beta}\right)$: 0.0). The region is on the left and can be seen at scale with the simulation on the right.}
+\label{fg:first_3D_largest}
+\end{figure}
+\FloatBarrier
+\subsubsection{Code example for Region Growing Algorithm - Approach by the FA and Divergence}
+\label{App:own_impl_code}
 \tiny
 %TODO insert the code
 Here comes the code.
