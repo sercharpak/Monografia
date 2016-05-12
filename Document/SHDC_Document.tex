@@ -1529,7 +1529,7 @@ laptop and later on the HPC cluster. For a significant number of particles, the 
 
 \subsubsection{Code example for Region Growing Algorithm - Approach by the Speed} \label{App:App_speed_code}
 \tiny
-\lstinputlisting[language=Python, caption=Region Growing Algorithm Code]{code/region_detection_document.py}
+\lstinputlisting[language=Python, caption=Region Growing Algorithm Code - Speed]{code/region_detection_document.py}
 
 
 
@@ -1538,18 +1538,20 @@ laptop and later on the HPC cluster. For a significant number of particles, the 
 \subsubsection{Code example for Region Growing Algorithm - Approach by the FA and VDH}
 \label{App:own_impl_code}
 \tiny
-%TODO insert the code
-Here comes the code.
+\lstinputlisting[language=Python, caption=Region Growing Algorithm Code - FA \& VDH]{code/region_detection_FA_VDH_document.py}
 
-
+\normalsize
 \subsubsection{Region Growing Algorithm with the FA and VDH} \label{sec:results_own_impl}
-%The first results I got
 
 \begin{par}
-Using our small and dense simulation described in
+The results from the simple implementation are good. Nevertheless, our implementation using the FoF is much more efficient. We show this simple implementation and its results in a way to illustrate the concepts behind the Region Growing Algorithm.
+\end{par}
+
+\begin{par}
+Using the data from our Small(Dense) simulation described in
  table \ref{tab:sims}, after the CIC (in a
   $256^3$ grid) and V-Web have been applied,
-   we ran the implementation described in section
+   we run the implementation described in section
     \ref{sec:own_impl_descr} for some of the
      values described in tables
       \ref{tab:seeds_FA_Trace} and
@@ -1579,7 +1581,6 @@ Using our small and dense simulation described in
 \label{fg:first_3D_largest}
 \end{figure}
 \FloatBarrier
-
 
 
 \end{document} 
