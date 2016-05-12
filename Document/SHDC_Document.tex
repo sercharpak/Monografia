@@ -254,9 +254,9 @@ Another important concept in this context is the redshift. The redshift $z$ can 
 \] 
 It is a measure of the difference between the observed
  wavelength $\lambda_{obs}$ and the wavelength received
-  from a distant star $\lambda_{em}$. It is a convenience
-   way to label epochs (time) with $z=0$ being present
-    time.
+  from a distant star $\lambda_{em}$. It is a convenient
+   way to label epochs (time) with $z=0$ being the
+    present time.
 \end{par}
 
 
@@ -274,7 +274,7 @@ Our method to detect superclusters in cosmological
 \begin{par}
 The peculiar velocity is defined as the velocity relative to a rest frame. It is the amount of the radial velocity of a galaxy which cannot be explained by the expansion of the Universe. Hubble's law states that galaxy are moving away from us at a speed proportional to the distance from us (the proportion is Hubble's constant). In other words,
 \[ 
-v_p = v_{obs} - H_{0} * d_{obs}
+v_p = v_{obs} - H_{0} \times d_{obs}
 \]
 With $v_p$ the peculiar velocity, $v_{obs}$ and $d_{obs}$ the observed velocity and distance, $H_{0}$ the Hubble constant as described in section \ref{cosmo_constants}.
 \end{par}
@@ -384,7 +384,7 @@ We now proceed to describe some of the observational
   distances, but can be applied to large sets of
    galaxies.\\
    
-  \item the Supernovae Ia method.
+  \item Supernovae Ia method.
 These supernovas are very bright and can been seen from
  great distances. The quality of these measurements are
   very high. Nevertheless, samples of these supernovas
@@ -491,7 +491,7 @@ With $\lambda_1$ $\lambda_2$ and $\lambda_3$ the
   interpret FA = 0 as an isotropic distribution around
    the particle (where $\lambda_1 = \lambda_2 =
     \lambda_3$) and FA = 1 as a highly anisotropic
-     distribution around the particle.
+     distribution around the particle. 
 
 \begin{itemize}
 \item The trace of the Velocity Shear Tensor (VDH)
@@ -621,7 +621,7 @@ The initial conditions were generated using Volker
 \end{table}
 \FloatBarrier
 
-As we specify in the section \ref{sec:cosmo_constants}, $\Omega_0$  corresponds to the Cosmological matter
+As we specify in the section \ref{cosmo_constants}, $\Omega_0$  corresponds to the Cosmological matter
  density parameter in units of the critical density at
 red shift z = 0. $\Omega_{\Lambda}$ is the cosmological
  vacuum energy density (cosmological constant) in
@@ -924,23 +924,23 @@ need to search for this case individually.
 
 \section{Results}
 
-\subsection{General visualizations (FA, VDH) of the Simulations}
-
-\subsubsection{FA, Fractional Anisotropy}
 The following results correspond to our
  \textbf{Small (Dense)} described in table
-  \ref{tab:sims}. After the CIC (to a $256^{3}$
-   grid) and V-Web have been applied, we can form
-    the FA and visualize its histogram (Figure
-     \ref{fg:hist_FA}) and a 2-D cut (Figure
-      \ref{fg:cut_FA}).
+  \ref{tab:sims}.
+  
+\subsection{Fractional Anisotropy and Divergence in the Simulation}
+
+\subsubsection{Fractional Anisotropy}
+ We compute the FA after interpolating the density and velocity fields on a $256^{3}$
+   grid using the CIC method and applying the V-Web algorithm. Figure \ref{fg:hist_FA} shows the FA histogram. Figure
+      \ref{fg:cut_FA} shows a 2-D cut of the FA grid.
 %Histogram and cut
 \begin{figure}[ht]
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=0.8\textwidth]{simulation/FA_hist_sim.png}
-  \caption{FA Histogram of the Small and Dense simulation}
+  \caption{FA Histogram in the simulation}
 \label{fg:hist_FA}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
@@ -952,37 +952,30 @@ The following results correspond to our
 \end{figure}
 \FloatBarrier
 
-%TODO Correct the following statement.
 \begin{par}
-As we saw in section \ref{sec:FA_trace}, you would
+As we saw in section \ref{sec:FA_trace}, we
  expect to have few highly isotropic particles.
-  The distribution \ref{fg:hist_FA} we obtained
-   agrees with it.\\
-Observing a 2-D cut of the FA \ref{fg:cut_FA} we
- observe the filamentary structures we would
+  The histogram in figure \ref{fg:hist_FA} we confirms this expectation.\\
+The 2-D cut of the FA in figure \ref{fg:cut_FA} shows the filamentary structures we would
   expect of the Cosmic Web. This cut is very
    similar to the ones presented by  Bustamante et
    al.  \cite{bustamante_tensor_2015} in their
     work. This is a good indicator that our
      simulation, CIC procedure V-Web application
-      and FA forming were correctly executed.
+      and FA forming are correctly executed.
        Bustamante et. al  explain that void
-        regions should have a FA < 0.95. We expect
-         the similar FA values for superclusters
-          and will make use of the Overdensity
-           $\delta$ to discriminate the    
-            regions and make sure we do not find
-             voids.
-
+        regions should have a $FA < 0.95$. We expect
+         superclusters to have a similar isotropic
+          behaviour as voids. Therefore we explore
+          similar FA values in our method. To make sure
+           we do not find voids we make use of the VDH.
 \end{par}
 
 
-\subsubsection{VDH, Trace of the shear velocity tensor}
+\subsubsection{VDH, Velocity Divergence}
 As we did for the FA, we visualize the
- distribution (Figure \ref{fg:hist_Trace}) and a
-  2-D cut (Figure \ref{fg:cut_Trace})of $-\nabla
-   \cdot \vec{v}$ for the small and dense
-    simulation of table \ref{tab:sims}.
+ histogram (Figure \ref{fg:hist_Trace}) and a
+  2-D cut (Figure \ref{fg:cut_Trace}) of the VDH.
 
 %Histogram and cut
 \begin{figure}[ht]
@@ -990,41 +983,40 @@ As we did for the FA, we visualize the
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=0.8\textwidth]{simulation/Trace_hist_sim.png} % Include the image placeholder.png
-\caption{$tr \left(\sum_{\alpha\beta}\right)$ Histogram of the Small and Dense simulation}
+\caption{VDH Histogram in the simulation}
 \label{fg:hist_Trace}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[width=0.95\textwidth]{simulation/Trace_cut_i_10.png}
-  \caption{A cut of the $tr \left(\sum_{\alpha\beta}\right)$ in the x axis}
+  \caption{A cut of the VDH in the x axis}
 \label{fg:cut_Trace}
 \end{minipage}
 \end{figure}
 \FloatBarrier
 
-%TODO Verify this
+
 \begin{par}
-The Divergence $tr \left(\sum_{\alpha\beta}\right)$ distribution is symmetric
+The VDH distribution is symmetric
  around 0.0. As we are searching for overdense
   structures (superclusters) we can then diminish
    our search space to half of it only by
-    selecting the points with $tr \left(\sum_{\alpha\beta}\right) \geq 0.0$. \\
+    selecting the points with $VDH > 0.0$. \\
 Observing a 2D cut of the Velocity Divergence as shown in
  figure \ref{fg:cut_Trace} also gives a good idea
   of good idea of the Cosmic Web as we can easily
-   recognize filaments (highly underdense, $tr \left(\sum_{\alpha\beta}\right)
-    \leq 1.0$) and highly overdense regions
-     ($tr \left(\sum_{\alpha\beta}\right) \geq 1.0$) which are our candidates
-      for seeds of supercluster structures.
+   recognize filaments (highly underdense, $VDH
+    \leq - 1.0$) and highly overdense regions
+     ($VDH \geq 1.0$). Our candidates
+      for seeds of supercluster structures are the highly
+       overdense regions with $VDH \geq 1.0$.
 \end{par}
 
 
 \subsection{Region Growing Algorithm and FoF with the FA and VDH}
 %The real results I got
 \begin{par}
-The following results are from the \textbf{Small
- (Dense)} simulation exposed in table
-  \ref{tab:sims}. We applied all the combinations
+We apply all the combinations
    for thresholds in table \ref{tab:seeds_FA_Trace}
     (seeds)  and table \ref{tab:search_FA_Trace}
      (growth). \\
@@ -1052,8 +1044,8 @@ Our algorithms run successfully on a regular
   \centering
   \includegraphics[width=0.9\textwidth]{groups/3d/seeds_FA_5/region_4094_small_seeds_FA_05_Trace_10_search_FA_09_Trace_00_.png}
 \end{minipage}
-\label{fg:detected_small_51_90}
 \caption{Two detected superclusters in the Small (Dense) simulation with thresholds: Seed (FA: 0.5, Div: 1.0) and Growth (FA: 9.0, Div:0.0). }
+\label{fg:detected_small_51_90}
 \end{figure}
 \FloatBarrier
 
@@ -1067,8 +1059,8 @@ Our algorithms run successfully on a regular
   \centering
   \includegraphics[width=0.9\textwidth]{groups/3d/seeds_FA_5/region_4094_scale_seeds_FA_05_Trace_10_search_FA_09_Trace_00_.png}
 \end{minipage}
-\label{fg:detected_scale_51_90}
 \caption{Two detected superclusters in the Small (Dense) simulation at scale with thresholds: Seed (FA: 0.5, Div: 1.0) and Growth (FA: 9.0, Div:0.0). }
+\label{fg:detected_scale_51_90}
 \end{figure}
 \FloatBarrier
 
@@ -1088,8 +1080,8 @@ We can observe from figures
    \ref{fg:detected_small_51_90} that the
     structures have different shapes and sizes.
      There are no hints for a specific shape and
-      size. We need to observe with more detail how
-       FA thresholds influence our results.
+      size. In the next section we analyse with more detail how
+       FA thresholds influence these results.
 \end{par}
 
 \subsubsection{Influence of the FA in the seeds}
@@ -1119,17 +1111,19 @@ We proceed to observe how changing the FA threshold
   \centering
   \includegraphics[width=0.9\textwidth]{groups/3d/seeds_FA_8/regions_nonoise_seeds_FA_08_Trace_10_search_FA_09_Trace_00_.png}
 \end{minipage}
-\caption{Efect of increasing the FA threshold in the seed selection. From upper left to down right the FA for the seeds are: 0.5, 0.6, 0.7 and 0.8. The growth FA is 0.9 and $tr \left(\sum_{\alpha\beta}\right)$ is 0.0. The $tr \left(\sum_{\alpha\beta}\right)$ for the seeds is 1.0.} \label{fg:3D_FA_seeds}
+\caption{Effect of increasing the FA threshold in the seed selection. From upper left to down right the FA for the seeds are: 0.5, 0.6, 0.7 and 0.8. The growth FA is 0.9 and $tr \left(\sum_{\alpha\beta}\right)$ is 0.0. The $tr \left(\sum_{\alpha\beta}\right)$ for the seeds is 1.0.} \label{fg:3D_FA_seeds}
 \end{figure}
 \FloatBarrier
 
 \begin{par}
-As we can observe in figure \ref{fg:3D_FA_seeds},
+In figure \ref{fg:3D_FA_seeds}, we observe qualitatively
  increasing the FA threshold in the seed selection
-  increases strongly the number of seeds for the
-   algorithm. This can be deduced from the FA
-    histogram (figure \ref{fg:hist_FA}) as most
-     part of the particles have a high value of FA.
+  increases strongly the number of regions detected. This
+   indicates that the number of seeds for the algorithm
+    increases as well with the FA threshold in the seed
+    selection. The FA histogram (figure \ref{fg:hist_FA})
+     shows this as well as most part of the particles
+      have a high value of FA.
 \end{par}
 
 
@@ -1158,33 +1152,29 @@ We now observe how changing the FA threshold
   \centering
   \includegraphics[width=0.9\textwidth]{groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_09_Trace_00_.png}
 \end{minipage}
-\caption{Efect of increasing the FA threshold in the growth. From upper left to down right the FA for the growth is: 0.6, 0.7, 0.8 and 0.9. The seed FA is 0.6 and $tr \left(\sum_{\alpha\beta}\right)$ is 1.0. The $tr \left(\sum_{\alpha\beta}\right)$ for the growth is 0.0.} \label{fg:3D_FA_growth}
+\caption{Efect of increasing the FA threshold in the growth. From upper left to down right the FA for the growth is: 0.6, 0.7, 0.8 and 0.9. The seed FA is 0.6 and VDH is 1.0. The VDH for the growth is 0.0.} \label{fg:3D_FA_growth}
 \end{figure}
 \FloatBarrier
 
 \begin{par}
- We can see in figure \ref{fg:3D_FA_growth} how augmenting the FA thresholds for the growth changes drastically the volumes of the regions detected, specially from the transition form FA threshold 0.8 to 0.9. This can also be seen comparing the possible growth space volume with the volume of the largest region detected ratio (figure \ref{fg:vol_FA_growth}).
+ Figure \ref{fg:3D_FA_growth} shows qualitatively how augmenting the FA thresholds for the growth changes drastically the volumes of the regions detected, specially from the transition form FA threshold 0.8 to 0.9. This can also be seen comparing the possible growth space volume with the volume of the largest region detected ratio (Figure \ref{fg:vol_FA_growth}).
 \end{par}
 
 \begin{figure}[ht]
 \centering
   \includegraphics[width=0.75\textwidth]{groups/volumeplots/volumes_growth_FA_All_WITH_ZERO.png}
-	
-\caption{Ratio of the volume of the largest structure and Volume of the growth space  increasing the FA threshold in the growth. From upper left to down right the FA for the seeds is: 0.5, 0.6, 0.7 and 0.8. The growth $tr \left(\sum_{\alpha\beta}\right)$ is 1.0. The $tr \left(\sum_{\alpha\beta}\right)$ for the seed is 0.0.} \label{fg:vol_FA_growth}
+\caption{Ratio of the volume of the largest structure and Volume of the growth space  increasing the FA threshold in the growth. From upper left to down right the FA for the seeds is: 0.5, 0.6, 0.7 and 0.8. The growth VDH is 1.0. The VDH for the seed is 0.0.} \label{fg:vol_FA_growth}
 \end{figure}
 \FloatBarrier
 
 \begin{par}
-From figure \ref{fg:vol_FA_growth}, we can deduce
- that changing the growth FA threshold follows the
+Figure \ref{fg:vol_FA_growth}, shows that changing the
+ growth FA threshold follows the
   same pattern for the different seed FA
-   thresholds. Increasing the FA threshold in the
-    growth produces a gradually better repartition
-     of the growth space. But eventually as the
-      growth space gets closer to all the space,
-       all the detected regions converge into one
-        structure which occupy all the search
-         space.
+   thresholds. We can observe that when maximizing the
+    growth FA threshold ($FA < 1.0$) the detected regions
+     converge into a single structure which occupy all
+      the search space.
 \end{par}
 
 \subsubsection{Volume distribution}
@@ -1212,8 +1202,8 @@ The detected structures vary in volume and shape.
   \centering
   \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_07_Trace_10_search_FA_09_Trace_00.png}
 \end{minipage}
-\label{fg:volume_plots_higher}
 \caption{Volume distributions for low values of seed FA threshold (0.6 and 0.7)}
+\label{fg:volume_plots_lower}
 \end{figure}
 \FloatBarrier
 
@@ -1227,8 +1217,9 @@ The detected structures vary in volume and shape.
   \centering
   \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_09_Trace_10_search_FA_09_Trace_00.png}
 \end{minipage}
-\label{fg:volume_plots_higher}
+
 \caption{Volume distributions for higher values of seed FA threshold (0.8 and 0.9)}
+\label{fg:volume_plots_higher}
 \end{figure}
 \FloatBarrier
 
@@ -1252,14 +1243,22 @@ To study the shape of the regions in a quantitative way we proceed, for each reg
   \centering
   \includegraphics[width=0.9\textwidth]{groups/inertiaplots/inertia_diff_09_Trace_10_search_FA_08_Trace_00.png}
 \end{minipage}
-\label{fg:inertia_diff}
 \caption{Inertia Tensor eigenvalues differences (normalized) for two different cases}
+\label{fg:inertia_diff}
 \end{figure}
 \FloatBarrier
 
 \begin{par}
-We can observe that all our detected structures
- correspond to the case of prolate structures. 
+Figure \ref{fg:inertia_diff} shows that most of our
+ detected structures correspond to the case where
+  $\lambda_a < \lambda_b < \lambda_c$ (asymmetric
+   structures). Nevertheless, if we set a tolerance we
+    can observe that there are cases where $\lambda_a
+     \sim \lambda_b < \lambda_c$ (oblate symmetric
+      structures), where $\lambda_a < \lambda_b \sim
+       \lambda_c$ (oblate symmetric structures), and very
+        few where $\lambda_a \sim \lambda_b \sim
+         \lambda_c$ (spherical structures).
 \end{par}
 
 \subsection{Comparisons with Laniakea}
@@ -1297,8 +1296,8 @@ We proceed to see how Laniakea fits in our volume distributions.
   \centering
   \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_laniakea_06_Trace_10_search_FA_09_Trace_00.png}
 \end{minipage}
-\label{fg:compare_lan_larg}
 \caption{Two distributions of volumes compared with the volume of Laniakea where Laniakea is larger.}
+\label{fg:compare_lan_larg}
 \end{figure}
 \FloatBarrier
 
@@ -1312,8 +1311,8 @@ We proceed to see how Laniakea fits in our volume distributions.
   \centering
   \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_laniakea_05_Trace_10_search_FA_10_Trace_00.png}
 \end{minipage}
-\label{fg:compare_lan_small}
 \caption{Two distributions of volumes compared with the volume of Laniakea where Laniakea is smaller.}
+\label{fg:compare_lan_small}
 \end{figure}
 \FloatBarrier
 
@@ -1336,7 +1335,7 @@ We can observe in figure \ref{fg:compare_lan_larg}  that for Growth FA threshold
 Our method, based on the Fractional Anisotropy (FA) and the Velocity Divergence, successfully find structures in cosmological simulations. \\
 \end{par}
 \begin{par}
-Nevertheless it is very sensitive to its parameters (FA and Divergence thresholds). An exhaustive calibration can improve it.\\
+Nevertheless it is very sensitive to its parameters (FA and Divergence thresholds). An exhaustive calibration can must be performed before interpreting the results.\\
 \end{par}
 \begin{par}
 We state that Laniakea is, in the Cosmological
@@ -1346,11 +1345,10 @@ We state that Laniakea is, in the Cosmological
     our detected structure is not equal to the
      available growth space, Laniakea's volume is
       always larger than the detected structures
-       volumes. \\
+       volumes. However, our simulation volume is small\\
 \end{par}
 
 
-%TODO The Future Work section needs to be re-written
 \begin{par}
 We provide here results for the Small (Dense)
  simulation. Nevertheless we generated data from
@@ -1369,17 +1367,9 @@ A more exhaustive FA thresholds analysis is to be
 \begin{par}
 In order to have a larger sample of detected large
  structures, a bigger simulation is to be performed
-  with parameters Boxsize: 1024 Mpc/h and $2014^3$
+  with parameters Boxsize: 1000 Mpc/h and $2048^3$
    DM particles. \\
 \end{par}
-\begin{par}
-A new approach for the detection of regions is to
- be developed based on the definition of
-  superclusters as gravitationally bound structures
-   as stated by Chon et al
-    \cite{chon_definition_2015}.
-\end{par}
-
 
 
 \bibliographystyle{unsrt}
@@ -1647,7 +1637,7 @@ Using our small and dense simulation described in
 \label{fg:first_3D_largest}
 \end{figure}
 \FloatBarrier
-\subsubsection{Code example for Region Growing Algorithm - Approach by the FA and Divergence}
+\subsubsection{Code example for Region Growing Algorithm - Approach by the FA and VDH}
 \label{App:own_impl_code}
 \tiny
 %TODO insert the code
