@@ -1,15 +1,15 @@
 \BOOKMARK [1][-]{section.1}{Acknowledgements}{}% 1
 \BOOKMARK [1][-]{section.2}{Abstract}{}% 2
-\BOOKMARK [1][-]{section.3}{Introduction}{}% 3
-\BOOKMARK [1][-]{section.4}{Background}{}% 4
+\BOOKMARK [1][-]{section.3}{Motivation}{}% 3
+\BOOKMARK [1][-]{section.4}{Introduction}{}% 4
 \BOOKMARK [2][-]{subsection.4.1}{The Standard Cosmological Model}{section.4}% 5
 \BOOKMARK [2][-]{subsection.4.2}{Cosmic flows and peculiar velocities}{section.4}% 6
 \BOOKMARK [2][-]{subsection.4.3}{The V-Web Algorithm}{section.4}% 7
-\BOOKMARK [2][-]{subsection.4.4}{Fractional Anisotropy \(FA\) and Trace of the Velocity Shear Tensor \(VDH\)}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.4}{Fractional Anisotropy \(FA\) and Velocity Divergence \(VDH\)}{section.4}% 8
 \BOOKMARK [1][-]{section.5}{Methods}{}% 9
 \BOOKMARK [2][-]{subsection.5.1}{Cosmological Simulations}{section.5}% 10
-\BOOKMARK [2][-]{subsection.5.2}{Approaches for the Detection of Superclusters}{section.5}% 11
-\BOOKMARK [2][-]{subsection.5.3}{Algorithms to find Superclusters}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.2}{Intermediate Steps}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.3}{Superclusters Finding Algorithms}{section.5}% 12
 \BOOKMARK [3][-]{subsubsection.5.3.1}{Region Growing Algorithm: Basic Description}{subsection.5.3}% 13
 \BOOKMARK [3][-]{subsubsection.5.3.2}{Region Growing Algorithm with the FA and the trace of the velocity shear tensor}{subsection.5.3}% 14
 \BOOKMARK [1][-]{section.6}{Results}{}% 15
