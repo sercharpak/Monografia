@@ -4,45 +4,45 @@ The top-level auxiliary file: SHDC_Document.aux
 The style file: unsrt.bst
 Database file #1: references.bib
 Warning--empty year in gonzalez_digital_2008
-You've used 11 entries,
+You've used 21 entries,
             1791 wiz_defined-function locations,
-            515 strings with 5741 characters,
-and the built_in function-call counts, 2698 in all, are:
-= -- 206
-> -- 180
+            575 strings with 7359 characters,
+and the built_in function-call counts, 5137 in all, are:
+= -- 422
+> -- 296
 < -- 0
-+ -- 65
-- -- 54
-* -- 233
-:= -- 462
-add.period$ -- 33
-call.type$ -- 11
-change.case$ -- 9
++ -- 108
+- -- 87
+* -- 454
+:= -- 859
+add.period$ -- 63
+call.type$ -- 21
+change.case$ -- 19
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 98
-empty$ -- 239
-format.name$ -- 54
-if$ -- 564
+cite$ -- 22
+duplicate$ -- 188
+empty$ -- 467
+format.name$ -- 87
+if$ -- 1077
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 13
-newline$ -- 58
-num.names$ -- 11
-pop$ -- 32
+int.to.str$ -- 21
+missing$ -- 23
+newline$ -- 108
+num.names$ -- 21
+pop$ -- 42
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 31
+skip$ -- 62
 stack$ -- 0
-substring$ -- 152
-swap$ -- 11
+substring$ -- 363
+swap$ -- 21
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 23
-width$ -- 13
-write$ -- 121
+while$ -- 50
+width$ -- 23
+write$ -- 231
 (There was 1 warning)

@@ -1,32 +1,34 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Acknowledgements}{2}{section.1}
 \contentsline {section}{\numberline {2}Abstract}{3}{section.2}
-\contentsline {section}{\numberline {3}Introduction}{5}{section.3}
-\contentsline {section}{\numberline {4}Background}{5}{section.4}
-\contentsline {subsection}{\numberline {4.1}The Current Model $\Lambda $CDM Cosmological Parameters}{5}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Cosmic flows and peculiar velocities}{5}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Boundaries of Laniakea - The V-Web Algorithm}{8}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Fractional Anisotropy and trace of the velocity shear tensor}{8}{subsection.4.4}
-\contentsline {section}{\numberline {5}Methods}{8}{section.5}
-\contentsline {subsection}{\numberline {5.1}Cosmological Simulations}{9}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Approaches for the Detection of Superclusters}{10}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Algorithms}{12}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Region Growing Algorithm: Basic Description}{12}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Region Growing Algorithm with the FA and the trace of the velocity shear tensor}{13}{subsubsection.5.3.2}
-\contentsline {section}{\numberline {6}Results}{15}{section.6}
-\contentsline {subsection}{\numberline {6.1}General visualizations (FA, Divergence) of the Simulations}{15}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}FA, Fractional Anisotropy}{15}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}$tr \left (\DOTSB \sum@ \slimits@ _{\alpha \beta }\right )$, Trace of the shear velocity tensor}{15}{subsubsection.6.1.2}
-\contentsline {subsection}{\numberline {6.2}Region Growing Algorithm and FoF with the FA and $tr \left (\DOTSB \sum@ \slimits@ _{\alpha \beta }\right )$}{16}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Influence of the FA in the seeds}{19}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Influence of the FA in the growth}{21}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Volume distribution}{24}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}Shape of the regions}{25}{subsubsection.6.2.4}
-\contentsline {subsection}{\numberline {6.3}Comparisons with Laniakea}{26}{subsection.6.3}
-\contentsline {section}{\numberline {7}Conclusions and Discussions}{27}{section.7}
-\contentsline {section}{\numberline {8}Future Work}{28}{section.8}
-\contentsline {section}{\numberline {A}Appendix}{29}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}Approach by the Speed}{29}{subsection.A.1}
-\contentsline {subsubsection}{\numberline {A.1.1}Region Growing Algorithm with the Speed}{29}{subsubsection.A.1.1}
-\contentsline {subsubsection}{\numberline {A.1.2}Results of the Speed Approach}{30}{subsubsection.A.1.2}
-\contentsline {subsubsection}{\numberline {A.1.3}Code example for Region Growing Algorithm - Approach by the Speed}{37}{subsubsection.A.1.3}
+\contentsline {section}{\numberline {3}Introduction}{6}{section.3}
+\contentsline {section}{\numberline {4}Background}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}The Standard Cosmological Model}{6}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Cosmic flows and peculiar velocities}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}The V-Web Algorithm}{11}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Fractional Anisotropy (FA) and Trace of the Velocity Shear Tensor (VDH)}{11}{subsection.4.4}
+\contentsline {section}{\numberline {5}Methods}{12}{section.5}
+\contentsline {subsection}{\numberline {5.1}Cosmological Simulations}{13}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Approaches for the Detection of Superclusters}{14}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Algorithms to find Superclusters}{16}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Region Growing Algorithm: Basic Description}{16}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Region Growing Algorithm with the FA and the trace of the velocity shear tensor}{17}{subsubsection.5.3.2}
+\contentsline {section}{\numberline {6}Results}{18}{section.6}
+\contentsline {subsection}{\numberline {6.1}General visualizations (FA, VDH) of the Simulations}{18}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}FA, Fractional Anisotropy}{18}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}VDH, Trace of the shear velocity tensor}{19}{subsubsection.6.1.2}
+\contentsline {subsection}{\numberline {6.2}Region Growing Algorithm and FoF with the FA and VDH}{20}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Influence of the FA in the seeds}{23}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Influence of the FA in the growth}{25}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Volume distribution}{28}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Shape of the regions}{29}{subsubsection.6.2.4}
+\contentsline {subsection}{\numberline {6.3}Comparisons with Laniakea}{30}{subsection.6.3}
+\contentsline {section}{\numberline {7}Conclusions and Future Work}{31}{section.7}
+\contentsline {section}{\numberline {A}Appendix}{34}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Approach by the Speed}{34}{subsection.A.1}
+\contentsline {subsubsection}{\numberline {A.1.1}Region Growing Algorithm with the Speed}{34}{subsubsection.A.1.1}
+\contentsline {subsubsection}{\numberline {A.1.2}Results of the Speed Approach}{35}{subsubsection.A.1.2}
+\contentsline {subsubsection}{\numberline {A.1.3}Code example for Region Growing Algorithm - Approach by the Speed}{42}{subsubsection.A.1.3}
+\contentsline {subsection}{\numberline {A.2}Simple implementation of the Region Growing Algorithm with the FA and VDH}{43}{subsection.A.2}
+\contentsline {subsubsection}{\numberline {A.2.1}Region Growing Algorithm with the FA and VDH}{43}{subsubsection.A.2.1}
+\contentsline {subsubsection}{\numberline {A.2.2}Code example for Region Growing Algorithm - Approach by the FA and Divergence}{45}{subsubsection.A.2.2}

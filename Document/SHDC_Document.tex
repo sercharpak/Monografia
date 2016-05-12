@@ -107,85 +107,176 @@ our methods and in observations) leading to this
 \newpage
 
 \section{Introduction}
-The Universe, at large scales, has a filamentary
- scructure. Large voids regions and galaxy
-  superclusters are part of it. These structures can
-   be identified visually. However, there are
+
+We live in the planet Earth. Our planet orbits
+ around the Sun in the Solar System, under the
+  influence of the gravitational forces. Our Solar
+   System forms, along with many other stars and
+    systems, our home galaxy, the Milky
+    Way. Galaxy themselves, under the
+  same forces, form even larger structures. It is
+   these structures we call galaxy superclusters. \\
+   
+   %TODO insert an image to explain the filamentary structure of the univers.
+
+Detecting these galaxy superclustes is a challenging task. Observationally there are  There exists
     different algorithms to identify them based on
-     physical criteria \cite{gott_iii_map_2005}.    
+     physical criteria \cite{gott_iii_map_2005}. The Universe, at large scales, has a filamentary
+ structure. Large voids regions and galaxy
+  superclusters are part of it. These structures
+   can
+   be identified visually.  
 \\
 
-Due to gravitational attraction, velocity and
- density are related. It is possible to relate
+Due to gravitational attraction, it is possible to relate
   velocity fields with density fields. A proposal to
    find galaxy superclusters is to analyze the
-    velocity field of galaxy. Matter tend to flow to
-     the most dense region. In this way, spacial
+    velocity field of galaxies as matter tend to flow to
+     dense region. Spacial
       regions where the galaxy flow is convergent
        represent galaxy superclusters.\\
 \\
 Recently a team build a galaxy velocities flow map
- of the local group in a scale of hundreds of light
+ of the local group in a scale of hundreds of million light
   years \cite{tully_cosmicflows-2_2013}. In this map
    converging points were found and this team
     identified Laniakea, the galaxy supercluster
-     which includes our galaxy, the milky way
+     which includes our galaxy, the Milky Way
       \cite{tully_laniakea_2014}. These observations
        are difficult to make for several reasons we
         will describe briefly. As a result of these
          difficulties, there is not a statistical
           quantity of galaxy superclusters obtained
-           from the observational approach. 
+           from the observational approach. Following
+            this our home address in the universe is
+             Earth, Solar System, Milky Way, Laniakea.
 \\   
-
-We propose to develop a method to detect a
- statistical significant number of galaxy
-supercluster in cosmological simulations. 
-With this we aim to quantify if Laniakea can be
+\begin{par}
+The definition of Laniakea by Tully et al
+ \cite{tully_laniakea_2014} is based on the
+  peculiar velocity flow. Chon et al provide an
+   interesting work on a different definition of
+    galaxy superclusters, a gravitationally bound
+     dense large scale structure
+      \cite{chon_characterising_2014} and
+       \cite{chon_definition_2015}. On this
+        different criteria, Laniakea and how
+         Laniakea fits their definition for supercluster
+          differs.  \\
+\end{par}
+We aim to quantify if Laniakea can be
  considered as an atypical structure in
-the Universe. 
+the Universe. For this, we develop a method to detect a
+ statistical significant number of galaxy
+supercluster in cosmological simulations following
+ physical criteria similar to the one used to define
+  Laniakea. 
 \\
 
 \section{Background}
-\subsection{The Current Model $\Lambda$CDM Cosmological Parameters}
+\subsection{The Standard Cosmological Model}
 \label{cosmo_constants}
-%TODO Explain the cosmological Parameters
 
 \begin{par}
+Before we expose our method to find superclusters in cosmological simulations we expose our current model for cosmology.\\
+
 The current accepted model for cosmology is the Lambda
- - Cold Matter Model, or $\Lambda$ CDM Model. The
+ - Cold Matter Model, or $\Lambda$ CDM Model. It is obtained from Einstein's equations of General Relativity.\cite{bertone_particle_2005}.\\
+The
   letter $\Lambda$ makes a reference to the
    cosmological constant $\Omega_{\Lambda}$, the dark
     matter density, which is
     associated with dark energy and the accelerated
      expansion of the Universe according to General
-      Relativity.
+      Relativity. Dark energy is a fairly unknown form of
+       energy. It is proposed to explain the accelerated
+        rate of expansion of the Universe.
+         \cite{peebles_cosmological_2003}\\
+      
+The dark matter is a hypothetical type of matter which is
+ nor ordinary matter (baryonic matter), nor neutrino
+  particles nor dark energy. It is dark as it does not
+   seem to produce any radiation (light). There has been
+    indirect observations of dark matter as difference
+     between gravitational matter implied by velocities
+      of stars and observed matter and gravitational
+       lensing between others
+        \cite{trimble_existence_1987}. \\
+        
+CDM refers to Cold Matter Model. Cold means that it
+ follows a bottom-up scheme. With bottom-up, we mean that
+  small structures merge into one larger structure. The
+   opposite would be hot matter in a top-down scheme,
+    where an initial large structure breaks into smaller
+     structures. \cite{bertone_particle_2005} \\
+      
 \end{par}
 
 \begin{par}
-The simplest $\Lambda$-CDM Model is based on 6 parameters.\\
+The simplest $\Lambda$-CDM Model is based on 6 general parameters. We describe some of them here.\\
+\begin{enumerate}
+\item The Hubble parameter, $H$, is defined as the time
+ dependent Hubble parameter 
+\[
+H = \frac{\dot{a}}{a}
+\]
+$a(t)$ refers to the expansion rate of the universe. For
+ small velocities, H is found to be constant and thus is
+  defined as the Hubble constant $H_0$. 
+\[
+H_0 = 100 h \times km \times s^{-1} \times Mpc^{-1} = 67 \pm 7 km \times s^{-1} \times Mpc^{-1}
+\]
+$Mpc$ is a cosmological unit of length for large
+ distances. $1 Mpc = 10^6 pc$ where $1 pc = 3.087 \times
+  10^{16} m$. $h$ is the dimensionless parameter defined
+   by the equation above, $H_0 = 1 km \times s^{-1} \times Mpc^{-1} \times
+    h^{-1}$. Most of the units we use are in $Mpc/h$, a
+     standard in this context.
+\item Baryon density parameter $\Omega_b$. The baryon matter is the common matter we are familiar and live within. $\Omega_b = 0.0486 \pm 0.0010$.
 
-Here comes the explanation of the model and the exposition of the Friedman Equation.\\
+\item Dark matter density parameter $\Omega_c$. $\Omega_c = 0.2589 \pm 0.0057$.
 
-%TODO Explain the Friedman Equation of the model 
+\item Matter density parameter $\Omega_m$ or $\Omega_0$.
+ It corresponds to roughly the sum of $\Omega_c$ and
+  $\Omega_b$. $\Omega_0 = 0.3089 \pm 0.0062$
+
+\item Dark energy density parameter, cosmological vacuum energy density (or cosmological constant), $\Omega_{\Lambda}$. As we stated before, it is bound to the accelerated rate of expansion of the universe. $\Omega_{\Lambda} = 0.6911 \pm 0.0062$
+
+\item These density parameters are bound to the critical density $\rho_c$ found when the cosmological constant is 0 in Einstein's equations. $\rho_c = \frac{3H^2}{8 \pi G} = (8.62 \pm 0.12) \times 10^{−27} kg/m^3$.
+
+\end{enumerate}
+The total density parameter, a constraint, is the sum of
+ the density parameters and has to be equal to one. $\Omega_{tot} = \Omega_b + \Omega_c + \Omega_{\Lambda} =1$ or $\Omega_{tot} = \Omega_0 + \Omega_{\Lambda} =1$.\\
+
+Another important concept in this context is the redshift. The redshift $z$ can be defined by the following equation\cite{peebles_cosmological_2003}: 
+\[
+1 + z = \frac{\lambda_{obs}}{\lambda_{em}}
+\] 
+It is a measure of the difference between the observed
+ wavelength $\lambda_{obs}$ and the wavelength received
+  from a distant star $\lambda_{em}$. It is a convenience
+   way to label epochs (time) with $z=0$ being present
+    time.
 \end{par}
 
 
-
-
 \subsection{Cosmic flows and peculiar velocities}
+\label{sec:peculiar_vel}
 %Describe in detail the Laniakea work and the Methods used
-
-%TODO Paragraph about the peculiar velocity.
-%TODO What is the peculiar velocity in an expanding universe?
+Our method to detect superclusters in cosmological
+ simulations is based on the peculiar velocity field
+  analysis in a similar fashion as Tully et al. did for
+   the definition on Laniakea \cite{tully_laniakea_2014}
+    \cite{tempel_cosmology:_2014}.
 \begin{itemize}
 \item Peculiar velocity
 \end{itemize}
 \begin{par}
-The peculiar velocity is defined as the velocity relative to a rest frame. In the current cosmology context ($\Lambda$CDM), it is the amount of the radial velocity of a galaxy which cannot be explained by the expansion of the Universe. Hubble's law states that galaxy are moving away from us at a speed proportional to the distance from us (the proportion is Hubble's constant). In other words,
+The peculiar velocity is defined as the velocity relative to a rest frame. It is the amount of the radial velocity of a galaxy which cannot be explained by the expansion of the Universe. Hubble's law states that galaxy are moving away from us at a speed proportional to the distance from us (the proportion is Hubble's constant). In other words,
 \[ 
 v_p = v_{obs} - H_{0} * d_{obs}
 \]
+With $v_p$ the peculiar velocity, $v_{obs}$ and $d_{obs}$ the observed velocity and distance, $H_{0}$ the Hubble constant as described in section \ref{cosmo_constants}.
 \end{par}
 
 \begin{itemize}
@@ -200,27 +291,34 @@ From the linear perturbations in the Newtonian limit of
     acceleration \cite{padmanabhan_theoretical_2000}.
      We find that:
 \[
-\vec{v}_p \simeq \frac{2}{3 H \Omega} \Omega^{0.6} \vec{g}
+\vec{v}_p \simeq \frac{2}{3 H \Omega_b} \Omega_{b}^{0.6} \vec{g}
 \]
-With $H = \frac{\dot{a}}{a}$ the Friedmann equation,
- $\Omega$ the density parameter and $\vec{g}$ the
+With $H$ the Hubble parameter,
+ $\Omega_b$ the baryonic density parameter as
+ described in section \ref{cosmo_constants} and $\vec{g}$ the
   peculiar acceleration with $\vec{g} = \frac{-1}{a}
    \nabla \phi $ with $\phi$ the gravitational
-    potential.\\
+    potential and $a$ the expansion rate of the universe.\\
 In other words we obtain an expression:
 \[ 
 \vec{v}_p \propto  - \nabla \phi
 \]
 If we take the divergence we obtain:
 \[
-\nabla \cdot \vec{v}_p \propto \nabla^2 \phi
+\nabla \cdot \vec{v}_p \propto - \nabla^2 \phi
 \]
 But $\nabla^2 \phi$ responds a Poisson-like equation
- with the density field $\delta$. We can finally write:
+ with the density field $\rho$. We can finally write:
 \[
-\nabla \cdot \vec{v}_p \propto - \delta
+\nabla \cdot \vec{v}_p \propto - \rho
 \]
-And, more exactly, as stated in
+We define the overdensity $\delta$ as the excess density
+ in relation with the mean density of the universe.
+ $\delta = \rho / \bar{\rho} -1$ with $\bar{\rho}$ the
+  mean density. $\delta$ is an adimensional quantity. \\
+
+Our equation for peculiar velocity can be stated as
+ stated in
  \cite{tully_laniakea_2014}: 
 \[
 \nabla \cdot \vec{v}_p = - H_0 f(\Omega_m, \Omega_{\Lambda}) \delta
@@ -228,16 +326,16 @@ And, more exactly, as stated in
 With $\vec{v}_p$ the peculiar velocity field, $H_0$ the
  Hubble constant, $\Omega_m$ the matter density
   parameter, $\Omega_{\Lambda}$ the Dark matter density
-   parameter and $\delta$ the density field.\\
+   parameter, $\delta$ the excess density field and $f(\Omega_m, \Omega_{\Lambda})$ a linear function of $\Omega_m$ and $\Omega_{\Lambda}$.\\
    With this relation we can directly link the peculiar
-    velocity field and the density field.
+    velocity field and the excess density field. They
+     will have related behaviours.
 \end{par}
 
 
 \begin{itemize}
 \item Observational methods
 \end{itemize}
-%TODO Paragraph about how do you find it observationally.
 \begin{par}
 We now proceed to describe some of the observational
  methods used Cosmicflows-2
@@ -246,8 +344,8 @@ We now proceed to describe some of the observational
     data which covers out to ~400 Mpc. Six main methods
      were jointly used to estimate the galaxy
       distances.	\\
-     
-     The first method is the Cepheid Period-Luminosity
+ \begin{enumerate}
+ \item Cepheid Period-Luminosity
       Relation (Cepheid PLR) applied to the Hubble
        Space Telescope (HST) distance scale key
         project. The HST data is covers distances
@@ -258,8 +356,8 @@ We now proceed to describe some of the observational
             difficult as there is plenty of luminosity
              noise from other objects even if Cepheids
               themselves are bright.\\
-
-The second method is applied to old stars. From the
+              
+  \item Is applied to old stars. From the
  luminosities of Red Giant stars at the gap of core
   Helium burning, distances are determined. This can be
    seen in the the Red Giant Branch (TRGB) color
@@ -269,31 +367,37 @@ The second method is applied to old stars. From the
        complementary to the Cepheid PRL method covers
         distances within 10 Mpc.\\
         
-The third method is the Surface Brightness Fluctuation method.\\\
-
-The fourth method is the elliptical fundamental plane
+  \item Surface Brightness Fluctuation (SBF) method. It
+   measures the variance in the distribution of light
+    emitted in a galaxy. The noisy fluctuations we
+     observe are proportional to the distance of the
+      galaxy. This method covers distances within 100
+       Mpc.\\
+  
+  \item Elliptical fundamental plane
  method. The quality of these measurements is not very
   good. Despite of that, it can be used for large
    samples of galaxies in a large volume.\\
-
-The fifth method is the Spiral luminosity-rotation
+   
+   \item Spiral luminosity-rotation
  method. This method also provides less accurate
   distances, but can be applied to large sets of
    galaxies.\\
-
-Finally, the sixth method is the Supernovae Ia method.
+   
+  \item the Supernovae Ia method.
 These supernovas are very bright and can been seen from
  great distances. The quality of these measurements are
   very high. Nevertheless, samples of these supernovas
    are small.
+\end{enumerate}     
+
 \end{par}
 
 
 \begin{itemize}
 \item Wiener Filter
 \end{itemize}
-%TODO Paragraph about the Wiener filterning method
-%TODO Explain how the fieltering worked
+
 %Reference 
 \begin{par}
 A Wiener filtering method is a tool to reconstruct
@@ -324,40 +428,95 @@ The Wiener filter formalism is based on linear minimum
 \end{par}
 
 
-
-
-
-\subsection{Boundaries of Laniakea - The V-Web Algorithm}
+\subsection{The V-Web Algorithm}
 \label{sec:v_web}
-The contour of the region were reconstructed with
- the V-web Algorithm. 
-%TODO V-Web
+The contour of the region of Laniakea were reconstructed
+ using the V-web Algorithm \cite{tully_laniakea_2014}.
+  The basis of our method for the
+  detection superclusters in cosmological simulation is
+   the V-Web Algorithm, first introduced by Hoffman et al \cite{hoffman_kinematic_2012}.\\
+
 %Reference 
 This algorithm is deeply
-  connected to the velocities.ts core is the
-   shear velocity tensor \cite{hoffman_kinematic_2012}:\\
-\[
-\sum_{\alpha\beta} = -\frac{1}{2 H_0} \left( \frac{\partial v_{\alpha}}{\partial x_{\beta}} + \frac{\partial v_{\beta}}{\partial x_{\alpha}} \right)
-\]
+  connected to the velocities. Its core is the
+   shear velocity tensor  defined as:\\
+$$
+\Sigma _{\alpha\beta} = -\frac{1}{2 H_0} \left( \frac{\partial v_{\alpha}}{\partial x_{\beta}} + \frac{\partial v_{\beta}}{\partial x_{\alpha}} \right)
+$$
 With $v_{\alpha}$ and $x_{\alpha}$ representing the $\alpha$ component of respectively the comoving velocity (the peculiar velocity) and the comoving position.  \\
 
-Here goes an explanation of the eigenvalues significance.
-%TODO Explain how the V-Web algorithm worked. 
+$\Sigma _{\alpha\beta}$ can be represented by a $3 \times
+ 3$ symmetric matrix with real values. This makes it
+  possible to diagonalize it and find its 3 eigenvalues.\\
+These eigenvalues $\lambda_1$, $\lambda_2$ and
+ $\lambda_3$ carry information about the motion of the
+ particles. By convention they are ordered such as
+  $\lambda_1 > \lambda_2 >\lambda_3$. The V-Web scheme
+   refers to the web classification based on how many of
+    these eigenvalues are above a predefined threshold.
+     Respectively if 0, 1, 2 or 3 eigenvalues are above
+      the threshold the point is classified as a void,
+       sheet, filament or knot. \\
+       
+Our method uses indirectly these eigenvalues through the
+ Fractional Anisotropy and the trace of 
+ $\Sigma _{\alpha\beta}$.
 
 
-
-
-
-\subsection{Fractional Anisotropy and trace of the velocity shear tensor}
+\subsection{Fractional Anisotropy (FA) and Trace of the Velocity Shear Tensor (VDH)}
 \label{sec:FA_trace}
-%TODO FA and Trace of the Tensor
-The Fractional Anisotropy (FA) was first introduced by Libeskind et al \cite{libeskind_velocity_2013} as tracer of cosmic voids and later exposed in detail by Bustamante et al. \cite{bustamante_tensor_2015}.\\
+
+Our method is based on the Fractional Anisotropy (FA) and the trace of the Velocity Shear Tensor.\\
+
+\begin{itemize}
+\item The Fractional Anisotropy (FA)
+\end{itemize}
+
+The Fractional Anisotropy (FA) was first conceived in the
+ medical context by Peter Basser
+  \cite{basser_inferring_1995}. Libeskind et al
+   \cite{libeskind_velocity_2013} first introduced the FA
+    in the cosmological context as tracer of cosmic voids
+     and later exposed in detail by Bustamante et al.
+     \cite{bustamante_tensor_2015}.\\
+    
 The FA can be written as:
 \[
 FA = \frac{1}{\sqrt{3}} \sqrt{\frac{( \left( \lambda_1 - \lambda_3 \right)^2 + \left( \lambda_2 - \lambda_3 \right)^2 + \left( \lambda_1 - \lambda_2 \right)^2  )}{\lambda^{2}_1 + \lambda^{2}_2 + \lambda^{2}_3}} 
 \]
-With $\lambda_1$ $\lambda_2$ and $\lambda_3$ the eigenvalues obtained from the V-Web algorithm.
+With $\lambda_1$ $\lambda_2$ and $\lambda_3$ the
+ eigenvalues obtained from the V-Web algorithm. FA is an
+  dimensionless quantity which takes values between 0 and
+   1. We
+  interpret FA = 0 as an isotropic distribution around
+   the particle (where $\lambda_1 = \lambda_2 =
+    \lambda_3$) and FA = 1 as a highly anisotropic
+     distribution around the particle.
 
+\begin{itemize}
+\item The trace of the Velocity Shear Tensor (VDH)
+\end{itemize}
+
+We describe in section \ref{sec:peculiar_vel} the divergence of the peculiar velocity field is proportional to the overdensity:
+\[
+\nabla \cdot \vec{v}_p \propto - \delta
+\]
+
+The trace of the velocity shear tensor $\Sigma
+ _{\alpha\beta}$, $\lambda_1 + \lambda_2 + \lambda_3$ is
+ equal to the divergence of the velocity divided by a
+  factor $H_0$, the Hubble constant.
+\[
+\lambda_1 + \lambda_2 + \lambda_3 = \frac{- \nabla \cdot \vec{v}}{H_0}
+\]
+$\frac{- \nabla \cdot \vec{v}}{H_0}$ is an dimensionless quantity. This trace of $\Sigma_{\alpha\beta}$ is
+ proportional to the overdensity $\delta$ and hence have
+  a similar behaviour.\\
+
+We name the trace of $\Sigma_{\alpha\beta}$ or $\frac{- \nabla \cdot \vec{v}}{H_0}$ as VDH which states as
+ Velocity Divergence divided by the Hubble constant. 
+
+We use the dimensionless quantities of the FA and the VDH in our method to find superclusters in cosmological simulations.
 
 \section{Methods}
 \begin{par}
@@ -367,10 +526,10 @@ Volker Springel's N-Body simulation software,
    cosmological simulations and is widely used in
     the scientific community. One example of use of
      Gadget is the Millennium Run
-      \cite{springel_simulations_2005}, which has
-       brought our understanding of our current
-        model forward. We describe our numerical
-         experiments in the section \ref{sec:sims}.
+      \cite{springel_simulations_2005}, which in its
+       moment (2005) was of great significance. We
+        describe the cosmological simulations we
+         performed in the section \ref{sec:sims}.
 \end{par}
 \\
 \begin{par}
@@ -380,11 +539,8 @@ We devised different approaches for the detection of
    appendix \ref{App:App_Speed}. We describe our
     main approach in section \ref{sec:approaches}.
      It is based on the analysis of the 
-    %TODO verify this
     eigenvalues of the local velocity shear tensor
-     in the V-Web scheme. We use the Fractional
-      Anisotropy and the trace of the shear tensor
-       described in section \ref{sec:FA_trace}. 
+     in the V-Web scheme. We use the FA and the VDH as described in section \ref{sec:FA_trace}. 
 \end{par}
 \\
 \begin{par}
@@ -422,21 +578,7 @@ We are looking for structures of the same order of
       section \ref{sec:approaches}. Finally we want
        these simulations to run in a reasonable time. 
        In table \ref{tab:sims}, we describe the 3
-        simulations we ran. We first ran the Medium
-         simulation, of dimension 500 Mpc/h and $512^3$
-          DM particles, as a first approach to this
-           problem. To perform the CIC correctly we
-            needed a more dense simulation. The result
-             is the Small (Dense) simulation, of
-              dimension 250 Mpc/h and the same $512^3$
-               DM particles. Finally we ran a longer
-                Medium (Dense), of dimension 500 Mpc/h
-                 and  $1024^3$ DM particles. This last
-                  simulation took several days to
-                   complete (80 hours). A bigger
-                    simulation would take several weeks
-                     and is to be performed in a future
-                      work.
+        simulations we use. 
 \end{par}
 \begin{table}[ht]
     \centering
@@ -451,17 +593,17 @@ We are looking for structures of the same order of
 \end{table}
 \FloatBarrier
 
-By DM particle we mean a particle which only
+By DM particle we mean a computational particle which only
  interacts through gravity
 interaction. In the simulation each particle
- represents a galaxy. The DM particles are
+ represents a fluid element. The DM particles are
 placed in a 3D grid layout first and then are
- perturbed following a Poisson distribution
+ perturbed following a Gaussian distribution
 before the simulation start, during the initial
  conditions generation. Once the simulation starts, the particles interact only with gravity\\
 
-%TODO this may be could be relocated in the %background section
-The initial conditions were generated with Volker
+
+The initial conditions were generated using Volker
  Springel's N-Genic software. For the initial
   conditions we specify the cosmological constants
    described in section \ref{sec:cosmo_constants}. They
@@ -471,34 +613,28 @@ The initial conditions were generated with Volker
  \begin{table}[ht]
     \centering
     \begin{tabular}{|c|c|c|c|}
-        $\Omega_0$ & $\Omega_{\Lambda}$ & $\Omega$ & H \\
+        $\Omega_0$ & $\Omega_{\Lambda}$ & $\Omega_b$ & H \\
         0.3 &  0.7 & 0 & 0.7 \\
     \end{tabular}
     \caption{Cosmological Constants in the Gadget-2 Simulations}
     \label{tab:consts}
 \end{table}
 \FloatBarrier
-%TODO Specify the units
-$\Omega_0$  corresponds to the Cosmological matter
+
+As we specify in the section \ref{sec:cosmo_constants}, $\Omega_0$  corresponds to the Cosmological matter
  density parameter in units of the critical density at
 red shift z = 0. $\Omega_{\Lambda}$ is the cosmological
  vacuum energy density (cosmological constant) in
-  units of the critical density at red shift z = 0. 
+  units of the critical density at red shift z = 0 (present). 
 %Relevant only for comoving integration. 
-For a geometrically flat universe, as ours, one has
- $\Omega_0$ + $\Omega_{\Lambda}$ = 1.
- $\Omega$ is the baryon density in units
+For the standard cosmological model, $\Omega_0$ + $\Omega_{\Lambda}$ = 1.
+ $\Omega_b$ is the baryon density in units
   of the critical density at red shift z = 0. In our
    case it
    is not relevant. Finally, H denotes the Hubble
     constant at red shift z=0 in  units of 100 
     $km$ $s^{-1}$
-     $Mpc^{-1}$. It will be relevant in the
-      discussions, section \ref{sec:discussions}.
-%TODO make a reference to the discussion with the
-% Chon paper where the Hubble constant is related
-% to a gravitationaly bounded structure.
-%TODO Explain the constants
+     $Mpc^{-1}$. 
 
 We then use different algorithms to identify the
  superclusters within the simulation.\\
@@ -517,24 +653,22 @@ In a first approach we analyse the distribution of
 \end{par}
 
 \begin{par}
-For our second approach (main one), we will use the
+For main approach, uses the
  following concepts: Cloud In Cell (CIC) method, the V-
  Web scheme (as described in section \ref{sec:v_web}),
-  the Fractional Anisotropy (FA) (as described in
-   section \ref{sec:FA_trace}), the trace of the
-    velocity shear tensor $tr\left(\sum_{\alpha
-     \beta}\right)$ (as described in section
-      \ref{sec:FA_trace}) and the algorithms described
+  the FA and VDH (as described in
+   section \ref{sec:FA_trace}) and the algorithms described
        in section \ref{sec:algorithms}.\\
 \end{par}
 
 
 \begin{itemize}
-\item The Cloud In Cell (CIC) method
+\item The Cloud In Cell (CIC) interpolation method
 \end{itemize}
 \begin{par}
-%TODO Describe the CIC method
-The Cloud In Cell (CIC) method is a derivation of the
+The Cloud In Cell (CIC) is a method to interpolate a
+ quantity such as the density in a grid. The (CIC) method
+ is a derivation of the
  Particle in Cell (PIC) method, a Particle Mesh (PM)
   method, first introduced by Francis Harlow in the
    1950's in the field of computational fluid dynamics
@@ -562,29 +696,22 @@ The Cloud In Cell (CIC) method is a derivation of the
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=0.6\textwidth]{general/CIC_Explain_bigger} % Include the image placeholder.png
-\caption{Explanation of the Cloud In Cell Method (CIC)}
+\caption{Visualization of the Cloud In Cell Method (CIC)}
 \label{fg:cic_explain}
 \end{center}
 \end{figure}
 \FloatBarrier
 
 \begin{itemize}
-\item The V-Web scheme
+\item The V-Web scheme, the FA and the VDH
 \end{itemize}
 \begin{par}
-%TODO Describe very briefly the V-Web
-We described the V-Web scheme in section \ref{sec:v_web}.\\ %TODO write a summary of the V-WEB
-\end{par}
-
-\begin{itemize}
-\item The Fractional Anisotropy and the trace of $\sum_{\alpha \beta}$
-\end{itemize}
-\begin{par}
-%TODO Describe very briefly our use of FA and $\sum_{\alpha \beta}$
-As we saw in section \ref{sec:FA_trace} the FA and the trace of $\sum_{\alpha \beta}$ carry valuable information.
-The FA %TODO what iformation carries the FA
-
-The trace of $\sum_{\alpha \beta}$\\  %TODO what iformation carries the $\sum_{\alpha \beta}$
+We describe the V-Web scheme in section \ref{sec:v_web}
+ and the FA and VDH in section \ref{sec:FA_trace}.
+The FA gives us a dimensionless quantity to analyse
+ isotropy and the VDH gives us a also another
+  dimensionless quantity which behaves in a similar
+   fashion as the matter overdensity $\delta$.
 \end{par}
 
 
@@ -594,14 +721,13 @@ In summary, our approach follows the steps:
 
 \begin{enumerate}
 \item Calculate the density field using CIC on the simulation data.
-\item At the same time we calculate the velocity field using CIC on the simulation data.
-\item Using finite differences we form the velocity shear tensor $\sum_{\alpha \beta}$.
-\item We diagonalize it and find its eigenvalues $\lambda_i$ and eigenvectors $\hat{u}_i$
-\item We form the FA grid as described in section \ref{sec:FA_trace} 
-\item We form the trace of $\sum_{\alpha \beta}$ grid.
-\item We apply the algorithms described in section \ref{sec:algorithms} to find the superclusters
-\item We extract the properties (volume, shape, mass) from the superclusters
-\item We compare the superclusters to Laniakea
+\item Calculate the velocity field using CIC on the simulation data.
+\item Use finite differences to compute the velocity shear tensor $\sum_{\alpha \beta}$.
+\item Diagonalize $\sum_{\alpha \beta}$ and find its eigenvalues $\lambda_i$ and eigenvectors $\hat{u}_i$
+\item Compute the FA and VDH grids as described in section \ref{sec:FA_trace} 
+\item Apply the algorithms described in section \ref{sec:algorithms} to find the superclusters
+\item Extract the properties (volume, shape, mass) from the superclusters
+\item Compare the superclusters detected in the simulation to Laniakea
 \end{enumerate}
 
 
@@ -616,7 +742,7 @@ Our approach is hence very close with the approach
     our detected structures.
 \end{par}
 
-\subsection{Algorithms}\label{sec:algorithms}
+\subsection{Algorithms to find Superclusters}\label{sec:algorithms}
 
 Our main algorithm is a region growing algorithm
  as described by Gonzalez
@@ -626,7 +752,7 @@ Our main algorithm is a region growing algorithm
 \subsubsection{Region Growing Algorithm: Basic Description}
 
 \begin{par}
-The region growing algorithm is used to identify different regions in a image. The aim is to identify regions which share common properties. First we identify points, as few as possible, which we know for sure are contained in these regions. These points are the seeds of our regions. We then define a certain growth predicate, if the neighbours of a seed validate this predicate they are considered as members of the group. These new members are then treated as seeds and ask their own neighbours if they validate the predicate. This goes on until all the points have been evaluated or until a limit defined by the user is reached.
+The region growing algorithm is used to identify regions sharing common properties. First we identify points, as few as possible, which we know for sure are contained in these regions. These points are the seeds of our regions. We then define a certain growth predicate, if the neighbours of a seed validate this predicate they are considered as members of the group. These new members are then treated as seeds and ask their own neighbours if they validate the predicate. This goes on until all the points have been evaluated or until a limit defined by the user is reached.
 \end{par}
 
 \begin{par}
@@ -685,13 +811,13 @@ simplify our own implementation.
 
 
 \subsubsection{Region Growing Algorithm with the FA and the trace of the velocity shear tensor}\label{sec:own_impl_descr}
-Our implementation is based in the FA and the trace of the velocity shear tensor $tr\left(\sum_{\alpha \beta}\right)$. It is uses 4-connectivity as described before.
+Our implementation is based in the FA and the VDH. It is uses 4-connectivity as described before.
 
 \begin{itemize}
     \item Seeds
 \begin{par}
 We are looking for overdense structures. Therefore we will look
-for particles with $tr\sum_{\alpha \beta} \geq 1.0$.  We also want to analyse how
+for particles with $VDH \geq 1.0$.  We also want to analyse how
 the FA fits. We know that the centres of our structures should be
 fairly isotropic so we will explore seeds with FA lesser than a
 threshold. We will perform several runs of the algorithm, so we
@@ -701,14 +827,14 @@ These can be seen in table \ref{tab:seeds_FA_Trace}.
  \begin{table}[ht]
     \centering
     \begin{tabular}{|c|c|c|c|}
-        $FA_{seed}$ & $tr\left(\sum_{\alpha \beta}\right)_{seed}$ \\
+        $FA_{seed}$ & $VDH_{seed}$ \\
         0.5 &  1.0 \\
         0.6 &  1.0 \\
         0.7 &  1.0 \\
         0.8 &  1.0 \\
         0.9 &  1.0 \\
     \end{tabular}
-    \caption{Different values of the FA and $tr\left(\sum_{\alpha \beta}\right)$ for the choice of the seeds}
+    \caption{Different values of the FA and VDH for the choice of the seeds}
     \label{tab:seeds_FA_Trace}
 \end{table}
 \FloatBarrier
@@ -724,31 +850,31 @@ We label groups as a function of its respective
 
 \begin{par}
 We define, as we did for the
-choice of the seeds, thresholds for the FA and for $tr\left(\sum_{\alpha \beta}\right)$. If
+choice of the seeds, thresholds for the FA and for VDH. If
 the neighbour cell validates these thresholds, and hasn't been
 labelled yet, it is labelled as the group of the seed particle. So
 in other words: \\
 
 \begin{center}
 $Q: \left( FA (x,y,z) \leq Thresh_{FA} \right)$ AND
-$\left( \delta (x,y,z) \geq Thresh_{tr\left(\sum_{\alpha \beta}\right)} \right)$ 
+$\left( VDH (x,y,z) \geq Thresh_{VDH} \right)$ 
 \end{center}
 As we are looking for overdense regions (no voids) we define the
-threshold for $tr\left(\sum_{\alpha \beta}\right)$ as 0.0. As we are exploring the different
+threshold for VDH as 0.0. As we are exploring the different
 values for the FA. each run will follow a row of the table \ref{tab:search_FA_Trace}.
 \end{par}
 
 \begin{table}[ht]
     \centering
     \begin{tabular}{|c|c|c|c|}
-        $FA_{growth}$ & $tr\left(\sum_{\alpha \beta}\right)_{growth}$ \\
+        $FA_{growth}$ & $VDH_{growth}$ \\
         0.5 &  0.0 \\
         0.6 &  0.0 \\
         0.7 &  0.0 \\
         0.8 &  0.0 \\
         0.9 &  0.0 \\
     \end{tabular}
-    \caption{Different values of the FA and $tr\left(\sum_{\alpha \beta}\right)$ for the growth of the regions}
+    \caption{Different values of the FA and VDH for the growth of the regions}
     \label{tab:search_FA_Trace}
 \end{table}
 \FloatBarrier
@@ -798,7 +924,7 @@ need to search for this case individually.
 
 \section{Results}
 
-\subsection{General visualizations (FA, Divergence) of the Simulations}
+\subsection{General visualizations (FA, VDH) of the Simulations}
 
 \subsubsection{FA, Fractional Anisotropy}
 The following results correspond to our
@@ -851,7 +977,7 @@ Observing a 2-D cut of the FA \ref{fg:cut_FA} we
 \end{par}
 
 
-\subsubsection{$tr \left(\sum_{\alpha\beta}\right)$, Trace of the shear velocity tensor}
+\subsubsection{VDH, Trace of the shear velocity tensor}
 As we did for the FA, we visualize the
  distribution (Figure \ref{fg:hist_Trace}) and a
   2-D cut (Figure \ref{fg:cut_Trace})of $-\nabla
@@ -893,7 +1019,7 @@ Observing a 2D cut of the Velocity Divergence as shown in
 \end{par}
 
 
-\subsection{Region Growing Algorithm and FoF with the FA and $tr \left(\sum_{\alpha\beta}\right)$}
+\subsection{Region Growing Algorithm and FoF with the FA and VDH}
 %The real results I got
 \begin{par}
 The following results are from the \textbf{Small
@@ -1204,7 +1330,7 @@ We can observe in figure \ref{fg:compare_lan_larg}  that for Growth FA threshold
 
 
 
-\section{Conclusions and Discussions}
+\section{Conclusions and Future Work}
 \label{sec:discussions}
 \begin{par}
 Our method, based on the Fractional Anisotropy (FA) and the Velocity Divergence, successfully find structures in cosmological simulations. \\
@@ -1222,23 +1348,9 @@ We state that Laniakea is, in the Cosmological
       always larger than the detected structures
        volumes. \\
 \end{par}
-\begin{par}
-The definition of Laniakea by Tully et al
- \cite{tully_laniakea_2014} is based on the
-  peculiar velocity flow. Chon et al provide an
-   interesting work on a different definition of
-    galaxy superclusters, a gravitationally bound
-     dense large scale structure
-      \cite{chon_characterising_2014} and
-       \cite{chon_definition_2015}. On this
-        different criteria, Laniakea and how
-         Laniakea fits in our current cosmological
-          context should be redefined.  \\
-\end{par}
+
 
 %TODO The Future Work section needs to be re-written
-\section{Future Work}
-\label{sec:future_work}
 \begin{par}
 We provide here results for the Small (Dense)
  simulation. Nevertheless we generated data from
@@ -1493,12 +1605,12 @@ laptop and later on the HPC cluster. For a significant number of particles, the 
 \subsubsection{Code example for Region Growing Algorithm - Approach by the Speed} \label{App:App_speed_code}
 \tiny
 \lstinputlisting[language=Python, caption=Region Growing Algorithm Code]{code/region_detection_document.py}
-\end{document} 
 
 
-\subsection{Simple implementation of the Region Growing Algorithm with the FA and $tr\left(\sum_{\alpha\beta}\right)$}
 
-\subsubsection{Region Growing Algorithm with the FA and $tr \left(\sum_{\alpha\beta}\right)$} \label{sec:results_own_impl}
+\subsection{Simple implementation of the Region Growing Algorithm with the FA and VDH}
+
+\subsubsection{Region Growing Algorithm with the FA and VDH} \label{sec:results_own_impl}
 %The first results I got
 %TODO this section could be ommited and just show the last results (the next section)
 \begin{par}
@@ -1515,7 +1627,7 @@ Using our small and dense simulation described in
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=0.7\textwidth]{groups/firstimplementation/regions_3D_129.png} % Include the image placeholder.png
-\caption{Regions detected for: Seeds (FA:0.6, $tr \left(\sum_{\alpha\beta}\right)$: 1.0) and Growth (FA:0.8, $tr \left(\sum_{\alpha\beta}\right)$: 0.0) }
+\caption{Regions detected for: Seeds (FA:0.6, VDH: 1.0) and Growth (FA:0.8, VDH: 0.0) }
 \label{fg:first_3D_all}
 \end{center}
 \end{figure}
@@ -1531,7 +1643,7 @@ Using our small and dense simulation described in
   \centering
   \includegraphics[width=0.8\textwidth]{groups/firstimplementation/largest_vol_24_seeds_129_scale.png}
   \end{minipage}
-\caption{Largest volume detected for: Seeds (FA:0.6, $tr \left(\sum_{\alpha\beta}\right)$: 1.0) and Growth (FA:0.8, $tr \left(\sum_{\alpha\beta}\right)$: 0.0). The region is on the left and can be seen at scale with the simulation on the right.}
+\caption{Largest volume detected for: Seeds (FA:0.6, VDH: 1.0) and Growth (FA:0.8, VDH: 0.0). The region is on the left and can be seen at scale with the simulation on the right.}
 \label{fg:first_3D_largest}
 \end{figure}
 \FloatBarrier
@@ -1540,3 +1652,4 @@ Using our small and dense simulation described in
 \tiny
 %TODO insert the code
 Here comes the code.
+\end{document} 

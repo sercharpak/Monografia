@@ -19,10 +19,72 @@ R.~Brent Tully, Hélène~M. Courtois, Andrew~E. Dolphin, J.~Richard Fisher,
 \newblock \textit{{COSMICFLOWS}-2} : {THE} {DATA}.
 \newblock {\em The Astronomical Journal}, 146(4):86, October 2013.
 
+\bibitem{chon_characterising_2014}
+Gayoung Chon, Hans Böhringer, Chris~A. Collins, and Martin Krause.
+\newblock Characterising superclusters with the galaxy cluster distribution.
+\newblock {\em Astronomy \& Astrophysics}, 567:A144, July 2014.
+
+\bibitem{chon_definition_2015}
+Gayoung Chon, Hans Böhringer, and Saleem Zaroubi.
+\newblock On the definition of superclusters.
+\newblock {\em Astronomy \& Astrophysics}, 575:L14, March 2015.
+
+\bibitem{bertone_particle_2005}
+Gianfranco Bertone, Dan Hooper, and Joseph Silk.
+\newblock Particle dark matter: evidence, candidates and constraints.
+\newblock {\em Physics Reports}, 405(5-6):279--390, January 2005.
+
+\bibitem{peebles_cosmological_2003}
+P.~J.~E. Peebles and Bharat Ratra.
+\newblock The cosmological constant and dark energy.
+\newblock {\em Reviews of Modern Physics}, 75(2):559--606, April 2003.
+
+\bibitem{trimble_existence_1987}
+Virginia Trimble.
+\newblock Existence and {Nature} of {Dark} {Matter} in the {Universe}.
+\newblock {\em Annual Review of Astronomy and Astrophysics}, 25(1):425--472,
+  September 1987.
+
+\bibitem{tempel_cosmology:_2014}
+Elmo Tempel.
+\newblock Cosmology: {Meet} the {Laniakea} supercluster.
+\newblock {\em Nature}, 513(7516):41--42, September 2014.
+
 \bibitem{padmanabhan_theoretical_2000}
 T.~Padmanabhan.
 \newblock {\em Theoretical astrophysics}.
 \newblock Cambridge University Press, Cambridge ; New York, 2000.
+
+\bibitem{zaroubi_wiener_1995}
+S.~Zaroubi, Y.~Hoffman, K.~B. Fisher, and O.~Lahav.
+\newblock Wiener {Reconstruction} of the {Large}-{Scale} {Structure}.
+\newblock {\em The Astrophysical Journal}, 449:446, August 1995.
+
+\bibitem{hoffman_kinematic_2012}
+Yehuda Hoffman, Ofer Metuki, Gustavo Yepes, Stefan Gottlöber, Jaime~E.
+  Forero-Romero, Noam~I. Libeskind, and Alexander Knebe.
+\newblock A kinematic classification of the cosmic web: {The} cosmic web.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  425(3):2049--2057, September 2012.
+
+\bibitem{basser_inferring_1995}
+Peter~J. Basser.
+\newblock Inferring microstructural features and the physiological state of
+  tissues from diffusion-weighted images.
+\newblock {\em NMR in Biomedicine}, 8(7):333--344, November 1995.
+
+\bibitem{libeskind_velocity_2013}
+N.~I. Libeskind, Y.~Hoffman, J.~Forero-Romero, S.~Gottlober, A.~Knebe,
+  M.~Steinmetz, and A.~Klypin.
+\newblock The velocity shear tensor: tracer of halo alignment.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  428(3):2489--2499, January 2013.
+
+\bibitem{bustamante_tensor_2015}
+Sebastian Bustamante and Jaime~E. Forero-Romero.
+\newblock Tensor anisotropy as a tracer of cosmic voids.
+\newblock {\em Monthly Notices of the Royal Astronomical Society},
+  453(1):497--506, October 2015.
 
 \bibitem{springel_gadget_2_2005}
 V.~Springel.
@@ -53,12 +115,6 @@ Yu~N. Grigoryev, V.~A. Vshivkov, and M.~P. Fedoruk.
 Rafael~C. Gonzalez and Richard~E. Woods.
 \newblock {\em Digital image processing}.
 \newblock Prentice Hall, 3rd ed edition.
-
-\bibitem{bustamante_tensor_2015}
-Sebastian Bustamante and Jaime~E. Forero-Romero.
-\newblock Tensor anisotropy as a tracer of cosmic voids.
-\newblock {\em Monthly Notices of the Royal Astronomical Society},
-  453(1):497--506, October 2015.
 
 \bibitem{thompson_pygadgetreader_2014ascl_soft11001T}
 R.~{Thompson}.
