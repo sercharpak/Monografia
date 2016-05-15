@@ -369,10 +369,12 @@ We now proceed to describe some of the observational
       galaxy. This method covers distances within 100
        Mpc.\\
   
+  %TODO COMPLETE THIS!!!
   \item Elliptical fundamental plane. The quality of these measurements is not very
   good. Despite of that, it can be used for large
    samples of galaxies in a large volume.\\
    
+   %TODO COMPLETE THIS!!!
    \item Spiral luminosity-rotation. This method also provides less accurate
   distances, but can be applied to large sets of
    galaxies.\\
@@ -584,7 +586,9 @@ We then use different algorithms to identify the
 
 
 \begin{par}
-\footnote{
+
+Our algorithm uses the FA and VDH computed from the N-
+body simulations\footnote{
 We also explored an approach of
  the magnitude of the velocity in the different
   simulations. We work with all the particles and
@@ -592,9 +596,7 @@ We also explored an approach of
     results are not based in this naive approach
      we leave it as an appendix here. It is
       explained in further detail in Appendix
-       \ref{App:App_Speed}}.
-Our algorithm uses the FA and VDH computed from the N-
-body simulations. There are three steps involved before.
+       \ref{App:App_Speed}}. There are three steps involved before.
  First, the interpolation of the particle data
   informations into a grid. Second, the V-web computation
    on this grid. Finally, the computation of the FA and
@@ -748,7 +750,11 @@ simplify our own implementation.
 
 
 \subsubsection{Region Growing Algorithm with the FA and the trace of the velocity shear tensor}\label{sec:own_impl_descr}
-Our implementation is based in the FA and the VDH. It is uses 4-connectivity as described before.
+Our implementation is based in the FA and the VDH. It is uses 4-connectivity as described before.\footnote{
+A simplified version code can be seen in appendix \ref{App:own_impl_code}. Results of this
+  implementation can be seen in appendix
+   \ref{sec:results_own_impl}.
+}
 
 \begin{itemize}
     \item Seeds
@@ -822,11 +828,6 @@ values for the FA. each run will follow a row of the table \ref{tab:search_FA_Tr
 
 %\subsubsection{FoF with the FA and Overdensity}\label{sec:fof_impl_descr}
 \begin{par}
-\footnote{
-A simplified version code can be seen in appendix \ref{App:own_impl_code}. Results of this
-  implementation can be seen in appendix
-   \ref{sec:results_own_impl}.
-}
 Finally to find the groups we used the Friends-of-Friends (FoF) algorithm.
 \end{par}
 
@@ -1204,7 +1205,7 @@ Figure \ref{fg:inertia_diff} shows that most of our
     \centering
     \begin{tabular}{|c|c|}
         Radius (Mpc/h) & 80  \\
-        Mass (Solar Masses) & $1*10^{17}$  \\
+        Mass (Solar Masses) & $1 \times 10^{17}$  \\
     \end{tabular}
     \caption{Properties of Laniakea we can compare with}
     \label{tab:laniakea}
@@ -1215,7 +1216,7 @@ Figure \ref{fg:inertia_diff} shows that most of our
 \item Size and Volume
 \end{itemize}
 \begin{par}
-Laniakea is a spheroid of radius 80 Mpc/h \cite{tully_laniakea_2014}. We can state it has approximatively a volume of $2.14 \cdot 10^6$ $\left[ Mpc/h \right]^3$.\\
+Laniakea is a spheroid of radius 80 Mpc/h \cite{tully_laniakea_2014}. We can state it has approximatively a volume of $2.14  \times 10^6$ $\left[ Mpc/h \right]^3$.\\
 \end{par}
 \begin{par}
 We proceed to see how Laniakea fits in our volume distributions.
