@@ -14,8 +14,8 @@
 \contentsline {subsubsection}{\numberline {5.3.1}Region Growing Algorithm: Basic Description}{15}{subsubsection.5.3.1}
 \contentsline {subsubsection}{\numberline {5.3.2}Region Growing Algorithm with the FA and the trace of the velocity shear tensor}{16}{subsubsection.5.3.2}
 \contentsline {section}{\numberline {6}Results}{17}{section.6}
-\contentsline {subsection}{\numberline {6.1}Fractional Anisotropy and Divergence in the Simulation}{17}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Fractional Anisotropy}{17}{subsubsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1}Fractional Anisotropy and Divergence in the Simulation}{18}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Fractional Anisotropy}{18}{subsubsection.6.1.1}
 \contentsline {subsubsection}{\numberline {6.1.2}VDH, Velocity Divergence}{18}{subsubsection.6.1.2}
 \contentsline {subsection}{\numberline {6.2}Region Growing Algorithm and FoF with the FA and VDH}{19}{subsection.6.2}
 \contentsline {subsubsection}{\numberline {6.2.1}Influence of the FA in the seeds}{22}{subsubsection.6.2.1}

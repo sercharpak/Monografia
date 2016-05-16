@@ -55,6 +55,11 @@ T.~Padmanabhan.
 \newblock {\em Theoretical astrophysics}.
 \newblock Cambridge University Press, Cambridge ; New York, 2000.
 
+\bibitem{tully_fisher_1977}
+R.B. Tully and J.R. Fisher.
+\newblock {A new method of determining distances to galaxies}.
+\newblock {\em Astronomy and Astrophysics}, 54:661--673, February 1977.
+
 \bibitem{zaroubi_wiener_1995}
 S.~Zaroubi, Y.~Hoffman, K.~B. Fisher, and O.~Lahav.
 \newblock Wiener {Reconstruction} of the {Large}-{Scale} {Structure}.
@@ -91,15 +96,6 @@ V.~Springel.
 \newblock The cosmological simulation code gadget-2.
 \newblock {\em Monthly Notices of the Royal Astronomical Society},
   364(4):1105--1134, 2005.
-
-\bibitem{springel_simulations_2005}
-Volker Springel, Simon D.~M. White, Adrian Jenkins, Carlos~S. Frenk, Naoki
-  Yoshida, Liang Gao, Julio Navarro, Robert Thacker, Darren Croton, John Helly,
-  John~A. Peacock, Shaun Cole, Peter Thomas, Hugh Couchman, August Evrard,
-  Jörg Colberg, and Frazer Pearce.
-\newblock Simulations of the formation, evolution and clustering of galaxies
-  and quasars.
-\newblock {\em Nature}, 435(7042):629--636, June 2005.
 
 \bibitem{harlow1964particle}
 Francis~H Harlow.
