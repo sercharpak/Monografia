@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.13)  23 MAY 2016 08:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.13)  23 MAY 2016 10:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1230,16 +1230,12 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1622.
 
 Package rerunfilecheck Info: File `SHDC_Document.out' has not changed.
 (rerunfilecheck)             Checksum: 9ED057EE44ADBCF475C20743815FA81F;2720.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1622.
  ) 
 Here is how much of TeX's memory you used:
  9955 strings out of 494985
  157411 string characters out of 6180356
- 301827 words of memory out of 5000000
+ 301862 words of memory out of 5000000
  12586 multiletter control sequences out of 15000+600000
  10798 words of font info for 39 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1261,7 +1257,7 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on SHDC_Document.pdf (44 pages, 18883752 bytes).
+Output written on SHDC_Document.pdf (44 pages, 18887074 bytes).
 PDF statistics:
  1020 PDF objects out of 1200 (max. 8388607)
  875 compressed objects within 9 object streams
