@@ -71,7 +71,8 @@ I would like to thank my advisor, Jaime E. Forero-Romero, for his guidance
       studies. Finally I couldn't have finish this
        work without the support of Andr\'{e}s,
         Nicol\'{a}s, Valentina, Jorge and all the special
-         friends I am lucky to have. Georges would
+         friends I am lucky to have. My grandfather Georges
+          would
           be very happy to be alive.
 
 
@@ -117,16 +118,16 @@ We live in the planet Earth. Our planet orbits
    %TODO insert an image to explain the filamentary structure of the univers.
 
 Detecting these galaxy superclusters is a challenging
- task. Observationally there are  There exists
-    different algorithms to identify them based on
+ task. Observationally there exist different algorithms to
+  identify them based on
      physical criteria \cite{gott_iii_map_2005}. One
       possible physical criterion relates the velocity
-       flows with the density.
+       flows with the matter density.
 \\
 
 Indeed, due to gravitational attraction, it is possible
  to relate
-  velocity fields with density fields. A proposal to
+  velocity fields with matter density fields. A proposal to
    find galaxy superclusters is to analyze the
     velocity field of galaxies as matter tend to flow
      to
@@ -139,10 +140,14 @@ Recently a team of astronomers built a galaxy velocities
  of the local universe in a scale of hundreds of million
   light
   years \cite{tully_cosmicflows-2_2013}. In this map, the
-   team found converging velocity flows to identify
-    identified Laniakea, the galaxy supercluster
+   team found converging velocity flows which form a
+    structure in the local region. They named this region
+     Laniakea,
+    the galaxy supercluster
      which includes our galaxy, the Milky Way
-      \cite{tully_laniakea_2014}. These observations
+      \cite{tully_laniakea_2014}. It is the first time a
+       galaxy supercluster is defined with this criterion.
+        Also, these observations
        are difficult. As a result of these
          difficulties, it is not possible to build a
           statistical sample superclusters obtained
@@ -156,7 +161,7 @@ We propose a method to detect galaxy superclusters in
    interpolation of the velocity and density fields we
     apply a region growing algorithm based in predefined
      parameters. We test our method on N-body simulations
-      and successfully detect structure we compare to
+      and successfully detect structures we compare to
        Laniakea.\\
 We aim to quantify if Laniakea can be
  considered as an atypical structure in
@@ -184,7 +189,7 @@ The definition of Laniakea by Tully et al
 \begin{par}
 
 The current standard cosmological model is known the Lambda
- - Cold Matter Model, or $\Lambda$ CDM Model. It assumes Einstein's equations of General Relativity.\cite{bertone_particle_2005}.\\
+ - Cold Matter Model, or $\Lambda$-CDM Model. It assumes Einstein's equations of General Relativity.\cite{bertone_particle_2005}.\\
 The
   letter $\Lambda$ makes a reference to the
    cosmological constant $\Omega_{\Lambda}$, which is
@@ -223,8 +228,7 @@ The dark matter is a hypothetical type of matter which is
 \begin{par}
 The simplest $\Lambda$-CDM Model is based on the following 6 general parameters.\\
 \begin{enumerate}
-\item The Hubble parameter, $H$, defined as the time
- dependent Hubble parameter 
+\item The Hubble parameter, $H$. It represents the expansion of the universe, how things are moving away from us. It is defined as
 \[
 H = \frac{\dot{a}}{a},
 \]
@@ -235,14 +239,16 @@ where $a(t)$ refers to the scale factor of the Universe. For
 H_0 = 100 \ h \ km \ s^{-1} \ Mpc^{-1} = 67 \pm 7 km \  s^{-1} \ Mpc^{-1} .
 \]
 $Mpc$ is a cosmological length unit. $1 Mpc = 10^6 \ pc$ where $1 pc = 3.087 \times
-  10^{16} m$. $h$ is the dimensionless parameter defined
-   by the equation above, $H_0 = 1 \ km \ s^{-1} \ Mpc^{-1} \ h^{-1}$. In this document the length units are $Mpc/h$.
+  10^{16} m$. \\
+  $h$ is the dimensionless parameter defined
+   by the equation above, $H_0 = 1 \ km \ s^{-1} \ Mpc^{-1} \ h^{-1}$. So $h \simeq 0.67$.\\
+   \textbf{In this document the length units are $Mpc/h$}.
 
-\item Critical density $\rho_{cr}$ found when the cosmological constant is 0 in Einstein's equations, condition needed to have a close universe. $\rho_{cr} = \frac{3H^2}{8 \pi G} = (8.62 \pm 0.12) \times 10^{−27} kg/m^3$. 
+\item Critical density $\rho_{cr}$ found when the cosmological constant is 0 in Einstein's equations, condition needed to have a close universe. It represents the point of change between an expending and contracting universe. $\rho_{cr} = \frac{3H^2}{8 \pi G} = (8.62 \pm 0.12) \times 10^{−27} kg/m^3$. 
 
-\item Baryon density parameter $\Omega_b$. The density of baryonic matter expressed as a fraction of the critical density. $\Omega_b = \frac{\rho_b}{\rho_{cr}} = 0.0486 \pm 0.0010$.
+\item Baryon density parameter $\Omega_b$. the baryonic matter is the visible matter we interact with, composed by the quarks described by the Standard Model of Particle Physic. The density of baryonic matter expressed as a fraction of the critical density is $\Omega_b = \frac{\rho_b}{\rho_{cr}} = 0.0486 \pm 0.0010$.
 
-\item Dark matter density parameter $\Omega_c$. The density of dark matter expressed as a fraction of the critical density.$\Omega_c = \frac{\rho_c}{\rho_{cr}} = 0.2589 \pm 0.0057$.
+\item Dark matter density parameter $\Omega_c$. Dark matter corresponds to a type of matter which do not produced any type of visible radiation. It interacts exclusively with the gravitational force. The density of dark matter expressed as a fraction of the critical density.$\Omega_c = \frac{\rho_c}{\rho_{cr}} = 0.2589 \pm 0.0057$.
 
 \item Matter density parameter $\Omega_m$ or $\Omega_0$.
  It corresponds to the sum of $\Omega_c$ and
@@ -256,7 +262,7 @@ $Mpc$ is a cosmological length unit. $1 Mpc = 10^6 \ pc$ where $1 pc = 3.087 \ti
 The total density parameter, a constraint, is the sum of
  the density parameters and has to be equal to one. $\Omega_{tot} = \Omega_b + \Omega_c + \Omega_{\Lambda} =1$ or $\Omega_{tot} = \Omega_0 + \Omega_{\Lambda} =1$.\\
 
-Another important concept is the redshift. The redshift $z$ can be defined by the following equation\cite{peebles_cosmological_2003}: 
+Another important concept before the rest of the work is to define the redshift. The redshift $z$ can be defined by the following equation\cite{peebles_cosmological_2003}: 
 \[
 1 + z = \frac{\lambda_{obs}}{\lambda_{em}}.
 \] 
@@ -264,8 +270,14 @@ It is a measure of the difference between the observed
  wavelength $\lambda_{obs}$ and the wavelength received
   from a distant object $\lambda_{em}$. It is a convenient
    way to label time, with $z=0$ being the
-    present time.
+    present time. \\
 \end{par}
+
+\begin{par}
+This is the model which represents the best the Universe as we see it. It is in this model we develop our method to find galaxy supercluster.
+\end{par}
+
+
 
 
 \subsection{Cosmic flows and peculiar velocities}
@@ -276,7 +288,7 @@ Our method to detect superclusters in cosmological
   analysis in a similar fashion as Tully et al. did to find Laniakea \cite{tully_laniakea_2014}
     \cite{tempel_cosmology:_2014}.
 \begin{itemize}
-\item Basic theoretical considerations
+\item Relation between the velocity and matter density fields
 \end{itemize}
 \begin{par}
 The peculiar velocity is defined as the velocity relative to a rest frame. Its radial component corresponds to the velocity of a galaxy that cannot be explained by the expansion of the Universe. Hubble's law states that nearby galaxies move away from us at a speed proportional to the distance from us (the proportion is Hubble's constant). In other words,
@@ -342,15 +354,17 @@ We now proceed to describe some of the observational
   \cite{tully_cosmicflows-2_2013}. To define Lanieakea,
    the catalogue of
    peculiar velocities is detailed within ~100 Mpc with
-    data covering out to ~400 Mpc. Six main methods
+    data covering out to ~400 Mpc from Earth. Six main
+     methods
      were jointly used to estimate the galaxy
       distances.	\\
  \begin{enumerate}
  \item Cepheid Period-Luminosity
       Relation (Cepheid PLR) applied to the Hubble
        Space Telescope (HST) distance scale key
-        project. The HST data is covers distances
-         within 10 Mpc. Their observation can be
+        project. The HST data covers velocities of galaxies
+         located with distances
+         within 10 Mpc from Earth. Their observation can be
           difficult due to luminosities of neighbouring
            objects.\\
               
@@ -360,14 +374,16 @@ We now proceed to describe some of the observational
       regions with small luminosity noise. This
        method,
        complementary to the Cepheid PRL method covers
-        distances within 10 Mpc.\\
+        velocities of galaxies with 
+        distances within 10 Mpc from Earth.\\
         
   \item Surface Brightness Fluctuation (SBF) method
    measures the variance in the distribution of light
     emitted in a galaxy. The noisy fluctuations we
      observe are proportional to the distance of the
-      galaxy. This method covers distances within 100
-       Mpc.\\
+      galaxy. This method covers velocities of galaxies
+       located with distances within 100
+       Mpc from Earth.\\
   
   %TODO COMPLETE THIS!!!
   \item Elliptical fundamental plane (EFP). EFP, is a
@@ -421,6 +437,14 @@ Finally, after the observation were made, a Wiener Filter was applied. A Wiener 
      the peculiar velocity field from the Cosmicflows-2 observations.\\
 \end{par}
 
+\begin{par}
+Using this data of the nearby galaxies velocities, Tully et
+ al \cite{tully_laniakea_2014} used the V-Web Algorithm to
+  analyse where the cosmic flows converge and diverge. The
+   boundaries of Laniakea correspond to the diverging cosmic
+    flows.
+\end{par}
+
 
 \subsection{The V-Web Algorithm}
 \label{sec:v_web}
@@ -437,7 +461,7 @@ This algorithm is deeply
 $$
 \Sigma _{\alpha\beta} = -\frac{1}{2 H_0} \left( \frac{\partial v_{\alpha}}{\partial x_{\beta}} + \frac{\partial v_{\beta}}{\partial x_{\alpha}} \right) ,
 $$
-With $v_{\alpha}$ and $x_{\alpha}$ representing the $\alpha$ component the comoving peculiar velocity and the comoving position, respectively.  \\
+With $v_{\alpha}$ and $x_{\alpha}$ representing the $\alpha$ component the peculiar velocity and the comoving position, respectively.  \\
 
 $\Sigma _{\alpha\beta}$ can be represented by a $3 \times
  3$ symmetric matrix with real values. This makes it
@@ -445,14 +469,18 @@ $\Sigma _{\alpha\beta}$ can be represented by a $3 \times
 These eigenvalues $\lambda_1$, $\lambda_2$ and
  $\lambda_3$ carry information about the motion of the
  fluid. By convention they are ordered such as
-  $\lambda_1 > \lambda_2 >\lambda_3$. The V-Web scheme
+  $\lambda_1 > \lambda_2 >\lambda_3$. \\
+  the Universe present a filamentary structure with knots,
+   filaments, voids and sheets. The V-Web scheme
    refers to the web classification based on how many of
-    these eigenvalues are above a predefined threshold.
+    these eigenvalues are above a predefined threshold $
+     \lambda_{th}$.\\
      Respectively if 0, 1, 2 or 3 eigenvalues are above
       the threshold the point is classified as a void,
        sheet, filament or knot. \\
        
-Our method uses indirectly these eigenvalues through the
+Our method uses indirectly these eigenvalues $\lambda_1$, $\lambda_2$ and
+ $\lambda_3$ through the
  Fractional Anisotropy and the trace of 
  $\Sigma _{\alpha\beta}$.
 
@@ -467,7 +495,7 @@ The Fractional Anisotropy (FA) was first conceived in the
  medical context by Peter Basser
   \cite{basser_inferring_1995}. Libeskind et al
    \cite{libeskind_velocity_2013} first introduced the FA
-    in the cosmological context. It has been used as
+    in the cosmological context. The FA carries the information of how isotropic (or anisotropic) is a collapse or expansion in a region. It has been used as
     a tracer of cosmic voids by Bustamante et al.
      \cite{bustamante_tensor_2015}.\\
     
@@ -478,10 +506,14 @@ FA = \frac{1}{\sqrt{3}} \sqrt{\frac{( \left( \lambda_1 - \lambda_3 \right)^2 + \
 With $\lambda_1$, $\lambda_2$ and $\lambda_3$ the
  eigenvalues obtained from the V-Web algorithm. The FA is
   dimensionless and takes values between 0 and
-   1. We
-  interpret FA = 0 as an isotropic velocity distribution (where $\lambda_1 = \lambda_2 =
+   1. \\
+We interpret FA = 0 as an isotropic velocity distribution
+ (where $\lambda_1 = \lambda_2 =
     \lambda_3$) and FA = 1 as a highly anisotropic
-     velocity distribution. 
+     velocity distribution. The nearer the FA is to 1, the
+      more anisotropic a collapse or expansion and the nearer
+       the FA is to 0, the more isotropic is the collapse or
+        expansion.
 
 \begin{itemize}
 \item The trace of the Velocity Shear Tensor (VDH)
@@ -499,12 +531,29 @@ The trace of the velocity shear tensor $\Sigma
 \[
 \lambda_1 + \lambda_2 + \lambda_3 = \frac{- \nabla \cdot \vec{v}}{H_0} .
 \]
-This is an dimensionless quantity, proportional to the overdensity $\delta$.\\
+This is an dimensionless quantity, proportional to the
+ overdensity $\delta$.\\
 
-We name the trace of $\Sigma_{\alpha\beta}$ or $\frac{- \nabla \cdot \vec{v}}{H_0}$ as VDH which states as
- Velocity Divergence divided by the Hubble constant. 
+We name the trace of $\Sigma_{\alpha\beta}$ or $\frac{-
+ \nabla \cdot \vec{v}}{H_0}$ as VDH which states as
+ Velocity Divergence divided by the Hubble constant. \\
 
-In the next section we observe how we use the FA and VDH
+If the VDH has a positive value, it means there is a
+ collapse. The velocity flows are then going inwards
+  converging. And if the VDH has a negative value, it means
+   there is an expansion. The velocity flows are then going
+    outwards, diverging. \\
+
+From the results of Tully et al \cite{tully_laniakea_2014} we
+ find that Laniakea is a structure with a VDH positive and an
+  FA lesser than 1 as it is a structure where the velocity
+   flows are converging and they are not converging 
+    anisotropically. We can then use the FA and VDH to find
+     structures with these properties.\\
+ 
+
+
+In the next section we describe how we use the FA and VDH
  to find superclusters in cosmological simulations.
 
 \section{Methods}
@@ -539,8 +588,13 @@ interaction. In the simulation each particle
 placed in a 3D grid layout first and then are
  perturbed following a Gaussian distribution
 before the simulation start, during the initial
- conditions generation. Once the simulation starts, the particles interact only with gravity. Gadget-2 simulates this fluid. The simulations ran on the HPC cluster at
-   UNIANDES.
+ conditions generation. The perturbation is Gaussian because
+  the distribution observed in the Cosmic Microwave
+   Background (the CMB) is Gaussian. \\
+
+Once the simulation starts, the particles interact only with
+ gravity. Gadget-2 simulates this fluid. The simulations ran
+  on the HPC cluster at UNIANDES.
   The main properties (boxsize, number of
    particles, number of CPUs used and time of the
     simulation) are described in table
@@ -549,7 +603,7 @@ before the simulation start, during the initial
 
 \begin{par}
 We are looking for structures of the same order of
- magnitude of Laniakea (radius of 80 Mpc/h). Our simulations need to be
+ magnitude of Laniakea (radius of 80 Mpc/h \cite{tully_laniakea_2014}). Our simulations need to be
    of at least the same order of magnitude. We also
     need a sufficient number of DM particles to
      be able to describe the density field on the smaller scales probed by observations (around 5 Mpc/h). From these constraints we decided to run three simulations as listed in table \ref{tab:sims}. 
@@ -581,7 +635,9 @@ The initial conditions were generated using Volker
         $\Omega_0$ & $\Omega_{\Lambda}$ & $\Omega_b$ & H \\
         0.3 &  0.7 & 0 & 0.7 \\
     \end{tabular}
-    \caption{Cosmological Constants in the N-body Simulations}
+    \caption{Cosmological Constants in the N-body Simulations. The different $\Omega$ are dimensionless quantities and H is in units of 100 
+    $km$ $s^{-1}$
+     $Mpc^{-1}$. }
     \label{tab:consts}
 \end{table}
 \FloatBarrier
@@ -597,16 +653,13 @@ For the standard cosmological model, $\Omega_0$ + $\Omega_{\Lambda}$ = 1.
   of the critical density at red shift z = 0. Finally, H denotes the Hubble
     constant at red shift z=0 in  units of 100 
     $km$ $s^{-1}$
-     $Mpc^{-1}$. 
+     $Mpc^{-1}$. \\
 
 We then use different algorithms to identify the
- superclusters within the simulation.\\
+ superclusters within the simulation. But first we must apply some intermediate steps.\\
 
 \subsection{Intermediate Steps} \label{sec:approaches}
 %Opening the section
-
-
-
 \begin{par}
 
 Our algorithm uses the FA and VDH computed from the N-
@@ -622,9 +675,22 @@ We also explored an approach of
  First, the interpolation of the particle data
   informations into a grid. Second, the V-web computation
    on this grid. Finally, the computation of the FA and
-    VDH on this grid. 
+    VDH on this grid. \\
 \end{par}
 
+\begin{par}
+In summary, our approach follows the steps:
+\end{par}
+
+\begin{enumerate}
+\item Calculate the density field using interpolation on the simulation data.
+\item Calculate the velocity field using interpolation on the simulation data.
+\item Use finite differences to compute the velocity shear tensor $\sum_{\alpha \beta}$.
+\item Diagonalize $\sum_{\alpha \beta}$ and find its eigenvalues $\lambda_i$ and eigenvectors $\hat{u}_i$
+\item Compute the FA and VDH grids as described in section \ref{sec:FA_trace} 
+\end{enumerate}
+
+We first describe our interpolation method.
 
 \begin{itemize}
 \item The Cloud In Cell (CIC) interpolation method
@@ -638,19 +704,19 @@ The Cloud In Cell (CIC) is a method to interpolate a
    1950's in the field of computational fluid dynamics
     \cite{harlow1964particle}. CIC is very popular
      among the scientific community
-      \cite{grigoryev_numerical_2002}. We form, in our
-       case, a $N^3$ grid. This grid is superpose with
-        the cubic
-      box resulting from the simulation. We then form
-       particle clouds (cubes in our case) around each
-        particle. For each particle cloud, each cell
-         where the particle cloud superposes is
-          assigned a weighted part of the physical
-           quantity we look to mesh proportional to the
-            superposed volume (in 2-D, superposed
-             area). A function can then be applied to
-              smooth the obtained field. We perform
-               this CIC
+      \cite{grigoryev_numerical_2002}. \\
+
+We form, in our case, a $N^3$ grid. This grid is superposed
+ with the cubic box with the results of our simulations
+  We then form particle clouds (cubes in our case) around
+   each particle. For each particle cloud, each cell 
+    where the particle cloud superposes is
+    assigned a weighted part of the physical
+    quantity we look to mesh proportional to the
+    superposed volume. A function can then be applied to
+     smooth the obtained field. \\
+     
+We perform this CIC
             for the density field and the velocity
              field. In figure \ref{fg:cic_explain} a
               graphical explanation is provided for the
@@ -660,7 +726,17 @@ The Cloud In Cell (CIC) is a method to interpolate a
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=0.6\textwidth]{general/CIC_Explain_bigger} % Include the image placeholder.png
-\caption{Visualization of the Cloud In Cell Method (CIC)}
+\caption{Visualization of the Cloud In Cell Method (CIC). The
+ particle is the black dot. Each color represents a different
+  cell of the grid. We form a particle cloud around the
+   particle. Each cell is assigned a weight of the quantity
+    meshed proportional to the area of the cloud superposed
+     in each cell. So in this example most of the meshed
+      quantity of the particle is assigned to the green cell
+       (upper right), then equivalent parts are assigned to
+        the red (upper left) and blue (down right) cells. And
+         finally a smaller part is assigned to the yellow
+          cell (down left)}
 \label{fg:cic_explain}
 \end{center}
 \end{figure}
@@ -678,30 +754,18 @@ The FA gives us a dimensionless quantity to analyse
    fashion as the matter overdensity $\delta$.
 \end{par}
 
-
-\begin{par}
-In summary, our approach follows the steps:
-\end{par}
-
-\begin{enumerate}
-\item Calculate the density field using CIC on the simulation data.
-\item Calculate the velocity field using CIC on the simulation data.
-\item Use finite differences to compute the velocity shear tensor $\sum_{\alpha \beta}$.
-\item Diagonalize $\sum_{\alpha \beta}$ and find its eigenvalues $\lambda_i$ and eigenvectors $\hat{u}_i$
-\item Compute the FA and VDH grids as described in section \ref{sec:FA_trace} 
-\item Apply the algorithms described in section \ref{sec:algorithms} to find the superclusters
-\item Extract the properties (volume, shape, mass) from the superclusters
-\item Compare the superclusters detected in the simulation to Laniakea
-\end{enumerate}
-
-
 %Closing the section
 \begin{par}
 This methodology is very close with the approach
  used to define Laniakea
   \cite{tully_laniakea_2014} which is important to
    validate our later comparison of Laniakea with
-    our detected structures.
+    our detected structures. \\
+\end{par}
+
+\begin{par}
+Once we have completed these intermediate steps we can
+ proceed to find the superclusters in our data.
 \end{par}
 
 \subsection{Superclusters Finding Algorithms}\label{sec:algorithms}
@@ -772,10 +836,8 @@ simplify our own implementation.
 
 
 \subsubsection{Region Growing Algorithm with the FA and the trace of the velocity shear tensor}\label{sec:own_impl_descr}
-Our implementation is based in the FA and the VDH. It is uses 4-connectivity as described before.\footnote{
-A simplified version code can be seen in appendix \ref{App:own_impl_code}. Results of this
-  implementation can be seen in appendix
-   \ref{sec:results_own_impl}.
+Our implementation is based in the FA and the VDH. It uses 4-connectivity as described before.\footnote{
+A simplified version code can be seen in appendix \ref{App:own_impl_code}.
 }
 
 \begin{itemize}
@@ -793,11 +855,11 @@ These can be seen in table \ref{tab:seeds_FA_Trace}.
     \centering
     \begin{tabular}{|c|c|c|c|}
         $FA_{seed}$ & $VDH_{seed}$ \\
-        0.5 &  1.0 \\
-        0.6 &  1.0 \\
-        0.7 &  1.0 \\
-        0.8 &  1.0 \\
-        0.9 &  1.0 \\
+        $<$ 0.5 &  $>$ 1.0 \\
+        $<$ 0.6 &  $>$ 1.0 \\
+        $<$ 0.7 &  $>$ 1.0 \\
+        $<$ 0.8 &  $>$ 1.0 \\
+        $<$ 0.9 &  $>$ 1.0 \\
     \end{tabular}
     \caption{Different values of the FA and VDH for the choice of the seeds}
     \label{tab:seeds_FA_Trace}
@@ -821,8 +883,8 @@ labelled yet, it is labelled as the group of the seed particle. So
 in other words: \\
 
 \begin{center}
-$Q: \left( FA (x,y,z) \leq Thresh_{FA} \right)$ AND
-$\left( VDH (x,y,z) \geq Thresh_{VDH} \right)$ 
+$Q: \left( FA (x,y,z) \leq FA_{growth} \right)$ \&
+$\left( VDH (x,y,z) \geq VDH_{growth} \right)$ 
 \end{center}
 As we are looking for overdense regions (no voids) we define the
 threshold for VDH as 0.0. As we are exploring the different
@@ -833,11 +895,11 @@ values for the FA. each run will follow a row of the table \ref{tab:search_FA_Tr
     \centering
     \begin{tabular}{|c|c|c|c|}
         $FA_{growth}$ & $VDH_{growth}$ \\
-        0.5 &  0.0 \\
-        0.6 &  0.0 \\
-        0.7 &  0.0 \\
-        0.8 &  0.0 \\
-        0.9 &  0.0 \\
+        $<$ 0.5 &  $>$ 0.0 \\
+        $<$ 0.6 &  $>$ 0.0 \\
+        $<$ 0.7 &  $>$ 0.0 \\
+        $<$ 0.8 &  $>$ 0.0 \\
+        $<$ 0.9 &  $>$ 0.0 \\
     \end{tabular}
     \caption{Different values of the FA and VDH for the growth of the regions}
     \label{tab:search_FA_Trace}
@@ -876,8 +938,19 @@ considered as a valid group, it needs to contain at least one seed
 particle. This procedure allow us to take care of the case where
 two seeds form two groups which eventually get together. Now we
 can make sure these groups are merged into one and there is no
-need to search for this case individually.
+need to search for this case individually. \\
 \end{par}
+
+\begin{par}
+Once we find the superclusters using this algorithm we proceed to do the following:
+\end{par}
+\begin{enumerate}
+\item Extract the properties (volume, shape, mass) from the superclusters
+\item Compare the superclusters detected in the simulation to Laniakea
+\end{enumerate}
+
+
+
 
 
 \section{Results}
@@ -1135,61 +1208,45 @@ Figure \ref{fg:vol_FA_growth}, shows that changing the
       the search space.
 \end{par}
 
-\subsubsection{Volume distribution}
+\subsection{Region properties and comparisons with Laniakea}
 
 \begin{par}
-The detected structures vary in volume and shape.
- The number and size of the detected structures
-  strongly depend on the choice for FA thresholds
-   (seed and growth) as it is presented in sections
-    \ref{sec:infl_FA_seed} and
-     \ref{sec:infl_FA_growth}.
-     We proceed to visualize the distribution of
-      detected structures volume for FA thresholds
-       where we have a significant number of
-        detected structures.
+ Let us remember the properties of Laniakea we can compare our detected structures with are described in table \ref{tab:laniakea}
 \end{par}
-
-\begin{figure}[ht]
-\centering
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_06_Trace_10_search_FA_09_Trace_00.png} % Include the image placeholder.png
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_07_Trace_10_search_FA_09_Trace_00.png}
-\end{minipage}
-\caption{Volume distributions for low values of seed FA threshold (0.6 and 0.7)}
-\label{fg:volume_plots_lower}
-\end{figure}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|}
+        Radius (Mpc) & 80  \\
+        Mass (Solar Masses) & $1 \times 10^{17}$  \\
+        Shape & Oblate top
+    \end{tabular}
+    \caption{Properties of Laniakea we can compare with as described by Tully et al. \cite{tully_laniakea_2014}}
+    \label{tab:laniakea}
+\end{table}
 \FloatBarrier
-
-\begin{figure}[ht]
-\centering
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_08_Trace_10_search_FA_09_Trace_00.png} % Include the image placeholder.png
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_09_Trace_10_search_FA_09_Trace_00.png}
-\end{minipage}
-
-\caption{Volume distributions for higher values of seed FA threshold (0.8 and 0.9)}
-\label{fg:volume_plots_higher}
-\end{figure}
-\FloatBarrier
-
-\begin{par}
-We find that as the seed FA threshold increases, the volume distribution tend to center to smaller volumes.
-\end{par}
 
 \subsubsection{Shape of the regions}
+
 \begin{par}
-To study the shape of the regions in a quantitative way we proceed, for each region, to form the Inertia Tensor, calculate its eigenvalues and observe how these eigenvalues differ from each other.
+To study the shape of the regions in a quantitative way we
+ proceed, for each region, to form the Inertia Tensor,
+  calculate its three eigenvalues $\lambda_a$, $\lambda_b$
+   and $\lambda_c$ and compare them. We order the eigenvalues
+    from the smallest to the
+    largest eigenvalue in order to get $\lambda_a < \lambda_b
+     < \lambda_c$ and later observe how these eigenvalues
+   differ from each other. \\
 \end{par}
 %TODO describe the Inertia Tensor
+
+\begin{par}
+For this we plot the difference between $\lambda_a$ and 
+ $\lambda_b$ versus the difference between $\lambda_b$ and 
+  $\lambda_c$. We obtain plots as the ones in figures
+   \ref{fg:inertia_diff} and \ref{fg:compare_lan_shape} and
+    we find that part of the regions we detected have the
+     same shape as Laniakea (oblate top).
+\end{par}
 
 \begin{figure}[ht]
 \centering
@@ -1201,101 +1258,72 @@ To study the shape of the regions in a quantitative way we proceed, for each reg
   \centering
   \includegraphics[width=0.9\textwidth]{groups/inertiaplots/inertia_diff_09_Trace_10_search_FA_08_Trace_00.png}
 \end{minipage}
-\caption{Inertia Tensor eigenvalues differences (normalized) for two different cases}
+\caption{Inertia Tensor eigenvalues differences (normalized) for two different cases. All the graphs are alike even for different values of FA and VDH.}
 \label{fg:inertia_diff}
 \end{figure}
 \FloatBarrier
-
-\begin{par}
-Figure \ref{fg:inertia_diff} shows that most of our
- detected structures correspond to the case where
-  $\lambda_a < \lambda_b < \lambda_c$ (asymmetric
-   structures). Nevertheless, if we set a tolerance we
-    can observe that there are cases where $\lambda_a
-     \sim \lambda_b < \lambda_c$ (oblate symmetric
-      structures), where $\lambda_a < \lambda_b \sim
-       \lambda_c$ (oblate symmetric structures), and very
-        few where $\lambda_a \sim \lambda_b \sim
-         \lambda_c$ (spherical structures).
-\end{par}
-
-\subsection{Comparisons with Laniakea}
-\begin{par}
- Let us remember the properties of Laniakea we can compare our detected structures with are described in table \ref{tab:laniakea}
-\end{par}
-\begin{table}[ht]
-    \centering
-    \begin{tabular}{|c|c|}
-        Radius (Mpc/h) & 80  \\
-        Mass (Solar Masses) & $1 \times 10^{17}$  \\
-    \end{tabular}
-    \caption{Properties of Laniakea we can compare with}
-    \label{tab:laniakea}
-\end{table}
-\FloatBarrier
-
-\begin{itemize}
-\item Size and Volume
-\end{itemize}
-\begin{par}
-Laniakea is a spheroid of radius 80 Mpc/h \cite{tully_laniakea_2014}. We can state it has approximatively a volume of $2.14  \times 10^6$ $\left[ Mpc/h \right]^3$.\\
-\end{par}
-\begin{par}
-We proceed to see how Laniakea fits in our volume distributions.
-\end{par}
-
-\iffalse
 \begin{figure}[ht]
+
 \centering
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_laniakea_09_Trace_10_search_FA_09_Trace_00.png} % Include the image placeholder.png
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_laniakea_06_Trace_10_search_FA_09_Trace_00.png}
-\end{minipage}
-\caption{Two distributions of volumes compared with the volume of Laniakea where Laniakea is larger.}
-\label{fg:compare_lan_larg}
-\end{figure}
-\FloatBarrier
-\fi
-
-%The commented parts can be easily activated by replacing \iffalse with \iftrue
-
-\begin{figure}[ht]
-\centering
-  \includegraphics[width=1.1\textwidth]{groups/volumes_distr_Mpc_laniakea_all_histstep_growth_90.png}
-\caption{Distributions of volumes for different seed FA thresholds. The growth FA threshold is 0.9. The growth VDH is 1.0. The VDH for the seeds is 0.0. We can see how Laniakea is larger.} \label{fg:compare_lan_larg}
-\end{figure}
-\FloatBarrier
-
-
-
-\begin{figure}[ht]
-\centering
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_laniakea_06_Trace_10_search_FA_10_Trace_00.png} % Include the image placeholder.png
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=0.9\textwidth]{groups/volumeplots/volumes_distr_Mpc_laniakea_05_Trace_10_search_FA_10_Trace_00.png}
-\end{minipage}
-\caption{Two distributions of volumes compared with the volume of Laniakea where Laniakea is smaller.}
-\label{fg:compare_lan_small}
+  \includegraphics[width=0.9\textwidth]{groups/inertia_cases.png}
+\caption{Inertia Tensor eigenvalues differences. We identify
+ the 4 different cases. The case 1 corresponds to a sphere,
+  where all the three eigenvalues are equal. The case 2
+   corresponds to a prolate top (an elonged sphere), where
+    the two larger eigenvalues are equal. The case 3
+     corresponds to an oblate top (a flattened sphere), where
+      the two smaller eigenvalues are equal. And the case 4
+       corresponds to an asymmetric top where all three
+        eigenvalues are different. Laniakea corresponds to an
+         oblate top case.} \label{fg:compare_lan_shape}
 \end{figure}
 \FloatBarrier
 
 
 \begin{par}
-We can observe in figure \ref{fg:compare_lan_larg}  that for Growth FA thresholds
- different than 1.0, Laniakea is always larger than
-  our detected structures. Figure \ref{fg:compare_lan_small}, where the Growth FA threshold
-   of 1.0 corresponds to the case where the
-    detected structure occupies all the available
-     space as exposed in section
-      \ref{sec:infl_FA_growth}.
+We have compared the shape of our regions with Laniakea. We
+ now proceed to compare the volume (size) of our regions with
+  Laniakea.
+\end{par}
+
+
+\subsubsection{Volume distribution}
+
+\begin{par}
+Laniakea is a spheroid of radius 80 Mpc  \cite{tully_laniakea_2014} which corresponds to a radius of 56 Mpc/h. We can then state it has approximatively a volume of $7.36  \times 10^5$ $\left[ Mpc/h \right]^3$ which is smaller than the total volume of our simulation $1.56 \times 10^7$ $\left[ Mpc/h \right]^3$.\\
+\end{par}
+
+\begin{par}
+The detected structures vary in volume and shape.
+ The number and size of the detected structures
+  strongly depend on the choice for FA thresholds
+   (seed and growth) as it is presented in sections
+    \ref{sec:infl_FA_seed} and
+     \ref{sec:infl_FA_growth}. 
+We know that if we choose as
+ FA thresholds 1.0, all the simulation volume is
+  detected as one region. This result is of no interest
+   here as we know it does not corresponds to reality. 
+     We proceed to visualize the distribution of
+      detected structures volume for FA thresholds
+       where we have a significant number of
+        detected structures.\\
+\end{par}
+
+\begin{figure}[ht]
+\centering
+  \includegraphics[width=1.1\textwidth]{groups/volumes_distr_Mpc_laniakea_all_plot.png}
+\caption{Distributions of volumes for different seed FA thresholds. The growth FA threshold is 0.9. The growth VDH is 1.0. The VDH for the seeds is 0.0. We can see how Laniakea is larger than the detected structures and smaller than the total simulation volume. We can see that as we increase the seeds FA threshold there are more regions of small volume detected and that the larger regions detected are always detected independently of the seed FA threshold.} \label{fg:compare_lan_larg}
+\end{figure}
+\FloatBarrier
+
+\begin{par}
+In figure \ref{fg:compare_lan_larg} we show how Laniakea is
+ always larger than the detected superclusters in our
+  simulation and smaller than the total simulation volume. We
+   can see how the larger regions are detected independently
+    of the seed FA threshold in place. This shows that our
+     method is robust to this parameter.
 \end{par}
 
 
@@ -1303,10 +1331,17 @@ We can observe in figure \ref{fg:compare_lan_larg}  that for Growth FA threshold
 \section{Conclusions and Future Work}
 \label{sec:discussions}
 \begin{par}
-Our method, based on the Fractional Anisotropy (FA) and the Velocity Divergence, successfully find structures in cosmological simulations. \\
+Our method, based on the Fractional Anisotropy (FA) and the Velocity Divergence, successfully finds structures in cosmological simulations. \\
 \end{par}
+
 \begin{par}
-Nevertheless it is very sensitive to its parameters (FA and Divergence thresholds). An exhaustive calibration can must be performed before interpreting the results.\\
+At first it seems very sensitive to its parameters (FA and
+ Divergence thresholds). An exhaustive calibration can must
+  be performed before interpreting the results.
+Nevertheless, We find that the larger structures (which are
+ the ones we are interested in) are detected independently of
+  the seed FA threshold parameter. This shows that our method
+   is robust.\\
 \end{par}
 \begin{par}
 We state that Laniakea is, in the Cosmological
@@ -1316,18 +1351,18 @@ We state that Laniakea is, in the Cosmological
     our detected structure is not equal to the
      available growth space, Laniakea's volume is
       always larger than the detected structures
-       volumes. However, our simulation volume is small\\
+       volumes.\\
 \end{par}
 
-
 \begin{par}
-We provide here results for the Small (Dense)
- simulation. Nevertheless we generated data from
+However, we only provide here results for the Small (Dense)
+ simulation. We generated data from
   the two other simulations exposed in table
    \ref{tab:sims}. A detailed analysis of how the
     detected structures behave for the different
      simulations is to be done.\\
 \end{par}
+
 \begin{par}
 A more exhaustive FA thresholds analysis is to be
  done similar to the one performed in this work.
@@ -1335,11 +1370,21 @@ A more exhaustive FA thresholds analysis is to be
    between 0.9 and 1.0 is to be examined in more
     detail.
 \end{par}
+
 \begin{par}
 In order to have a larger sample of detected large
  structures, a bigger simulation is to be performed
   with parameters Boxsize: 1000 Mpc/h and $2048^3$
    DM particles. \\
+\end{par}
+
+\begin{par}
+Finally, to have a deeper perspective of Laniakea, it is
+ of great interest to apply our method to the observational
+  data which was used to define Laniakea in order to validate
+   it. We could then obtained
+   the seed and growth FA and VDH thresholds which
+    corresponds to Laniakea.
 \end{par}
 
 
@@ -1569,54 +1614,12 @@ laptop and later on the HPC cluster. For a significant number of particles, the 
 
 
 
-\subsection{Simple implementation of the Region Growing Algorithm with the FA and VDH}
-
-\subsubsection{Code example for Region Growing Algorithm - Approach by the FA and VDH}
+\subsection{Code example for Region Growing Algorithm - Approach by the FA and VDH}
 \label{App:own_impl_code}
 \tiny
 \lstinputlisting[language=Python, caption=Region Growing Algorithm Code - FA \& VDH]{code/region_detection_FA_VDH_document.py}
 
 \normalsize
-\subsubsection{Region Growing Algorithm with the FA and VDH} \label{sec:results_own_impl}
-
-\begin{par}
-The results from the simple implementation are good. Nevertheless, our implementation using the FoF is much more efficient. We show this simple implementation and its results in a way to illustrate the concepts behind the Region Growing Algorithm.
-\end{par}
-
-\begin{par}
-Using the data from our Small(Dense) simulation described in
- table \ref{tab:sims}, after the CIC (in a
-  $256^3$ grid) and V-Web have been applied,
-   we run the implementation described in section
-    \ref{sec:own_impl_descr} for some of the
-     values described in tables
-      \ref{tab:seeds_FA_Trace} and
-       \ref{tab:search_FA_Trace}. 
-\end{par}
-
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=0.7\textwidth]{groups/firstimplementation/regions_3D_129.png} % Include the image placeholder.png
-\caption{Regions detected for: Seeds (FA:0.6, VDH: 1.0) and Growth (FA:0.8, VDH: 0.0) }
-\label{fg:first_3D_all}
-\end{center}
-\end{figure}
-\FloatBarrier
-
-\begin{figure}[ht]
-\centering
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=0.8\textwidth]{groups/firstimplementation/largest_vol_24_seeds_129.png} % Include the image placeholder.png
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
-  \centering
-  \includegraphics[width=0.8\textwidth]{groups/firstimplementation/largest_vol_24_seeds_129_scale.png}
-  \end{minipage}
-\caption{Largest volume detected for: Seeds (FA:0.6, VDH: 1.0) and Growth (FA:0.8, VDH: 0.0). The region is on the left and can be seen at scale with the simulation on the right.}
-\label{fg:first_3D_largest}
-\end{figure}
-\FloatBarrier
 
 
 \end{document} 

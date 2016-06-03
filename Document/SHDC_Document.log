@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.13)  23 MAY 2016 10:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.13)  3 JUN 2016 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -458,7 +458,7 @@ LaTeX Info: Redefining \nameref on input line 22.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<general/logo-andes.jpg, id=136, 423.14085pt x 169.1118pt>
+<general/logo-andes.jpg, id=128, 423.14085pt x 169.1118pt>
 File: general/logo-andes.jpg Graphic file (type jpg)
 
 <use general/logo-andes.jpg>
@@ -467,182 +467,232 @@ Package pdftex.def Info: general/logo-andes.jpg used on input line 27.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./general/logo-andes.jpg>]
- [2] [3] (./SHDC_Document.toc [4])
+ [2] [3] (./SHDC_Document.toc)
 \tf@toc=\write4
 \openout4 = `SHDC_Document.toc'.
 
- [5]
-Underfull \hbox (badness 10000) in paragraph at lines 108--116
+ [4]
+Underfull \hbox (badness 10000) in paragraph at lines 109--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--126
+Underfull \hbox (badness 10000) in paragraph at lines 120--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--151
+Underfull \hbox (badness 10000) in paragraph at lines 128--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--151
+Underfull \hbox (badness 10000) in paragraph at lines 128--156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--166
+Underfull \hbox (badness 10000) in paragraph at lines 158--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--180
+Underfull \hbox (badness 10000) in paragraph at lines 173--185
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 198--220
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 203--225
 
  []
 
 
-Overfull \hbox (23.47672pt too wide) in paragraph at lines 236--240
-\OT1/cmr/m/n/12 the di-men-sion-less pa-ram-e-ter de-fined by the equa-tion abo
-ve, $\OML/cmm/m/it/12 H[] \OT1/cmr/m/n/12 = 1 \OML/cmm/m/it/12 km s[] Mpc[] h[]
-$\OT1/cmr/m/n/12 .
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
+
+ []
+
+
+Overfull \hbox (43.36124pt too wide) in paragraph at lines 240--246
+\OML/cmm/m/it/12 h$ \OT1/cmr/m/n/12 is the di-men-sion-less pa-ram-e-ter de-fin
+ed by the equa-tion above, $\OML/cmm/m/it/12 H[] \OT1/cmr/m/n/12 = 1 \OML/cmm/m
+/it/12 km s[] Mpc[] h[]$\OT1/cmr/m/n/12 .
  []
 
 Missing character: There is no â in font cmr8!
 Missing character: There is no ˆ in font cmr8!
 Missing character: There is no ’ in font cmr8!
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 262--264
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 279.
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--275
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 291.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 279.
- [8]
-Underfull \hbox (badness 10000) in paragraph at lines 315--320
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 291.
+ [7]
+Underfull \hbox (badness 10000) in paragraph at lines 327--332
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--348
+Underfull \hbox (badness 10000) in paragraph at lines 352--361
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--356
+Underfull \hbox (badness 10000) in paragraph at lines 362--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--364
+Underfull \hbox (badness 10000) in paragraph at lines 371--379
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 380--387
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--371
+Underfull \hbox (badness 10000) in paragraph at lines 389--402
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--386
+Underfull \hbox (badness 10000) in paragraph at lines 404--415
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--439
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 388--399
+Underfull \hbox (badness 10000) in paragraph at lines 451--456
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--423
+Underfull \hbox (badness 10000) in paragraph at lines 458--461
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--432
+Underfull \hbox (badness 10000) in paragraph at lines 463--465
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 434--437
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 439--441
+Underfull \hbox (badness 10000) in paragraph at lines 466--481
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 442--454
-
- []
-
-
-Overfull \hbox (8.60092pt too wide) in paragraph at lines 460--460
+Overfull \hbox (8.60092pt too wide) in paragraph at lines 488--488
 []\OT1/cmr/bx/n/14.4 Fractional Anisotropy (FA) and Ve-loc-ity Di-ver-gence (VD
 H) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 463--464
+Underfull \hbox (badness 10000) in paragraph at lines 491--492
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--473
+Underfull \hbox (badness 10000) in paragraph at lines 494--501
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 533--536
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--540
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--546
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 547--553
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 501--503
+Underfull \hbox (badness 10000) in paragraph at lines 578--584
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--535
+Underfull \hbox (badness 10000) in paragraph at lines 585--594
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 536--549
+Underfull \hbox (badness 10000) in paragraph at lines 595--603
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 602--604
+Underfull \hbox (badness 10000) in paragraph at lines 645--657
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 633--659
+Underfull \hbox (badness 10000) in paragraph at lines 658--660
 
  []
 
-[13] <general/CIC_Explain_bigger.png, id=322, 466.74374pt x 454.69875pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--680
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--708
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 709--718
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 719--725
+
+ []
+
+<general/CIC_Explain_bigger.png, id=318, 466.74374pt x 454.69875pt>
 File: general/CIC_Explain_bigger.png Graphic file (type png)
 
 <use general/CIC_Explain_bigger.png>
-Package pdftex.def Info: general/CIC_Explain_bigger.png used on input line 662.
+Package pdftex.def Info: general/CIC_Explain_bigger.png used on input line 728.
 
 (pdftex.def)             Requested size: 266.14978pt x 259.29198pt.
  [14 <./general/CIC_Explain_bigger.png>]
-Overfull \hbox (15.62479pt too wide) in paragraph at lines 736--737
+Underfull \hbox (badness 10000) in paragraph at lines 759--765
+
+ []
+
+
+Overfull \hbox (15.62479pt too wide) in paragraph at lines 800--801
 []\OT1/cmr/m/n/12 If the par-ti-cle $\OML/cmm/m/it/12 c$ \OT1/cmr/m/n/12 at $\O
 ML/cmm/m/it/12 x[]; y[]; z[]$ \OT1/cmr/m/n/12 sat-is-fies $\OML/cmm/m/it/12 Q$\
 OT1/cmr/m/n/12 , it is marked as part of the re-gion, $\OML/cmm/m/it/12 S\OT1/c
@@ -650,85 +700,92 @@ mr/m/n/12 (\OML/cmm/m/it/12 x[]; y[]; z[]\OT1/cmr/m/n/12 ) =
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 817--822
+Underfull \hbox (badness 10000) in paragraph at lines 879--884
 
  []
 
-[16] <simulation/FA_hist_sim.png, id=370, 361.35pt x 361.35pt>
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 934--943
+
+ []
+
+[17] <simulation/FA_hist_sim.png, id=364, 361.35pt x 361.35pt>
 File: simulation/FA_hist_sim.png Graphic file (type png)
 
 <use simulation/FA_hist_sim.png>
-Package pdftex.def Info: simulation/FA_hist_sim.png used on input line 900.
+Package pdftex.def Info: simulation/FA_hist_sim.png used on input line 973.
 (pdftex.def)             Requested size: 177.43205pt x 177.43246pt.
 
-<simulation/FA_cut_i_10.png, id=371, 433.62pt x 433.62pt>
+<simulation/FA_cut_i_10.png, id=365, 433.62pt x 433.62pt>
 File: simulation/FA_cut_i_10.png Graphic file (type png)
 
 <use simulation/FA_cut_i_10.png>
-Package pdftex.def Info: simulation/FA_cut_i_10.png used on input line 906.
+Package pdftex.def Info: simulation/FA_cut_i_10.png used on input line 979.
 (pdftex.def)             Requested size: 210.69908pt x 210.70244pt.
- [17]
-<simulation/Trace_hist_sim.png, id=383, 361.35pt x 361.35pt>
+
+<simulation/Trace_hist_sim.png, id=372, 361.35pt x 361.35pt>
 File: simulation/Trace_hist_sim.png Graphic file (type png)
 
 <use simulation/Trace_hist_sim.png>
-Package pdftex.def Info: simulation/Trace_hist_sim.png used on input line 943.
+Package pdftex.def Info: simulation/Trace_hist_sim.png used on input line 1016.
+
 (pdftex.def)             Requested size: 177.43205pt x 177.43246pt.
 
-<simulation/Trace_cut_i_10.png, id=384, 433.62pt x 433.62pt>
+<simulation/Trace_cut_i_10.png, id=373, 433.62pt x 433.62pt>
 File: simulation/Trace_cut_i_10.png Graphic file (type png)
 
 <use simulation/Trace_cut_i_10.png>
-Package pdftex.def Info: simulation/Trace_cut_i_10.png used on input line 949.
+Package pdftex.def Info: simulation/Trace_cut_i_10.png used on input line 1022.
+
 (pdftex.def)             Requested size: 210.69908pt x 210.70244pt.
  [18 <./simulation/FA_hist_sim.png> <./simulation/FA_cut_i_10.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 977--982
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1055
 
  []
 
 
 <groups/3d/seeds_FA_5/region_2184_small_seeds_FA_05_Trace_10_search_FA_09_Trace
-_00_.png, id=399, 489.83pt x 580.1675pt>
+_00_.png, id=388, 489.83pt x 580.1675pt>
 File: groups/3d/seeds_FA_5/region_2184_small_seeds_FA_05_Trace_10_search_FA_09_
 Trace_00_.png Graphic file (type png)
 
 <use groups/3d/seeds_FA_5/region_2184_small_seeds_FA_05_Trace_10_search_FA_09_T
 race_00_.png>
 Package pdftex.def Info: groups/3d/seeds_FA_5/region_2184_small_seeds_FA_05_Tra
-ce_10_search_FA_09_Trace_00_.png used on input line 999.
+ce_10_search_FA_09_Trace_00_.png used on input line 1072.
 (pdftex.def)             Requested size: 199.60895pt x 236.41837pt.
 
 <groups/3d/seeds_FA_5/region_4094_small_seeds_FA_05_Trace_10_search_FA_09_Trace
-_00_.png, id=400, 493.845pt x 577.15625pt>
+_00_.png, id=389, 493.845pt x 577.15625pt>
 File: groups/3d/seeds_FA_5/region_4094_small_seeds_FA_05_Trace_10_search_FA_09_
 Trace_00_.png Graphic file (type png)
 
 <use groups/3d/seeds_FA_5/region_4094_small_seeds_FA_05_Trace_10_search_FA_09_T
 race_00_.png>
 Package pdftex.def Info: groups/3d/seeds_FA_5/region_4094_small_seeds_FA_05_Tra
-ce_10_search_FA_09_Trace_00_.png used on input line 1003.
+ce_10_search_FA_09_Trace_00_.png used on input line 1076.
 (pdftex.def)             Requested size: 199.60895pt x 233.28024pt.
  [19 <./simulation/Trace_hist_sim.png> <./simulation/Trace_cut_i_10.png>]
 <groups/3d/seeds_FA_5/region_2184_scale_seeds_FA_05_Trace_10_search_FA_09_Trace
-_00_.png, id=411, 491.8375pt x 585.18625pt>
+_00_.png, id=400, 491.8375pt x 585.18625pt>
 File: groups/3d/seeds_FA_5/region_2184_scale_seeds_FA_05_Trace_10_search_FA_09_
 Trace_00_.png Graphic file (type png)
 
 <use groups/3d/seeds_FA_5/region_2184_scale_seeds_FA_05_Trace_10_search_FA_09_T
 race_00_.png>
 Package pdftex.def Info: groups/3d/seeds_FA_5/region_2184_scale_seeds_FA_05_Tra
-ce_10_search_FA_09_Trace_00_.png used on input line 1014.
+ce_10_search_FA_09_Trace_00_.png used on input line 1087.
 (pdftex.def)             Requested size: 199.60895pt x 237.49023pt.
 
 <groups/3d/seeds_FA_5/region_4094_scale_seeds_FA_05_Trace_10_search_FA_09_Trace
-_00_.png, id=412, 491.8375pt x 583.17876pt>
+_00_.png, id=401, 491.8375pt x 583.17876pt>
 File: groups/3d/seeds_FA_5/region_4094_scale_seeds_FA_05_Trace_10_search_FA_09_
 Trace_00_.png Graphic file (type png)
 
 <use groups/3d/seeds_FA_5/region_4094_scale_seeds_FA_05_Trace_10_search_FA_09_T
 race_00_.png>
 Package pdftex.def Info: groups/3d/seeds_FA_5/region_4094_scale_seeds_FA_05_Tra
-ce_10_search_FA_09_Trace_00_.png used on input line 1018.
+ce_10_search_FA_09_Trace_00_.png used on input line 1091.
 (pdftex.def)             Requested size: 199.60895pt x 236.67552pt.
  [20 <./groups/3d/seeds_FA_5/region_2184_small_seeds_FA_05_Trace_10_search_FA_0
 9_Trace_00_.png> <./groups/3d/seeds_FA_5/region_4094_small_seeds_FA_05_Trace_10
@@ -736,14 +793,14 @@ _search_FA_09_Trace_00_.png> <./groups/3d/seeds_FA_5/region_2184_scale_seeds_FA
 _05_Trace_10_search_FA_09_Trace_00_.png> <./groups/3d/seeds_FA_5/region_4094_sc
 ale_seeds_FA_05_Trace_10_search_FA_09_Trace_00_.png>]
 <groups/3d/seeds_FA_5/regions_nonoise_seeds_FA_05_Trace_10_search_FA_09_Trace_0
-0_.png, id=417, 475.7775pt x 556.0775pt>
+0_.png, id=406, 475.7775pt x 556.0775pt>
 File: groups/3d/seeds_FA_5/regions_nonoise_seeds_FA_05_Trace_10_search_FA_09_Tr
 ace_00_.png Graphic file (type png)
 
 <use groups/3d/seeds_FA_5/regions_nonoise_seeds_FA_05_Trace_10_search_FA_09_Tra
 ce_00_.png>
 Package pdftex.def Info: groups/3d/seeds_FA_5/regions_nonoise_seeds_FA_05_Trace
-_10_search_FA_09_Trace_00_.png used on input line 1027.
+_10_search_FA_09_Trace_00_.png used on input line 1100.
 (pdftex.def)             Requested size: 399.21791pt x 466.61827pt.
  [21 <./groups/3d/seeds_FA_5/regions_nonoise_seeds_FA_05_Trace_10_search_FA_09_
 Trace_00_.png>]
@@ -753,40 +810,40 @@ ace_00_.png Graphic file (type png)
 <use groups/3d/seeds_FA_5/regions_nonoise_seeds_FA_05_Trace_10_search_FA_09_Tra
 ce_00_.png>
 Package pdftex.def Info: groups/3d/seeds_FA_5/regions_nonoise_seeds_FA_05_Trace
-_10_search_FA_09_Trace_00_.png used on input line 1058.
+_10_search_FA_09_Trace_00_.png used on input line 1131.
 (pdftex.def)             Requested size: 179.64682pt x 209.97101pt.
 
 <groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_09_Trace_0
-0_.png, id=426, 567.11874pt x 675.52374pt>
+0_.png, id=415, 567.11874pt x 675.52374pt>
 File: groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_09_Tr
 ace_00_.png Graphic file (type png)
 
 <use groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_09_Tra
 ce_00_.png>
 Package pdftex.def Info: groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace
-_10_search_FA_09_Trace_00_.png used on input line 1062.
+_10_search_FA_09_Trace_00_.png used on input line 1135.
 (pdftex.def)             Requested size: 179.64682pt x 213.98679pt.
 
 <groups/3d/seeds_FA_7/regions_nonoise_seeds_FA_07_Trace_10_search_FA_09_Trace_0
-0_.png, id=427, 573.14125pt x 676.5275pt>
+0_.png, id=416, 573.14125pt x 676.5275pt>
 File: groups/3d/seeds_FA_7/regions_nonoise_seeds_FA_07_Trace_10_search_FA_09_Tr
 ace_00_.png Graphic file (type png)
 
 <use groups/3d/seeds_FA_7/regions_nonoise_seeds_FA_07_Trace_10_search_FA_09_Tra
 ce_00_.png>
 Package pdftex.def Info: groups/3d/seeds_FA_7/regions_nonoise_seeds_FA_07_Trace
-_10_search_FA_09_Trace_00_.png used on input line 1066.
+_10_search_FA_09_Trace_00_.png used on input line 1139.
 (pdftex.def)             Requested size: 179.64682pt x 212.05434pt.
 
 <groups/3d/seeds_FA_8/regions_nonoise_seeds_FA_08_Trace_10_search_FA_09_Trace_0
-0_.png, id=428, 487.8225pt x 586.19pt>
+0_.png, id=417, 487.8225pt x 586.19pt>
 File: groups/3d/seeds_FA_8/regions_nonoise_seeds_FA_08_Trace_10_search_FA_09_Tr
 ace_00_.png Graphic file (type png)
 
 <use groups/3d/seeds_FA_8/regions_nonoise_seeds_FA_08_Trace_10_search_FA_09_Tra
 ce_00_.png>
 Package pdftex.def Info: groups/3d/seeds_FA_8/regions_nonoise_seeds_FA_08_Trace
-_10_search_FA_09_Trace_00_.png used on input line 1070.
+_10_search_FA_09_Trace_00_.png used on input line 1143.
 (pdftex.def)             Requested size: 179.64682pt x 215.86722pt.
  [22
 
@@ -796,36 +853,36 @@ _Trace_00_.png> <./groups/3d/seeds_FA_7/regions_nonoise_seeds_FA_07_Trace_10_se
 arch_FA_09_Trace_00_.png> <./groups/3d/seeds_FA_8/regions_nonoise_seeds_FA_08_T
 race_10_search_FA_09_Trace_00_.png>]
 <groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_06_Trace_0
-0_.png, id=441, 568.1225pt x 677.53125pt>
+0_.png, id=430, 568.1225pt x 677.53125pt>
 File: groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_06_Tr
 ace_00_.png Graphic file (type png)
 
 <use groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_06_Tra
 ce_00_.png>
 Package pdftex.def Info: groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace
-_10_search_FA_06_Trace_00_.png used on input line 1099.
+_10_search_FA_06_Trace_00_.png used on input line 1172.
 (pdftex.def)             Requested size: 179.64682pt x 214.24019pt.
 
 <groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_07_Trace_0
-0_.png, id=442, 566.115pt x 678.535pt>
+0_.png, id=431, 566.115pt x 678.535pt>
 File: groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_07_Tr
 ace_00_.png Graphic file (type png)
 
 <use groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_07_Tra
 ce_00_.png>
 Package pdftex.def Info: groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace
-_10_search_FA_07_Trace_00_.png used on input line 1103.
+_10_search_FA_07_Trace_00_.png used on input line 1176.
 (pdftex.def)             Requested size: 179.64682pt x 215.3134pt.
 
 <groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_08_Trace_0
-0_.png, id=443, 636.3775pt x 754.82pt>
+0_.png, id=432, 636.3775pt x 754.82pt>
 File: groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_08_Tr
 ace_00_.png Graphic file (type png)
 
 <use groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_08_Tra
 ce_00_.png>
 Package pdftex.def Info: groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace
-_10_search_FA_08_Trace_00_.png used on input line 1107.
+_10_search_FA_08_Trace_00_.png used on input line 1180.
 (pdftex.def)             Requested size: 179.64682pt x 213.0758pt.
 File: groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_09_Tr
 ace_00_.png Graphic file (type png)
@@ -833,7 +890,7 @@ ace_00_.png Graphic file (type png)
 <use groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_search_FA_09_Tra
 ce_00_.png>
 Package pdftex.def Info: groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace
-_10_search_FA_09_Trace_00_.png used on input line 1111.
+_10_search_FA_09_Trace_00_.png used on input line 1184.
 (pdftex.def)             Requested size: 179.64682pt x 213.98679pt.
  [24
 
@@ -841,154 +898,96 @@ _10_search_FA_09_Trace_00_.png used on input line 1111.
 _Trace_00_.png> <./groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_Trace_10_se
 arch_FA_07_Trace_00_.png> <./groups/3d/seeds_FA_6/regions_nonoise_seeds_FA_06_T
 race_10_search_FA_08_Trace_00_.png>]
-<groups/volumeplots/volumes_growth_FA_All_WITH_ZERO.png, id=456, 578.16pt x 578
+<groups/volumeplots/volumes_growth_FA_All_WITH_ZERO.png, id=445, 578.16pt x 578
 .16pt>
 File: groups/volumeplots/volumes_growth_FA_All_WITH_ZERO.png Graphic file (type
  png)
  <use groups/volumeplots/volumes_growth_FA_All_WITH_ZERO.png>
 Package pdftex.def Info: groups/volumeplots/volumes_growth_FA_All_WITH_ZERO.png
- used on input line 1123.
+ used on input line 1196.
 (pdftex.def)             Requested size: 332.68385pt x 332.67761pt.
  [26
 
  <./groups/volumeplots/volumes_growth_FA_All_WITH_ZERO.png>]
-<groups/volumeplots/volumes_distr_Mpc_06_Trace_10_search_FA_09_Trace_00.png, id
-=466, 578.16pt x 578.16pt>
-File: groups/volumeplots/volumes_distr_Mpc_06_Trace_10_search_FA_09_Trace_00.pn
-g Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 1231--1241
 
-<use groups/volumeplots/volumes_distr_Mpc_06_Trace_10_search_FA_09_Trace_00.png
->
-Package pdftex.def Info: groups/volumeplots/volumes_distr_Mpc_06_Trace_10_searc
-h_FA_09_Trace_00.png used on input line 1157.
-(pdftex.def)             Requested size: 199.60895pt x 199.60657pt.
+ []
 
-<groups/volumeplots/volumes_distr_Mpc_07_Trace_10_search_FA_09_Trace_00.png, id
-=467, 578.16pt x 578.16pt>
-File: groups/volumeplots/volumes_distr_Mpc_07_Trace_10_search_FA_09_Trace_00.pn
-g Graphic file (type png)
 
-<use groups/volumeplots/volumes_distr_Mpc_07_Trace_10_search_FA_09_Trace_00.png
->
-Package pdftex.def Info: groups/volumeplots/volumes_distr_Mpc_07_Trace_10_searc
-h_FA_09_Trace_00.png used on input line 1161.
-(pdftex.def)             Requested size: 199.60895pt x 199.60657pt.
-
-<groups/volumeplots/volumes_distr_Mpc_08_Trace_10_search_FA_09_Trace_00.png, id
-=468, 578.16pt x 578.16pt>
-File: groups/volumeplots/volumes_distr_Mpc_08_Trace_10_search_FA_09_Trace_00.pn
-g Graphic file (type png)
-
-<use groups/volumeplots/volumes_distr_Mpc_08_Trace_10_search_FA_09_Trace_00.png
->
-Package pdftex.def Info: groups/volumeplots/volumes_distr_Mpc_08_Trace_10_searc
-h_FA_09_Trace_00.png used on input line 1172.
-(pdftex.def)             Requested size: 199.60895pt x 199.60657pt.
-
-<groups/volumeplots/volumes_distr_Mpc_09_Trace_10_search_FA_09_Trace_00.png, id
-=469, 578.16pt x 578.16pt>
-File: groups/volumeplots/volumes_distr_Mpc_09_Trace_10_search_FA_09_Trace_00.pn
-g Graphic file (type png)
-
-<use groups/volumeplots/volumes_distr_Mpc_09_Trace_10_search_FA_09_Trace_00.png
->
-Package pdftex.def Info: groups/volumeplots/volumes_distr_Mpc_09_Trace_10_searc
-h_FA_09_Trace_00.png used on input line 1176.
-(pdftex.def)             Requested size: 199.60895pt x 199.60657pt.
- [27 <./groups/volumeplots/volumes_distr_Mpc_06_Trace_10_search_FA_09_Trace_00.
-png> <./groups/volumeplots/volumes_distr_Mpc_07_Trace_10_search_FA_09_Trace_00.
-png> <./groups/volumeplots/volumes_distr_Mpc_08_Trace_10_search_FA_09_Trace_00.
-png> <./groups/volumeplots/volumes_distr_Mpc_09_Trace_10_search_FA_09_Trace_00.
-png>]
-<groups/inertiaplots/inertia_diff_08_Trace_10_search_FA_08_Trace_00.png, id=480
+<groups/inertiaplots/inertia_diff_08_Trace_10_search_FA_08_Trace_00.png, id=459
 , 722.7pt x 722.7pt>
 File: groups/inertiaplots/inertia_diff_08_Trace_10_search_FA_08_Trace_00.png Gr
 aphic file (type png)
 
 <use groups/inertiaplots/inertia_diff_08_Trace_10_search_FA_08_Trace_00.png>
 Package pdftex.def Info: groups/inertiaplots/inertia_diff_08_Trace_10_search_FA
-_08_Trace_00.png used on input line 1198.
+_08_Trace_00.png used on input line 1255.
 (pdftex.def)             Requested size: 199.60895pt x 199.60876pt.
 
-<groups/inertiaplots/inertia_diff_09_Trace_10_search_FA_08_Trace_00.png, id=481
+<groups/inertiaplots/inertia_diff_09_Trace_10_search_FA_08_Trace_00.png, id=460
 , 722.7pt x 722.7pt>
 File: groups/inertiaplots/inertia_diff_09_Trace_10_search_FA_08_Trace_00.png Gr
 aphic file (type png)
 
 <use groups/inertiaplots/inertia_diff_09_Trace_10_search_FA_08_Trace_00.png>
 Package pdftex.def Info: groups/inertiaplots/inertia_diff_09_Trace_10_search_FA
-_08_Trace_00.png used on input line 1202.
+_08_Trace_00.png used on input line 1259.
 (pdftex.def)             Requested size: 199.60895pt x 199.60876pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1241--1243
+<groups/inertia_cases.png, id=461, 464.73625pt x 490.83376pt>
+File: groups/inertia_cases.png Graphic file (type png)
+
+<use groups/inertia_cases.png>
+Package pdftex.def Info: groups/inertia_cases.png used on input line 1268.
+(pdftex.def)             Requested size: 399.21791pt x 421.64444pt.
+ [27 <./groups/inertiaplots/inertia_diff_08_Trace_10_search_FA_08_Trace_00.png>
+ <./groups/inertiaplots/inertia_diff_09_Trace_10_search_FA_08_Trace_00.png>] [2
+8 <./groups/inertia_cases.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1293--1295
 
  []
 
 
-<groups/volumes_distr_Mpc_laniakea_all_histstep_growth_90.png, id=485, 1011.78p
-t x 1011.78pt>
-File: groups/volumes_distr_Mpc_laniakea_all_histstep_growth_90.png Graphic file
- (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 1297--1312
 
-<use groups/volumes_distr_Mpc_laniakea_all_histstep_growth_90.png>
-Package pdftex.def Info: groups/volumes_distr_Mpc_laniakea_all_histstep_growth_
-90.png used on input line 1268.
+ []
+
+
+<groups/volumes_distr_Mpc_laniakea_all_plot.png, id=477, 1011.78pt x 1011.78pt>
+File: groups/volumes_distr_Mpc_laniakea_all_plot.png Graphic file (type png)
+<use groups/volumes_distr_Mpc_laniakea_all_plot.png>
+Package pdftex.def Info: groups/volumes_distr_Mpc_laniakea_all_plot.png used on
+ input line 1315.
 (pdftex.def)             Requested size: 487.93903pt x 487.94922pt.
 
-Overfull \hbox (44.36055pt too wide) in paragraph at lines 1268--1269
+Overfull \hbox (44.36055pt too wide) in paragraph at lines 1315--1316
  [][] 
  []
 
-[28 <./groups/inertiaplots/inertia_diff_08_Trace_10_search_FA_08_Trace_00.png> 
-<./groups/inertiaplots/inertia_diff_09_Trace_10_search_FA_08_Trace_00.png>]
-[29 <./groups/volumes_distr_Mpc_laniakea_all_histstep_growth_90.png>]
-<groups/volumeplots/volumes_distr_Mpc_laniakea_06_Trace_10_search_FA_10_Trace_0
-0.png, id=500, 578.16pt x 578.16pt>
-File: groups/volumeplots/volumes_distr_Mpc_laniakea_06_Trace_10_search_FA_10_Tr
-ace_00.png Graphic file (type png)
+[29
 
-<use groups/volumeplots/volumes_distr_Mpc_laniakea_06_Trace_10_search_FA_10_Tra
-ce_00.png>
-Package pdftex.def Info: groups/volumeplots/volumes_distr_Mpc_laniakea_06_Trace
-_10_search_FA_10_Trace_00.png used on input line 1279.
-(pdftex.def)             Requested size: 199.60895pt x 199.60657pt.
-
-<groups/volumeplots/volumes_distr_Mpc_laniakea_05_Trace_10_search_FA_10_Trace_0
-0.png, id=501, 578.16pt x 578.16pt>
-File: groups/volumeplots/volumes_distr_Mpc_laniakea_05_Trace_10_search_FA_10_Tr
-ace_00.png Graphic file (type png)
-
-<use groups/volumeplots/volumes_distr_Mpc_laniakea_05_Trace_10_search_FA_10_Tra
-ce_00.png>
-Package pdftex.def Info: groups/volumeplots/volumes_distr_Mpc_laniakea_05_Trace
-_10_search_FA_10_Trace_00.png used on input line 1283.
-(pdftex.def)             Requested size: 199.60895pt x 199.60657pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1306--1308
+] [30 <./groups/volumes_distr_Mpc_laniakea_all_plot.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1334--1336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1309--1311
+Underfull \hbox (badness 10000) in paragraph at lines 1338--1346
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1312--1321
+Underfull \hbox (badness 10000) in paragraph at lines 1347--1356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1324--1331
+Underfull \hbox (badness 10000) in paragraph at lines 1358--1365
 
  []
 
-[30
 
- <./groups/volumeplots/volumes_distr_Mpc_laniakea_06_Trace_10_search_FA_10_Trac
-e_00.png> <./groups/volumeplots/volumes_distr_Mpc_laniakea_05_Trace_10_search_F
-A_10_Trace_00.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1339--1344
+Underfull \hbox (badness 10000) in paragraph at lines 1375--1380
 
  []
 
@@ -1001,6 +1000,9 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¨ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ‡ in font cmr12!
+ [31
+
+]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
 Missing character: There is no Ã in font cmr12!
@@ -1011,147 +1013,146 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
- [31]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
-) [32]
-Underfull \hbox (badness 10000) in paragraph at lines 1397--1404
+ [32]) [33]
+Underfull \hbox (badness 10000) in paragraph at lines 1442--1449
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1415--1419
+Underfull \hbox (badness 10000) in paragraph at lines 1460--1464
 
  []
 
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 1420--1422
+
+Underfull \hbox (badness 10000) in paragraph at lines 1465--1467
 
  []
 
-<graphs/hist_vel.png, id=543, 578.16pt x 433.62pt>
+<graphs/hist_vel.png, id=514, 578.16pt x 433.62pt>
 File: graphs/hist_vel.png Graphic file (type png)
  <use graphs/hist_vel.png>
-Package pdftex.def Info: graphs/hist_vel.png used on input line 1426.
+Package pdftex.def Info: graphs/hist_vel.png used on input line 1471.
 (pdftex.def)             Requested size: 399.21791pt x 299.40985pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1447--1450
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 1492--1495
 
  []
 
-[34 <./graphs/hist_vel.png>]
-<graphs/pos_3d_vel_menor_s_smaller.png, id=551, 2168.1pt x 2168.1pt>
+<graphs/pos_3d_vel_menor_s_smaller.png, id=525, 2168.1pt x 2168.1pt>
 File: graphs/pos_3d_vel_menor_s_smaller.png Graphic file (type png)
 
 <use graphs/pos_3d_vel_menor_s_smaller.png>
 Package pdftex.def Info: graphs/pos_3d_vel_menor_s_smaller.png used on input li
-ne 1461.
+ne 1506.
 (pdftex.def)             Requested size: 354.86412pt x 354.8429pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1472--1473
+ [35 <./graphs/hist_vel.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1517--1518
 
  []
 
-<graphs/scatter_magnitud_vel50000.png, id=552, 1445.4pt x 1445.4pt>
+<graphs/scatter_magnitud_vel50000.png, id=533, 1445.4pt x 1445.4pt>
 File: graphs/scatter_magnitud_vel50000.png Graphic file (type png)
 
 <use graphs/scatter_magnitud_vel50000.png>
 Package pdftex.def Info: graphs/scatter_magnitud_vel50000.png used on input lin
-e 1481.
+e 1526.
 (pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
 
-<graphs/scatter_magnitud_vel100000.png, id=553, 1445.4pt x 1445.4pt>
+<graphs/scatter_magnitud_vel100000.png, id=534, 1445.4pt x 1445.4pt>
 File: graphs/scatter_magnitud_vel100000.png Graphic file (type png)
 
 <use graphs/scatter_magnitud_vel100000.png>
 Package pdftex.def Info: graphs/scatter_magnitud_vel100000.png used on input li
-ne 1485.
+ne 1530.
 (pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
 
-<graphs/scatter_magnitud_vel150000.png, id=554, 1445.4pt x 1445.4pt>
+<graphs/scatter_magnitud_vel150000.png, id=535, 1445.4pt x 1445.4pt>
 File: graphs/scatter_magnitud_vel150000.png Graphic file (type png)
 
 <use graphs/scatter_magnitud_vel150000.png>
 Package pdftex.def Info: graphs/scatter_magnitud_vel150000.png used on input li
-ne 1489.
+ne 1534.
 (pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
 
-<graphs/scatter_magnitud_vel200000.png, id=555, 1445.4pt x 1445.4pt>
+<graphs/scatter_magnitud_vel200000.png, id=536, 1445.4pt x 1445.4pt>
 File: graphs/scatter_magnitud_vel200000.png Graphic file (type png)
 
 <use graphs/scatter_magnitud_vel200000.png>
 Package pdftex.def Info: graphs/scatter_magnitud_vel200000.png used on input li
-ne 1493.
+ne 1538.
 (pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
- [35 <./graphs/pos_3d_vel_menor_s_smaller.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1502
+ [36 <./graphs/pos_3d_vel_menor_s_smaller.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1545--1547
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1503--1504
+Underfull \hbox (badness 10000) in paragraph at lines 1548--1549
 
  []
 
-<graphs/scatter_magnitud_vel_488_lz_100000.png, id=563, 1445.4pt x 1445.4pt>
+<graphs/scatter_magnitud_vel_488_lz_100000.png, id=544, 1445.4pt x 1445.4pt>
 File: graphs/scatter_magnitud_vel_488_lz_100000.png Graphic file (type png)
 
 <use graphs/scatter_magnitud_vel_488_lz_100000.png>
 Package pdftex.def Info: graphs/scatter_magnitud_vel_488_lz_100000.png used on 
-input line 1509.
+input line 1554.
 (pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
 
-<graphs/scatter_magnitud_vel_488_lz_200000.png, id=564, 1445.4pt x 1445.4pt>
+<graphs/scatter_magnitud_vel_488_lz_200000.png, id=545, 1445.4pt x 1445.4pt>
 File: graphs/scatter_magnitud_vel_488_lz_200000.png Graphic file (type png)
 
 <use graphs/scatter_magnitud_vel_488_lz_200000.png>
 Package pdftex.def Info: graphs/scatter_magnitud_vel_488_lz_200000.png used on 
-input line 1513.
+input line 1558.
 (pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
 
-<graphs/scatter_magnitud_vel_59_lz_100000.png, id=565, 1445.4pt x 1445.4pt>
+<graphs/scatter_magnitud_vel_59_lz_100000.png, id=546, 1445.4pt x 1445.4pt>
 File: graphs/scatter_magnitud_vel_59_lz_100000.png Graphic file (type png)
 
 <use graphs/scatter_magnitud_vel_59_lz_100000.png>
 Package pdftex.def Info: graphs/scatter_magnitud_vel_59_lz_100000.png used on i
-nput line 1517.
+nput line 1562.
 (pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
 
-<graphs/scatter_magnitud_vel_59_lz_200000.png, id=566, 1445.4pt x 1445.4pt>
+<graphs/scatter_magnitud_vel_59_lz_200000.png, id=547, 1445.4pt x 1445.4pt>
 File: graphs/scatter_magnitud_vel_59_lz_200000.png Graphic file (type png)
 
 <use graphs/scatter_magnitud_vel_59_lz_200000.png>
 Package pdftex.def Info: graphs/scatter_magnitud_vel_59_lz_200000.png used on i
-nput line 1521.
+nput line 1566.
 (pdftex.def)             Requested size: 179.64682pt x 179.63797pt.
- [36 <./graphs/scatter_magnitud_vel50000.png> <./graphs/scatter_magnitud_vel100
+ [37 <./graphs/scatter_magnitud_vel50000.png> <./graphs/scatter_magnitud_vel100
 000.png> <./graphs/scatter_magnitud_vel150000.png> <./graphs/scatter_magnitud_v
 el200000.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1529--1530
+Underfull \hbox (badness 10000) in paragraph at lines 1574--1575
 
  []
 
-<graphs/regions_small.png, id=577, 1806.75pt x 1806.75pt>
+<graphs/regions_small.png, id=559, 1806.75pt x 1806.75pt>
 File: graphs/regions_small.png Graphic file (type png)
 
 <use graphs/regions_small.png>
-Package pdftex.def Info: graphs/regions_small.png used on input line 1534.
+Package pdftex.def Info: graphs/regions_small.png used on input line 1579.
 (pdftex.def)             Requested size: 354.86412pt x 354.86494pt.
- [37 <./graphs/scatter_magnitud_vel_488_lz_100000.png> <./graphs/scatter_magnit
+ [38 <./graphs/scatter_magnitud_vel_488_lz_100000.png> <./graphs/scatter_magnit
 ud_vel_488_lz_200000.png> <./graphs/scatter_magnitud_vel_59_lz_100000.png> <./g
 raphs/scatter_magnitud_vel_59_lz_200000.png>]
-<graphs/regions_big.png, id=588, 1806.75pt x 1806.75pt>
+<graphs/regions_big.png, id=569, 1806.75pt x 1806.75pt>
 File: graphs/regions_big.png Graphic file (type png)
 
 <use graphs/regions_big.png>
-Package pdftex.def Info: graphs/regions_big.png used on input line 1547.
+Package pdftex.def Info: graphs/regions_big.png used on input line 1592.
 (pdftex.def)             Requested size: 354.86412pt x 354.86494pt.
- [38 <./graphs/regions_small.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1555
+ [39 <./graphs/regions_small.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1599--1600
 
  []
 
-[39 <./graphs/regions_big.png>]
+[40 <./graphs/regions_big.png>]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
@@ -1179,7 +1180,7 @@ Overfull \hbox (40.42085pt too wide) in paragraph at lines 68--69
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[40]
+[41]
 Overfull \hbox (31.62086pt too wide) in paragraph at lines 73--74
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1192,54 +1193,26 @@ Overfull \hbox (40.42085pt too wide) in paragraph at lines 77--78
 ) (./code/region_detection_FA_VDH_document.py
 LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <6> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 14.
- [41]) [42]
-<groups/firstimplementation/regions_3D_129.png, id=858, 1806.75pt x 1806.75pt>
-File: groups/firstimplementation/regions_3D_129.png Graphic file (type png)
-
-<use groups/firstimplementation/regions_3D_129.png>
-Package pdftex.def Info: groups/firstimplementation/regions_3D_129.png used on 
-input line 1599.
-(pdftex.def)             Requested size: 310.50357pt x 310.50682pt.
-
-<groups/firstimplementation/largest_vol_24_seeds_129.png, id=859, 1806.75pt x 1
-806.75pt>
-File: groups/firstimplementation/largest_vol_24_seeds_129.png Graphic file (typ
-e png)
- <use groups/firstimplementation/largest_vol_24_seeds_129.png>
-Package pdftex.def Info: groups/firstimplementation/largest_vol_24_seeds_129.pn
-g used on input line 1610.
-(pdftex.def)             Requested size: 177.43205pt x 177.43246pt.
-
-<groups/firstimplementation/largest_vol_24_seeds_129_scale.png, id=860, 1806.75
-pt x 1806.75pt>
-File: groups/firstimplementation/largest_vol_24_seeds_129_scale.png Graphic fil
-e (type png)
-
-<use groups/firstimplementation/largest_vol_24_seeds_129_scale.png>
-Package pdftex.def Info: groups/firstimplementation/largest_vol_24_seeds_129_sc
-ale.png used on input line 1614.
-(pdftex.def)             Requested size: 177.43205pt x 177.43246pt.
- [43 <./groups/firstimplementation/regions_3D_129.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1622.
- [44 <./groups/firstimplementation/largest_vol_24_seeds_129.png> <./groups/firs
-timplementation/largest_vol_24_seeds_129_scale.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1622.
+ [42])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1625.
+ [43]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1625.
  (./SHDC_Document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1622.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1622.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1625.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1625.
 
 Package rerunfilecheck Info: File `SHDC_Document.out' has not changed.
-(rerunfilecheck)             Checksum: 9ED057EE44ADBCF475C20743815FA81F;2720.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1622.
+(rerunfilecheck)             Checksum: 80E4CB72DBE8A8C1B316680C6ABC3B48;2505.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1625.
  ) 
 Here is how much of TeX's memory you used:
- 9955 strings out of 494985
- 157411 string characters out of 6180356
- 301862 words of memory out of 5000000
- 12586 multiletter control sequences out of 15000+600000
+ 9899 strings out of 494985
+ 154086 string characters out of 6180356
+ 305356 words of memory out of 5000000
+ 12547 multiletter control sequences out of 15000+600000
  10798 words of font info for 39 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 42i,10n,43p,595b,1840s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,43p,704b,1840s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texli
@@ -1257,10 +1230,10 @@ ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on SHDC_Document.pdf (44 pages, 18887074 bytes).
+Output written on SHDC_Document.pdf (43 pages, 17774668 bytes).
 PDF statistics:
- 1020 PDF objects out of 1200 (max. 8388607)
- 875 compressed objects within 9 object streams
- 398 named destinations out of 1000 (max. 500000)
- 475 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 978 PDF objects out of 1000 (max. 8388607)
+ 850 compressed objects within 9 object streams
+ 390 named destinations out of 1000 (max. 500000)
+ 419 words of extra memory for PDF output out of 10000 (max. 10000000)
 

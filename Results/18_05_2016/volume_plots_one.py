@@ -43,8 +43,8 @@ array_seeds_FA = np.array([0.6,0.7,0.8,0.9])
 #Radius Laniakea: 80 Mpc/h
 #Volume Laniakea: 2.14E16(Mpc/h)^3
 
-radius_laniakea_Mpc = 80.0
-volume_laniakea_Mpc = 2.14 * (10.0**6.0)
+radius_laniakea_Mpc = 80.0*0.7
+volume_laniakea_Mpc = (4.0/3.0) * np.pi * (radius_laniakea_Mpc**3.0)
 log_10_vol_laniakea_Mpc = np.log10(volume_laniakea_Mpc)
 
 volume_sim_mpc = 250.0**3.0
