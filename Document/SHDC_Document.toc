@@ -21,7 +21,7 @@
 \contentsline {subsubsection}{\numberline {6.2.1}Influence of the FA in the seeds}{22}{subsubsection.6.2.1}
 \contentsline {subsubsection}{\numberline {6.2.2}Influence of the FA in the growth}{24}{subsubsection.6.2.2}
 \contentsline {subsection}{\numberline {6.3}Region properties and comparisons with Laniakea}{26}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Shape of the regions}{27}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.1}Shape of the regions}{26}{subsubsection.6.3.1}
 \contentsline {subsubsection}{\numberline {6.3.2}Volume distribution}{29}{subsubsection.6.3.2}
 \contentsline {section}{\numberline {7}Conclusions and Future Work}{31}{section.7}
 \contentsline {section}{\numberline {A}Appendix}{33}{appendix.A}
