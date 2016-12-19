@@ -1,0 +1,94 @@
+-------------------------
+THE REVMEXAA LATEX MACROS
+-------------------------
+
+Version: 3.26b (09 Feb 2015)
+
+Author: William Henney (w.henney@crya.unam.mx)
+
+Latest version available from:	http://www.crya.unam.mx/rmaa
+
+
+USAGE
+-----
+
+This package is intended for the typesetting of papers that are being
+submitted for publication in the main journal of the Revista Mexicana
+de Astronomia y Astrofisica. The example document
+rm-journal-example.tex serves both as simple documentation and as a
+template for your own contribution.
+
+Further details on the use of the macros are given in the "Guide for
+Authors", authorguide.pdf
+
+
+VERSION 3.2x RELEASE NOTES 
+--------------------------
+
+The main change in this release is a reorganization to give separate
+packages for the Conference Series (rmsc3.2x.tar.gz or rmsc3.2x.zip)
+and the main journal (rmaa3.2x.tar.gz or rmaa3.2x.zip).
+
+The manuscript option for the main journal has been revamped and this
+is now the default style, which should be used for all submissions.
+
+A maximum of six keywords is now enforced. Exceeding this limit gives
+a LaTeX compilation error.
+
+There is also support for BibTeX, and a "review article" option has
+been added to the main journal.
+
+For more details, see the News section of http://www.crya.unam.mx/rmaa
+
+DOWNLOAD AND INSTALLATION
+-------------------------
+
+The latest version of the macros can always be obtained from
+|http://www.astrosmo.unam.mx/rmaa|. There are three different
+packages, each designed for a different audience: authors of main
+journal papers (e.g., |rmaa3.24.tar.gz|), authors of contributions to
+conference proceedings (e.g., |rmsc3.24.tar.gz|), and editors of the
+main journal or conference proceedings (e.g.,
+|rmaa_editor3.24.tar.gz|). Please make sure you have the right
+package. All packages are also provided in |.zip| format, chiefly for
+the convenience of MS Windows users.
+
+Once you have downloaded the relevant package archive file, move it to
+the directory (folder) where you wish to work and unpack the
+archive. The procedure to do this may vary between systems. From the
+command line on Unix, Linux, or Mac OS X, you can use something like
+|tar -zxf rmaa3.24.tar.gz|.
+
+To test that everything is working, you should compile the example
+document: |rm-journal-example.tex|. You will need to invoke |latex|
+twice to get the cross references right. The procedure to view and
+print the document will vary between systems. On Unix, Linux, or Mac
+OS X, you can use |latex} and |dvips| to generate a postscript file
+(which can be converted to PDF via |ps2pdf|), or alternatively you can
+use |pdflatex| to generate a PDF file directly. Note that in the first
+case, any included graphics must be in EPS format, while in the second
+case, they must be in PDF, PNG, or JPG format. It is recommended that
+you omit the file extension from the filenames in the
+|\includegraphics| command, so that both |latex| and |pdflatex| can
+automatically find the correct figure file.
+
+Assuming that the example document compiled and printed correctly, you
+can now start writing your own paper, using the example document as a
+template. 
+
+
+FILE MANIFEST for rmaaN.MM.tar:
+-------------------------------
+
+README			this file
+rmaa.cls		LaTeX class file for typesetting RMAA articles 
+rm-journal-example.tex	Example main journal paper and tutorial
+authorguide.pdf		Guide for Authors 
+example-fig.eps		Example of figure
+example-badfig.eps	Example of how not to do a figure
+example-fig.pdf		
+example-badfig.pdf	
+rmaa.bst		Bibtex style file (experimental)
+GPL			Terms and conditions for copying, distribution
+                        and modification
+
